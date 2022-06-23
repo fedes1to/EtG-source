@@ -48,7 +48,7 @@ public class SunShafts : PostEffectsBase
 		useDepthTexture = true;
 	}
 
-	public override bool CheckResources()
+	public bool CheckResources()
 	{
 		CheckSupport(useDepthTexture);
 		sunShaftsMaterial = CheckShaderAndCreateMaterial(sunShaftsShader, sunShaftsMaterial);
@@ -60,7 +60,7 @@ public class SunShafts : PostEffectsBase
 		return isSupported;
 	}
 
-	public override void OnRenderImage(RenderTexture source, RenderTexture destination)
+	public void OnRenderImage(RenderTexture source, RenderTexture destination)
 	{
 		if (!CheckResources())
 		{
@@ -132,7 +132,7 @@ public class SunShafts : PostEffectsBase
 		return (its < 1) ? 1 : ((its <= 4) ? its : 4);
 	}
 
-	public override void Main()
+	public void Main()
 	{
 	}
 }

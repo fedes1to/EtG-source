@@ -38,7 +38,7 @@ public class EdgeDetectEffectNormals : PostEffectsBase
 		oldMode = EdgeDetectMode.SobelDepthThin;
 	}
 
-	public override bool CheckResources()
+	public bool CheckResources()
 	{
 		CheckSupport(true);
 		edgeDetectMaterial = CheckShaderAndCreateMaterial(edgeDetectShader, edgeDetectMaterial);
@@ -54,12 +54,12 @@ public class EdgeDetectEffectNormals : PostEffectsBase
 		return isSupported;
 	}
 
-	public override void Start()
+	public void Start()
 	{
 		oldMode = mode;
 	}
 
-	public override void SetCameraFlag()
+	public void SetCameraFlag()
 	{
 		if (mode > EdgeDetectMode.RobertsCrossDepthNormals)
 		{
@@ -71,13 +71,13 @@ public class EdgeDetectEffectNormals : PostEffectsBase
 		}
 	}
 
-	public override void OnEnable()
+	public void OnEnable()
 	{
 		SetCameraFlag();
 	}
 
 	[ImageEffectOpaque]
-	public override void OnRenderImage(RenderTexture source, RenderTexture destination)
+	public void OnRenderImage(RenderTexture source, RenderTexture destination)
 	{
 		if (!CheckResources())
 		{
@@ -93,7 +93,7 @@ public class EdgeDetectEffectNormals : PostEffectsBase
 		Graphics.Blit(source, destination, edgeDetectMaterial, (int)mode);
 	}
 
-	public override void Main()
+	public void Main()
 	{
 	}
 }

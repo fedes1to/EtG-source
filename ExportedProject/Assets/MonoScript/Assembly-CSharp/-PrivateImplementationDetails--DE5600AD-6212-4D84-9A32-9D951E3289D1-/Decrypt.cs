@@ -2,7 +2,7 @@ using System;
 using System.Runtime.InteropServices;
 using System.Security.Cryptography;
 using System.Text;
-using Mono.Security.Cryptography;
+//using Mono.Security.Cryptography;
 
 namespace _003CPrivateImplementationDetails_003E_007BDE5600AD_002D6212_002D4D84_002D9A32_002D9D951E3289D1_007D
 {
@@ -85,14 +85,15 @@ namespace _003CPrivateImplementationDetails_003E_007BDE5600AD_002D6212_002D4D84_
 		public static string DecryptLiteral(byte[] b)
 		{
 			int num = 4096;
-			RSAManaged rSAManaged = new RSAManaged(num);
-			rSAManaged.UseKeyBlinding = false;
-			RSA rSA = CryptoConvert.FromCapiKeyBlob(publicKey);
-			rSAManaged.ImportParameters(rSA.ExportParameters(false));
+			//RSAManaged rSAManaged = new RSAManaged(num);
+			//rSAManaged.UseKeyBlinding = false;
+			//RSA rSA = CryptoConvert.FromCapiKeyBlob(publicKey);
+		//	rSAManaged.ImportParameters(rSA.ExportParameters(false));
 			int num2 = num / 8;
 			if (b.Length == num2)
 			{
-				byte[] b2 = rSA.EncryptValue(b);
+				//byte[] b2 = rSA.EncryptValue(b);
+				byte[] b2 = null;
 				string text = Translate(b2);
 				return text.Substring(1, text.Length - 2);
 			}
@@ -101,7 +102,8 @@ namespace _003CPrivateImplementationDetails_003E_007BDE5600AD_002D6212_002D4D84_
 			{
 				byte[] array = new byte[num2];
 				Buffer.BlockCopy(b, i * num2, array, 0, num2);
-				byte[] b3 = rSA.EncryptValue(array);
+				//byte[] b3 = rSA.EncryptValue(array);
+				byte[] b3 = null;
 				stringBuilder.Append(Translate(b3));
 			}
 			return stringBuilder.ToString(1, ((string)(object)stringBuilder).Length - 2);

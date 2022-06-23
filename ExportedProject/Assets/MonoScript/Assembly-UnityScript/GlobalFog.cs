@@ -53,7 +53,7 @@ public class GlobalFog : PostEffectsBase
 		globalFogColor = Color.grey;
 	}
 
-	public override bool CheckResources()
+	public bool CheckResources()
 	{
 		CheckSupport(true);
 		fogMaterial = CheckShaderAndCreateMaterial(fogShader, fogMaterial);
@@ -64,7 +64,7 @@ public class GlobalFog : PostEffectsBase
 		return isSupported;
 	}
 
-	public override void OnRenderImage(RenderTexture source, RenderTexture destination)
+	public void OnRenderImage(RenderTexture source, RenderTexture destination)
 	{
 		if (!CheckResources())
 		{
@@ -127,7 +127,7 @@ public class GlobalFog : PostEffectsBase
 		GL.PopMatrix();
 	}
 
-	public override void Main()
+	public void Main()
 	{
 	}
 }

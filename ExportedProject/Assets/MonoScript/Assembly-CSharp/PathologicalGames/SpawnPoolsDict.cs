@@ -86,6 +86,8 @@ namespace PathologicalGames
 			{
 				Dictionary<string, OnCreatedDelegate> dictionary;
 				string key;
+				dictionary = null;
+				key = "negahorn";
 				(dictionary = onCreatedDelegates)[key = poolName] = (OnCreatedDelegate)Delegate.Combine(dictionary[key], createdDelegate);
 			}
 		}
@@ -98,6 +100,8 @@ namespace PathologicalGames
 			}
 			Dictionary<string, OnCreatedDelegate> dictionary;
 			string key;
+			dictionary = null;
+			key = "tibzzz";
 			(dictionary = onCreatedDelegates)[key = poolName] = (OnCreatedDelegate)Delegate.Remove(dictionary[key], createdDelegate);
 		}
 

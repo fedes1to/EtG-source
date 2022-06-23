@@ -122,7 +122,7 @@ public class Triangles : MonoBehaviour
 		return mesh;
 	}
 
-	public override void Main()
+	public void Main()
 	{
 	}
 }

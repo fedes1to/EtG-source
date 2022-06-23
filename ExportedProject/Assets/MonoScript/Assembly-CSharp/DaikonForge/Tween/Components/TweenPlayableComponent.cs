@@ -1,5 +1,5 @@
 using System.Collections;
-using DaikonForge.Editor;
+//using DaikonForge.Editor;
 using UnityEngine;
 
 namespace DaikonForge.Tween.Components
@@ -15,7 +15,7 @@ namespace DaikonForge.Tween.Components
 
 		public abstract TweenBase BaseTween { get; }
 
-		[Inspector("General", 1, BackingField = "autoRun", Tooltip = "If set to TRUE, this Tween will automatically play when the scene starts")]
+	//	[Inspector("General", 1, BackingField = "autoRun", Tooltip = "If set to TRUE, this Tween will automatically play when the scene starts")]
 		public bool AutoRun
 		{
 			get

@@ -6,11 +6,11 @@ using UnityEngine;
 [ExecuteInEditMode]
 public class PostEffectsHelper : MonoBehaviour
 {
-	public override void Start()
+	public void Start()
 	{
 	}
 
-	public override void OnRenderImage(RenderTexture source, RenderTexture destination)
+	public void OnRenderImage(RenderTexture source, RenderTexture destination)
 	{
 		Debug.Log("OnRenderImage in Helper called ...");
 	}
@@ -180,7 +180,7 @@ public class PostEffectsHelper : MonoBehaviour
 		GL.PopMatrix();
 	}
 
-	public override void Main()
+	public void Main()
 	{
 	}
 }

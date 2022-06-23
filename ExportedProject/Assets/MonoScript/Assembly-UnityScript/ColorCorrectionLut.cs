@@ -19,7 +19,7 @@ public class ColorCorrectionLut : PostEffectsBase
 		basedOnTempTex = string.Empty;
 	}
 
-	public override bool CheckResources()
+	public bool CheckResources()
 	{
 		CheckSupport(false);
 		material = CheckShaderAndCreateMaterial(shader, material);
@@ -30,7 +30,7 @@ public class ColorCorrectionLut : PostEffectsBase
 		return isSupported;
 	}
 
-	public override void OnDisable()
+	public void OnDisable()
 	{
 		if ((bool)material)
 		{
@@ -39,7 +39,7 @@ public class ColorCorrectionLut : PostEffectsBase
 		}
 	}
 
-	public override void OnDestroy()
+	public void OnDestroy()
 	{
 		if ((bool)converted3DLut)
 		{
@@ -48,7 +48,7 @@ public class ColorCorrectionLut : PostEffectsBase
 		converted3DLut = null;
 	}
 
-	public override void SetIdentityLut()
+	public void SetIdentityLut()
 	{
 		int num = 16;
 		Color[] array = new Color[num * num * num];
@@ -73,7 +73,7 @@ public class ColorCorrectionLut : PostEffectsBase
 		basedOnTempTex = string.Empty;
 	}
 
-	public override bool ValidDimensions(Texture2D tex2d)
+	public bool ValidDimensions(Texture2D tex2d)
 	{
 		int result;
 		if (!tex2d)
@@ -88,7 +88,7 @@ public class ColorCorrectionLut : PostEffectsBase
 		return (byte)result != 0;
 	}
 
-	public override void Convert(Texture2D temp2DTex, string path)
+	public void Convert(Texture2D temp2DTex, string path)
 	{
 		if ((bool)temp2DTex)
 		{
@@ -128,7 +128,7 @@ public class ColorCorrectionLut : PostEffectsBase
 		}
 	}
 
-	public override void OnRenderImage(RenderTexture source, RenderTexture destination)
+	public void OnRenderImage(RenderTexture source, RenderTexture destination)
 	{
 		if (!CheckResources())
 		{
@@ -147,7 +147,7 @@ public class ColorCorrectionLut : PostEffectsBase
 		Graphics.Blit(source, destination, material, (QualitySettings.activeColorSpace == ColorSpace.Linear) ? 1 : 0);
 	}
 
-	public override void Main()
+	public void Main()
 	{
 	}
 }

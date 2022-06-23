@@ -129,7 +129,7 @@ public class Quads : MonoBehaviour
 		return mesh;
 	}
 
-	public override void Main()
+	public void Main()
 	{
 	}
 }

@@ -21,7 +21,7 @@ public class Fisheye : PostEffectsBase
 		strengthY = 0.05f;
 	}
 
-	public override bool CheckResources()
+	public bool CheckResources()
 	{
 		CheckSupport(false);
 		fisheyeMaterial = CheckShaderAndCreateMaterial(fishEyeShader, fisheyeMaterial);
@@ -32,7 +32,7 @@ public class Fisheye : PostEffectsBase
 		return isSupported;
 	}
 
-	public override void OnRenderImage(RenderTexture source, RenderTexture destination)
+	public void OnRenderImage(RenderTexture source, RenderTexture destination)
 	{
 		if (!CheckResources())
 		{
@@ -45,7 +45,7 @@ public class Fisheye : PostEffectsBase
 		Graphics.Blit(source, destination, fisheyeMaterial);
 	}
 
-	public override void Main()
+	public void Main()
 	{
 	}
 }

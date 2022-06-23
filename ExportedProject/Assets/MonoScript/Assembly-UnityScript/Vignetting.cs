@@ -50,7 +50,7 @@ public class Vignetting : PostEffectsBase
 		luminanceDependency = 0.25f;
 	}
 
-	public override bool CheckResources()
+	public bool CheckResources()
 	{
 		CheckSupport(false);
 		vignetteMaterial = CheckShaderAndCreateMaterial(vignetteShader, vignetteMaterial);
@@ -63,7 +63,7 @@ public class Vignetting : PostEffectsBase
 		return isSupported;
 	}
 
-	public override void OnRenderImage(RenderTexture source, RenderTexture destination)
+	public void OnRenderImage(RenderTexture source, RenderTexture destination)
 	{
 		if (!CheckResources())
 		{
@@ -128,7 +128,7 @@ public class Vignetting : PostEffectsBase
 		}
 	}
 
-	public override void Main()
+	public void Main()
 	{
 	}
 }

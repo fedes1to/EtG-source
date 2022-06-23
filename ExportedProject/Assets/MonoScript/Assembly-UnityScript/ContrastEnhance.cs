@@ -27,7 +27,7 @@ public class ContrastEnhance : PostEffectsBase
 		blurSpread = 1f;
 	}
 
-	public override bool CheckResources()
+	public bool CheckResources()
 	{
 		CheckSupport(false);
 		contrastCompositeMaterial = CheckShaderAndCreateMaterial(contrastCompositeShader, contrastCompositeMaterial);
@@ -39,7 +39,7 @@ public class ContrastEnhance : PostEffectsBase
 		return isSupported;
 	}
 
-	public override void OnRenderImage(RenderTexture source, RenderTexture destination)
+	public void OnRenderImage(RenderTexture source, RenderTexture destination)
 	{
 		if (!CheckResources())
 		{
@@ -64,7 +64,7 @@ public class ContrastEnhance : PostEffectsBase
 		RenderTexture.ReleaseTemporary(temporary3);
 	}
 
-	public override void Main()
+	public void Main()
 	{
 	}
 }

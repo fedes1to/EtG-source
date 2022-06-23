@@ -88,7 +88,7 @@ public class DepthOfFieldScatter : PostEffectsBase
 		internalBlurWidth = 1f;
 	}
 
-	public override bool CheckResources()
+	public bool CheckResources()
 	{
 		CheckSupport(true);
 		dofHdrMaterial = CheckShaderAndCreateMaterial(dofHdrShader, dofHdrMaterial);
@@ -104,12 +104,12 @@ public class DepthOfFieldScatter : PostEffectsBase
 		return isSupported;
 	}
 
-	public override void OnEnable()
+	public void OnEnable()
 	{
 		GetComponent<Camera>().depthTextureMode = GetComponent<Camera>().depthTextureMode | DepthTextureMode.Depth;
 	}
 
-	public override void OnDisable()
+	public void OnDisable()
 	{
 		ReleaseComputeResources();
 		if ((bool)dofHdrMaterial)
@@ -124,7 +124,7 @@ public class DepthOfFieldScatter : PostEffectsBase
 		dx11bokehMaterial = null;
 	}
 
-	public override void ReleaseComputeResources()
+	public void ReleaseComputeResources()
 	{
 		if (cbDrawArgs != null)
 		{
@@ -138,11 +138,11 @@ public class DepthOfFieldScatter : PostEffectsBase
 		cbPoints = null;
 	}
 
-	public override void CreateComputeResources()
+	public void CreateComputeResources()
 	{
 		if (RuntimeServices.EqualityOperator(cbDrawArgs, null))
 		{
-			cbDrawArgs = new ComputeBuffer(1, 16, ComputeBufferType.DrawIndirect);
+			cbDrawArgs = new ComputeBuffer(1, 16, ComputeBufferType.IndirectArguments);
 			int[] data = new int[4] { 0, 1, 0, 0 };
 			cbDrawArgs.SetData(data);
 		}
@@ -152,7 +152,7 @@ public class DepthOfFieldScatter : PostEffectsBase
 		}
 	}
 
-	public override float FocalDistance01(float worldDist)
+	public float FocalDistance01(float worldDist)
 	{
 		return GetComponent<Camera>().WorldToViewportPoint((worldDist - GetComponent<Camera>().nearClipPlane) * GetComponent<Camera>().transform.forward + GetComponent<Camera>().transform.position).z / (GetComponent<Camera>().farClipPlane - GetComponent<Camera>().nearClipPlane);
 	}
@@ -177,7 +177,7 @@ public class DepthOfFieldScatter : PostEffectsBase
 		}
 	}
 
-	public override void OnRenderImage(RenderTexture source, RenderTexture destination)
+	public void OnRenderImage(RenderTexture source, RenderTexture destination)
 	{
 		if (!CheckResources())
 		{
@@ -356,7 +356,7 @@ public class DepthOfFieldScatter : PostEffectsBase
 		}
 	}
 
-	public override void Main()
+	public void Main()
 	{
 	}
 }

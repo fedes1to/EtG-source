@@ -13,7 +13,7 @@ public class CameraInfo : MonoBehaviour
 
 	public int recognizedPostFxCount;
 
-	public override void Main()
+	public void Main()
 	{
 	}
 }

@@ -119,7 +119,7 @@ public class DepthOfField34 : PostEffectsBase
 		bokehDownsample = 1;
 	}
 
-	public override void CreateMaterials()
+	public void CreateMaterials()
 	{
 		dofBlurMaterial = CheckShaderAndCreateMaterial(dofBlurShader, dofBlurMaterial);
 		dofMaterial = CheckShaderAndCreateMaterial(dofShader, dofMaterial);
@@ -130,7 +130,7 @@ public class DepthOfField34 : PostEffectsBase
 		}
 	}
 
-	public override bool CheckResources()
+	public bool CheckResources()
 	{
 		CheckSupport(true);
 		dofBlurMaterial = CheckShaderAndCreateMaterial(dofBlurShader, dofBlurMaterial);
@@ -147,22 +147,22 @@ public class DepthOfField34 : PostEffectsBase
 		return isSupported;
 	}
 
-	public override void OnDisable()
+	public void OnDisable()
 	{
 		Quads.Cleanup();
 	}
 
-	public override void OnEnable()
+	public void OnEnable()
 	{
 		GetComponent<Camera>().depthTextureMode = GetComponent<Camera>().depthTextureMode | DepthTextureMode.Depth;
 	}
 
-	public override float FocalDistance01(float worldDist)
+	public float FocalDistance01(float worldDist)
 	{
 		return GetComponent<Camera>().WorldToViewportPoint((worldDist - GetComponent<Camera>().nearClipPlane) * GetComponent<Camera>().transform.forward + GetComponent<Camera>().transform.position).z / (GetComponent<Camera>().farClipPlane - GetComponent<Camera>().nearClipPlane);
 	}
 
-	public override int GetDividerBasedOnQuality()
+	public int GetDividerBasedOnQuality()
 	{
 		int result = 1;
 		if (resolution == DofResolution.Medium)
@@ -176,7 +176,7 @@ public class DepthOfField34 : PostEffectsBase
 		return result;
 	}
 
-	public override int GetLowResolutionDividerBasedOnQuality(int baseDivider)
+	public int GetLowResolutionDividerBasedOnQuality(int baseDivider)
 	{
 		int num = baseDivider;
 		if (resolution == DofResolution.High)
@@ -190,7 +190,7 @@ public class DepthOfField34 : PostEffectsBase
 		return num;
 	}
 
-	public override void OnRenderImage(RenderTexture source, RenderTexture destination)
+	public void OnRenderImage(RenderTexture source, RenderTexture destination)
 	{
 		if (!CheckResources())
 		{
@@ -303,7 +303,7 @@ public class DepthOfField34 : PostEffectsBase
 		ReleaseTextures();
 	}
 
-	public override void Blur(RenderTexture from, RenderTexture to, DofBlurriness iterations, int blurPass, float spread)
+	public void Blur(RenderTexture from, RenderTexture to, DofBlurriness iterations, int blurPass, float spread)
 	{
 		RenderTexture temporary = RenderTexture.GetTemporary(to.width, to.height);
 		if (iterations > DofBlurriness.Low)
@@ -327,7 +327,7 @@ public class DepthOfField34 : PostEffectsBase
 		RenderTexture.ReleaseTemporary(temporary);
 	}
 
-	public override void BlurFg(RenderTexture from, RenderTexture to, DofBlurriness iterations, int blurPass, float spread)
+	public void BlurFg(RenderTexture from, RenderTexture to, DofBlurriness iterations, int blurPass, float spread)
 	{
 		dofBlurMaterial.SetTexture("_TapHigh", from);
 		RenderTexture temporary = RenderTexture.GetTemporary(to.width, to.height);
@@ -352,7 +352,7 @@ public class DepthOfField34 : PostEffectsBase
 		RenderTexture.ReleaseTemporary(temporary);
 	}
 
-	public override void BlurHex(RenderTexture from, RenderTexture to, int blurPass, float spread, RenderTexture tmp)
+	public void BlurHex(RenderTexture from, RenderTexture to, int blurPass, float spread, RenderTexture tmp)
 	{
 		dofBlurMaterial.SetVector("offsets", new Vector4(0f, spread * oneOverBaseSize, 0f, 0f));
 		Graphics.Blit(from, tmp, dofBlurMaterial, blurPass);
@@ -364,13 +364,13 @@ public class DepthOfField34 : PostEffectsBase
 		Graphics.Blit(tmp, to, dofBlurMaterial, blurPass);
 	}
 
-	public override void Downsample(RenderTexture from, RenderTexture to)
+	public void Downsample(RenderTexture from, RenderTexture to)
 	{
 		dofMaterial.SetVector("_InvRenderTargetSize", new Vector4(1f / (1f * (float)to.width), 1f / (1f * (float)to.height), 0f, 0f));
 		Graphics.Blit(from, to, dofMaterial, SMOOTH_DOWNSAMPLE_PASS);
 	}
 
-	public override void AddBokeh(RenderTexture bokehInfo, RenderTexture tempTex, RenderTexture finalTarget)
+	public void AddBokeh(RenderTexture bokehInfo, RenderTexture tempTex, RenderTexture finalTarget)
 	{
 		if (!bokehMaterial)
 		{
@@ -404,7 +404,7 @@ public class DepthOfField34 : PostEffectsBase
 		bokehInfo.filterMode = FilterMode.Bilinear;
 	}
 
-	public override void ReleaseTextures()
+	public void ReleaseTextures()
 	{
 		if ((bool)foregroundTexture)
 		{
@@ -432,7 +432,7 @@ public class DepthOfField34 : PostEffectsBase
 		}
 	}
 
-	public override void AllocateTextures(bool blurForeground, RenderTexture source, int divider, int lowTexDivider)
+	public void AllocateTextures(bool blurForeground, RenderTexture source, int divider, int lowTexDivider)
 	{
 		foregroundTexture = null;
 		if (blurForeground)
@@ -463,7 +463,7 @@ public class DepthOfField34 : PostEffectsBase
 		}
 	}
 
-	public override void Main()
+	public void Main()
 	{
 	}
 }

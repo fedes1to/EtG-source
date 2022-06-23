@@ -2035,10 +2035,10 @@ public class BraveOptionsMenuItem : MonoBehaviour
 			}
 			else if (optionType == BraveOptionsOptionType.VIEW_PRIVACY)
 			{
-				DataPrivacy.FetchPrivacyUrl(delegate(string url)
-				{
-					Application.OpenURL(url);
-				});
+//				DataPrivacy.FetchPrivacyUrl(delegate(string url)
+			//	{
+			//		Application.OpenURL(url);
+			//	});
 			}
 			else if (optionType == BraveOptionsOptionType.HOW_TO_PLAY)
 			{

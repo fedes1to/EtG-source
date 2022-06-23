@@ -73,9 +73,9 @@ public static class SaveManager
 
 	public static string SavePath = Application.persistentDataPath;
 
-	private static string secret = _003CPrivateImplementationDetails_003E_007BDE5600AD_002D6212_002D4D84_002D9A32_002D9D951E3289D1_007D.Decrypt.DecryptLiteral(new byte[512]
-	{
-		107, 164, 67, 89, 49, 25, 207, 88, 51, 60,
+	private static string secret = "bruh";
+	//{
+		/*107, 164, 67, 89, 49, 25, 207, 88, 51, 60,
 		248, 156, 50, 78, 62, 211, 54, 174, 103, 13,
 		39, 68, 125, 41, 212, 32, 206, 226, 34, 63,
 		197, 19, 19, 117, 113, 209, 103, 3, 1, 163,
@@ -126,8 +126,9 @@ public static class SaveManager
 		203, 200, 46, 51, 146, 214, 94, 14, 84, 30,
 		89, 23, 193, 141, 63, 13, 162, 19, 27, 199,
 		80, 206, 186, 115, 52, 128, 227, 139, 123, 247,
-		24, 20
-	});
+		24, 20*/
+		
+	//}
 
 	public static void Init()
 	{

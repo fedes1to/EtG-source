@@ -61,7 +61,7 @@ public class AntialiasingAsPostEffect : PostEffectsBase
 		edgeSharpness = 4f;
 	}
 
-	public override Material CurrentAAMaterial()
+	public Material CurrentAAMaterial()
 	{
 		Material material = null;
 		switch (mode)
@@ -85,7 +85,7 @@ public class AntialiasingAsPostEffect : PostEffectsBase
 		}
 	}
 
-	public override bool CheckResources()
+	public bool CheckResources()
 	{
 		CheckSupport(false);
 		materialFXAAPreset2 = CreateMaterial(shaderFXAAPreset2, materialFXAAPreset2);
@@ -103,7 +103,7 @@ public class AntialiasingAsPostEffect : PostEffectsBase
 		return isSupported;
 	}
 
-	public override void OnRenderImage(RenderTexture source, RenderTexture destination)
+	public void OnRenderImage(RenderTexture source, RenderTexture destination)
 	{
 		if (!CheckResources())
 		{
@@ -155,7 +155,7 @@ public class AntialiasingAsPostEffect : PostEffectsBase
 		}
 	}
 
-	public override void Main()
+	public void Main()
 	{
 	}
 }

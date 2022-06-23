@@ -1,21 +1,21 @@
 using System.Collections.Generic;
 using System.Linq;
-using DaikonForge.Editor;
+//using DaikonForge.Editor;
 using UnityEngine;
 
 namespace DaikonForge.Tween
 {
 	[AddComponentMenu("Daikon Forge/Tween/Spline Path")]
-	[InspectorGroupOrder(new string[] { "General", "Path", "Control Points" })]
+	//[InspectorGroupOrder(new string[] { "General", "Path", "Control Points" })]
 	[ExecuteInEditMode]
 	public class SplineObject : MonoBehaviour
 	{
 		public Spline Spline;
 
-		[Inspector("Path", Order = 0, Tooltip = "If set to TRUE, the end of the path will wrap around to the beginning")]
+	//	[Inspector("Path", Order = 0, Tooltip = "If set to TRUE, the end of the path will wrap around to the beginning")]
 		public bool Wrap;
 
-		[Inspector("Control Points", Order = 1, Tooltip = "Contains the list of Transforms that represent the control points of the path's curve")]
+	//	[Inspector("Control Points", Order = 1, Tooltip = "Contains the list of Transforms that represent the control points of the path's curve")]
 		public List<Transform> ControlPoints = new List<Transform>();
 
 		public void Awake()

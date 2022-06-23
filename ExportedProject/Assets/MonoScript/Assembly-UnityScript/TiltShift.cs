@@ -49,7 +49,7 @@ public class TiltShift : PostEffectsBase
 		curve = 1f;
 	}
 
-	public override bool CheckResources()
+	public bool CheckResources()
 	{
 		CheckSupport(true);
 		tiltShiftMaterial = CheckShaderAndCreateMaterial(tiltShiftShader, tiltShiftMaterial);
@@ -60,7 +60,7 @@ public class TiltShift : PostEffectsBase
 		return isSupported;
 	}
 
-	public override void OnRenderImage(RenderTexture source, RenderTexture destination)
+	public void OnRenderImage(RenderTexture source, RenderTexture destination)
 	{
 		if (!CheckResources())
 		{
@@ -122,7 +122,7 @@ public class TiltShift : PostEffectsBase
 		RenderTexture.ReleaseTemporary(temporary4);
 	}
 
-	public override void Main()
+	public void Main()
 	{
 	}
 }

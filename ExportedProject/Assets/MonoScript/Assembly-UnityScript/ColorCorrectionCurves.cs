@@ -63,17 +63,17 @@ public class ColorCorrectionCurves : PostEffectsBase
 		updateTexturesOnStartup = true;
 	}
 
-	public override void Start()
+	public void Start()
 	{
 		base.Start();
 		updateTexturesOnStartup = true;
 	}
 
-	public override void Awake()
+	public void Awake()
 	{
 	}
 
-	public override bool CheckResources()
+	public bool CheckResources()
 	{
 		CheckSupport(mode == ColorCorrectionMode.Advanced);
 		ccMaterial = CheckShaderAndCreateMaterial(simpleColorCorrectionCurvesShader, ccMaterial);
@@ -104,7 +104,7 @@ public class ColorCorrectionCurves : PostEffectsBase
 		return isSupported;
 	}
 
-	public override void UpdateParameters()
+	public void UpdateParameters()
 	{
 		if (redChannel != null && greenChannel != null && blueChannel != null)
 		{
@@ -131,12 +131,12 @@ public class ColorCorrectionCurves : PostEffectsBase
 		}
 	}
 
-	public override void UpdateTextures()
+	public void UpdateTextures()
 	{
 		UpdateParameters();
 	}
 
-	public override void OnRenderImage(RenderTexture source, RenderTexture destination)
+	public void OnRenderImage(RenderTexture source, RenderTexture destination)
 	{
 		if (!CheckResources())
 		{
@@ -180,7 +180,7 @@ public class ColorCorrectionCurves : PostEffectsBase
 		}
 	}
 
-	public override void Main()
+	public void Main()
 	{
 	}
 }

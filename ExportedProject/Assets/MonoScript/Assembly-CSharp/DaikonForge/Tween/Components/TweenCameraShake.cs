@@ -1,22 +1,22 @@
 using System;
-using DaikonForge.Editor;
+//using DaikonForge.Editor;
 using UnityEngine;
 
 namespace DaikonForge.Tween.Components
 {
-	[InspectorGroupOrder(new string[] { "General", "Animation", "Looping", "Parameters" })]
+	//[InspectorGroupOrder(new string[] { "General", "Animation", "Looping", "Parameters" })]
 	[AddComponentMenu("Daikon Forge/Tween/Camera Shake")]
 	public class TweenCameraShake : TweenComponentBase
 	{
 		[SerializeField]
-		[Inspector("Parameters", 0, Label = "Duration")]
+		//[Inspector("Parameters", 0, Label = "Duration")]
 		protected float duration = 1f;
 
-		[Inspector("Parameters", 0, Label = "Magnitude")]
+		//[Inspector("Parameters", 0, Label = "Magnitude")]
 		[SerializeField]
 		protected float shakeMagnitude = 0.25f;
 
-		[Inspector("Parameters", 0, Label = "Speed")]
+		//[Inspector("Parameters", 0, Label = "Speed")]
 		[SerializeField]
 		protected float shakeSpeed = 13f;
 

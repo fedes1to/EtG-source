@@ -1,42 +1,42 @@
 using System;
-using DaikonForge.Editor;
+//using DaikonForge.Editor;
 using UnityEngine;
 
 namespace DaikonForge.Tween.Components
 {
-	[InspectorGroupOrder(new string[] { "General", "Animation", "Looping", "Values" })]
+	//[InspectorGroupOrder(new string[] { "General", "Animation", "Looping", "Values" })]
 	public abstract class TweenComponent<T> : TweenComponentBase
 	{
-		[Inspector("Animation", Order = 4, Tooltip = "How long the Tween should take to complete the animation")]
+		//[Inspector("Animation", Order = 4, Tooltip = "How long the Tween should take to complete the animation")]
 		[SerializeField]
 		protected float duration = 1f;
 
-		[Inspector("Animation", Order = 2, Tooltip = "The type of easing, if any, to apply to the animation")]
+		//[Inspector("Animation", Order = 2, Tooltip = "The type of easing, if any, to apply to the animation")]
 		[SerializeField]
 		protected EasingType easingType;
 
-		[Inspector("Animation", Order = 3, Label = "Curve", Tooltip = "An animation curve can be used to modify the animation timeline")]
+	//	[Inspector("Animation", Order = 3, Label = "Curve", Tooltip = "An animation curve can be used to modify the animation timeline")]
 		[SerializeField]
 		protected AnimationCurve animCurve = new AnimationCurve(new Keyframe(0f, 0f, 0f, 1f), new Keyframe(1f, 1f, 1f, 0f));
 
 		[SerializeField]
-		[Inspector("Animation", Order = 5, Label = "Direction")]
+	//	[Inspector("Animation", Order = 5, Label = "Direction")]
 		protected TweenDirection playDirection;
 
-		[Inspector("Values", Order = 0)]
+	//	[Inspector("Values", Order = 0)]
 		[SerializeField]
 		protected TweenStartValueType startValueType;
 
-		[Inspector("Values", Order = 1)]
+	//	[Inspector("Values", Order = 1)]
 		[SerializeField]
 		protected T startValue;
 
 		[SerializeField]
-		[Inspector("Values", Order = 2)]
+	//	[Inspector("Values", Order = 2)]
 		protected TweenEndValueType endValueType;
 
 		[SerializeField]
-		[Inspector("Values", Order = 3)]
+	//	[Inspector("Values", Order = 3)]
 		protected T endValue;
 
 		protected Tween<T> tween;

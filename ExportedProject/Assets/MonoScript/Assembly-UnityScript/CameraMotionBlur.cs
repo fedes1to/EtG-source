@@ -102,7 +102,7 @@ public class CameraMotionBlur : PostEffectsBase
 		currentViewProjMat = gPUProjectionMatrix * worldToCameraMatrix;
 	}
 
-	public override void Start()
+	public void Start()
 	{
 		CheckResources();
 		wasActive = gameObject.activeInHierarchy;
@@ -112,12 +112,12 @@ public class CameraMotionBlur : PostEffectsBase
 		wasActive = false;
 	}
 
-	public override void OnEnable()
+	public void OnEnable()
 	{
 		GetComponent<Camera>().depthTextureMode = GetComponent<Camera>().depthTextureMode | DepthTextureMode.Depth;
 	}
 
-	public override void OnDisable()
+	public void OnDisable()
 	{
 		if (null != motionBlurMaterial)
 		{
@@ -136,7 +136,7 @@ public class CameraMotionBlur : PostEffectsBase
 		}
 	}
 
-	public override bool CheckResources()
+	public bool CheckResources()
 	{
 		CheckSupport(true, true);
 		motionBlurMaterial = CheckShaderAndCreateMaterial(shader, motionBlurMaterial);
@@ -151,7 +151,7 @@ public class CameraMotionBlur : PostEffectsBase
 		return isSupported;
 	}
 
-	public override void OnRenderImage(RenderTexture source, RenderTexture destination)
+	public void OnRenderImage(RenderTexture source, RenderTexture destination)
 	{
 		if (!CheckResources())
 		{
@@ -317,7 +317,7 @@ public class CameraMotionBlur : PostEffectsBase
 		RenderTexture.ReleaseTemporary(temporary3);
 	}
 
-	public override void Remember()
+	public void Remember()
 	{
 		prevViewProjMat = currentViewProjMat;
 		prevFrameForward = transform.forward;
@@ -326,7 +326,7 @@ public class CameraMotionBlur : PostEffectsBase
 		prevFramePos = transform.position;
 	}
 
-	public override Camera GetTmpCam()
+	public Camera GetTmpCam()
 	{
 		if (tmpCam == null)
 		{
@@ -352,17 +352,17 @@ public class CameraMotionBlur : PostEffectsBase
 		return tmpCam.GetComponent<Camera>();
 	}
 
-	public override void StartFrame()
+	public void StartFrame()
 	{
 		prevFramePos = Vector3.Slerp(prevFramePos, transform.position, 0.75f);
 	}
 
-	public override int divRoundUp(int x, int d)
+	public int divRoundUp(int x, int d)
 	{
 		return (x + d - 1) / d;
 	}
 
-	public override void Main()
+	public void Main()
 	{
 	}
 }

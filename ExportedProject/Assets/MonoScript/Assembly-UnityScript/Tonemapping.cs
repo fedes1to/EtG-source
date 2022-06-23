@@ -70,7 +70,7 @@ public class Tonemapping : PostEffectsBase
 		rtFormat = RenderTextureFormat.ARGBHalf;
 	}
 
-	public override bool CheckResources()
+	public bool CheckResources()
 	{
 		CheckSupport(false, true);
 		tonemapMaterial = CheckShaderAndCreateMaterial(tonemapper, tonemapMaterial);
@@ -88,7 +88,7 @@ public class Tonemapping : PostEffectsBase
 		return isSupported;
 	}
 
-	public override float UpdateCurve()
+	public float UpdateCurve()
 	{
 		float num = 1f;
 		if (Extensions.get_length((System.Array)remapCurve.keys) < 1)
@@ -111,7 +111,7 @@ public class Tonemapping : PostEffectsBase
 		return 1f / num;
 	}
 
-	public override void OnDisable()
+	public void OnDisable()
 	{
 		if ((bool)rt)
 		{
@@ -130,7 +130,7 @@ public class Tonemapping : PostEffectsBase
 		}
 	}
 
-	public override bool CreateInternalRenderTexture()
+	public bool CreateInternalRenderTexture()
 	{
 		int result;
 		if ((bool)rt)
@@ -148,7 +148,7 @@ public class Tonemapping : PostEffectsBase
 	}
 
 	[ImageEffectTransformsToLDR]
-	public override void OnRenderImage(RenderTexture source, RenderTexture destination)
+	public void OnRenderImage(RenderTexture source, RenderTexture destination)
 	{
 		if (!CheckResources())
 		{
@@ -244,7 +244,7 @@ public class Tonemapping : PostEffectsBase
 		RenderTexture.ReleaseTemporary(temporary);
 	}
 
-	public override void Main()
+	public void Main()
 	{
 	}
 }

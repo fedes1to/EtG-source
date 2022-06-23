@@ -1,19 +1,19 @@
 using System;
 using System.Collections.Generic;
-using DaikonForge.Editor;
+//using DaikonForge.Editor;
 using UnityEngine;
 
 namespace DaikonForge.Tween.Components
 {
-	[InspectorGroupOrder(new string[] { "General", "Animation", "Looping", "Tweens" })]
+	//[InspectorGroupOrder(new string[] { "General", "Animation", "Looping", "Tweens" })]
 	[AddComponentMenu("Daikon Forge/Tween/Group")]
 	public class TweenComponentGroup : TweenComponentBase
 	{
 		[SerializeField]
-		[Inspector("General", 1, Label = "Mode")]
+		//[Inspector("General", 1, Label = "Mode")]
 		protected TweenGroupMode groupMode;
 
-		[Inspector("Tweens", 0, Label = "Tweens")]
+		//[Inspector("Tweens", 0, Label = "Tweens")]
 		[SerializeField]
 		protected List<TweenPlayableComponent> tweens = new List<TweenPlayableComponent>();
 

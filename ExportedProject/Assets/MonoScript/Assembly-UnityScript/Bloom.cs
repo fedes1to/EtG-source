@@ -128,7 +128,7 @@ public class Bloom : PostEffectsBase
 		blurWidth = 1f;
 	}
 
-	public override bool CheckResources()
+	public bool CheckResources()
 	{
 		CheckSupport(false);
 		screenBlend = CheckShaderAndCreateMaterial(screenBlendShader, screenBlend);
@@ -142,7 +142,7 @@ public class Bloom : PostEffectsBase
 		return isSupported;
 	}
 
-	public override void OnRenderImage(RenderTexture source, RenderTexture destination)
+	public void OnRenderImage(RenderTexture source, RenderTexture destination)
 	{
 		if (!CheckResources())
 		{
@@ -341,7 +341,7 @@ public class Bloom : PostEffectsBase
 		}
 	}
 
-	public override void Main()
+	public void Main()
 	{
 	}
 }

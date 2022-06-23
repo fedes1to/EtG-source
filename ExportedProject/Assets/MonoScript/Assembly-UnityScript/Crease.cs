@@ -32,7 +32,7 @@ public class Crease : PostEffectsBase
 		spread = 1f;
 	}
 
-	public override bool CheckResources()
+	public bool CheckResources()
 	{
 		CheckSupport(true);
 		blurMaterial = CheckShaderAndCreateMaterial(blurShader, blurMaterial);
@@ -45,7 +45,7 @@ public class Crease : PostEffectsBase
 		return isSupported;
 	}
 
-	public override void OnRenderImage(RenderTexture source, RenderTexture destination)
+	public void OnRenderImage(RenderTexture source, RenderTexture destination)
 	{
 		if (!CheckResources())
 		{
@@ -75,7 +75,7 @@ public class Crease : PostEffectsBase
 		RenderTexture.ReleaseTemporary(temporary3);
 	}
 
-	public override void Main()
+	public void Main()
 	{
 	}
 }

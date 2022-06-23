@@ -1,23 +1,23 @@
 using System;
-using DaikonForge.Editor;
+//using DaikonForge.Editor;
 using UnityEngine;
 
 namespace DaikonForge.Tween.Components
 {
-	[InspectorGroupOrder(new string[] { "General", "Path", "Animation", "Looping" })]
+	//[InspectorGroupOrder(new string[] { "General", "Path", "Animation", "Looping" })]
 	[AddComponentMenu("Daikon Forge/Tween/Move Along Path")]
 	public class TweenObjectPath : TweenComponentBase
 	{
-		[Inspector("Animation", 0, Label = "Duration", Tooltip = "How long the Tween should take to complete the animation")]
+	//	[Inspector("Animation", 0, Label = "Duration", Tooltip = "How long the Tween should take to complete the animation")]
 		[SerializeField]
 		protected float duration = 1f;
 
-		[Inspector("Path", 0, Label = "Path", Tooltip = "The path for the object to follow")]
+	//	[Inspector("Path", 0, Label = "Path", Tooltip = "The path for the object to follow")]
 		[SerializeField]
 		protected SplineObject path;
 
 		[SerializeField]
-		[Inspector("Animation", 1, Label = "Orient To Path", Tooltip = "If set to TRUE, will orient the object to face the direction of the path")]
+	//	[Inspector("Animation", 1, Label = "Orient To Path", Tooltip = "If set to TRUE, will orient the object to face the direction of the path")]
 		protected bool orientToPath = true;
 
 		[SerializeField]

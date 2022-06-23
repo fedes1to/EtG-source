@@ -1,22 +1,22 @@
 using System;
 using System.Collections.Generic;
-using DaikonForge.Editor;
+//using DaikonForge.Editor;
 using DaikonForge.Tween.Interpolation;
 using UnityEngine;
 
 namespace DaikonForge.Tween.Components
 {
-	[InspectorGroupOrder(new string[] { "General", "Animation", "Looping", "Property", "Values" })]
+//	[InspectorGroupOrder(new string[] { "General", "Animation", "Looping", "Property", "Values" })]
 	public class TweenPropertyComponent<T> : TweenComponent<T>, ITweenPropertyBase
 	{
-		[Inspector("Property", Label = "Target", Order = 0)]
+	//	[Inspector("Property", Label = "Target", Order = 0)]
 		[SerializeField]
 		protected GameObject target;
 
 		[SerializeField]
 		protected string componentType;
 
-		[Inspector("Property", Label = "Field", Order = 1)]
+	//	[Inspector("Property", Label = "Field", Order = 1)]
 		[SerializeField]
 		protected string memberName;
 
