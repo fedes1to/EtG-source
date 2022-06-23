@@ -1,0 +1,591 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1038465340094974}
+  m_IsPrefabParent: 1
+--- !u!1 &1038465340094974
+GameObject:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - component: {fileID: 4791500427272798}
+  - component: {fileID: 114119607739407600}
+  - component: {fileID: 33365449998045455}
+  - component: {fileID: 23335580033320853}
+  - component: {fileID: 114292664115402282}
+  - component: {fileID: 114609218690222046}
+  - component: {fileID: 114338347545110366}
+  - component: {fileID: 114282299066999325}
+  m_Layer: 0
+  m_Name: Sniper Rifle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4791500427272798
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1038465340094974}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.96875, y: -0.1875, z: -0.1875}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4178108181822735}
+  - {fileID: 4152032994119901}
+  - {fileID: 4896678265358616}
+  - {fileID: 4018230328000925}
+  - {fileID: 4372870027409268}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &114119607739407600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1038465340094974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d7100183e88ef1419d909794737a72e, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  PickupObjectId: 49
+  quality: 2
+  additionalMagnificenceModifier: 0
+  ItemSpansBaseQualityTiers: 0
+  ItemRespectsHeartMagnificence: 0
+  associatedItemChanceMods: []
+  contentSource: 0
+  ShouldBeExcludedFromShops: 0
+  CanBeDropped: 1
+  PreventStartingOwnerFromDropping: 0
+  PersistsOnDeath: 0
+  RespawnsIfPitfall: 0
+  PreventSaveSerialization: 0
+  IgnoredByRat: 0
+  SaveFlagToSetOnAcquisition: 0
+  itemName:
+  ForcedPositionInAmmonomicon: 96
+  UsesCustomCost: 0
+  CustomCost: 0
+  PersistsOnPurchase: 0
+  CanBeSold: 1
+  gunName: Sniper Rifle
+  gunSwitchGroup: AWP
+  isAudioLoop: 0
+  lowersAudioWhileFiring: 0
+  gunClass: 15
+  currentGunStatModifiers: []
+  passiveStatModifiers: []
+  currentGunDamageTypeModifiers: []
+  ArmorToGainOnPickup: 0
+  barrelOffset: {fileID: 4178108181822735}
+  muzzleOffset: {fileID: 0}
+  chargeOffset: {fileID: 0}
+  reloadOffset: {fileID: 0}
+  carryPixelOffset:
+    x: 6
+    y: 0
+  carryPixelUpOffset:
+    x: 0
+    y: 0
+  carryPixelDownOffset:
+    x: 0
+    y: 0
+  UsesPerCharacterCarryPixelOffsets: 0
+  PerCharacterPixelOffsets: []
+  leftFacingPixelOffset:
+    x: 0
+    y: 0
+  gunHandedness: 0
+  overrideOutOfAmmoHandedness: 0
+  additionalHandState: 0
+  gunPosition: 0
+  forceFlat: 0
+  rawVolley: {fileID: 0}
+  singleModule:
+    shootStyle: 0
+    ammoType: 14
+    customAmmoType: Rifle
+    projectiles:
+    - {fileID: 114941753536362356, guid: 1376781ca17c2cd4e9ebc4cfedc194f0, type: 2}
+    sequenceStyle: 0
+    orderedGroupCounts:
+    chargeProjectiles: []
+    maxChargeTime: 0
+    triggerCooldownForAnyChargeAmount: 0
+    isFinalVolley: 0
+    usesOptionalFinalProjectile: 0
+    finalProjectile: {fileID: 0}
+    finalVolley: {fileID: 0}
+    numberOfFinalProjectiles: 1
+    finalAmmoType: 0
+    finalCustomAmmoType:
+    angleFromAim: 0
+    alternateAngle: 0
+    angleVariance: 1
+    positionOffset: {x: 0, y: 0, z: 0}
+    mirror: 0
+    inverted: 0
+    ammoCost: 1
+    burstShotCount: 3
+    burstCooldownTime: 0.2
+    cooldownTime: 1
+    numberOfShotsInClip: 10
+    ignoredForReloadPurposes: 0
+    preventFiringDuringCharge: 0
+  rawOptionalReloadVolley: {fileID: 0}
+  ammo: 80
+  CanGainAmmo: 1
+  LocalInfiniteAmmo: 0
+  UsesBossDamageModifier: 0
+  CustomBossDamageModifier: -1
+  maxAmmo: 80
+  reloadTime: 1.5
+  blankDuringReload: 0
+  blankReloadRadius: 1
+  reflectDuringReload: 0
+  blankKnockbackPower: 20
+  blankDamageToEnemies: 0
+  blankDamageScalingOnEmptyClip: 1
+  doesScreenShake: 1
+  gunScreenShake:
+    magnitude: 0.6
+    speed: 4
+    time: 0.09
+    falloff: 0
+    direction: {x: 0, y: 0}
+    vibrationType: 10
+    simpleVibrationTime: 20
+    simpleVibrationStrength: 20
+  directionlessScreenShake: 0
+  damageModifier: 0
+  thrownObject: {fileID: 0}
+  procGunData: {fileID: 0}
+  activeReloadData:
+    damageMultiply: 1
+    knockbackMultiply: 1
+    usesOverrideAngleVariance: 0
+    overrideAngleVariance: 0
+    reloadSpeedMultiplier: 1
+    ActiveReloadStacks: 0
+    ActiveReloadIncrementsTier: 0
+    MaxTier: 5
+  ClearsCooldownsLikeAWP: 0
+  AppliesHoming: 0
+  AppliedHomingAngularVelocity: 180
+  AppliedHomingDetectRadius: 4
+  m_unswitchableGun: 0
+  shootAnimation: sniper_rifle_fire
+  usesContinuousFireAnimation: 0
+  reloadAnimation:
+  emptyReloadAnimation:
+  idleAnimation:
+  chargeAnimation:
+  dischargeAnimation:
+  emptyAnimation:
+  introAnimation:
+  finalShootAnimation:
+  enemyPreFireAnimation: sniper_rifle_enemy_charge
+  outOfAmmoAnimation:
+  criticalFireAnimation:
+  dodgeAnimation:
+  usesDirectionalIdleAnimations: 0
+  usesDirectionalAnimator: 0
+  preventRotation: 0
+  muzzleFlashEffects:
+    type: 4
+    effects:
+    - effects:
+      - effect: {fileID: 1214909122112394, guid: df070e411191a6c40bb1e4bd7498f8ed, type: 2}
+        orphaned: 1
+        attached: 1
+        persistsOnDeath: 0
+        usesZHeight: 0
+        zHeight: 0
+        alignment: 0
+        destructible: 0
+  usesContinuousMuzzleFlash: 0
+  finalMuzzleFlashEffects:
+    type: 0
+    effects: []
+  reloadEffects:
+    type: 0
+    effects: []
+  emptyReloadEffects:
+    type: 0
+    effects: []
+  activeReloadSuccessEffects:
+    type: 0
+    effects: []
+  activeReloadFailedEffects:
+    type: 0
+    effects: []
+  light: {fileID: 0}
+  baseLightIntensity: 0
+  shellCasing: {fileID: 1392700440113785, guid: 0d5c2d59eea1266479c55be06f335685, type: 2}
+  shellsToLaunchOnFire: 1
+  shellCasingOnFireFrameDelay: 6
+  shellsToLaunchOnReload: 0
+  reloadShellLaunchFrame: 0
+  clipObject: {fileID: 1971551166910384, guid: 1c51efb000ecd004c9b542c7c81c83db, type: 2}
+  clipsToLaunchOnReload: 1
+  reloadClipLaunchFrame: 0
+  prefabName:
+  rampBullets: 0
+  rampStartHeight: 2
+  rampTime: 1
+  IgnoresAngleQuantization: 0
+  IsTrickGun: 0
+  TrickGunAlternatesHandedness: 0
+  PreventOutlines: 0
+  alternateVolley: {fileID: 0}
+  alternateShootAnimation:
+  alternateReloadAnimation:
+  alternateIdleAnimation:
+  alternateSwitchGroup:
+  IsHeroSword: 0
+  HeroSwordDoesntBlank: 0
+  StarterGunForAchievement: 0
+  CanSneakAttack: 0
+  SneakAttackDamageMultiplier: 3
+  SuppressLaserSight: 0
+  RequiresFundsToShoot: 0
+  CurrencyCostPerShot: 1
+  weaponPanelSpriteOverride: {fileID: 0}
+  IsLuteCompanionBuff: 0
+  MovesPlayerForwardOnChargeFire: 0
+  LockedHorizontalOnCharge: 0
+  LockedHorizontalCenterFireOffset: -1
+  GoopReloadsFree: 0
+  IsUndertaleGun: 0
+  LocalActiveReload: 0
+  UsesRechargeLikeActiveItem: 0
+  ActiveItemStyleRechargeAmount: 100
+  CanAttackThroughObjects: 0
+  CanCriticalFire: 0
+  CriticalChance: 0.1
+  CriticalDamageMultiplier: 3
+  CriticalMuzzleFlashEffects:
+    type: 0
+    effects: []
+  CriticalReplacementProjectile: {fileID: 0}
+  GainsRateOfFireAsContinueAttack: 0
+  RateOfFireMultiplierAdditionPerSecond: 0
+  OnlyUsesIdleInWeaponBox: 0
+  DisablesRendererOnCooldown: 0
+  ObjectToInstantiateOnReload: {fileID: 0}
+  HasBeenPickedUp: 0
+--- !u!33 &33365449998045455
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1038465340094974}
+  m_Mesh: {fileID: 0}
+--- !u!23 &23335580033320853
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1038465340094974}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 12bfbe0dd9bc7ce409203b0ca09cf1ca, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 0
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 0
+  m_AutoUVMaxDistance: 0
+  m_AutoUVMaxAngle: 0
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -1981987969
+  m_SortingLayer: 2
+  m_SortingOrder: 0
+--- !u!114 &114292664115402282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1038465340094974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aab037bf7c2ce7343b005114c0e6a2e1, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  automaticallyManagesDepth: 1
+  ignoresTiltworldDepth: 0
+  depthUsesTrimmedBounds: 0
+  allowDefaultLayer: 0
+  attachParent: {fileID: 0}
+  OverrideMaterialMode: 0
+  independentOrientation: 0
+  autodetectFootprint: 1
+  customFootprintOrigin:
+    x: 0
+    y: 0
+  customFootprint:
+    x: 0
+    y: 0
+  hasOffScreenCachedUpdate: 0
+  offScreenCachedCollection: {fileID: 0}
+  offScreenCachedID: -1
+  collection: {fileID: 114182630210929412, guid: ac8243238b491204199563117dca9009, type: 2}
+  _color: {r: 1, g: 1, b: 1, a: 1}
+  _scale: {x: 1, y: 1, z: 1}
+  _spriteId: 342
+  boxCollider2D: {fileID: 0}
+  boxCollider: {fileID: 0}
+  meshCollider: {fileID: 0}
+  meshColliderPositions: []
+  meshColliderMesh: {fileID: 0}
+  CachedPerpState: 0
+  m_heightOffGround: 0
+  renderLayer: 2
+  IsBraveOutlineSprite: 0
+  IsZDepthDirty: 0
+  ApplyEmissivePropertyBlock: 0
+  GenerateUV2: 0
+  LockUV2OnFrameOne: 0
+  StaticPositions: 0
+--- !u!114 &114609218690222046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1038465340094974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 858693f8db5b6d94ba3af909ccf0a16b, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  library: {fileID: 114782019059897328, guid: d3c3cc93e2c392940a6fdb63158584df, type: 2}
+  defaultClipId: 105
+  AdditionalCameraVisibilityRadius: 0
+  AnimateDuringBossIntros: 0
+  AlwaysIgnoreTimeScale: 0
+  ForceSetEveryFrame: 0
+  playAutomatically: 0
+  IsFrameBlendedAnimation: 0
+  clipTime: 0
+  deferNextStartClip: 0
+--- !u!114 &114338347545110366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1038465340094974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25bc20faa5e64aa45ace06824a2d9bed, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  attachPoints:
+  - {fileID: 4018230328000925}
+  - {fileID: 4372870027409268}
+  - {fileID: 4896678265358616}
+  - {fileID: 4152032994119901}
+  deactivateUnusedAttachPoints: 0
+  disableEmissionOnUnusedParticleSystems: 0
+  ignorePosition: 0
+  ignoreScale: 0
+  ignoreRotation: 0
+  centerUnusedAttachPoints: 0
+--- !u!114 &114282299066999325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1038465340094974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6e00452ca7999142b2e9fe55da9cea0, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  ProxyEncounterGuid:
+  m_encounterGuid: 0ae126796a414e8b928eab6e15a0a561
+  m_doNotificationOnEncounter: 1
+  SuppressInInventory: 0
+  m_journalData:
+    SuppressInAmmonomicon: 0
+    SuppressKnownState: 0
+    DisplayOnLoadingScreen: 0
+    RequiresLightBackgroundInLoadingScreen: 0
+    PrimaryDisplayName: '#SNIPERRIFLE_ENCNAME'
+    NotificationPanelDescription: '#SNIPERRIFLE_SHORTDESC'
+    AmmonomiconFullEntry: '#SNIPERRIFLE_LONGDESC'
+    AmmonomiconSprite: sniper_rifle_idle_001
+    IsEnemy: 0
+    enemyPortraitSprite: {fileID: 0}
+    SpecialIdentifier: 0
+  m_ignoreDifferentiator: 0
+  m_prerequisites: []
+  m_usesPurpleNotifications: 0
+--- !u!1 &1441224130837614
+GameObject:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - component: {fileID: 4178108181822735}
+  m_Layer: 0
+  m_Name: Barrel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4178108181822735
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1441224130837614}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.8917007, y: 0.27698517, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4791500427272798}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!1 &1166688219492409
+GameObject:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - component: {fileID: 4152032994119901}
+  m_Layer: 0
+  m_Name: Casing
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4152032994119901
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1166688219492409}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.75, y: 0.25, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4791500427272798}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!1 &1392498397219161
+GameObject:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - component: {fileID: 4896678265358616}
+  m_Layer: 0
+  m_Name: Clip
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4896678265358616
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1392498397219161}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.8125, y: 0.0625, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4791500427272798}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!1 &1672221832589300
+GameObject:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - component: {fileID: 4018230328000925}
+  m_Layer: 0
+  m_Name: PrimaryHand
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4018230328000925
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1672221832589300}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.4375, y: 0.125, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4791500427272798}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!1 &1763781376858375
+GameObject:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - component: {fileID: 4372870027409268}
+  m_Layer: 0
+  m_Name: SecondaryHand
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4372870027409268
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1763781376858375}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.0625, y: 0.125, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4791500427272798}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}

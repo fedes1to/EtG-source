@@ -1,0 +1,308 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1100045372373849}
+  m_IsPrefabParent: 1
+--- !u!1 &1100045372373849
+GameObject:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - component: {fileID: 4418433749675649}
+  - component: {fileID: 114999388087561149}
+  - component: {fileID: 114204925565661315}
+  - component: {fileID: 114318486620730909}
+  - component: {fileID: 114218356556471846}
+  m_Layer: 0
+  m_Name: ArtfulDodger_Bumper_Blue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4418433749675649
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1100045372373849}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4906141736665076}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &114999388087561149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1100045372373849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6d6e26d8dd7ea642badf31565daa70a, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  CollideWithTileMap: 1
+  CollideWithOthers: 1
+  Velocity: {x: 0, y: 0}
+  CapVelocity: 0
+  MaxVelocity: {x: 0, y: 0}
+  ForceAlwaysUpdate: 0
+  CanPush: 0
+  CanBePushed: 0
+  PushSpeedModifier: 1
+  CanCarry: 0
+  CanBeCarried: 1
+  PreventPiercing: 1
+  SkipEmptyColliders: 0
+  TK2DSprite: {fileID: 0}
+  RecheckTriggers: 0
+  UpdateCollidersOnRotation: 0
+  UpdateCollidersOnScale: 0
+  AxialScale: {x: 1, y: 1}
+  DebugParams:
+    ShowPosition: 0
+    PositionHistory: 0
+    ShowVelocity: 0
+    ShowSlope: 0
+  IgnorePixelGrid: 0
+  PixelColliders:
+  - Enabled: 1
+    CollisionLayer: 6
+    IsTrigger: 0
+    ColliderGenerationMode: 0
+    BagleUseFirstFrameOnly: 0
+    SpecifyBagelFrame:
+    BagelColliderNumber: 0
+    ManualOffsetX: 0
+    ManualOffsetY: 0
+    ManualWidth: 16
+    ManualHeight: 16
+    ManualRadius: 11
+    ManualDiameter: 0
+    ManualLeftX: 0
+    ManualLeftY: 0
+    ManualRightX: 0
+    ManualRightY: 0
+    Sprite: {fileID: 0}
+    m_offset:
+      x: 0
+      y: 0
+    m_transformOffset:
+      x: 0
+      y: 0
+    m_dimensions:
+      x: 0
+      y: 0
+    m_rotation: 0
+  m_position:
+    m_position:
+      x: 0
+      y: 0
+    m_remainder: {x: 0, y: 0}
+--- !u!114 &114204925565661315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1100045372373849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a15fcf4ac1e70534dbc5cab052cb8272, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Paused: 0
+  OriginalPathSpeed: 3
+  AdditionalNodeDelay: 0
+--- !u!114 &114318486620730909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1100045372373849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24bdc30d4340e2b4782ef3457fc930be, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  placeableWidth: 1
+  placeableHeight: 1
+  difficulty: 0
+  isPassable: 1
+  mySprite: {fileID: 114738506013907918}
+  StopsGameProjectileBounces: 0
+  DestroyBumperOnGameCollision: 0
+  diagonalDirection: 0
+  BumperPopVFX:
+    type: 0
+    effects: []
+  hitAnimation: winchester_bump_blue_bump
+  breakAnimation:
+  idleAnimation: winchester_bump_blue_idle
+--- !u!114 &114218356556471846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1100045372373849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9a9e5a1b267d8041aff39d685147ad6, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  colliderSelection: 0
+  SpecifyPixelCollider: 0
+  SpecifiedPixelCollider: 0
+--- !u!1 &1720712853670222
+GameObject:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - component: {fileID: 4906141736665076}
+  - component: {fileID: 23203319825098542}
+  - component: {fileID: 33690986490877968}
+  - component: {fileID: 114738506013907918}
+  - component: {fileID: 114539985850970354}
+  m_Layer: 22
+  m_Name: Sprizzle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4906141736665076
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1720712853670222}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 1.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4418433749675649}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!23 &23203319825098542
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1720712853670222}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: d3088e67b8f326948b163bac88cd74ee, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 0
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 0
+  m_AutoUVMaxDistance: 0
+  m_AutoUVMaxAngle: 0
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -1981987969
+  m_SortingLayer: 2
+  m_SortingOrder: 2
+--- !u!33 &33690986490877968
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1720712853670222}
+  m_Mesh: {fileID: 0}
+--- !u!114 &114738506013907918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1720712853670222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aab037bf7c2ce7343b005114c0e6a2e1, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  automaticallyManagesDepth: 1
+  ignoresTiltworldDepth: 0
+  depthUsesTrimmedBounds: 0
+  allowDefaultLayer: 0
+  attachParent: {fileID: 0}
+  OverrideMaterialMode: 0
+  independentOrientation: 0
+  autodetectFootprint: 1
+  customFootprintOrigin:
+    x: 0
+    y: 0
+  customFootprint:
+    x: 0
+    y: 0
+  hasOffScreenCachedUpdate: 0
+  offScreenCachedCollection: {fileID: 0}
+  offScreenCachedID: -1
+  collection: {fileID: 114100591609553257, guid: a912273fecc172e438446687141b0340, type: 2}
+  _color: {r: 1, g: 1, b: 1, a: 1}
+  _scale: {x: 1, y: 1, z: 1}
+  _spriteId: 566
+  boxCollider2D: {fileID: 0}
+  boxCollider: {fileID: 0}
+  meshCollider: {fileID: 0}
+  meshColliderPositions: []
+  meshColliderMesh: {fileID: 0}
+  CachedPerpState: 2
+  m_heightOffGround: -1.5
+  renderLayer: 2
+  IsBraveOutlineSprite: 0
+  IsZDepthDirty: 0
+  ApplyEmissivePropertyBlock: 0
+  GenerateUV2: 0
+  LockUV2OnFrameOne: 0
+  StaticPositions: 0
+--- !u!114 &114539985850970354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1720712853670222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 858693f8db5b6d94ba3af909ccf0a16b, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  library: {fileID: 114303852428238512, guid: 7d6b2065d4e4f19458026809dc5c2958, type: 2}
+  defaultClipId: 128
+  AdditionalCameraVisibilityRadius: 0
+  AnimateDuringBossIntros: 0
+  AlwaysIgnoreTimeScale: 0
+  ForceSetEveryFrame: 0
+  playAutomatically: 1
+  IsFrameBlendedAnimation: 0
+  clipTime: 0
+  deferNextStartClip: 0

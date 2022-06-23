@@ -1,0 +1,1491 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1456463907444880}
+  m_IsPrefabParent: 1
+--- !u!1 &1456463907444880
+GameObject:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - component: {fileID: 4302321571548463}
+  - component: {fileID: 114839672855975225}
+  - component: {fileID: 114122828961541798}
+  - component: {fileID: 114197820531492945}
+  - component: {fileID: 114727693916731909}
+  - component: {fileID: 114093146187225394}
+  - component: {fileID: 33202704921934881}
+  - component: {fileID: 23020869406760873}
+  - component: {fileID: 114177249805519510}
+  - component: {fileID: 114563799754552202}
+  - component: {fileID: 114876290214519284}
+  - component: {fileID: 114218587501214016}
+  - component: {fileID: 114483246549239285}
+  - component: {fileID: 114162584709088210}
+  - component: {fileID: 114070712189794281}
+  - component: {fileID: 114483414391532760}
+  - component: {fileID: 114426001523059323}
+  m_Layer: 28
+  m_Name: PhantomAgunim
+  m_TagString: Enemy
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4302321571548463
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1456463907444880}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4873052817693708}
+  - {fileID: 4413755050781456}
+  - {fileID: 4649581037108519}
+  - {fileID: 4953150652721776}
+  - {fileID: 4060121947319938}
+  - {fileID: 4870772263799202}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &114839672855975225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1456463907444880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6d6e26d8dd7ea642badf31565daa70a, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  CollideWithTileMap: 1
+  CollideWithOthers: 1
+  Velocity: {x: 0, y: 0}
+  CapVelocity: 0
+  MaxVelocity: {x: 0, y: 0}
+  ForceAlwaysUpdate: 1
+  CanPush: 0
+  CanBePushed: 0
+  PushSpeedModifier: 1
+  CanCarry: 0
+  CanBeCarried: 1
+  PreventPiercing: 0
+  SkipEmptyColliders: 0
+  TK2DSprite: {fileID: 0}
+  RecheckTriggers: 0
+  UpdateCollidersOnRotation: 0
+  UpdateCollidersOnScale: 0
+  AxialScale: {x: 1, y: 1}
+  DebugParams:
+    ShowPosition: 0
+    PositionHistory: 0
+    ShowVelocity: 0
+    ShowSlope: 0
+  IgnorePixelGrid: 0
+  PixelColliders:
+  - Enabled: 1
+    CollisionLayer: 3
+    IsTrigger: 0
+    ColliderGenerationMode: 0
+    BagleUseFirstFrameOnly: 1
+    SpecifyBagelFrame:
+    BagelColliderNumber: 0
+    ManualOffsetX: 51
+    ManualOffsetY: 17
+    ManualWidth: 28
+    ManualHeight: 8
+    ManualRadius: 0
+    ManualDiameter: 0
+    ManualLeftX: 0
+    ManualLeftY: 0
+    ManualRightX: 0
+    ManualRightY: 0
+    Sprite: {fileID: 0}
+    m_offset:
+      x: 0
+      y: 0
+    m_transformOffset:
+      x: 0
+      y: 0
+    m_dimensions:
+      x: 0
+      y: 0
+    m_rotation: 0
+  - Enabled: 1
+    CollisionLayer: 2
+    IsTrigger: 0
+    ColliderGenerationMode: 2
+    BagleUseFirstFrameOnly: 0
+    SpecifyBagelFrame:
+    BagelColliderNumber: 0
+    ManualOffsetX: 51
+    ManualOffsetY: 29
+    ManualWidth: 28
+    ManualHeight: 41
+    ManualRadius: 0
+    ManualDiameter: 0
+    ManualLeftX: 0
+    ManualLeftY: 0
+    ManualRightX: 0
+    ManualRightY: 0
+    Sprite: {fileID: 114177249805519510}
+    m_offset:
+      x: 0
+      y: 0
+    m_transformOffset:
+      x: 0
+      y: 0
+    m_dimensions:
+      x: 0
+      y: 0
+    m_rotation: 0
+  - Enabled: 0
+    CollisionLayer: 2
+    IsTrigger: 0
+    ColliderGenerationMode: 0
+    BagleUseFirstFrameOnly: 0
+    SpecifyBagelFrame:
+    BagelColliderNumber: 0
+    ManualOffsetX: 54
+    ManualOffsetY: 37
+    ManualWidth: 22
+    ManualHeight: 48
+    ManualRadius: 0
+    ManualDiameter: 0
+    ManualLeftX: 0
+    ManualLeftY: 0
+    ManualRightX: 0
+    ManualRightY: 0
+    Sprite: {fileID: 114177249805519510}
+    m_offset:
+      x: 0
+      y: 0
+    m_transformOffset:
+      x: 0
+      y: 0
+    m_dimensions:
+      x: 0
+      y: 0
+    m_rotation: 0
+  m_position:
+    m_position:
+      x: 0
+      y: 0
+    m_remainder: {x: 0, y: 0}
+--- !u!114 &114122828961541798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1456463907444880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ba4aa78d8e99464390948970a3f689e, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  placeableWidth: 2
+  placeableHeight: 2
+  difficulty: 0
+  isPassable: 1
+  ActorName: Phantom Agunim
+  OverrideDisplayName:
+  actorTypes: 0
+  HasShadow: 1
+  ShadowPrefab: {fileID: 0}
+  ShadowObject: {fileID: 1250148209321322}
+  ShadowHeightOffGround: 0
+  ShadowParent: {fileID: 0}
+  ActorShadowOffset: {x: 0, y: 0, z: 0}
+  DoDustUps: 0
+  DustUpInterval: 0
+  OverrideDustUp: {fileID: 0}
+  FreezeDispelFactor: 20
+  ImmuneToAllEffects: 0
+  EffectResistances: []
+  OverrideColorOverridden: 0
+  EnemyId: 74
+  EnemyGuid: db97e486ef02425280129e1e27c33118
+  ForcedPositionInAmmonomicon: 103
+  SetsFlagOnDeath: 0
+  FlagToSetOnDeath: 0
+  SetsFlagOnActivation: 0
+  FlagToSetOnActivation: 0
+  SetsCharacterSpecificFlagOnDeath: 0
+  CharacterSpecificFlagToSetOnDeath: 0
+  IsNormalEnemy: 1
+  IsSignatureEnemy: 0
+  IsHarmlessEnemy: 0
+  CompanionSettings:
+    WarpsToRandomPoint: 0
+  MovementSpeed: 2.5
+  PathableTiles: 2
+  LosPoint: {fileID: 0}
+  DiesOnCollison: 0
+  CollisionDamage: 1
+  CollisionKnockbackStrength: 50
+  CollisionDamageTypes: 0
+  EnemyCollisionKnockbackStrengthOverride: -1
+  CollisionVFX:
+    type: 0
+    effects: []
+  NonActorCollisionVFX:
+    type: 0
+    effects: []
+  CollisionSetsPlayerOnFire: 0
+  TryDodgeBullets: 0
+  AvoidRadius: 7
+  ReflectsProjectilesWhileInvulnerable: 0
+  HitByEnemyBullets: 0
+  HasOverrideDodgeRollDeath: 0
+  OverrideDodgeRollDeath:
+  CanDropCurrency: 1
+  AdditionalSingleCoinDropChance: 0
+  CanDropItems: 1
+  CustomLootTable: {fileID: 11400000, guid: 3ecf8d062a63deb428daec63bf205c8e, type: 2}
+  CanDropDuplicateItems: 0
+  CustomLootTableMinDrops: 2
+  CustomLootTableMaxDrops: 4
+  CustomChestTable: {fileID: 11400000, guid: 929b13b69e4c9044bb4278cf743e8bd3, type: 2}
+  ChanceToDropCustomChest: 1
+  IgnoreForRoomClear: 0
+  SpawnLootAtRewardChestPos: 0
+  CorpseObject: {fileID: 0}
+  CorpseShadow: 0
+  TransferShadowToCorpse: 0
+  shadowDeathType: 10
+  PreventDeathKnockback: 0
+  OnCorpseVFX:
+    type: 0
+    effects: []
+  OnEngagedVFX: {fileID: 0}
+  OnEngagedVFXAnchor: 0
+  shadowHeightOffset: 0
+  invisibleUntilAwaken: 0
+  procedurallyOutlined: 1
+  forceUsesTrimmedBounds: 1
+  reinforceType: 0
+  optionalPalette: {fileID: 0}
+  UsesVaryingEmissiveShaderPropertyBlock: 0
+  OverrideBuffEffectPosition: {fileID: 0}
+  EnemySwitchState: BulletKing
+  OverrideSpawnReticleAudio:
+  OverrideSpawnAppearAudio:
+  UseMovementAudio: 0
+  StartMovingEvent:
+  StopMovingEvent:
+  animationAudioEvents:
+  - eventTag: footstep
+    eventName:
+  - eventTag: flap
+    eventName: Play_ANM_Gull_Flap_01
+  - eventTag: intro
+    eventName: Play_ANM_Gull_Intro_01
+  - eventTag: descend
+    eventName: Play_ANM_Gull_Descend_01
+  - eventTag: flex
+    eventName: Play_ANM_Gull_Flex_01
+  - eventTag: lift
+    eventName: Play_ANM_Gull_Lift_01
+  - eventTag: leap
+    eventName: Play_ANM_Gull_Leap_01
+  - eventTag: laugh
+    eventName: Play_ANM_Gull_Laugh_01
+  - eventTag: shoot
+    eventName: Play_ANM_Gull_Shoot_01
+  - eventTag: rocket
+    eventName: Play_ANM_Gull_Rocket_01
+  - eventTag: swing
+    eventName: Play_ANM_Gull_Swing_01
+  - eventTag: death
+    eventName: Play_ANM_Gull_Death_01
+  HealthOverrides: []
+  IdentifierForEffects: 0
+  BehaviorOverridesVelocity: 0
+  BehaviorVelocity: {x: 0, y: 0}
+  OverridePathVelocity: {}
+  AlwaysShowOffscreenArrow: 0
+  BlackPhantomProperties:
+    BonusHealthPercentIncrease: 0
+    BonusHealthFlatIncrease: 200
+    MaxTotalHealth: 1000
+    CooldownMultiplier: 1
+    MovementSpeedMultiplier: 1
+    LocalTimeScaleMultiplier: 1
+    BulletSpeedMultiplier: 1
+    GradientScale: 0.75
+    ContrastPower: 1.3
+  ForceBlackPhantomParticles: 1
+  OverrideBlackPhantomParticlesCollider: 1
+  BlackPhantomParticlesCollider: 2
+  PreventFallingInPitsEver: 0
+--- !u!114 &114197820531492945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1456463907444880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecf22b9d5193fc4786c6bd88f8e24eb, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Bullets:
+  - Name: default_vfx
+    BulletObject: {fileID: 1815952434959518, guid: 091aa71a32c62fe46b88605968f31043, type: 2}
+    OverrideProjectile: 0
+    ProjectileData:
+      damage: 0.5
+      speed: 9
+      range: 100
+      force: 10
+      damping: 0
+      UsesCustomAccelerationCurve: 0
+      AccelerationCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      CustomAccelerationCurveDuration: 1
+      onDestroyBulletScript:
+        scriptTypeName:
+    PlayAudio: 0
+    AudioSwitch:
+    AudioEvent:
+    AudioLimitOncePerFrame: 1
+    AudioLimitOncePerAttack: 0
+    MuzzleFlashEffects:
+      type: 0
+      effects:
+      - effects:
+        - effect: {fileID: 0}
+          orphaned: 0
+          attached: 0
+          persistsOnDeath: 0
+          usesZHeight: 1
+          zHeight: 3
+          alignment: 0
+          destructible: 0
+    MuzzleLimitOncePerFrame: 0
+    MuzzleInheritsTransformDirection: 0
+    SpawnShells: 0
+    ShellTransform: {fileID: 0}
+    ShellPrefab: {fileID: 0}
+    ShellForce: 1.75
+    ShellForceVariance: 0.75
+    DontRotateShell: 0
+    ShellGroundOffset: 0
+    ShellsLimitOncePerFrame: 0
+    rampBullets: 1
+    rampStartHeight: 11
+    rampTime: 180
+    conditionalMinDegFromNorth: 0
+    forceCanHitEnemies: 0
+    suppressHitEffectsIfOffscreen: 0
+    preloadCount: 0
+  - Name: reflect
+    BulletObject: {fileID: 1699538661032687, guid: eab510ba0212738488557db0e3aa4564, type: 2}
+    OverrideProjectile: 0
+    ProjectileData:
+      damage: 0.5
+      speed: 9
+      range: 100
+      force: 10
+      damping: 0
+      UsesCustomAccelerationCurve: 0
+      AccelerationCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      CustomAccelerationCurveDuration: 1
+      onDestroyBulletScript:
+        scriptTypeName:
+    PlayAudio: 0
+    AudioSwitch:
+    AudioEvent:
+    AudioLimitOncePerFrame: 1
+    AudioLimitOncePerAttack: 0
+    MuzzleFlashEffects:
+      type: 0
+      effects:
+      - effects:
+        - effect: {fileID: 1680633974899540, guid: b3c85e617dc640a4d94b4129257ffcd8, type: 2}
+          orphaned: 0
+          attached: 0
+          persistsOnDeath: 0
+          usesZHeight: 1
+          zHeight: 7
+          alignment: 0
+          destructible: 0
+    MuzzleLimitOncePerFrame: 1
+    MuzzleInheritsTransformDirection: 0
+    SpawnShells: 0
+    ShellTransform: {fileID: 0}
+    ShellPrefab: {fileID: 0}
+    ShellForce: 1.75
+    ShellForceVariance: 0.75
+    DontRotateShell: 0
+    ShellGroundOffset: 0
+    ShellsLimitOncePerFrame: 0
+    rampBullets: 1
+    rampStartHeight: 8
+    rampTime: 180
+    conditionalMinDegFromNorth: 0
+    forceCanHitEnemies: 0
+    suppressHitEffectsIfOffscreen: 0
+    preloadCount: 0
+  useDefaultBulletIfMissing: 1
+  transforms:
+  - {fileID: 4413755050781456}
+  - {fileID: 4953150652721776}
+  - {fileID: 4060121947319938}
+  FixedPlayerPosition: {}
+--- !u!114 &114727693916731909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1456463907444880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 301eb88be2851694f82c3a4de315a602, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  overrideMaterialDefinition: {fileID: 0}
+  overrideHitEffect:
+    effects: []
+  overrideHitEffectPool:
+    type: 0
+    effects: []
+  additionalHitEffects: []
+  SuppressAllHitEffects: 0
+--- !u!114 &114093146187225394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1456463907444880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: daff7bb4fa885db4e9c997e01d349b56, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  quantizeHealth: 0
+  quantizedIncrement: 0.5
+  flashesOnDamage: 1
+  incorporealityOnDamage: 0
+  incorporealityTime: 1
+  PreventAllDamage: 0
+  persistsOnDeath: 0
+  maximumHealth: 450
+  currentHealth: 1000
+  currentArmor: 0
+  usesInvulnerabilityPeriod: 0
+  invulnerabilityPeriod: 0.5
+  useFortunesFavorInvulnerability: 0
+  deathEffect: {fileID: 0}
+  damagedAudioEvent:
+  overrideDeathAudioEvent:
+  overrideDeathAnimation:
+  shakesCameraOnDamage: 0
+  cameraShakeOnDamage:
+    magnitude: 0.35
+    speed: 6
+    time: 0.06
+    falloff: 0
+    direction: {x: 0, y: 0}
+    vibrationType: 10
+    simpleVibrationTime: 20
+    simpleVibrationStrength: 20
+  damageTypeModifiers: []
+  healthIsNumberOfHits: 0
+  OnlyAllowSpecialBossDamage: 0
+  spawnBulletScript: 0
+  chanceToSpawnBulletScript: 0
+  overrideDeathAnimBulletScript:
+  noCorpseWhenBulletScriptDeath: 0
+  bulletScriptType: 0
+  bulletScript:
+    scriptTypeName:
+  bossHealthBar: 6
+  overrideBossName:
+  forcePreventVictoryMusic: 0
+  GlobalPixelColliderDamageMultiplier: 1
+--- !u!33 &33202704921934881
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1456463907444880}
+  m_Mesh: {fileID: 0}
+--- !u!23 &23020869406760873
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1456463907444880}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 7f9f66358601f7340bdb00684bc1cf80, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 0
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 0
+  m_AutoUVMaxDistance: 0
+  m_AutoUVMaxAngle: 0
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -1981987969
+  m_SortingLayer: 2
+  m_SortingOrder: 0
+--- !u!114 &114177249805519510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1456463907444880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aab037bf7c2ce7343b005114c0e6a2e1, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  automaticallyManagesDepth: 0
+  ignoresTiltworldDepth: 0
+  depthUsesTrimmedBounds: 0
+  allowDefaultLayer: 0
+  attachParent: {fileID: 0}
+  OverrideMaterialMode: 0
+  independentOrientation: 0
+  autodetectFootprint: 1
+  customFootprintOrigin:
+    x: 0
+    y: 0
+  customFootprint:
+    x: 0
+    y: 0
+  hasOffScreenCachedUpdate: 0
+  offScreenCachedCollection: {fileID: 0}
+  offScreenCachedID: -1
+  collection: {fileID: 114845980760472891, guid: 22f41bc913d46c346819b543e36ee9d5, type: 2}
+  _color: {r: 1, g: 1, b: 1, a: 1}
+  _scale: {x: 1, y: 1, z: 1}
+  _spriteId: 57
+  boxCollider2D: {fileID: 0}
+  boxCollider: {fileID: 0}
+  meshCollider: {fileID: 0}
+  meshColliderPositions: []
+  meshColliderMesh: {fileID: 0}
+  CachedPerpState: 1
+  m_heightOffGround: 0
+  renderLayer: 0
+  IsBraveOutlineSprite: 0
+  IsZDepthDirty: 0
+  ApplyEmissivePropertyBlock: 0
+  GenerateUV2: 0
+  LockUV2OnFrameOne: 0
+  StaticPositions: 0
+--- !u!114 &114563799754552202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1456463907444880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 858693f8db5b6d94ba3af909ccf0a16b, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  library: {fileID: 114193480941864483, guid: c6fc8c327f0eb654eb869594d1a96f89, type: 2}
+  defaultClipId: 1
+  AdditionalCameraVisibilityRadius: 0
+  AnimateDuringBossIntros: 0
+  AlwaysIgnoreTimeScale: 0
+  ForceSetEveryFrame: 0
+  playAutomatically: 1
+  IsFrameBlendedAnimation: 0
+  clipTime: 0
+  deferNextStartClip: 0
+--- !u!114 &114876290214519284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1456463907444880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17e45053a45c92d49b882037d5e54712, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  ChildAnimator: {fileID: 114325634123775379}
+  SpecifyAiActor: {fileID: 0}
+  facingType: 0
+  DirectionParent: {fileID: 0}
+  faceSouthWhenStopped: 0
+  faceTargetWhenStopped: 0
+  AnimatedFacingDirection: -90
+  directionalType: 10
+  RotationQuantizeTo: 0
+  RotationOffset: 0
+  ForceKillVfxOnPreDeath: 0
+  SuppressAnimatorFallback: 0
+  IsBodySprite: 1
+  IdleAnimation:
+    Type: 5
+    Prefix: idle
+    AnimNames:
+    - 
+    - idle
+    - idle
+    - idle
+    - idle
+    - idle
+    Flipped: 000000000000000000000000000000000000000000000000
+  MoveAnimation:
+    Type: 0
+    Prefix: move
+    AnimNames: []
+    Flipped:
+  FlightAnimation:
+    Type: 0
+    Prefix:
+    AnimNames: []
+    Flipped:
+  HitAnimation:
+    Type: 0
+    Prefix:
+    AnimNames: []
+    Flipped:
+  HitReactChance: 0
+  MinTimeBetweenHitReacts: 0
+  HitType: 0
+  TalkAnimation:
+    Type: 0
+    Prefix:
+    AnimNames: []
+    Flipped:
+  OtherAnimations:
+  - name: hover_intro
+    anim:
+      Type: 5
+      Prefix: attack_hover_intro
+      AnimNames:
+      - attack_hover_back_intro
+      - attack_hover_intro
+      - attack_hover_intro
+      - attack_hover_intro
+      - attack_hover_intro
+      - attack_hover_intro
+      Flipped: 000000000000000000000000000000000000000000000000
+  - name: hover
+    anim:
+      Type: 5
+      Prefix: attack_hover
+      AnimNames:
+      - 
+      - attack_hover
+      - attack_hover
+      - attack_hover
+      - attack_hover
+      - attack_hover
+      Flipped: 000000000000000000000000000000000000000000000000
+  - name: hover_outro
+    anim:
+      Type: 5
+      Prefix: attack_hover_outro
+      AnimNames:
+      - attack_hover_back_outro
+      - attack_hover_outro
+      - attack_hover_outro
+      - attack_hover_outro
+      - attack_hover_outro
+      - attack_hover_outro
+      Flipped: 000000000000000000000000000000000000000000000000
+  - name: lightning
+    anim:
+      Type: 5
+      Prefix: attack_lightning
+      AnimNames:
+      - 
+      - attack_lightning
+      - attack_lightning
+      - attack_lightning
+      - attack_lightning
+      - attack_lightning
+      Flipped: 000000000000000000000000000000000000000000000000
+  - name: arc_attack
+    anim:
+      Type: 2
+      Prefix: attack
+      AnimNames:
+      - 
+      - 
+      Flipped: 0000000000000000
+  - name: arc_attack_reverse
+    anim:
+      Type: 2
+      Prefix: attack
+      AnimNames:
+      - attack_left
+      - attack_right
+      Flipped: 0000000000000000
+  - name: move_in
+    anim:
+      Type: 1
+      Prefix: move_intro
+      AnimNames:
+      - 
+      Flipped: 00000000
+  - name: move_loop
+    anim:
+      Type: 5
+      Prefix: move_loop
+      AnimNames:
+      - move_front
+      - move_right
+      - move_right
+      - move_front
+      - move_left
+      - move_left
+      Flipped: 000000000000000000000000000000000000000000000000
+  - name: move_out
+    anim:
+      Type: 1
+      Prefix: move_outro
+      AnimNames:
+      - 
+      Flipped: 00000000
+  OtherVFX:
+  - name: hover_charge
+    anchorTransform: {fileID: 4302321571548463}
+    vfxPool:
+      type: 4
+      effects:
+      - effects:
+        - effect: {fileID: 1070956424897863, guid: 0aa58c931b7a1f7439307fc954c4815b, type: 2}
+          orphaned: 1
+          attached: 1
+          persistsOnDeath: 0
+          usesZHeight: 1
+          zHeight: 5
+          alignment: 0
+          destructible: 0
+  - name: hover_charge_loop
+    anchorTransform: {fileID: 4302321571548463}
+    vfxPool:
+      type: 4
+      effects:
+      - effects:
+        - effect: {fileID: 1969530416466370, guid: f0ff2b2ff52058749badd4ef2959b2c4, type: 2}
+          orphaned: 1
+          attached: 1
+          persistsOnDeath: 0
+          usesZHeight: 1
+          zHeight: -4
+          alignment: 0
+          destructible: 0
+  - name: hover_charge_end
+    anchorTransform: {fileID: 4302321571548463}
+    vfxPool:
+      type: 4
+      effects:
+      - effects:
+        - effect: {fileID: 1314194568511868, guid: d35c5ba6e90d63343842261c13fd721a, type: 2}
+          orphaned: 1
+          attached: 1
+          persistsOnDeath: 0
+          usesZHeight: 1
+          zHeight: -4
+          alignment: 0
+          destructible: 0
+  OtherScreenShake: []
+  IdleFidgetAnimations: []
+--- !u!114 &114218587501214016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1456463907444880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b976a500c4f56cb4fb1f2892767fd2d3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  SuppressPlayerEnteredRoom: 0
+--- !u!114 &114483246549239285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1456463907444880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f71f521d562bfa743af7feb5982314c9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  _objectReferences:
+  - {fileID: 1840588045717143}
+  - {fileID: 1550204368784949}
+  - {fileID: 1550204368784949}
+  - {fileID: 1550204368784949}
+  _serializedStateKeys:
+  - OverrideBehaviors
+  - TargetBehaviors
+  - MovementBehaviors
+  - AttackBehaviors
+  - OtherBehaviors
+  _serializedStateValues:
+  - '[]'
+  - '[{"Radius":35.0,"LineOfSight":true,"ObjectPermanence":true,"SearchInterval":0.25,"PauseOnTargetSwitch":false,"PauseTime":0.25,"$type":"TargetPlayerBehavior"}]'
+  - '[]'
+  - '[{"ShareCooldowns":false,"AttackBehaviors":[{"NickName":"Reflect Shot","Probability":1000.0,"Behavior":{"ShootPoint":0,"BulletScript":{"scriptTypeName":"PhantomAgunimNonReflect1"},"BulletName":null,"LeadAmount":0.0,"StopDuring":"Tell","ImmobileDuringStop":false,"MoveSpeedModifier":1.0,"LockFacingDirection":false,"ContinueAimingDuringTell":false,"ReaimOnFire":false,"MultipleFireEvents":false,"RequiresTarget":true,"PreventTargetSwitching":false,"Uninterruptible":false,"ClearGoop":false,"ClearGoopRadius":2.0,"ShouldOverrideFireDirection":false,"OverrideFireDirection":0.0,"SpecifyAiAnimator":null,"ChargeAnimation":null,"ChargeTime":0.0,"TellAnimation":"hover_intro","FireAnimation":"hover","PostFireAnimation":"hover_outro","HideGun":true,"OverrideBaseAnims":false,"OverrideIdleAnim":null,"OverrideMoveAnim":null,"UseVfx":true,"ChargeVfx":"","TellVfx":"","FireVfx":"hover_charge","Vfx":null,"EnabledDuringAttack":[],"Cooldown":7.5,"CooldownVariance":0.0,"AttackCooldown":0.0,"GlobalCooldown":0.0,"InitialCooldown":6.0,"InitialCooldownVariance":0.0,"GroupName":null,"GroupCooldown":0.0,"MinRange":0.0,"Range":0.0,"MinWallDistance":0.0,"MaxEnemiesInRoom":0.0,"MinHealthThreshold":0.0,"MaxHealthThreshold":1.0,"HealthThresholds":[],"AccumulateHealthThresholds":true,"targetAreaStyle":null,"IsBlackPhantom":false,"resetCooldownOnDamage":null,"RequiresLineOfSight":false,"MaxUsages":0,"$type":"ShootBehavior"}},{"NickName":"Move","Probability":2.0,"Behavior":{"MoveTime":1.5,"MinSpeed":4.5,"MaxSpeed":0.0,"DisableCollisionDuringMove":true,"MinDistFromHorizontalWall":4,"MinDistFromNorthWall":2,"MinTilesAbovePlayer":5,"MaxTilesAbovePlayer":12,"MinDistanceFromPlayer":4,"UseSouthWall":true,"MinTilesBelowPlayer":5,"MaxTilesBelowPlayer":12,"MinDistFromSouthWall":1,"preMoveAnimation":"move_in","moveAnimation":"move_loop","postMoveAnimation":"move_out","enableShadowTrail":false,"Cooldown":5.0,"CooldownVariance":0.0,"AttackCooldown":0.0,"GlobalCooldown":0.0,"InitialCooldown":0.0,"InitialCooldownVariance":0.0,"GroupName":null,"GroupCooldown":0.0,"MinRange":0.0,"Range":0.0,"MinWallDistance":0.0,"MaxEnemiesInRoom":0.0,"MinHealthThreshold":0.0,"MaxHealthThreshold":1.0,"HealthThresholds":[],"AccumulateHealthThresholds":true,"targetAreaStyle":null,"IsBlackPhantom":false,"resetCooldownOnDamage":null,"RequiresLineOfSight":false,"MaxUsages":0,"$type":"BossFinalBulletAgunimMoveBehavior"}},{"NickName":"Lightning","Probability":1.0,"Behavior":{"ShootPoint":1,"BulletScript":{"scriptTypeName":"BossFinalBulletAgunimLightning1"},"BulletName":null,"LeadAmount":0.0,"StopDuring":"Tell","ImmobileDuringStop":false,"MoveSpeedModifier":1.0,"LockFacingDirection":false,"ContinueAimingDuringTell":false,"ReaimOnFire":false,"MultipleFireEvents":false,"RequiresTarget":true,"PreventTargetSwitching":false,"Uninterruptible":false,"ClearGoop":false,"ClearGoopRadius":2.0,"ShouldOverrideFireDirection":false,"OverrideFireDirection":0.0,"SpecifyAiAnimator":null,"ChargeAnimation":null,"ChargeTime":0.0,"TellAnimation":"lightning","FireAnimation":"","PostFireAnimation":"","HideGun":true,"OverrideBaseAnims":false,"OverrideIdleAnim":null,"OverrideMoveAnim":null,"UseVfx":false,"ChargeVfx":null,"TellVfx":null,"FireVfx":"","Vfx":null,"EnabledDuringAttack":[],"Cooldown":1.0,"CooldownVariance":0.0,"AttackCooldown":0.5,"GlobalCooldown":0.0,"InitialCooldown":0.0,"InitialCooldownVariance":0.0,"GroupName":null,"GroupCooldown":0.0,"MinRange":0.0,"Range":0.0,"MinWallDistance":0.0,"MaxEnemiesInRoom":0.0,"MinHealthThreshold":0.0,"MaxHealthThreshold":1.0,"HealthThresholds":[],"AccumulateHealthThresholds":true,"targetAreaStyle":null,"IsBlackPhantom":false,"resetCooldownOnDamage":null,"RequiresLineOfSight":false,"MaxUsages":0,"$type":"ShootBehavior"}},{"NickName":"Arc Shot (South)","Probability":1.0,"Behavior":{"ShootPoint":2,"BulletScript":{"scriptTypeName":"BossFinalBulletAgunimArc1"},"BulletName":null,"LeadAmount":0.0,"StopDuring":"Tell","ImmobileDuringStop":false,"MoveSpeedModifier":1.0,"LockFacingDirection":true,"ContinueAimingDuringTell":false,"ReaimOnFire":false,"MultipleFireEvents":false,"RequiresTarget":true,"PreventTargetSwitching":false,"Uninterruptible":false,"ClearGoop":false,"ClearGoopRadius":2.0,"ShouldOverrideFireDirection":false,"OverrideFireDirection":0.0,"SpecifyAiAnimator":null,"ChargeAnimation":null,"ChargeTime":0.0,"TellAnimation":"arc_attack","FireAnimation":null,"PostFireAnimation":null,"HideGun":true,"OverrideBaseAnims":false,"OverrideIdleAnim":null,"OverrideMoveAnim":null,"UseVfx":false,"ChargeVfx":null,"TellVfx":null,"FireVfx":null,"Vfx":null,"EnabledDuringAttack":[],"Cooldown":0.0,"CooldownVariance":0.0,"AttackCooldown":0.5,"GlobalCooldown":0.0,"InitialCooldown":0.0,"InitialCooldownVariance":0.0,"GroupName":"arc","GroupCooldown":1.0,"MinRange":0.0,"Range":0.0,"MinWallDistance":0.0,"MaxEnemiesInRoom":0.0,"MinHealthThreshold":0.0,"MaxHealthThreshold":1.0,"HealthThresholds":[],"AccumulateHealthThresholds":true,"targetAreaStyle":{"StartAngle":200.0,"SweepAngle":140.0,"targetAreaOrigin":"HitboxCenter","$type":"ShootBehavior+ArcFiringArea"},"IsBlackPhantom":false,"resetCooldownOnDamage":null,"RequiresLineOfSight":false,"MaxUsages":0,"$type":"ShootBehavior"}},{"NickName":"Arc Shot (Sides)","Probability":1.0,"Behavior":{"ShootPoint":3,"BulletScript":{"scriptTypeName":"PhantomAgunimArc1"},"BulletName":null,"LeadAmount":0.0,"StopDuring":"Tell","ImmobileDuringStop":false,"MoveSpeedModifier":1.0,"LockFacingDirection":true,"ContinueAimingDuringTell":false,"ReaimOnFire":false,"MultipleFireEvents":false,"RequiresTarget":true,"PreventTargetSwitching":false,"Uninterruptible":false,"ClearGoop":false,"ClearGoopRadius":2.0,"ShouldOverrideFireDirection":false,"OverrideFireDirection":0.0,"SpecifyAiAnimator":null,"ChargeAnimation":null,"ChargeTime":0.0,"TellAnimation":"arc_attack_reverse","FireAnimation":null,"PostFireAnimation":null,"HideGun":true,"OverrideBaseAnims":false,"OverrideIdleAnim":null,"OverrideMoveAnim":null,"UseVfx":false,"ChargeVfx":null,"TellVfx":null,"FireVfx":null,"Vfx":null,"EnabledDuringAttack":[],"Cooldown":0.0,"CooldownVariance":0.0,"AttackCooldown":0.5,"GlobalCooldown":0.0,"InitialCooldown":0.0,"InitialCooldownVariance":0.0,"GroupName":"arc","GroupCooldown":1.0,"MinRange":0.0,"Range":0.0,"MinWallDistance":0.0,"MaxEnemiesInRoom":0.0,"MinHealthThreshold":0.0,"MaxHealthThreshold":1.0,"HealthThresholds":[],"AccumulateHealthThresholds":true,"targetAreaStyle":{"StartAngle":-45.0,"SweepAngle":270.0,"targetAreaOrigin":"HitboxCenter","$type":"ShootBehavior+ArcFiringArea"},"IsBlackPhantom":false,"resetCooldownOnDamage":null,"RequiresLineOfSight":false,"MaxUsages":0,"$type":"ShootBehavior"}}],"$type":"AttackBehaviorGroup"}]'
+  - '[]'
+  InstantFirstTick: 0
+  TickInterval: 0.1
+  PostAwakenDelay: 2
+  RemoveDelayOnReinforce: 0
+  OverrideStartingFacingDirection: 1
+  StartingFacingDirection: -90
+  SkipTimingDifferentiator: 0
+--- !u!114 &114162584709088210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1456463907444880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17d6803d59c58984698a29bc2b524553, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  triggerType: 10
+  initialDelay: 0.5
+  cameraMoveSpeed: 12
+  specifyIntroAiAnimator: {fileID: 0}
+  BossMusicEvent: Play_MUS_Boss_Theme_Beholster
+  PreventBossMusic: 0
+  InvisibleBeforeIntroAnim: 1
+  preIntroAnim:
+  preIntroDirectionalAnim:
+  introAnim: intro
+  introDirectionalAnim:
+  continueAnimDuringOutro: 0
+  cameraFocus: {fileID: 0}
+  roomPositionCameraFocus: {x: 0, y: 0}
+  restrictPlayerMotionToRoom: 0
+  fusebombLock: 0
+  AdditionalHeightOffset: 0
+  SkipBossCard: 1
+  portraitSlideSettings:
+    bossNameString: '#AGUNIM_TITLE'
+    bossSubtitleString: '#AGUNIM_SUBTITLE'
+    bossQuoteString: '#AGUNIM_QUOTE'
+    bossArtSprite: {fileID: 2800000, guid: 11bb0668aa7b099409c19da3e138e73e, type: 3}
+    bossSpritePxOffset:
+      x: 0
+      y: 0
+    topLeftTextPxOffset:
+      x: 0
+      y: 0
+    bottomRightTextPxOffset:
+      x: 0
+      y: 0
+    bgColor: {r: 0, g: 0, b: 1, a: 1}
+  HideGunAndHand: 0
+--- !u!114 &114070712189794281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1456463907444880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6e00452ca7999142b2e9fe55da9cea0, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  ProxyEncounterGuid:
+  m_encounterGuid: f2229286b97341bcb99e528108949ec1
+  m_doNotificationOnEncounter: 1
+  SuppressInInventory: 0
+  m_journalData:
+    SuppressInAmmonomicon: 0
+    SuppressKnownState: 0
+    DisplayOnLoadingScreen: 0
+    RequiresLightBackgroundInLoadingScreen: 0
+    PrimaryDisplayName: '#SHADOW_AGUNIM_ENCNAME'
+    NotificationPanelDescription: '#SHADOW_AGUNIM_SHORTDESC'
+    AmmonomiconFullEntry: '#SHADOW_AGUNIM_LONGDESC'
+    AmmonomiconSprite: phantunim_intro_004
+    IsEnemy: 1
+    enemyPortraitSprite: {fileID: 2800000, guid: 5b0ed1427ece52944b580603e8b3e1b6, type: 3}
+    SpecialIdentifier: 0
+  m_ignoreDifferentiator: 0
+  m_prerequisites: []
+  m_usesPurpleNotifications: 0
+--- !u!114 &114483414391532760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1456463907444880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25bc20faa5e64aa45ace06824a2d9bed, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  attachPoints:
+  - {fileID: 4953150652721776}
+  - {fileID: 4060121947319938}
+  deactivateUnusedAttachPoints: 0
+  disableEmissionOnUnusedParticleSystems: 0
+  ignorePosition: 0
+  ignoreScale: 0
+  ignoreRotation: 0
+  centerUnusedAttachPoints: 0
+--- !u!114 &114426001523059323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1456463907444880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fb80bd60b231374694bc084b6c310f0, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  spawnShadows: 0
+  shadowTimeDelay: 0.1
+  shadowLifetime: 0.6
+  minTranslation: 0.2
+  maxEmission: 800
+  minEmission: 100
+  targetHeight: -3.5
+  dashColor: {r: 0.5019608, g: 0.5019608, b: 0.5019608, a: 0.5019608}
+  OptionalImageShader: {fileID: 0}
+  UseTargetLayer: 0
+  TargetLayer:
+--- !u!1 &1901516327511524
+GameObject:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - component: {fileID: 4873052817693708}
+  - component: {fileID: 33155896856192637}
+  - component: {fileID: 23839154444540067}
+  - component: {fileID: 114538357214472846}
+  - component: {fileID: 114837001639945403}
+  - component: {fileID: 114325634123775379}
+  m_Layer: 22
+  m_Name: vfx
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4873052817693708
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1901516327511524}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.05}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4302321571548463}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!33 &33155896856192637
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1901516327511524}
+  m_Mesh: {fileID: 0}
+--- !u!23 &23839154444540067
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1901516327511524}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 2b64bfd32261fa34fb8a7c5c99a6058f, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 0
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 0
+  m_AutoUVMaxDistance: 0
+  m_AutoUVMaxAngle: 0
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -1981987969
+  m_SortingLayer: 2
+  m_SortingOrder: 2
+--- !u!114 &114538357214472846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1901516327511524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aab037bf7c2ce7343b005114c0e6a2e1, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  automaticallyManagesDepth: 0
+  ignoresTiltworldDepth: 0
+  depthUsesTrimmedBounds: 0
+  allowDefaultLayer: 0
+  attachParent: {fileID: 114177249805519510}
+  OverrideMaterialMode: 0
+  independentOrientation: 0
+  autodetectFootprint: 1
+  customFootprintOrigin:
+    x: 0
+    y: 0
+  customFootprint:
+    x: 0
+    y: 0
+  hasOffScreenCachedUpdate: 0
+  offScreenCachedCollection: {fileID: 0}
+  offScreenCachedID: -1
+  collection: {fileID: 114846242168416736, guid: 5685a4dc1c2b5b64c97c779fe98baf01, type: 2}
+  _color: {r: 1, g: 1, b: 1, a: 1}
+  _scale: {x: 1, y: 1, z: 1}
+  _spriteId: 118
+  boxCollider2D: {fileID: 0}
+  boxCollider: {fileID: 0}
+  meshCollider: {fileID: 0}
+  meshColliderPositions: []
+  meshColliderMesh: {fileID: 0}
+  CachedPerpState: 1
+  m_heightOffGround: 0.05
+  renderLayer: 2
+  IsBraveOutlineSprite: 0
+  IsZDepthDirty: 0
+  ApplyEmissivePropertyBlock: 0
+  GenerateUV2: 0
+  LockUV2OnFrameOne: 0
+  StaticPositions: 0
+--- !u!114 &114837001639945403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1901516327511524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 858693f8db5b6d94ba3af909ccf0a16b, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  library: {fileID: 114983213380505552, guid: 24f18b0a4e2376b45b0716234abcef2f, type: 2}
+  defaultClipId: 0
+  AdditionalCameraVisibilityRadius: 0
+  AnimateDuringBossIntros: 0
+  AlwaysIgnoreTimeScale: 0
+  ForceSetEveryFrame: 0
+  playAutomatically: 0
+  IsFrameBlendedAnimation: 0
+  clipTime: 0
+  deferNextStartClip: 0
+--- !u!114 &114325634123775379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1901516327511524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17e45053a45c92d49b882037d5e54712, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  ChildAnimator: {fileID: 0}
+  SpecifyAiActor: {fileID: 0}
+  facingType: 3
+  DirectionParent: {fileID: 114876290214519284}
+  faceSouthWhenStopped: 0
+  faceTargetWhenStopped: 0
+  AnimatedFacingDirection: -90
+  directionalType: 10
+  RotationQuantizeTo: 0
+  RotationOffset: 0
+  ForceKillVfxOnPreDeath: 0
+  SuppressAnimatorFallback: 1
+  IsBodySprite: 0
+  IdleAnimation:
+    Type: 1
+    Prefix: blank
+    AnimNames:
+    - 
+    Flipped: 00000000
+  MoveAnimation:
+    Type: 0
+    Prefix:
+    AnimNames: []
+    Flipped:
+  FlightAnimation:
+    Type: 0
+    Prefix:
+    AnimNames: []
+    Flipped:
+  HitAnimation:
+    Type: 0
+    Prefix:
+    AnimNames: []
+    Flipped:
+  HitReactChance: 1
+  MinTimeBetweenHitReacts: 0
+  HitType: 0
+  TalkAnimation:
+    Type: 0
+    Prefix:
+    AnimNames: []
+    Flipped:
+  OtherAnimations:
+  - name: hover_intro
+    anim:
+      Type: 5
+      Prefix: attack_hover_intro_vfx
+      AnimNames:
+      - attack_hover_intro_phantom_back_vfx
+      - attack_hover_intro_vfx
+      - attack_hover_intro_vfx
+      - attack_hover_intro_vfx
+      - attack_hover_intro_vfx
+      - attack_hover_intro_vfx
+      Flipped: 000000000000000000000000000000000000000000000000
+  - name: hover
+    anim:
+      Type: 1
+      Prefix: attack_hover_vfx
+      AnimNames:
+      - 
+      Flipped: 00000000
+  - name: hover_outro
+    anim:
+      Type: 1
+      Prefix: blank
+      AnimNames:
+      - 
+      Flipped: 00000000
+  - name: lightning
+    anim:
+      Type: 5
+      Prefix: attack_lightning_vfx
+      AnimNames:
+      - attack_phantom_back_lightning_vfx
+      - attack_lightning_vfx
+      - attack_lightning_vfx
+      - attack_lightning_vfx
+      - attack_lightning_vfx
+      - attack_lightning_vfx
+      Flipped: 000000000000000000000000000000000000000000000000
+  - name: arc_attack
+    anim:
+      Type: 2
+      Prefix: attack
+      AnimNames:
+      - attack_right_vfx
+      - attack_left_vfx
+      Flipped: 0000000000000000
+  - name: arc_attack_reverse
+    anim:
+      Type: 2
+      Prefix: attack
+      AnimNames:
+      - attack_left_vfx
+      - attack_right_vfx
+      Flipped: 0000000000000000
+  - name: deflect
+    anim:
+      Type: 1
+      Prefix: attack_deflect_vfx
+      AnimNames:
+      - attack_right_vfx
+      Flipped: 00000000
+  - name: big_hit
+    anim:
+      Type: 1
+      Prefix: blank
+      AnimNames:
+      - attack_right_vfx
+      Flipped: 00000000
+  OtherVFX: []
+  OtherScreenShake: []
+  IdleFidgetAnimations: []
+--- !u!1 &1550204368784949
+GameObject:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - component: {fileID: 4413755050781456}
+  m_Layer: 0
+  m_Name: shoot point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4413755050781456
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1550204368784949}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.0625, y: 2.8125, z: 0.21875}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4302321571548463}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!1 &1840588045717143
+GameObject:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - component: {fileID: 4649581037108519}
+  m_Layer: 0
+  m_Name: reflect shoot point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4649581037108519
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1840588045717143}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4, y: 6.0625, z: 0.21875}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4302321571548463}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1957803933975357
+GameObject:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - component: {fileID: 4953150652721776}
+  m_Layer: 0
+  m_Name: lightning left shoot point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4953150652721776
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1957803933975357}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.1875, y: 1.5625, z: 0.21875}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4302321571548463}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1908772407472015
+GameObject:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - component: {fileID: 4060121947319938}
+  m_Layer: 0
+  m_Name: lightning right shoot point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4060121947319938
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1908772407472015}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.875, y: 1.5625, z: 0.21875}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4302321571548463}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1250148209321322
+GameObject:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - component: {fileID: 4870772263799202}
+  - component: {fileID: 23346023309952539}
+  - component: {fileID: 33554718037480600}
+  - component: {fileID: 114859391276025066}
+  m_Layer: 22
+  m_Name: shadow
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4870772263799202
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1250148209321322}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.125, y: 0.4375, z: 0.4375}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4302321571548463}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!23 &23346023309952539
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1250148209321322}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: b13b792eb7cc3674d93ec922745b9408, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 0
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 0
+  m_AutoUVMaxDistance: 0
+  m_AutoUVMaxAngle: 0
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -66451081
+  m_SortingLayer: 1
+  m_SortingOrder: 0
+--- !u!33 &33554718037480600
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1250148209321322}
+  m_Mesh: {fileID: 0}
+--- !u!114 &114859391276025066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1250148209321322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aab037bf7c2ce7343b005114c0e6a2e1, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  automaticallyManagesDepth: 1
+  ignoresTiltworldDepth: 0
+  depthUsesTrimmedBounds: 0
+  allowDefaultLayer: 0
+  attachParent: {fileID: 0}
+  OverrideMaterialMode: 0
+  independentOrientation: 0
+  autodetectFootprint: 1
+  customFootprintOrigin:
+    x: 0
+    y: 0
+  customFootprint:
+    x: 0
+    y: 0
+  hasOffScreenCachedUpdate: 0
+  offScreenCachedCollection: {fileID: 0}
+  offScreenCachedID: -1
+  collection: {fileID: 114244720227545250, guid: e8e30b9a75d881644978d05d5fc6fb79, type: 2}
+  _color: {r: 1, g: 1, b: 1, a: 1}
+  _scale: {x: 1, y: 1, z: 1}
+  _spriteId: 65
+  boxCollider2D: {fileID: 0}
+  boxCollider: {fileID: 0}
+  meshCollider: {fileID: 0}
+  meshColliderPositions: []
+  meshColliderMesh: {fileID: 0}
+  CachedPerpState: 0
+  m_heightOffGround: 0
+  renderLayer: 0
+  IsBraveOutlineSprite: 0
+  IsZDepthDirty: 0
+  ApplyEmissivePropertyBlock: 0
+  GenerateUV2: 0
+  LockUV2OnFrameOne: 0
+  StaticPositions: 0

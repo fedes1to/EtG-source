@@ -1,0 +1,567 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1302940035973239}
+  m_IsPrefabParent: 1
+--- !u!1 &1302940035973239
+GameObject:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - component: {fileID: 4752608941534305}
+  - component: {fileID: 114672660405691833}
+  - component: {fileID: 23207954084649471}
+  - component: {fileID: 33814779171607422}
+  - component: {fileID: 114445891588270764}
+  - component: {fileID: 114668736103269405}
+  - component: {fileID: 114075985911611776}
+  - component: {fileID: 114832413703624431}
+  - component: {fileID: 114951136857570484}
+  m_Layer: 22
+  m_Name: Proton_Pack_Beam
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4752608941534305
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1302940035973239}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4254801120110777}
+  - {fileID: 4462651281017963}
+  - {fileID: 4816918313048463}
+  - {fileID: 4235854436940031}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &114672660405691833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1302940035973239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d7100183e88ef1419d909794737a72e, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  PickupObjectId: 179
+  quality: 3
+  additionalMagnificenceModifier: 0
+  ItemSpansBaseQualityTiers: 0
+  ItemRespectsHeartMagnificence: 0
+  associatedItemChanceMods: []
+  contentSource: 0
+  ShouldBeExcludedFromShops: 0
+  CanBeDropped: 1
+  PreventStartingOwnerFromDropping: 0
+  PersistsOnDeath: 0
+  RespawnsIfPitfall: 0
+  PreventSaveSerialization: 0
+  IgnoredByRat: 0
+  SaveFlagToSetOnAcquisition: 0
+  itemName:
+  ForcedPositionInAmmonomicon: 180
+  UsesCustomCost: 0
+  CustomCost: 0
+  PersistsOnPurchase: 0
+  CanBeSold: 1
+  gunName: Proton Pack
+  gunSwitchGroup: ProtonPack
+  isAudioLoop: 0
+  lowersAudioWhileFiring: 0
+  gunClass: 20
+  currentGunStatModifiers: []
+  passiveStatModifiers: []
+  currentGunDamageTypeModifiers: []
+  ArmorToGainOnPickup: 0
+  barrelOffset: {fileID: 4254801120110777}
+  muzzleOffset: {fileID: 4235854436940031}
+  chargeOffset: {fileID: 0}
+  reloadOffset: {fileID: 0}
+  carryPixelOffset:
+    x: 3
+    y: 0
+  carryPixelUpOffset:
+    x: 0
+    y: 0
+  carryPixelDownOffset:
+    x: 0
+    y: 0
+  UsesPerCharacterCarryPixelOffsets: 0
+  PerCharacterPixelOffsets: []
+  leftFacingPixelOffset:
+    x: 0
+    y: 0
+  gunHandedness: 0
+  overrideOutOfAmmoHandedness: 0
+  additionalHandState: 0
+  gunPosition: 0
+  forceFlat: 0
+  rawVolley: {fileID: 11400000, guid: d0862fd38a67d3240981537039cb73fe, type: 2}
+  singleModule:
+    shootStyle: 2
+    ammoType: 14
+    customAmmoType: red_beam
+    projectiles:
+    - {fileID: 114775657209835508, guid: 904cfb472f2ccf4478753c27fa755aed, type: 2}
+    - {fileID: 114775657209835508, guid: 904cfb472f2ccf4478753c27fa755aed, type: 2}
+    sequenceStyle: 0
+    orderedGroupCounts:
+    chargeProjectiles: []
+    maxChargeTime: 0
+    triggerCooldownForAnyChargeAmount: 0
+    isFinalVolley: 0
+    usesOptionalFinalProjectile: 0
+    finalProjectile: {fileID: 0}
+    finalVolley: {fileID: 0}
+    numberOfFinalProjectiles: 1
+    finalAmmoType: 0
+    finalCustomAmmoType:
+    angleFromAim: 0
+    alternateAngle: 0
+    angleVariance: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+    mirror: 0
+    inverted: 0
+    ammoCost: 2
+    burstShotCount: 3
+    burstCooldownTime: 0.2
+    cooldownTime: 1
+    numberOfShotsInClip: -1
+    ignoredForReloadPurposes: 0
+    preventFiringDuringCharge: 0
+  rawOptionalReloadVolley: {fileID: 0}
+  ammo: 500
+  CanGainAmmo: 1
+  LocalInfiniteAmmo: 0
+  UsesBossDamageModifier: 1
+  CustomBossDamageModifier: -1
+  maxAmmo: 500
+  reloadTime: 0
+  blankDuringReload: 0
+  blankReloadRadius: 1
+  reflectDuringReload: 0
+  blankKnockbackPower: 20
+  blankDamageToEnemies: 0
+  blankDamageScalingOnEmptyClip: 1
+  doesScreenShake: 1
+  gunScreenShake:
+    magnitude: 0.25
+    speed: 5
+    time: 0.25
+    falloff: 0.5
+    direction: {x: 0, y: 0}
+    vibrationType: 10
+    simpleVibrationTime: 20
+    simpleVibrationStrength: 20
+  directionlessScreenShake: 1
+  damageModifier: 0
+  thrownObject: {fileID: 0}
+  procGunData: {fileID: 0}
+  activeReloadData:
+    damageMultiply: 1
+    knockbackMultiply: 1
+    usesOverrideAngleVariance: 0
+    overrideAngleVariance: 0
+    reloadSpeedMultiplier: 1
+    ActiveReloadStacks: 0
+    ActiveReloadIncrementsTier: 0
+    MaxTier: 5
+  ClearsCooldownsLikeAWP: 0
+  AppliesHoming: 0
+  AppliedHomingAngularVelocity: 180
+  AppliedHomingDetectRadius: 4
+  m_unswitchableGun: 0
+  shootAnimation: proton_pack_idle
+  usesContinuousFireAnimation: 0
+  reloadAnimation:
+  emptyReloadAnimation:
+  idleAnimation:
+  chargeAnimation:
+  dischargeAnimation:
+  emptyAnimation:
+  introAnimation:
+  finalShootAnimation:
+  enemyPreFireAnimation:
+  outOfAmmoAnimation:
+  criticalFireAnimation:
+  dodgeAnimation:
+  usesDirectionalIdleAnimations: 0
+  usesDirectionalAnimator: 0
+  preventRotation: 0
+  muzzleFlashEffects:
+    type: 0
+    effects: []
+  usesContinuousMuzzleFlash: 0
+  finalMuzzleFlashEffects:
+    type: 0
+    effects: []
+  reloadEffects:
+    type: 0
+    effects: []
+  emptyReloadEffects:
+    type: 0
+    effects: []
+  activeReloadSuccessEffects:
+    type: 0
+    effects: []
+  activeReloadFailedEffects:
+    type: 0
+    effects: []
+  light: {fileID: 0}
+  baseLightIntensity: 0
+  shellCasing: {fileID: 0}
+  shellsToLaunchOnFire: 1
+  shellCasingOnFireFrameDelay: 0
+  shellsToLaunchOnReload: 0
+  reloadShellLaunchFrame: 0
+  clipObject: {fileID: 0}
+  clipsToLaunchOnReload: 0
+  reloadClipLaunchFrame: 0
+  prefabName:
+  rampBullets: 0
+  rampStartHeight: 2
+  rampTime: 1
+  IgnoresAngleQuantization: 0
+  IsTrickGun: 0
+  TrickGunAlternatesHandedness: 0
+  PreventOutlines: 0
+  alternateVolley: {fileID: 0}
+  alternateShootAnimation:
+  alternateReloadAnimation:
+  alternateIdleAnimation:
+  alternateSwitchGroup:
+  IsHeroSword: 0
+  HeroSwordDoesntBlank: 0
+  StarterGunForAchievement: 0
+  CanSneakAttack: 0
+  SneakAttackDamageMultiplier: 3
+  SuppressLaserSight: 0
+  RequiresFundsToShoot: 0
+  CurrencyCostPerShot: 1
+  weaponPanelSpriteOverride: {fileID: 0}
+  IsLuteCompanionBuff: 0
+  MovesPlayerForwardOnChargeFire: 0
+  LockedHorizontalOnCharge: 0
+  LockedHorizontalCenterFireOffset: -1
+  GoopReloadsFree: 0
+  IsUndertaleGun: 0
+  LocalActiveReload: 0
+  UsesRechargeLikeActiveItem: 0
+  ActiveItemStyleRechargeAmount: 100
+  CanAttackThroughObjects: 0
+  CanCriticalFire: 0
+  CriticalChance: 0.1
+  CriticalDamageMultiplier: 3
+  CriticalMuzzleFlashEffects:
+    type: 0
+    effects: []
+  CriticalReplacementProjectile: {fileID: 0}
+  GainsRateOfFireAsContinueAttack: 0
+  RateOfFireMultiplierAdditionPerSecond: 0
+  OnlyUsesIdleInWeaponBox: 0
+  DisablesRendererOnCooldown: 0
+  ObjectToInstantiateOnReload: {fileID: 0}
+  HasBeenPickedUp: 0
+--- !u!23 &23207954084649471
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1302940035973239}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 404286d24470104489f3498e9bfaf419, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 0
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 0
+  m_AutoUVMaxDistance: 0
+  m_AutoUVMaxAngle: 0
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -1981987969
+  m_SortingLayer: 2
+  m_SortingOrder: 2
+--- !u!33 &33814779171607422
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1302940035973239}
+  m_Mesh: {fileID: 0}
+--- !u!114 &114445891588270764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1302940035973239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aab037bf7c2ce7343b005114c0e6a2e1, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  automaticallyManagesDepth: 1
+  ignoresTiltworldDepth: 0
+  depthUsesTrimmedBounds: 0
+  allowDefaultLayer: 0
+  attachParent: {fileID: 0}
+  OverrideMaterialMode: 0
+  independentOrientation: 0
+  autodetectFootprint: 1
+  customFootprintOrigin:
+    x: 0
+    y: 0
+  customFootprint:
+    x: 0
+    y: 0
+  hasOffScreenCachedUpdate: 0
+  offScreenCachedCollection: {fileID: 0}
+  offScreenCachedID: -1
+  collection: {fileID: 114510362345752576, guid: dfb664895c4ece44ba78e4ebd1de6891, type: 2}
+  _color: {r: 1, g: 1, b: 1, a: 1}
+  _scale: {x: 1, y: 1, z: 1}
+  _spriteId: 15
+  boxCollider2D: {fileID: 0}
+  boxCollider: {fileID: 0}
+  meshCollider: {fileID: 0}
+  meshColliderPositions: []
+  meshColliderMesh: {fileID: 0}
+  CachedPerpState: 0
+  m_heightOffGround: 0
+  renderLayer: 2
+  IsBraveOutlineSprite: 0
+  IsZDepthDirty: 0
+  ApplyEmissivePropertyBlock: 0
+  GenerateUV2: 0
+  LockUV2OnFrameOne: 0
+  StaticPositions: 0
+--- !u!114 &114668736103269405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1302940035973239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25bc20faa5e64aa45ace06824a2d9bed, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  attachPoints:
+  - {fileID: 4462651281017963}
+  - {fileID: 4816918313048463}
+  deactivateUnusedAttachPoints: 0
+  disableEmissionOnUnusedParticleSystems: 0
+  ignorePosition: 0
+  ignoreScale: 0
+  ignoreRotation: 0
+  centerUnusedAttachPoints: 0
+--- !u!114 &114075985911611776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1302940035973239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 858693f8db5b6d94ba3af909ccf0a16b, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  library: {fileID: 114252206976050710, guid: 84c6e7e184e0bc9439936370f9a271b9, type: 2}
+  defaultClipId: 6
+  AdditionalCameraVisibilityRadius: 0
+  AnimateDuringBossIntros: 0
+  AlwaysIgnoreTimeScale: 0
+  ForceSetEveryFrame: 0
+  playAutomatically: 0
+  IsFrameBlendedAnimation: 0
+  clipTime: 0
+  deferNextStartClip: 0
+--- !u!114 &114832413703624431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1302940035973239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6e00452ca7999142b2e9fe55da9cea0, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  ProxyEncounterGuid:
+  m_encounterGuid: 2af84e0a8c57412589046e59718f6ee2
+  m_doNotificationOnEncounter: 1
+  SuppressInInventory: 0
+  m_journalData:
+    SuppressInAmmonomicon: 0
+    SuppressKnownState: 0
+    DisplayOnLoadingScreen: 0
+    RequiresLightBackgroundInLoadingScreen: 0
+    PrimaryDisplayName: '#PROTONPACK_ENCNAME'
+    NotificationPanelDescription: '#PROTONPACK_SHORTDESC'
+    AmmonomiconFullEntry: '#PROTONPACK_LONGDESC'
+    AmmonomiconSprite: proton_pack_ver2_idle_001
+    IsEnemy: 0
+    enemyPortraitSprite: {fileID: 0}
+    SpecialIdentifier: 0
+  m_ignoreDifferentiator: 0
+  m_prerequisites: []
+  m_usesPurpleNotifications: 0
+--- !u!114 &114951136857570484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1302940035973239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dfbb683350ff734d866bf4b1990aff9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  SynergyToCheck: 150
+  NonSynergyGunId: 179
+  SynergyGunId: 720
+--- !u!1 &1486498905153646
+GameObject:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - component: {fileID: 4254801120110777}
+  m_Layer: 0
+  m_Name: Barrel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4254801120110777
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1486498905153646}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.6152141, y: 0.23152137, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4752608941534305}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!1 &1263716365802512
+GameObject:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - component: {fileID: 4462651281017963}
+  m_Layer: 0
+  m_Name: PrimaryHand
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4462651281017963
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1263716365802512}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.125, y: 0.1875, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4752608941534305}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!1 &1440412736667996
+GameObject:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - component: {fileID: 4816918313048463}
+  m_Layer: 0
+  m_Name: SecondaryHand
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4816918313048463
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1440412736667996}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.875, y: 0.125, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4752608941534305}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!1 &1720100669601939
+GameObject:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - component: {fileID: 4235854436940031}
+  m_Layer: 0
+  m_Name: Muzzle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4235854436940031
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1720100669601939}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.6152141, y: 0.23152137, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4752608941534305}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}

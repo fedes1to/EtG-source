@@ -1,0 +1,287 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1433861527197287}
+  m_IsPrefabParent: 1
+--- !u!1 &1433861527197287
+GameObject:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - component: {fileID: 4143228961517716}
+  - component: {fileID: 114657622921894823}
+  - component: {fileID: 114817398569792939}
+  - component: {fileID: 114400422832188272}
+  - component: {fileID: 114666776796182499}
+  m_Layer: 0
+  m_Name: BossStatuesDummy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4143228961517716
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1433861527197287}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 27.312263, y: 104.422775, z: 104.38373}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &114657622921894823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1433861527197287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6d6e26d8dd7ea642badf31565daa70a, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  CollideWithTileMap: 1
+  CollideWithOthers: 1
+  Velocity: {x: 0, y: 0}
+  CapVelocity: 0
+  MaxVelocity: {x: 0, y: 0}
+  ForceAlwaysUpdate: 0
+  CanPush: 0
+  CanBePushed: 0
+  PushSpeedModifier: 1
+  CanCarry: 0
+  CanBeCarried: 1
+  PreventPiercing: 0
+  SkipEmptyColliders: 0
+  TK2DSprite: {fileID: 0}
+  RecheckTriggers: 0
+  UpdateCollidersOnRotation: 0
+  UpdateCollidersOnScale: 0
+  AxialScale: {x: 1, y: 1}
+  DebugParams:
+    ShowPosition: 0
+    PositionHistory: 0
+    ShowVelocity: 0
+    ShowSlope: 0
+  IgnorePixelGrid: 0
+  PixelColliders:
+  - Enabled: 0
+    CollisionLayer: 5
+    IsTrigger: 0
+    ColliderGenerationMode: 0
+    BagleUseFirstFrameOnly: 0
+    SpecifyBagelFrame:
+    BagelColliderNumber: 0
+    ManualOffsetX: 0
+    ManualOffsetY: 0
+    ManualWidth: 0
+    ManualHeight: 0
+    ManualRadius: 0
+    ManualDiameter: 0
+    ManualLeftX: 0
+    ManualLeftY: 0
+    ManualRightX: 0
+    ManualRightY: 0
+    Sprite: {fileID: 0}
+    m_offset:
+      x: 0
+      y: 0
+    m_transformOffset:
+      x: 0
+      y: 0
+    m_dimensions:
+      x: 0
+      y: 0
+    m_rotation: 0
+  m_position:
+    m_position:
+      x: 0
+      y: 0
+    m_remainder: {x: 0, y: 0}
+--- !u!114 &114817398569792939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1433861527197287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 301eb88be2851694f82c3a4de315a602, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  overrideMaterialDefinition: {fileID: 0}
+  overrideHitEffect:
+    effects: []
+  overrideHitEffectPool:
+    type: 0
+    effects: []
+  additionalHitEffects: []
+  SuppressAllHitEffects: 0
+--- !u!114 &114400422832188272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1433861527197287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55781324cca05804ab628d3b044fa2e3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  placeableWidth: 12
+  placeableHeight: 12
+  difficulty: 0
+  isPassable: 1
+  ActorName:
+  OverrideDisplayName:
+  actorTypes: 0
+  HasShadow: 1
+  ShadowPrefab: {fileID: 0}
+  ShadowObject: {fileID: 0}
+  ShadowHeightOffGround: 0
+  ShadowParent: {fileID: 0}
+  ActorShadowOffset: {x: 0, y: 0, z: 0}
+  DoDustUps: 0
+  DustUpInterval: 0
+  OverrideDustUp: {fileID: 0}
+  FreezeDispelFactor: 20
+  ImmuneToAllEffects: 0
+  EffectResistances: []
+  OverrideColorOverridden: 0
+  EnemyId: -1
+  EnemyGuid: 3f11bbbc439c4086a180eb0fb9990cb4
+  ForcedPositionInAmmonomicon: 14
+  SetsFlagOnDeath: 0
+  FlagToSetOnDeath: 0
+  SetsFlagOnActivation: 0
+  FlagToSetOnActivation: 0
+  SetsCharacterSpecificFlagOnDeath: 0
+  CharacterSpecificFlagToSetOnDeath: 0
+  IsNormalEnemy: 1
+  IsSignatureEnemy: 0
+  IsHarmlessEnemy: 0
+  CompanionSettings:
+    WarpsToRandomPoint: 0
+  MovementSpeed: 2
+  PathableTiles: 2
+  LosPoint: {fileID: 0}
+  DiesOnCollison: 0
+  CollisionDamage: 1
+  CollisionKnockbackStrength: 5
+  CollisionDamageTypes: 0
+  EnemyCollisionKnockbackStrengthOverride: -1
+  CollisionVFX:
+    type: 0
+    effects: []
+  NonActorCollisionVFX:
+    type: 0
+    effects: []
+  CollisionSetsPlayerOnFire: 0
+  TryDodgeBullets: 1
+  AvoidRadius: 4
+  ReflectsProjectilesWhileInvulnerable: 0
+  HitByEnemyBullets: 0
+  HasOverrideDodgeRollDeath: 0
+  OverrideDodgeRollDeath:
+  CanDropCurrency: 1
+  AdditionalSingleCoinDropChance: 0
+  CanDropItems: 1
+  CustomLootTable: {fileID: 0}
+  CanDropDuplicateItems: 0
+  CustomLootTableMinDrops: 1
+  CustomLootTableMaxDrops: 1
+  CustomChestTable: {fileID: 0}
+  ChanceToDropCustomChest: 0
+  IgnoreForRoomClear: 0
+  SpawnLootAtRewardChestPos: 0
+  CorpseObject: {fileID: 0}
+  CorpseShadow: 1
+  TransferShadowToCorpse: 0
+  shadowDeathType: 10
+  PreventDeathKnockback: 0
+  OnCorpseVFX:
+    type: 0
+    effects: []
+  OnEngagedVFX: {fileID: 0}
+  OnEngagedVFXAnchor: 0
+  shadowHeightOffset: 0
+  invisibleUntilAwaken: 0
+  procedurallyOutlined: 1
+  forceUsesTrimmedBounds: 1
+  reinforceType: 0
+  optionalPalette: {fileID: 0}
+  UsesVaryingEmissiveShaderPropertyBlock: 0
+  OverrideBuffEffectPosition: {fileID: 0}
+  EnemySwitchState:
+  OverrideSpawnReticleAudio:
+  OverrideSpawnAppearAudio:
+  UseMovementAudio: 0
+  StartMovingEvent:
+  StopMovingEvent:
+  animationAudioEvents: []
+  HealthOverrides: []
+  IdentifierForEffects: 0
+  BehaviorOverridesVelocity: 0
+  BehaviorVelocity: {x: 0, y: 0}
+  OverridePathVelocity: {}
+  AlwaysShowOffscreenArrow: 0
+  BlackPhantomProperties:
+    BonusHealthPercentIncrease: 0
+    BonusHealthFlatIncrease: 0
+    MaxTotalHealth: 175
+    CooldownMultiplier: 0.66
+    MovementSpeedMultiplier: 1.5
+    LocalTimeScaleMultiplier: 1
+    BulletSpeedMultiplier: 1
+    GradientScale: 0.75
+    ContrastPower: 1.3
+  ForceBlackPhantomParticles: 0
+  OverrideBlackPhantomParticlesCollider: 0
+  BlackPhantomParticlesCollider: 0
+  PreventFallingInPitsEver: 0
+  isInBossTab: 1
+  realPrefab: {fileID: 1680114625749089, guid: af38eac9b417e2c4dae42fb515b5fbe8, type: 2}
+--- !u!114 &114666776796182499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1433861527197287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6e00452ca7999142b2e9fe55da9cea0, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  ProxyEncounterGuid:
+  m_encounterGuid: 0c0984e0d19143838f88664c6c8f7874
+  m_doNotificationOnEncounter: 1
+  SuppressInInventory: 0
+  m_journalData:
+    SuppressInAmmonomicon: 0
+    SuppressKnownState: 0
+    DisplayOnLoadingScreen: 0
+    RequiresLightBackgroundInLoadingScreen: 0
+    PrimaryDisplayName: '#BOSSSTATUES_ENCNAME'
+    NotificationPanelDescription: '#BOSSSTATUES_SHORTDESC'
+    AmmonomiconFullEntry: '#BOSSSTATUES_LONGDESC'
+    AmmonomiconSprite: boss_icon_statues_001
+    IsEnemy: 1
+    enemyPortraitSprite: {fileID: 2800000, guid: f0e6773f0cfef92428eeff28554fdab4, type: 3}
+    SpecialIdentifier: 0
+  m_ignoreDifferentiator: 0
+  m_prerequisites: []
+  m_usesPurpleNotifications: 0

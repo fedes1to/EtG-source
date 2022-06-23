@@ -1,0 +1,878 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1018154534404383}
+  m_IsPrefabParent: 1
+--- !u!1 &1018154534404383
+GameObject:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - component: {fileID: 4475182725514185}
+  - component: {fileID: 114330536672996094}
+  - component: {fileID: 114783764239784713}
+  - component: {fileID: 114671738242393478}
+  - component: {fileID: 114024581029536577}
+  - component: {fileID: 114919757958826697}
+  - component: {fileID: 114217950156965805}
+  - component: {fileID: 33465370000798396}
+  - component: {fileID: 23880965941141463}
+  - component: {fileID: 114067390789188984}
+  - component: {fileID: 114638197900876219}
+  - component: {fileID: 114373550068066014}
+  - component: {fileID: 114604561216947523}
+  - component: {fileID: 114506535163305133}
+  - component: {fileID: 114746361729209932}
+  m_Layer: 22
+  m_Name: BulletManMagic
+  m_TagString: Enemy
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4475182725514185
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1018154534404383}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4643742278725233}
+  - {fileID: 4628091580780126}
+  - {fileID: 4843152404813542}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &114330536672996094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1018154534404383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6d6e26d8dd7ea642badf31565daa70a, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  CollideWithTileMap: 1
+  CollideWithOthers: 1
+  Velocity: {x: 0, y: 0}
+  CapVelocity: 0
+  MaxVelocity: {x: 0, y: 0}
+  ForceAlwaysUpdate: 0
+  CanPush: 0
+  CanBePushed: 0
+  PushSpeedModifier: 1
+  CanCarry: 0
+  CanBeCarried: 1
+  PreventPiercing: 0
+  SkipEmptyColliders: 0
+  TK2DSprite: {fileID: 0}
+  RecheckTriggers: 0
+  UpdateCollidersOnRotation: 0
+  UpdateCollidersOnScale: 0
+  AxialScale: {x: 1, y: 1}
+  DebugParams:
+    ShowPosition: 0
+    PositionHistory: 0
+    ShowVelocity: 0
+    ShowSlope: 0
+  IgnorePixelGrid: 0
+  PixelColliders:
+  - Enabled: 1
+    CollisionLayer: 3
+    IsTrigger: 0
+    ColliderGenerationMode: 0
+    BagleUseFirstFrameOnly: 1
+    SpecifyBagelFrame:
+    BagelColliderNumber: 0
+    ManualOffsetX: 10
+    ManualOffsetY: 1
+    ManualWidth: 14
+    ManualHeight: 4
+    ManualRadius: 0
+    ManualDiameter: 0
+    ManualLeftX: 0
+    ManualLeftY: 0
+    ManualRightX: 0
+    ManualRightY: 0
+    Sprite: {fileID: 0}
+    m_offset:
+      x: 0
+      y: 0
+    m_transformOffset:
+      x: 0
+      y: 0
+    m_dimensions:
+      x: 0
+      y: 0
+    m_rotation: 0
+  - Enabled: 1
+    CollisionLayer: 2
+    IsTrigger: 0
+    ColliderGenerationMode: 0
+    BagleUseFirstFrameOnly: 1
+    SpecifyBagelFrame:
+    BagelColliderNumber: 0
+    ManualOffsetX: 10
+    ManualOffsetY: 9
+    ManualWidth: 14
+    ManualHeight: 28
+    ManualRadius: 0
+    ManualDiameter: 0
+    ManualLeftX: 0
+    ManualLeftY: 0
+    ManualRightX: 0
+    ManualRightY: 0
+    Sprite: {fileID: 114067390789188984}
+    m_offset:
+      x: 0
+      y: 0
+    m_transformOffset:
+      x: 0
+      y: 0
+    m_dimensions:
+      x: 0
+      y: 0
+    m_rotation: 0
+  m_position:
+    m_position:
+      x: 0
+      y: 0
+    m_remainder: {x: 0, y: 0}
+--- !u!114 &114783764239784713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1018154534404383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ba4aa78d8e99464390948970a3f689e, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  placeableWidth: 1
+  placeableHeight: 1
+  difficulty: 0
+  isPassable: 1
+  ActorName: Bullet Man Magic
+  OverrideDisplayName:
+  actorTypes: 0
+  HasShadow: 1
+  ShadowPrefab: {fileID: 0}
+  ShadowObject: {fileID: 0}
+  ShadowHeightOffGround: 0
+  ShadowParent: {fileID: 0}
+  ActorShadowOffset: {x: 0, y: 0, z: 0}
+  DoDustUps: 0
+  DustUpInterval: 0
+  OverrideDustUp: {fileID: 0}
+  FreezeDispelFactor: 20
+  ImmuneToAllEffects: 0
+  EffectResistances: []
+  OverrideColorOverridden: 0
+  EnemyId: 43
+  EnemyGuid: 43426a2e39584871b287ac31df04b544
+  ForcedPositionInAmmonomicon: 64
+  SetsFlagOnDeath: 0
+  FlagToSetOnDeath: 0
+  SetsFlagOnActivation: 0
+  FlagToSetOnActivation: 0
+  SetsCharacterSpecificFlagOnDeath: 0
+  CharacterSpecificFlagToSetOnDeath: 0
+  IsNormalEnemy: 1
+  IsSignatureEnemy: 0
+  IsHarmlessEnemy: 0
+  CompanionSettings:
+    WarpsToRandomPoint: 0
+  MovementSpeed: 1
+  PathableTiles: 6
+  LosPoint: {fileID: 0}
+  DiesOnCollison: 0
+  CollisionDamage: 0.5
+  CollisionKnockbackStrength: 5
+  CollisionDamageTypes: 0
+  EnemyCollisionKnockbackStrengthOverride: -1
+  CollisionVFX:
+    type: 0
+    effects: []
+  NonActorCollisionVFX:
+    type: 0
+    effects: []
+  CollisionSetsPlayerOnFire: 0
+  TryDodgeBullets: 0
+  AvoidRadius: 4
+  ReflectsProjectilesWhileInvulnerable: 0
+  HitByEnemyBullets: 0
+  HasOverrideDodgeRollDeath: 0
+  OverrideDodgeRollDeath:
+  CanDropCurrency: 1
+  AdditionalSingleCoinDropChance: 0
+  CanDropItems: 1
+  CustomLootTable: {fileID: 0}
+  CanDropDuplicateItems: 0
+  CustomLootTableMinDrops: 1
+  CustomLootTableMaxDrops: 1
+  CustomChestTable: {fileID: 0}
+  ChanceToDropCustomChest: 0
+  IgnoreForRoomClear: 0
+  SpawnLootAtRewardChestPos: 0
+  CorpseObject: {fileID: 0}
+  CorpseShadow: 1
+  TransferShadowToCorpse: 0
+  shadowDeathType: 10
+  PreventDeathKnockback: 0
+  OnCorpseVFX:
+    type: 0
+    effects: []
+  OnEngagedVFX: {fileID: 0}
+  OnEngagedVFXAnchor: 0
+  shadowHeightOffset: 0
+  invisibleUntilAwaken: 0
+  procedurallyOutlined: 1
+  forceUsesTrimmedBounds: 1
+  reinforceType: 0
+  optionalPalette: {fileID: 0}
+  UsesVaryingEmissiveShaderPropertyBlock: 0
+  OverrideBuffEffectPosition: {fileID: 0}
+  EnemySwitchState: Mummy_Bullet_Man
+  OverrideSpawnReticleAudio:
+  OverrideSpawnAppearAudio:
+  UseMovementAudio: 0
+  StartMovingEvent:
+  StopMovingEvent:
+  animationAudioEvents:
+  - eventTag: footstep
+    eventName: Play_CHR_metalBullet_step_01
+  HealthOverrides: []
+  IdentifierForEffects: 0
+  BehaviorOverridesVelocity: 0
+  BehaviorVelocity: {x: 0, y: 0}
+  OverridePathVelocity: {}
+  AlwaysShowOffscreenArrow: 0
+  BlackPhantomProperties:
+    BonusHealthPercentIncrease: 2.2
+    BonusHealthFlatIncrease: 0
+    MaxTotalHealth: 175
+    CooldownMultiplier: 0.66
+    MovementSpeedMultiplier: 1.5
+    LocalTimeScaleMultiplier: 1
+    BulletSpeedMultiplier: 1
+    GradientScale: 0.75
+    ContrastPower: 1.3
+  ForceBlackPhantomParticles: 0
+  OverrideBlackPhantomParticlesCollider: 0
+  BlackPhantomParticlesCollider: 0
+  PreventFallingInPitsEver: 0
+--- !u!114 &114671738242393478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1018154534404383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecf22b9d5193fc4786c6bd88f8e24eb, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Bullets:
+  - Name: default
+    BulletObject: {fileID: 1815952434959518, guid: 091aa71a32c62fe46b88605968f31043, type: 2}
+    OverrideProjectile: 0
+    ProjectileData:
+      damage: 0.5
+      speed: 8
+      range: 20
+      force: 1
+      damping: 0
+      UsesCustomAccelerationCurve: 0
+      AccelerationCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      CustomAccelerationCurveDuration: 1
+      onDestroyBulletScript:
+        scriptTypeName:
+    PlayAudio: 0
+    AudioSwitch:
+    AudioEvent:
+    AudioLimitOncePerFrame: 0
+    AudioLimitOncePerAttack: 0
+    MuzzleFlashEffects:
+      type: 0
+      effects:
+      - effects:
+        - effect: {fileID: 1036003401932496, guid: 3bc6a4ca582728e48a79e215bb3f2c17, type: 2}
+          orphaned: 0
+          attached: 1
+          persistsOnDeath: 0
+          usesZHeight: 0
+          zHeight: 0
+          alignment: 0
+          destructible: 0
+    MuzzleLimitOncePerFrame: 0
+    MuzzleInheritsTransformDirection: 0
+    SpawnShells: 0
+    ShellTransform: {fileID: 0}
+    ShellPrefab: {fileID: 0}
+    ShellForce: 1.75
+    ShellForceVariance: 0.75
+    DontRotateShell: 0
+    ShellGroundOffset: 0
+    ShellsLimitOncePerFrame: 0
+    rampBullets: 0
+    rampStartHeight: 10
+    rampTime: 0.5
+    conditionalMinDegFromNorth: 0
+    forceCanHitEnemies: 0
+    suppressHitEffectsIfOffscreen: 0
+    preloadCount: 0
+  - Name: astral
+    BulletObject: {fileID: 1845380583802734, guid: 58eca202c68298d40b7562c223985f70, type: 2}
+    OverrideProjectile: 0
+    ProjectileData:
+      damage: 0.5
+      speed: 8
+      range: 20
+      force: 1
+      damping: 0
+      UsesCustomAccelerationCurve: 0
+      AccelerationCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      CustomAccelerationCurveDuration: 1
+      onDestroyBulletScript:
+        scriptTypeName:
+    PlayAudio: 0
+    AudioSwitch:
+    AudioEvent:
+    AudioLimitOncePerFrame: 0
+    AudioLimitOncePerAttack: 0
+    MuzzleFlashEffects:
+      type: 0
+      effects:
+      - effects:
+        - effect: {fileID: 1036003401932496, guid: 3bc6a4ca582728e48a79e215bb3f2c17, type: 2}
+          orphaned: 0
+          attached: 1
+          persistsOnDeath: 0
+          usesZHeight: 0
+          zHeight: 0
+          alignment: 0
+          destructible: 0
+    MuzzleLimitOncePerFrame: 0
+    MuzzleInheritsTransformDirection: 0
+    SpawnShells: 0
+    ShellTransform: {fileID: 0}
+    ShellPrefab: {fileID: 0}
+    ShellForce: 1.75
+    ShellForceVariance: 0.75
+    DontRotateShell: 0
+    ShellGroundOffset: 0
+    ShellsLimitOncePerFrame: 0
+    rampBullets: 0
+    rampStartHeight: 10
+    rampTime: 0.5
+    conditionalMinDegFromNorth: 0
+    forceCanHitEnemies: 0
+    suppressHitEffectsIfOffscreen: 0
+    preloadCount: 0
+  useDefaultBulletIfMissing: 0
+  transforms: []
+  FixedPlayerPosition: {}
+--- !u!114 &114024581029536577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1018154534404383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 301eb88be2851694f82c3a4de315a602, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  overrideMaterialDefinition: {fileID: 0}
+  overrideHitEffect:
+    effects: []
+  overrideHitEffectPool:
+    type: 0
+    effects: []
+  additionalHitEffects: []
+  SuppressAllHitEffects: 0
+--- !u!114 &114919757958826697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1018154534404383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: daff7bb4fa885db4e9c997e01d349b56, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  quantizeHealth: 0
+  quantizedIncrement: 0.5
+  flashesOnDamage: 1
+  incorporealityOnDamage: 0
+  incorporealityTime: 1
+  PreventAllDamage: 0
+  persistsOnDeath: 0
+  maximumHealth: 25
+  currentHealth: 25
+  currentArmor: 0
+  usesInvulnerabilityPeriod: 0
+  invulnerabilityPeriod: 0.5
+  useFortunesFavorInvulnerability: 0
+  deathEffect: {fileID: 0}
+  damagedAudioEvent:
+  overrideDeathAudioEvent:
+  overrideDeathAnimation:
+  shakesCameraOnDamage: 0
+  cameraShakeOnDamage:
+    magnitude: 0.35
+    speed: 6
+    time: 0.06
+    falloff: 0
+    direction: {x: 0, y: 0}
+    vibrationType: 10
+    simpleVibrationTime: 20
+    simpleVibrationStrength: 20
+  damageTypeModifiers: []
+  healthIsNumberOfHits: 0
+  OnlyAllowSpecialBossDamage: 0
+  spawnBulletScript: 0
+  chanceToSpawnBulletScript: 0
+  overrideDeathAnimBulletScript:
+  noCorpseWhenBulletScriptDeath: 0
+  bulletScriptType: 0
+  bulletScript:
+    scriptTypeName:
+  bossHealthBar: 0
+  overrideBossName:
+  forcePreventVictoryMusic: 0
+  GlobalPixelColliderDamageMultiplier: 1
+--- !u!114 &114217950156965805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1018154534404383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c980374f410b048499ccc9811422658c, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  weight: 35
+  deathMultiplier: 4
+  knockbackWhileReflecting: 0
+  shouldBounce: 1
+  collisionDecay: 0.5
+--- !u!33 &33465370000798396
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1018154534404383}
+  m_Mesh: {fileID: 0}
+--- !u!23 &23880965941141463
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1018154534404383}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 78aeebcdd79990c46a6df98bcef638ad, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 0
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 0
+  m_AutoUVMaxDistance: 0
+  m_AutoUVMaxAngle: 0
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -1981987969
+  m_SortingLayer: 2
+  m_SortingOrder: 0
+--- !u!114 &114067390789188984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1018154534404383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aab037bf7c2ce7343b005114c0e6a2e1, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  automaticallyManagesDepth: 1
+  ignoresTiltworldDepth: 0
+  depthUsesTrimmedBounds: 0
+  allowDefaultLayer: 0
+  attachParent: {fileID: 0}
+  OverrideMaterialMode: 0
+  independentOrientation: 0
+  autodetectFootprint: 1
+  customFootprintOrigin:
+    x: 0
+    y: 0
+  customFootprint:
+    x: 0
+    y: 0
+  hasOffScreenCachedUpdate: 0
+  offScreenCachedCollection: {fileID: 0}
+  offScreenCachedID: -1
+  collection: {fileID: 114223936013087696, guid: ff352134967926a4a8948ccfd291b0b2, type: 2}
+  _color: {r: 1, g: 1, b: 1, a: 1}
+  _scale: {x: 1, y: 1, z: 1}
+  _spriteId: 46
+  boxCollider2D: {fileID: 0}
+  boxCollider: {fileID: 0}
+  meshCollider: {fileID: 0}
+  meshColliderPositions: []
+  meshColliderMesh: {fileID: 0}
+  CachedPerpState: 0
+  m_heightOffGround: 0
+  renderLayer: 0
+  IsBraveOutlineSprite: 0
+  IsZDepthDirty: 0
+  ApplyEmissivePropertyBlock: 0
+  GenerateUV2: 0
+  LockUV2OnFrameOne: 0
+  StaticPositions: 0
+--- !u!114 &114638197900876219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1018154534404383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 858693f8db5b6d94ba3af909ccf0a16b, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  library: {fileID: 114387555249327596, guid: c92726105ba8fa04eba8947e32cf44bf, type: 2}
+  defaultClipId: 1
+  AdditionalCameraVisibilityRadius: 0
+  AnimateDuringBossIntros: 0
+  AlwaysIgnoreTimeScale: 0
+  ForceSetEveryFrame: 0
+  playAutomatically: 1
+  IsFrameBlendedAnimation: 0
+  clipTime: 0
+  deferNextStartClip: 0
+--- !u!114 &114373550068066014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1018154534404383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17e45053a45c92d49b882037d5e54712, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  ChildAnimator: {fileID: 0}
+  SpecifyAiActor: {fileID: 0}
+  facingType: 0
+  DirectionParent: {fileID: 0}
+  faceSouthWhenStopped: 0
+  faceTargetWhenStopped: 0
+  AnimatedFacingDirection: -90
+  directionalType: 10
+  RotationQuantizeTo: 0
+  RotationOffset: 0
+  ForceKillVfxOnPreDeath: 0
+  SuppressAnimatorFallback: 0
+  IsBodySprite: 1
+  IdleAnimation:
+    Type: 5
+    Prefix: idle
+    AnimNames:
+    - idle
+    - idle_right
+    - idle_right
+    - idle
+    - idle_left
+    - idle_left
+    Flipped: 000000000000000000000000000000000000000000000000
+  MoveAnimation:
+    Type: 0
+    Prefix:
+    AnimNames: []
+    Flipped:
+  FlightAnimation:
+    Type: 0
+    Prefix:
+    AnimNames: []
+    Flipped:
+  HitAnimation:
+    Type: 1
+    Prefix: hit
+    AnimNames:
+    - 
+    Flipped: 00000000
+  HitReactChance: 0.5
+  MinTimeBetweenHitReacts: 0
+  HitType: 0
+  TalkAnimation:
+    Type: 0
+    Prefix:
+    AnimNames: []
+    Flipped:
+  OtherAnimations:
+  - name: attack
+    anim:
+      Type: 1
+      Prefix: hypno
+      AnimNames:
+      - 
+      Flipped: 00000000
+  - name: laugh
+    anim:
+      Type: 1
+      Prefix: laugh
+      AnimNames:
+      - 
+      Flipped: 00000000
+  - name: teleport_out
+    anim:
+      Type: 1
+      Prefix: teleport_out
+      AnimNames:
+      - 
+      Flipped: 00000000
+  - name: teleport_in
+    anim:
+      Type: 1
+      Prefix: teleport_in
+      AnimNames:
+      - 
+      Flipped: 00000000
+  - name: death
+    anim:
+      Type: 1
+      Prefix: death
+      AnimNames:
+      - 
+      Flipped: 00000000
+  OtherVFX:
+  - name: teleport_in
+    anchorTransform: {fileID: 4628091580780126}
+    vfxPool:
+      type: 4
+      effects:
+      - effects:
+        - effect: {fileID: 1738897516091849, guid: f934ea3f0441aa646b455ecbee555b0a, type: 2}
+          orphaned: 1
+          attached: 0
+          persistsOnDeath: 0
+          usesZHeight: 0
+          zHeight: 0
+          alignment: 0
+          destructible: 0
+  - name: attack
+    anchorTransform: {fileID: 4843152404813542}
+    vfxPool:
+      type: 4
+      effects:
+      - effects:
+        - effect: {fileID: 1659613767688971, guid: 49b03126ec4b9914aa1e06fe7310fcd0, type: 2}
+          orphaned: 0
+          attached: 1
+          persistsOnDeath: 0
+          usesZHeight: 0
+          zHeight: 0.05
+          alignment: 0
+          destructible: 0
+  OtherScreenShake: []
+  IdleFidgetAnimations: []
+--- !u!114 &114604561216947523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1018154534404383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b976a500c4f56cb4fb1f2892767fd2d3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  SuppressPlayerEnteredRoom: 0
+--- !u!114 &114506535163305133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1018154534404383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f71f521d562bfa743af7feb5982314c9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  _objectReferences: []
+  _serializedStateKeys:
+  - OverrideBehaviors
+  - TargetBehaviors
+  - MovementBehaviors
+  - AttackBehaviors
+  - OtherBehaviors
+  _serializedStateValues:
+  - '[{"AvoidRedBarrels":true,"ShootRedBarrels":true,"PushRedBarrels":true,"$type":"RedBarrelAwareness"}]'
+  - '[{"Radius":35.0,"LineOfSight":true,"ObjectPermanence":true,"SearchInterval":0.25,"PauseOnTargetSwitch":false,"PauseTime":0.25,"$type":"TargetPlayerBehavior"}]'
+  - '[{"StopWhenInRange":true,"CustomRange":7.0,"LineOfSight":true,"ReturnToSpawn":true,"SpawnTetherDistance":0.0,"PathInterval":0.25,"SpecifyRange":false,"MinActiveRange":0.0,"MaxActiveRange":0.0,"$type":"SeekTargetBehavior"}]'
+  - '[{"ShareCooldowns":false,"AttackBehaviors":[{"NickName":"Homing Shots","Probability":1.0,"Behavior":{"DefineRadius":true,"MinRadius":4.0,"MaxRadius":12.0,"RemoteFootprint":{"x":1,"y":1},"TellTime":1.5,"remoteBulletScript":{"scriptTypeName":"BulletManMagicAstral2"},"FireTime":2.75,"Multifire":false,"MinShots":2,"MaxShots":3,"MidShotTime":0.0,"StopDuringAnimation":true,"TellAnim":"attack","TellVfx":null,"ShootVfx":null,"RemoteVfx":"","PostFireAnim":null,"HideGun":false,"Cooldown":3.0,"CooldownVariance":0.0,"AttackCooldown":0.0,"GlobalCooldown":0.0,"InitialCooldown":0.0,"InitialCooldownVariance":0.0,"GroupName":null,"GroupCooldown":0.0,"MinRange":0.0,"Range":0.0,"MinWallDistance":0.0,"MaxEnemiesInRoom":0.0,"MinHealthThreshold":0.0,"MaxHealthThreshold":1.0,"HealthThresholds":[],"AccumulateHealthThresholds":true,"targetAreaStyle":null,"IsBlackPhantom":false,"resetCooldownOnDamage":null,"RequiresLineOfSight":false,"MaxUsages":0,"$type":"RemoteShootBehavior"}},{"NickName":"Teleport","Probability":1.0,"Behavior":{"AttackableDuringAnimation":true,"AvoidWalls":true,"StayOnScreen":true,"MinDistanceFromPlayer":4.0,"MaxDistanceFromPlayer":-1.0,"GoneTime":1.0,"OnlyTeleportIfPlayerUnreachable":false,"teleportOutBulletScript":null,"teleportInBulletScript":null,"goneAttackBehavior":null,"AllowCrossRoomTeleportation":false,"teleportOutAnim":"teleport_out","teleportInAnim":"teleport_in","teleportRequiresTransparency":false,"hasOutlinesDuringAnim":true,"shadowSupport":"Fade","shadowOutAnim":null,"shadowInAnim":null,"ManuallyDefineRoom":false,"roomMin":{"x":0.0,"y":0.0},"roomMax":{"x":0.0,"y":0.0},"Cooldown":6.0,"CooldownVariance":0.0,"AttackCooldown":0.0,"GlobalCooldown":0.0,"InitialCooldown":0.0,"InitialCooldownVariance":0.0,"GroupName":null,"GroupCooldown":0.0,"MinRange":0.0,"Range":0.0,"MinWallDistance":0.0,"MaxEnemiesInRoom":0.0,"MinHealthThreshold":0.0,"MaxHealthThreshold":1.0,"HealthThresholds":[],"AccumulateHealthThresholds":true,"targetAreaStyle":null,"IsBlackPhantom":false,"resetCooldownOnDamage":null,"RequiresLineOfSight":false,"MaxUsages":0,"$type":"TeleportBehavior"}}],"$type":"AttackBehaviorGroup"}]'
+  - '[]'
+  InstantFirstTick: 0
+  TickInterval: 0.1
+  PostAwakenDelay: 0.5
+  RemoveDelayOnReinforce: 0
+  OverrideStartingFacingDirection: 0
+  StartingFacingDirection: -90
+  SkipTimingDifferentiator: 0
+--- !u!114 &114746361729209932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1018154534404383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6e00452ca7999142b2e9fe55da9cea0, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  ProxyEncounterGuid:
+  m_encounterGuid: f916de92d2134aca95e1c330f5b930a6
+  m_doNotificationOnEncounter: 1
+  SuppressInInventory: 0
+  m_journalData:
+    SuppressInAmmonomicon: 0
+    SuppressKnownState: 0
+    DisplayOnLoadingScreen: 0
+    RequiresLightBackgroundInLoadingScreen: 0
+    PrimaryDisplayName: '#BULLETMANMAGIC_ENCNAME'
+    NotificationPanelDescription: '#BULLETMANMAGIC_SHORTDESC'
+    AmmonomiconFullEntry: '#BULLETMANMAGIC_LONGDESC'
+    AmmonomiconSprite: magic_bullet_idle_001
+    IsEnemy: 1
+    enemyPortraitSprite: {fileID: 2800000, guid: 755e58eb132d538448aad827e4262b80, type: 3}
+    SpecialIdentifier: 0
+  m_ignoreDifferentiator: 0
+  m_prerequisites: []
+  m_usesPurpleNotifications: 0
+--- !u!1 &1877797696018300
+GameObject:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - component: {fileID: 4643742278725233}
+  m_Layer: 0
+  m_Name: shoot point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4643742278725233
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1877797696018300}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.0625, y: 1.125, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4475182725514185}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!1 &1892121203335905
+GameObject:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - component: {fileID: 4628091580780126}
+  m_Layer: 0
+  m_Name: teleport vfx
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4628091580780126
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1892121203335905}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.0625, y: 1.125, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4475182725514185}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!1 &1775581086898853
+GameObject:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - component: {fileID: 4843152404813542}
+  m_Layer: 0
+  m_Name: attack vfx
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4843152404813542
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1775581086898853}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.0625, y: 2.4375, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4475182725514185}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}

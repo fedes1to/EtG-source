@@ -1,0 +1,1215 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1493847821913255}
+  m_IsPrefabParent: 1
+--- !u!1 &1493847821913255
+GameObject:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - component: {fileID: 4135283545184956}
+  - component: {fileID: 114574191973612292}
+  - component: {fileID: 114883952759986784}
+  - component: {fileID: 114122508141093431}
+  - component: {fileID: 114058198272088738}
+  - component: {fileID: 114879447392874147}
+  - component: {fileID: 114913694878511518}
+  - component: {fileID: 114216191593091607}
+  - component: {fileID: 33022015159101043}
+  - component: {fileID: 23661968711662051}
+  - component: {fileID: 114629003262516109}
+  - component: {fileID: 114079718354931777}
+  - component: {fileID: 114391472132068017}
+  - component: {fileID: 114886196409140633}
+  - component: {fileID: 114435555114581724}
+  - component: {fileID: 114503782388815548}
+  - component: {fileID: 114440845323173190}
+  - component: {fileID: 114922394541384555}
+  - component: {fileID: 114516301956298074}
+  m_Layer: 28
+  m_Name: GatlingGull
+  m_TagString: Enemy
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4135283545184956
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1493847821913255}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4139526373704829}
+  - {fileID: 4035045032253032}
+  - {fileID: 4612586195098517}
+  - {fileID: 4913665763702433}
+  - {fileID: 4832074733494051}
+  - {fileID: 4420652590592408}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &114574191973612292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1493847821913255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6d6e26d8dd7ea642badf31565daa70a, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  CollideWithTileMap: 1
+  CollideWithOthers: 1
+  Velocity: {x: 0, y: 0}
+  CapVelocity: 0
+  MaxVelocity: {x: 0, y: 0}
+  ForceAlwaysUpdate: 1
+  CanPush: 0
+  CanBePushed: 0
+  PushSpeedModifier: 1
+  CanCarry: 0
+  CanBeCarried: 1
+  PreventPiercing: 0
+  SkipEmptyColliders: 0
+  TK2DSprite: {fileID: 0}
+  RecheckTriggers: 0
+  UpdateCollidersOnRotation: 0
+  UpdateCollidersOnScale: 0
+  AxialScale: {x: 1, y: 1}
+  DebugParams:
+    ShowPosition: 0
+    PositionHistory: 0
+    ShowVelocity: 0
+    ShowSlope: 0
+  IgnorePixelGrid: 0
+  PixelColliders:
+  - Enabled: 1
+    CollisionLayer: 3
+    IsTrigger: 0
+    ColliderGenerationMode: 0
+    BagleUseFirstFrameOnly: 1
+    SpecifyBagelFrame:
+    BagelColliderNumber: 0
+    ManualOffsetX: 31
+    ManualOffsetY: 21
+    ManualWidth: 30
+    ManualHeight: 12
+    ManualRadius: 0
+    ManualDiameter: 0
+    ManualLeftX: 0
+    ManualLeftY: 0
+    ManualRightX: 0
+    ManualRightY: 0
+    Sprite: {fileID: 0}
+    m_offset:
+      x: 0
+      y: 0
+    m_transformOffset:
+      x: 0
+      y: 0
+    m_dimensions:
+      x: 0
+      y: 0
+    m_rotation: 0
+  - Enabled: 1
+    CollisionLayer: 8
+    IsTrigger: 0
+    ColliderGenerationMode: 2
+    BagleUseFirstFrameOnly: 0
+    SpecifyBagelFrame:
+    BagelColliderNumber: 1
+    ManualOffsetX: 0
+    ManualOffsetY: 0
+    ManualWidth: 0
+    ManualHeight: 0
+    ManualRadius: 0
+    ManualDiameter: 0
+    ManualLeftX: 0
+    ManualLeftY: 0
+    ManualRightX: 0
+    ManualRightY: 0
+    Sprite: {fileID: 114629003262516109}
+    m_offset:
+      x: 0
+      y: 0
+    m_transformOffset:
+      x: 0
+      y: 0
+    m_dimensions:
+      x: 0
+      y: 0
+    m_rotation: 0
+  - Enabled: 1
+    CollisionLayer: 2
+    IsTrigger: 0
+    ColliderGenerationMode: 2
+    BagleUseFirstFrameOnly: 0
+    SpecifyBagelFrame:
+    BagelColliderNumber: 0
+    ManualOffsetX: 0
+    ManualOffsetY: 0
+    ManualWidth: 0
+    ManualHeight: 0
+    ManualRadius: 0
+    ManualDiameter: 0
+    ManualLeftX: 0
+    ManualLeftY: 0
+    ManualRightX: 0
+    ManualRightY: 0
+    Sprite: {fileID: 114629003262516109}
+    m_offset:
+      x: 0
+      y: 0
+    m_transformOffset:
+      x: 0
+      y: 0
+    m_dimensions:
+      x: 0
+      y: 0
+    m_rotation: 0
+  m_position:
+    m_position:
+      x: 0
+      y: 0
+    m_remainder: {x: 0, y: 0}
+--- !u!114 &114883952759986784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1493847821913255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ba4aa78d8e99464390948970a3f689e, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  placeableWidth: 5
+  placeableHeight: 5
+  difficulty: 0
+  isPassable: 1
+  ActorName: Gatling Gull
+  OverrideDisplayName:
+  actorTypes: 0
+  HasShadow: 1
+  ShadowPrefab: {fileID: 1215925145268158, guid: f8540135e13fb734ba58b51c10da027c, type: 2}
+  ShadowObject: {fileID: 0}
+  ShadowHeightOffGround: 0
+  ShadowParent: {fileID: 0}
+  ActorShadowOffset: {x: 0, y: 0, z: 0}
+  DoDustUps: 0
+  DustUpInterval: 0
+  OverrideDustUp: {fileID: 0}
+  FreezeDispelFactor: 20
+  ImmuneToAllEffects: 0
+  EffectResistances:
+  - resistType: 2
+    resistAmount: 0.75
+  OverrideColorOverridden: 0
+  EnemyId: 3
+  EnemyGuid: ec6b674e0acd4553b47ee94493d66422
+  ForcedPositionInAmmonomicon: 0
+  SetsFlagOnDeath: 1
+  FlagToSetOnDeath: 10100
+  SetsFlagOnActivation: 0
+  FlagToSetOnActivation: 0
+  SetsCharacterSpecificFlagOnDeath: 0
+  CharacterSpecificFlagToSetOnDeath: 0
+  IsNormalEnemy: 1
+  IsSignatureEnemy: 0
+  IsHarmlessEnemy: 0
+  CompanionSettings:
+    WarpsToRandomPoint: 0
+  MovementSpeed: 3
+  PathableTiles: 2
+  LosPoint: {fileID: 0}
+  DiesOnCollison: 0
+  CollisionDamage: 1
+  CollisionKnockbackStrength: 50
+  CollisionDamageTypes: 0
+  EnemyCollisionKnockbackStrengthOverride: -1
+  CollisionVFX:
+    type: 0
+    effects: []
+  NonActorCollisionVFX:
+    type: 0
+    effects: []
+  CollisionSetsPlayerOnFire: 0
+  TryDodgeBullets: 0
+  AvoidRadius: 4
+  ReflectsProjectilesWhileInvulnerable: 0
+  HitByEnemyBullets: 0
+  HasOverrideDodgeRollDeath: 0
+  OverrideDodgeRollDeath:
+  CanDropCurrency: 1
+  AdditionalSingleCoinDropChance: 0
+  CanDropItems: 0
+  CustomLootTable: {fileID: 0}
+  CanDropDuplicateItems: 0
+  CustomLootTableMinDrops: 1
+  CustomLootTableMaxDrops: 1
+  CustomChestTable: {fileID: 0}
+  ChanceToDropCustomChest: 0
+  IgnoreForRoomClear: 0
+  SpawnLootAtRewardChestPos: 0
+  CorpseObject: {fileID: 1642146322486313, guid: f7f2374328ba6c2458ea8d1cecced06f, type: 2}
+  CorpseShadow: 0
+  TransferShadowToCorpse: 1
+  shadowDeathType: 10
+  PreventDeathKnockback: 0
+  OnCorpseVFX:
+    type: 0
+    effects: []
+  OnEngagedVFX: {fileID: 0}
+  OnEngagedVFXAnchor: 0
+  shadowHeightOffset: 0
+  invisibleUntilAwaken: 0
+  procedurallyOutlined: 1
+  forceUsesTrimmedBounds: 1
+  reinforceType: 0
+  optionalPalette: {fileID: 0}
+  UsesVaryingEmissiveShaderPropertyBlock: 0
+  OverrideBuffEffectPosition: {fileID: 0}
+  EnemySwitchState:
+  OverrideSpawnReticleAudio:
+  OverrideSpawnAppearAudio:
+  UseMovementAudio: 0
+  StartMovingEvent:
+  StopMovingEvent:
+  animationAudioEvents:
+  - eventTag: footstep
+    eventName:
+  - eventTag: flap
+    eventName: Play_ANM_Gull_Flap_01
+  - eventTag: intro
+    eventName: Play_ANM_Gull_Intro_01
+  - eventTag: descend
+    eventName: Play_ANM_Gull_Descend_01
+  - eventTag: flex
+    eventName: Play_ANM_Gull_Flex_01
+  - eventTag: lift
+    eventName: Play_ANM_Gull_Lift_01
+  - eventTag: leap
+    eventName: Play_ANM_Gull_Leap_01
+  - eventTag: laugh
+    eventName: Play_ANM_Gull_Laugh_01
+  - eventTag: shoot
+    eventName: Play_ANM_Gull_Shoot_01
+  - eventTag: rocket
+    eventName: Play_ANM_Gull_Rocket_01
+  - eventTag: swing
+    eventName: Play_ANM_Gull_Swing_01
+  - eventTag: death
+    eventName: Play_ANM_Gull_Death_01
+  HealthOverrides:
+  - HealthPercentage: 0.35
+    Stat: MovementSpeed
+    Value: 4.3
+  IdentifierForEffects: 0
+  BehaviorOverridesVelocity: 0
+  BehaviorVelocity: {x: 0, y: 0}
+  OverridePathVelocity: {}
+  AlwaysShowOffscreenArrow: 0
+  BlackPhantomProperties:
+    BonusHealthPercentIncrease: 0
+    BonusHealthFlatIncrease: 0
+    MaxTotalHealth: 175
+    CooldownMultiplier: 1
+    MovementSpeedMultiplier: 1
+    LocalTimeScaleMultiplier: 1
+    BulletSpeedMultiplier: 1
+    GradientScale: 0.75
+    ContrastPower: 1.3
+  ForceBlackPhantomParticles: 0
+  OverrideBlackPhantomParticlesCollider: 0
+  BlackPhantomParticlesCollider: 0
+  PreventFallingInPitsEver: 0
+--- !u!114 &114122508141093431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1493847821913255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32d2cda5d48dad49a3ab35201baf589, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  volley: {fileID: 11400000, guid: 538b94c4bd7be564e9b693f5b9d0b339, type: 2}
+  equippedGunId: -1
+  shouldUseGunReload: 1
+  volleyShootPosition: {fileID: 4612586195098517}
+  volleyShellCasing: {fileID: 1049213465576358, guid: f1084182b6919f54db0c535224ee8407, type: 2}
+  volleyShellTransform: {fileID: 4832074733494051}
+  volleyShootVfx: {fileID: 1430241705694926, guid: 4dc621e584d8cfa48a163e50a35b95a6, type: 2}
+  usesOctantShootVFX: 1
+  bulletName: default
+  customShootCooldownPeriod: 0.05
+  doesScreenShake: 0
+  rampBullets: 0
+  rampStartHeight: 2
+  rampTime: 1
+  gunAttachPoint: {fileID: 4139526373704829}
+  bulletScriptAttachPoint: {fileID: 0}
+  overallGunAttachOffset:
+    x: 0
+    y: 0
+  flippedGunAttachOffset:
+    x: 0
+    y: 0
+  handObject: {fileID: 0}
+  AllowTwoHands: 0
+  ForceGunOnTop: 0
+  IsReallyBigBoy: 0
+  BackupAimInMoveDirection: 0
+--- !u!114 &114058198272088738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1493847821913255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecf22b9d5193fc4786c6bd88f8e24eb, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Bullets:
+  - Name: default
+    BulletObject: {fileID: 1815952434959518, guid: 091aa71a32c62fe46b88605968f31043, type: 2}
+    OverrideProjectile: 1
+    ProjectileData:
+      damage: 0.5
+      speed: 10.5
+      range: 100
+      force: 10
+      damping: 0
+      UsesCustomAccelerationCurve: 0
+      AccelerationCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      CustomAccelerationCurveDuration: 1
+      onDestroyBulletScript:
+        scriptTypeName:
+    PlayAudio: 0
+    AudioSwitch:
+    AudioEvent:
+    AudioLimitOncePerFrame: 0
+    AudioLimitOncePerAttack: 0
+    MuzzleFlashEffects:
+      type: 0
+      effects:
+      - effects:
+        - effect: {fileID: 0}
+          orphaned: 0
+          attached: 0
+          persistsOnDeath: 0
+          usesZHeight: 0
+          zHeight: 0
+          alignment: 0
+          destructible: 0
+    MuzzleLimitOncePerFrame: 1
+    MuzzleInheritsTransformDirection: 0
+    SpawnShells: 0
+    ShellTransform: {fileID: 0}
+    ShellPrefab: {fileID: 0}
+    ShellForce: 1.75
+    ShellForceVariance: 0.75
+    DontRotateShell: 0
+    ShellGroundOffset: 0
+    ShellsLimitOncePerFrame: 0
+    rampBullets: 0
+    rampStartHeight: 2
+    rampTime: 1
+    conditionalMinDegFromNorth: 0
+    forceCanHitEnemies: 0
+    suppressHitEffectsIfOffscreen: 0
+    preloadCount: 0
+  - Name: defaultWithVfx
+    BulletObject: {fileID: 1815952434959518, guid: 091aa71a32c62fe46b88605968f31043, type: 2}
+    OverrideProjectile: 0
+    ProjectileData:
+      damage: 0.5
+      speed: 10.5
+      range: 100
+      force: 10
+      damping: 0
+      UsesCustomAccelerationCurve: 0
+      AccelerationCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      CustomAccelerationCurveDuration: 1
+      onDestroyBulletScript:
+        scriptTypeName:
+    PlayAudio: 1
+    AudioSwitch: AWP
+    AudioEvent: Play_WPN_gun_shot_01
+    AudioLimitOncePerFrame: 1
+    AudioLimitOncePerAttack: 0
+    MuzzleFlashEffects:
+      type: 1
+      effects:
+      - effects:
+        - effect: {fileID: 1430241705694926, guid: 4dc621e584d8cfa48a163e50a35b95a6, type: 2}
+          orphaned: 0
+          attached: 0
+          persistsOnDeath: 0
+          usesZHeight: 1
+          zHeight: 1
+          alignment: 0
+          destructible: 0
+    MuzzleLimitOncePerFrame: 0
+    MuzzleInheritsTransformDirection: 0
+    SpawnShells: 0
+    ShellTransform: {fileID: 0}
+    ShellPrefab: {fileID: 0}
+    ShellForce: 1.75
+    ShellForceVariance: 0.75
+    DontRotateShell: 0
+    ShellGroundOffset: 0
+    ShellsLimitOncePerFrame: 0
+    rampBullets: 0
+    rampStartHeight: 2
+    rampTime: 1
+    conditionalMinDegFromNorth: 0
+    forceCanHitEnemies: 0
+    suppressHitEffectsIfOffscreen: 0
+    preloadCount: 0
+  - Name: bigBullet
+    BulletObject: {fileID: 1111935842251173, guid: 843b15681478a0949b3eeccdbfacaf36, type: 2}
+    OverrideProjectile: 0
+    ProjectileData:
+      damage: 0.5
+      speed: 12
+      range: 100
+      force: 10
+      damping: 0
+      UsesCustomAccelerationCurve: 0
+      AccelerationCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      CustomAccelerationCurveDuration: 1
+      onDestroyBulletScript:
+        scriptTypeName:
+    PlayAudio: 1
+    AudioSwitch: ElephantGun
+    AudioEvent: Play_WPN_gun_shot_01
+    AudioLimitOncePerFrame: 0
+    AudioLimitOncePerAttack: 1
+    MuzzleFlashEffects:
+      type: 4
+      effects:
+      - effects:
+        - effect: {fileID: 1314542929540271, guid: 44e44549201f602449112679bd573b5c, type: 2}
+          orphaned: 0
+          attached: 0
+          persistsOnDeath: 0
+          usesZHeight: 1
+          zHeight: 1
+          alignment: 0
+          destructible: 0
+    MuzzleLimitOncePerFrame: 0
+    MuzzleInheritsTransformDirection: 0
+    SpawnShells: 0
+    ShellTransform: {fileID: 0}
+    ShellPrefab: {fileID: 0}
+    ShellForce: 1.75
+    ShellForceVariance: 0.75
+    DontRotateShell: 0
+    ShellGroundOffset: 0
+    ShellsLimitOncePerFrame: 0
+    rampBullets: 1
+    rampStartHeight: 2
+    rampTime: 10
+    conditionalMinDegFromNorth: 0
+    forceCanHitEnemies: 0
+    suppressHitEffectsIfOffscreen: 0
+    preloadCount: 0
+  useDefaultBulletIfMissing: 0
+  transforms: []
+  FixedPlayerPosition: {}
+--- !u!114 &114879447392874147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1493847821913255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 301eb88be2851694f82c3a4de315a602, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  overrideMaterialDefinition: {fileID: 0}
+  overrideHitEffect:
+    effects: []
+  overrideHitEffectPool:
+    type: 0
+    effects: []
+  additionalHitEffects: []
+  SuppressAllHitEffects: 0
+--- !u!114 &114913694878511518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1493847821913255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: daff7bb4fa885db4e9c997e01d349b56, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  quantizeHealth: 0
+  quantizedIncrement: 0.5
+  flashesOnDamage: 1
+  incorporealityOnDamage: 0
+  incorporealityTime: 1
+  PreventAllDamage: 0
+  persistsOnDeath: 0
+  maximumHealth: 700
+  currentHealth: 800
+  currentArmor: 0
+  usesInvulnerabilityPeriod: 0
+  invulnerabilityPeriod: 0.5
+  useFortunesFavorInvulnerability: 0
+  deathEffect: {fileID: 0}
+  damagedAudioEvent:
+  overrideDeathAudioEvent:
+  overrideDeathAnimation:
+  shakesCameraOnDamage: 0
+  cameraShakeOnDamage:
+    magnitude: 0.35
+    speed: 6
+    time: 0.06
+    falloff: 0
+    direction: {x: 0, y: 0}
+    vibrationType: 10
+    simpleVibrationTime: 20
+    simpleVibrationStrength: 20
+  damageTypeModifiers: []
+  healthIsNumberOfHits: 0
+  OnlyAllowSpecialBossDamage: 0
+  spawnBulletScript: 0
+  chanceToSpawnBulletScript: 0
+  overrideDeathAnimBulletScript:
+  noCorpseWhenBulletScriptDeath: 0
+  bulletScriptType: 0
+  bulletScript:
+    scriptTypeName:
+  bossHealthBar: 1
+  overrideBossName:
+  forcePreventVictoryMusic: 0
+  GlobalPixelColliderDamageMultiplier: 1
+--- !u!114 &114216191593091607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1493847821913255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c980374f410b048499ccc9811422658c, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  weight: 100000
+  deathMultiplier: 5
+  knockbackWhileReflecting: 0
+  shouldBounce: 1
+  collisionDecay: 0.5
+--- !u!33 &33022015159101043
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1493847821913255}
+  m_Mesh: {fileID: 0}
+--- !u!23 &23661968711662051
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1493847821913255}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 81516619c383e2948a24e9ec5845892e, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 0
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 0
+  m_AutoUVMaxDistance: 0
+  m_AutoUVMaxAngle: 0
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -1981987969
+  m_SortingLayer: 2
+  m_SortingOrder: 0
+--- !u!114 &114629003262516109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1493847821913255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aab037bf7c2ce7343b005114c0e6a2e1, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  automaticallyManagesDepth: 1
+  ignoresTiltworldDepth: 0
+  depthUsesTrimmedBounds: 0
+  allowDefaultLayer: 0
+  attachParent: {fileID: 0}
+  OverrideMaterialMode: 0
+  independentOrientation: 0
+  autodetectFootprint: 1
+  customFootprintOrigin:
+    x: 0
+    y: 0
+  customFootprint:
+    x: 0
+    y: 0
+  hasOffScreenCachedUpdate: 0
+  offScreenCachedCollection: {fileID: 0}
+  offScreenCachedID: -1
+  collection: {fileID: 114492872477613869, guid: 8bf8c7f14362f6a4491d1d5525f05d3d, type: 2}
+  _color: {r: 1, g: 1, b: 1, a: 1}
+  _scale: {x: 1, y: 1, z: 1}
+  _spriteId: 144
+  boxCollider2D: {fileID: 0}
+  boxCollider: {fileID: 0}
+  meshCollider: {fileID: 0}
+  meshColliderPositions: []
+  meshColliderMesh: {fileID: 0}
+  CachedPerpState: 0
+  m_heightOffGround: 0
+  renderLayer: 0
+  IsBraveOutlineSprite: 0
+  IsZDepthDirty: 0
+  ApplyEmissivePropertyBlock: 0
+  GenerateUV2: 0
+  LockUV2OnFrameOne: 0
+  StaticPositions: 0
+--- !u!114 &114079718354931777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1493847821913255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 858693f8db5b6d94ba3af909ccf0a16b, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  library: {fileID: 114530968576994792, guid: 8e73d5ccac03a5346aa82c1b04dea033, type: 2}
+  defaultClipId: 15
+  AdditionalCameraVisibilityRadius: 0
+  AnimateDuringBossIntros: 0
+  AlwaysIgnoreTimeScale: 0
+  ForceSetEveryFrame: 0
+  playAutomatically: 1
+  IsFrameBlendedAnimation: 0
+  clipTime: 0
+  deferNextStartClip: 0
+--- !u!114 &114391472132068017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1493847821913255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17e45053a45c92d49b882037d5e54712, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  ChildAnimator: {fileID: 0}
+  SpecifyAiActor: {fileID: 0}
+  facingType: 0
+  DirectionParent: {fileID: 0}
+  faceSouthWhenStopped: 0
+  faceTargetWhenStopped: 0
+  AnimatedFacingDirection: -90
+  directionalType: 10
+  RotationQuantizeTo: 0
+  RotationOffset: 0
+  ForceKillVfxOnPreDeath: 0
+  SuppressAnimatorFallback: 0
+  IsBodySprite: 1
+  IdleAnimation:
+    Type: 10
+    Prefix: fire
+    AnimNames:
+    - fire_up
+    - fire_north_east
+    - fire_right
+    - fire_south_east
+    - fire_down
+    - fire_south_west
+    - fire_left
+    - fire_north_west
+    Flipped: 0000000000000000000000000000000000000000000000000000000000000000
+  MoveAnimation:
+    Type: 8
+    Prefix: move_fire
+    AnimNames:
+    - 
+    - move_fire_north_north_east
+    - move_fire_north_east
+    - move_fire_east_north_east
+    - 
+    - move_fire_east_south_east
+    - move_fire_south_east
+    - move_fire_south_south_east
+    - 
+    - move_fire_south_south_west
+    - move_fire_south_west
+    - move_fire_west_south_west
+    - 
+    - move_fire_west_north_west
+    - move_fire_north_west
+    - move_fire_north_north_west
+    Flipped: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  FlightAnimation:
+    Type: 0
+    Prefix:
+    AnimNames: []
+    Flipped:
+  HitAnimation:
+    Type: 6
+    Prefix: hit
+    AnimNames:
+    - hit_north
+    - hit_north_east
+    - hit_east
+    - hit_south_east
+    - hit_south
+    - hit_south_west
+    - hit_west
+    - hit_north_west
+    Flipped: 0000000000000000000000000000000000000000000000000000000000000000
+  HitReactChance: 1
+  MinTimeBetweenHitReacts: 0.8
+  HitType: 1
+  TalkAnimation:
+    Type: 0
+    Prefix:
+    AnimNames: []
+    Flipped:
+  OtherAnimations:
+  - name: idle_shoot
+    anim:
+      Type: 10
+      Prefix: fire
+      AnimNames:
+      - fire_up
+      - fire_north_east
+      - fire_right
+      - fire_south_east
+      - fire_down
+      - fire_south_west
+      - fire_left
+      - fire_north_west
+      Flipped: 0000000000000000000000000000000000000000000000000000000000000000
+  - name: charge
+    anim:
+      Type: 10
+      Prefix: charge
+      AnimNames:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      Flipped: 0000000000000000000000000000000000000000000000000000000000000000
+  - name: full_idle
+    anim:
+      Type: 1
+      Prefix: idle
+      AnimNames:
+      - fire_up
+      Flipped: 00000000
+  OtherVFX:
+  - name: charge_vfx
+    anchorTransform: {fileID: 4420652590592408}
+    vfxPool:
+      type: 4
+      effects:
+      - effects:
+        - effect: {fileID: 1327206848358983, guid: eb3f06360357f01448594932859bf167, type: 2}
+          orphaned: 0
+          attached: 1
+          persistsOnDeath: 0
+          usesZHeight: 1
+          zHeight: 2
+          alignment: 0
+          destructible: 0
+  OtherScreenShake: []
+  IdleFidgetAnimations: []
+--- !u!114 &114886196409140633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1493847821913255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b976a500c4f56cb4fb1f2892767fd2d3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  SuppressPlayerEnteredRoom: 0
+--- !u!114 &114435555114581724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1493847821913255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f71f521d562bfa743af7feb5982314c9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  _objectReferences:
+  - {fileID: 1492290296187416}
+  - {fileID: 1548469795021419}
+  - {fileID: 1548469795021419}
+  - {fileID: 1633792796691449, guid: da3b7ceb1f7fcee4b83a6341bc18a355, type: 2}
+  - {fileID: 4913665763702433}
+  - {fileID: 1996431950333561, guid: 78162cd2925df164db064c6f81f2b6c3, type: 2}
+  _serializedStateKeys:
+  - OverrideBehaviors
+  - TargetBehaviors
+  - MovementBehaviors
+  - AttackBehaviors
+  - OtherBehaviors
+  _serializedStateValues:
+  - '[]'
+  - '[{"Radius":35.0,"LineOfSight":true,"ObjectPermanence":true,"SearchInterval":0.25,"PauseOnTargetSwitch":true,"PauseTime":0.300000011920929,"$type":"TargetPlayerBehavior"}]'
+  - '[{"StopWhenInRange":false,"CustomRange":6.0,"LineOfSight":false,"ReturnToSpawn":true,"SpawnTetherDistance":0.0,"PathInterval":0.5,"SpecifyRange":false,"MinActiveRange":0.0,"MaxActiveRange":0.0,"$type":"SeekTargetBehavior"}]'
+  - '[{"Time":2.0,"PlayDirectionalAnimation":"full_idle","SetDefaultDirectionalAnimation":null,"EndOnDamage":true,"$type":"InitialAttackDelayBehavior"},{"LostSightTime":5.0,"MinDistanceToPlayer":3.0,"LeapSpeedMultiplier":1.5,"Cooldown":5.0,"CooldownVariance":0.0,"AttackCooldown":0.0,"GlobalCooldown":0.0,"InitialCooldown":0.0,"InitialCooldownVariance":0.0,"GroupName":null,"GroupCooldown":0.0,"MinRange":0.0,"Range":0.0,"MinWallDistance":0.0,"MaxEnemiesInRoom":0.0,"MinHealthThreshold":0.0,"MaxHealthThreshold":1.0,"HealthThresholds":[],"AccumulateHealthThresholds":true,"targetAreaStyle":null,"IsBlackPhantom":false,"resetCooldownOnDamage":null,"RequiresLineOfSight":false,"MaxUsages":0,"$type":"GatlingGullRepositionBehavior"},{"TriggerDistance":4.0,"Damage":0.5,"KnockbackForce":100.0,"CenterPoint":0,"DamageDistance":2.59999990463257,"StickyFriction":0.100000001490116,"Cooldown":2.0,"CooldownVariance":0.0,"AttackCooldown":0.0,"GlobalCooldown":0.25,"InitialCooldown":0.0,"InitialCooldownVariance":0.0,"GroupName":null,"GroupCooldown":0.0,"MinRange":0.0,"Range":0.0,"MinWallDistance":0.0,"MaxEnemiesInRoom":0.0,"MinHealthThreshold":0.0,"MaxHealthThreshold":1.0,"HealthThresholds":[],"AccumulateHealthThresholds":true,"targetAreaStyle":null,"IsBlackPhantom":false,"resetCooldownOnDamage":null,"RequiresLineOfSight":false,"MaxUsages":0,"$type":"GatlingGullMelee"},{"ShareCooldowns":false,"AttackBehaviors":[{"NickName":"Walk and Shoot","Probability":3.0,"Behavior":{"Duration":6.0,"AngleVariance":27.0,"ContinuesOnPathComplete":false,"OverrideBulletName":null,"Cooldown":1.0,"CooldownVariance":0.0,"AttackCooldown":1.0,"GlobalCooldown":0.0,"InitialCooldown":0.0,"InitialCooldownVariance":0.0,"GroupName":null,"GroupCooldown":0.0,"MinRange":0.0,"Range":0.0,"MinWallDistance":0.0,"MaxEnemiesInRoom":0.0,"MinHealthThreshold":0.0,"MaxHealthThreshold":1.0,"HealthThresholds":[],"AccumulateHealthThresholds":true,"targetAreaStyle":null,"IsBlackPhantom":false,"resetCooldownOnDamage":null,"RequiresLineOfSight":false,"MaxUsages":0,"$type":"GatlingGullWalkAndShoot"}},{"NickName":"Fan Spray","Probability":2.0,"Behavior":{"SprayAngle":90.0,"SpraySpeed":150.0,"SprayIterations":4,"OverrideBulletName":null,"Cooldown":1.0,"CooldownVariance":0.0,"AttackCooldown":1.0,"GlobalCooldown":0.0,"InitialCooldown":0.0,"InitialCooldownVariance":0.0,"GroupName":null,"GroupCooldown":0.0,"MinRange":0.0,"Range":0.0,"MinWallDistance":0.0,"MaxEnemiesInRoom":0.0,"MinHealthThreshold":0.0,"MaxHealthThreshold":1.0,"HealthThresholds":[],"AccumulateHealthThresholds":true,"targetAreaStyle":null,"IsBlackPhantom":false,"resetCooldownOnDamage":null,"RequiresLineOfSight":false,"MaxUsages":0,"$type":"GatlingGullFanSpray"}},{"NickName":"Big Shot","Probability":1.5,"Behavior":{"ShootPoint":1,"BulletScript":{"scriptTypeName":"GatlingGullBigShot1"},"BulletName":null,"LeadAmount":0.0,"StopDuring":"Tell","ImmobileDuringStop":false,"MoveSpeedModifier":1.0,"LockFacingDirection":false,"ContinueAimingDuringTell":false,"ReaimOnFire":false,"MultipleFireEvents":false,"RequiresTarget":true,"PreventTargetSwitching":false,"Uninterruptible":false,"ClearGoop":false,"ClearGoopRadius":2.0,"ShouldOverrideFireDirection":false,"OverrideFireDirection":-1.0,"SpecifyAiAnimator":null,"ChargeAnimation":"","ChargeTime":1.0,"TellAnimation":"charge","FireAnimation":"","PostFireAnimation":null,"HideGun":true,"OverrideBaseAnims":false,"OverrideIdleAnim":null,"OverrideMoveAnim":null,"UseVfx":false,"ChargeVfx":null,"TellVfx":null,"FireVfx":null,"Vfx":null,"EnabledDuringAttack":[],"Cooldown":8.0,"CooldownVariance":0.0,"AttackCooldown":0.75,"GlobalCooldown":0.0,"InitialCooldown":5.0,"InitialCooldownVariance":0.0,"GroupName":null,"GroupCooldown":0.0,"MinRange":0.0,"Range":0.0,"MinWallDistance":0.0,"MaxEnemiesInRoom":0.0,"MinHealthThreshold":0.0,"MaxHealthThreshold":1.0,"HealthThresholds":[],"AccumulateHealthThresholds":true,"targetAreaStyle":null,"IsBlackPhantom":false,"resetCooldownOnDamage":null,"RequiresLineOfSight":false,"MaxUsages":0,"$type":"ShootBehavior"}},{"NickName":"Waves","Probability":1.5,"Behavior":{"ShootPoint":2,"BulletScript":{"scriptTypeName":"GatlingGullFanBursts1"},"BulletName":null,"LeadAmount":0.0,"StopDuring":"Tell","ImmobileDuringStop":false,"MoveSpeedModifier":1.0,"LockFacingDirection":false,"ContinueAimingDuringTell":false,"ReaimOnFire":false,"MultipleFireEvents":false,"RequiresTarget":true,"PreventTargetSwitching":false,"Uninterruptible":false,"ClearGoop":false,"ClearGoopRadius":2.0,"ShouldOverrideFireDirection":false,"OverrideFireDirection":-1.0,"SpecifyAiAnimator":null,"ChargeAnimation":null,"ChargeTime":0.0,"TellAnimation":"charge","FireAnimation":"idle_shoot","PostFireAnimation":null,"HideGun":true,"OverrideBaseAnims":false,"OverrideIdleAnim":null,"OverrideMoveAnim":null,"UseVfx":false,"ChargeVfx":null,"TellVfx":null,"FireVfx":null,"Vfx":null,"EnabledDuringAttack":[],"Cooldown":8.0,"CooldownVariance":0.0,"AttackCooldown":1.0,"GlobalCooldown":0.0,"InitialCooldown":5.0,"InitialCooldownVariance":0.0,"GroupName":null,"GroupCooldown":0.0,"MinRange":0.0,"Range":0.0,"MinWallDistance":0.0,"MaxEnemiesInRoom":0.0,"MinHealthThreshold":0.0,"MaxHealthThreshold":1.0,"HealthThresholds":[],"AccumulateHealthThresholds":true,"targetAreaStyle":null,"IsBlackPhantom":false,"resetCooldownOnDamage":null,"RequiresLineOfSight":false,"MaxUsages":0,"$type":"ShootBehavior"}},{"NickName":"Leap","Probability":1.0,"Behavior":{"AirSpeed":22.0,"MinAirtime":0.600000023841858,"DamageRadius":1.0,"Damage":1.0,"Force":60.0,"HitScreenShake":{"magnitude":2.5,"speed":6.0,"time":0.0599999986588955,"falloff":0.0,"direction":{"x":0.0,"y":0.0},"vibrationType":"Auto","simpleVibrationTime":"Normal","simpleVibrationStrength":"Medium"},"MissScreenShake":{"magnitude":1.0,"speed":6.0,"time":0.0599999986588955,"falloff":0.0,"direction":{"x":0.0,"y":0.0},"vibrationType":"Auto","simpleVibrationTime":"Normal","simpleVibrationStrength":"Medium"},"ImpactDustUp":3,"SmugTime":0.300000011920929,"Cooldown":5.0,"CooldownVariance":0.0,"AttackCooldown":0.0,"GlobalCooldown":0.0,"InitialCooldown":0.0,"InitialCooldownVariance":0.0,"GroupName":null,"GroupCooldown":0.0,"MinRange":0.0,"Range":0.0,"MinWallDistance":0.0,"MaxEnemiesInRoom":0.0,"MinHealthThreshold":0.0,"MaxHealthThreshold":1.0,"HealthThresholds":[],"AccumulateHealthThresholds":true,"targetAreaStyle":null,"IsBlackPhantom":false,"resetCooldownOnDamage":null,"RequiresLineOfSight":false,"MaxUsages":0,"$type":"GatlingGullLeapBehavior"}},{"NickName":"Rockets","Probability":3.0,"Behavior":{"RocketOrigin":4,"Rocket":5,"MaxRockets":16,"DamageToHalt":75.0,"PerRocketCooldown":0.620000004768372,"Cooldown":20.0,"CooldownVariance":0.0,"AttackCooldown":1.5,"GlobalCooldown":0.0,"InitialCooldown":0.0,"InitialCooldownVariance":0.0,"GroupName":null,"GroupCooldown":0.0,"MinRange":0.0,"Range":0.0,"MinWallDistance":0.0,"MaxEnemiesInRoom":0.0,"MinHealthThreshold":0.0,"MaxHealthThreshold":1.0,"HealthThresholds":[],"AccumulateHealthThresholds":true,"targetAreaStyle":null,"IsBlackPhantom":false,"resetCooldownOnDamage":null,"RequiresLineOfSight":false,"MaxUsages":0,"$type":"GatlingGullRocketBehavior"}}],"$type":"AttackBehaviorGroup"}]'
+  - '[]'
+  InstantFirstTick: 0
+  TickInterval: 0.1
+  PostAwakenDelay: 0
+  RemoveDelayOnReinforce: 0
+  OverrideStartingFacingDirection: 0
+  StartingFacingDirection: -90
+  SkipTimingDifferentiator: 0
+--- !u!114 &114503782388815548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1493847821913255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25bc20faa5e64aa45ace06824a2d9bed, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  attachPoints:
+  - {fileID: 4612586195098517}
+  - {fileID: 4832074733494051}
+  - {fileID: 4913665763702433}
+  - {fileID: 4420652590592408}
+  deactivateUnusedAttachPoints: 0
+  disableEmissionOnUnusedParticleSystems: 0
+  ignorePosition: 0
+  ignoreScale: 1
+  ignoreRotation: 0
+  centerUnusedAttachPoints: 0
+--- !u!114 &114440845323173190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1493847821913255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd88d509c5a46c7488d0198e022cc7db, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  initialDelay: 1.5
+  cameraMoveSpeed: 12
+  portraitSlideSettings:
+    bossNameString: '#GATLINGGULL_TITLE'
+    bossSubtitleString: '#GATLINGGULL_SUBTITLE'
+    bossQuoteString: '#GATLINGGULL_QUOTE'
+    bossArtSprite: {fileID: 2800000, guid: 00ca4b49fd3f0e644823940fba235787, type: 3}
+    bossSpritePxOffset:
+      x: 0
+      y: 0
+    topLeftTextPxOffset:
+      x: 0
+      y: 0
+    bottomRightTextPxOffset:
+      x: 0
+      y: 0
+    bgColor: {r: 0, g: 0, b: 1, a: 1}
+  landingShakeSettings:
+    magnitude: 0.5
+    speed: 6
+    time: 0.08
+    falloff: 0
+    direction: {x: 1, y: 0}
+    vibrationType: 10
+    simpleVibrationTime: 20
+    simpleVibrationStrength: 20
+  featherShakeSettings:
+    magnitude: 1
+    speed: 8
+    time: 0.07
+    falloff: 0
+    direction: {x: 1, y: 0}
+    vibrationType: 10
+    simpleVibrationTime: 20
+    simpleVibrationStrength: 20
+  gullAnimator: {fileID: 0}
+  feathersVFX: {fileID: 1069045922668218, guid: 8e1fa4a8e397b7c40a6cb6ce5d5e5935, type: 2}
+  feathersDebris: {fileID: 1709480410561039, guid: 8203a32d7d1c5cd4a9aa315fb64c2f38, type: 2}
+  numFeathersToSpawn: 30
+--- !u!114 &114922394541384555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1493847821913255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6e00452ca7999142b2e9fe55da9cea0, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  ProxyEncounterGuid:
+  m_encounterGuid: 67c602cdbafc4f3a8605ef840b82d483
+  m_doNotificationOnEncounter: 1
+  SuppressInInventory: 0
+  m_journalData:
+    SuppressInAmmonomicon: 0
+    SuppressKnownState: 0
+    DisplayOnLoadingScreen: 0
+    RequiresLightBackgroundInLoadingScreen: 0
+    PrimaryDisplayName: '#GATLINGGULL_ENCNAME'
+    NotificationPanelDescription: '#GATLINGGULL_SHORTDESC'
+    AmmonomiconFullEntry: '#GATLINGGULL_LONGDESC'
+    AmmonomiconSprite: boss_icon_gatling_gull_001
+    IsEnemy: 1
+    enemyPortraitSprite: {fileID: 2800000, guid: 446bb4f798a076d49962079ed0797afc, type: 3}
+    SpecialIdentifier: 0
+  m_ignoreDifferentiator: 0
+  m_prerequisites: []
+  m_usesPurpleNotifications: 0
+--- !u!114 &114516301956298074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1493847821913255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cee8a26f12d2d245bbd1e3c2368f907, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!1 &1909840225882405
+GameObject:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - component: {fileID: 4139526373704829}
+  m_Layer: 0
+  m_Name: GunAttachPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4139526373704829
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1909840225882405}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.3125, y: 0.25, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4135283545184956}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!1 &1492290296187416
+GameObject:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - component: {fileID: 4035045032253032}
+  m_Layer: 0
+  m_Name: melee center
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4035045032253032
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1492290296187416}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.37, y: 2.97, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4135283545184956}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!1 &1548469795021419
+GameObject:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - component: {fileID: 4612586195098517}
+  m_Layer: 0
+  m_Name: gatling
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4612586195098517
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1548469795021419}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.8125, y: 1.875, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4135283545184956}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!1 &1015580547334936
+GameObject:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - component: {fileID: 4913665763702433}
+  m_Layer: 0
+  m_Name: rocket
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4913665763702433
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1015580547334936}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.0625, y: 4.4375, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4135283545184956}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!1 &1383226588929895
+GameObject:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - component: {fileID: 4832074733494051}
+  m_Layer: 0
+  m_Name: shell
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4832074733494051
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1383226588929895}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.9375, y: 2.25, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4135283545184956}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!1 &1964440047429938
+GameObject:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - component: {fileID: 4420652590592408}
+  m_Layer: 0
+  m_Name: charge attach point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4420652590592408
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1964440047429938}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.3125, y: 0.25, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4135283545184956}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}

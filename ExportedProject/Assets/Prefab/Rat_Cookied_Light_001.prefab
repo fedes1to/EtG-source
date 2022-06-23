@@ -1,0 +1,144 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1352073512404860}
+  m_IsPrefabParent: 1
+--- !u!1 &1352073512404860
+GameObject:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - component: {fileID: 4826217334260523}
+  m_Layer: 0
+  m_Name: Rat_Cookied_Light_001
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4826217334260523
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1352073512404860}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 24, y: 80, z: 50}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4106526976891344}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!1 &1650316912297206
+GameObject:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - component: {fileID: 4106526976891344}
+  - component: {fileID: 108631469370935792}
+  - component: {fileID: 114769369872612151}
+  m_Layer: 0
+  m_Name: Rat_Cookied_Light_ACTUAL
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4106526976891344
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1650316912297206}
+  m_LocalRotation: {x: -0.3420102, y: 0.0077903746, z: -0.0028354859, w: -0.9396597}
+  m_LocalPosition: {x: 0, y: 29.4375, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4826217334260523}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 40.000217, y: 0.950015, z: -4.8838126E-07}
+--- !u!108 &108631469370935792
+Light:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1650316912297206}
+  m_Enabled: 1
+  m_Type: 0
+  m_Color: {r: 0.7941176, g: 0.72920626, b: 0.62478375, a: 1}
+  m_Intensity: 3.29
+  m_Range: 72
+  m_SpotAngle: 46.1
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 2800000, guid: e67416b46e6a49642bc7a8db8a135bf2, type: 3}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 1
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+--- !u!114 &114769369872612151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1650316912297206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51012c1c230a0184f8c6ee82ff84f6d5, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  pointDirectlyAtFloor: 1
+  zHeightOffset: -45
+  randomStartingRotation: 1
+  swayRotation: 1
+  swaySpeed: 0.18
+  rotationMin: -20
+  rotationMax: 20
+  rotationSpeed: 0
+  randomStartingCookieAngle: 1
+  pulseCookieAngle: 1
+  pulseCookieAngleHang: 1
+  pulseCookieAngleSpeed4Real: 10
+  cookieAngleMin: 42
+  cookieAngleMax: 47
+  randomIntensity: 1
+  pulseIntensity: 1
+  pulseIntensityHang: 0.5
+  pulseIntensitySpeed4Real: 10
+  intensityMin: 2
+  intensityMax: 7
+  doPingPong: 0
+  startColor: {r: 0, g: 0, b: 1, a: 1}
+  endColor: {r: 1, g: 0, b: 0, a: 1}
+  pingPongTime: 2
+  otherNumber: 1.5

@@ -1,0 +1,790 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1143678419636902}
+  m_IsPrefabParent: 1
+--- !u!1 &1143678419636902
+GameObject:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - component: {fileID: 4436652021129160}
+  - component: {fileID: 114406968518493997}
+  - component: {fileID: 33910219814528927}
+  - component: {fileID: 23172932620215786}
+  - component: {fileID: 114755452248024810}
+  - component: {fileID: 114231209458741887}
+  - component: {fileID: 114229862523633773}
+  - component: {fileID: 114080959615912412}
+  - component: {fileID: 114763452241170824}
+  m_Layer: 22
+  m_Name: Tachyon_Gun
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4436652021129160
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1143678419636902}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 8, y: 18.25, z: 18.25}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4221891465810123}
+  - {fileID: 4145641874113831}
+  - {fileID: 4396280068062078}
+  - {fileID: 4588384261734078}
+  - {fileID: 4467668401630930}
+  - {fileID: 4078552624024884}
+  - {fileID: 4869956735109121}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &114406968518493997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1143678419636902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d7100183e88ef1419d909794737a72e, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  PickupObjectId: 562
+  quality: 3
+  additionalMagnificenceModifier: 0
+  ItemSpansBaseQualityTiers: 0
+  ItemRespectsHeartMagnificence: 0
+  associatedItemChanceMods: []
+  contentSource: 4
+  ShouldBeExcludedFromShops: 0
+  CanBeDropped: 1
+  PreventStartingOwnerFromDropping: 0
+  PersistsOnDeath: 0
+  RespawnsIfPitfall: 0
+  PreventSaveSerialization: 0
+  IgnoredByRat: 0
+  SaveFlagToSetOnAcquisition: 0
+  itemName:
+  ForcedPositionInAmmonomicon: 82
+  UsesCustomCost: 0
+  CustomCost: 0
+  PersistsOnPurchase: 0
+  CanBeSold: 1
+  gunName: Tachyon Gun
+  gunSwitchGroup: Tachyon
+  isAudioLoop: 0
+  lowersAudioWhileFiring: 0
+  gunClass: 10
+  currentGunStatModifiers: []
+  passiveStatModifiers: []
+  currentGunDamageTypeModifiers: []
+  ArmorToGainOnPickup: 0
+  barrelOffset: {fileID: 4221891465810123}
+  muzzleOffset: {fileID: 4078552624024884}
+  chargeOffset: {fileID: 0}
+  reloadOffset: {fileID: 0}
+  carryPixelOffset:
+    x: 6
+    y: 0
+  carryPixelUpOffset:
+    x: 0
+    y: 0
+  carryPixelDownOffset:
+    x: 0
+    y: 0
+  UsesPerCharacterCarryPixelOffsets: 0
+  PerCharacterPixelOffsets: []
+  leftFacingPixelOffset:
+    x: 0
+    y: 0
+  gunHandedness: 0
+  overrideOutOfAmmoHandedness: 0
+  additionalHandState: 0
+  gunPosition: 0
+  forceFlat: 0
+  rawVolley: {fileID: 0}
+  singleModule:
+    shootStyle: 1
+    ammoType: 14
+    customAmmoType: tachyon
+    projectiles:
+    - {fileID: 114636258190635116, guid: ecf8a7e3ebc9abd458a5f1412fb13556, type: 2}
+    sequenceStyle: 1
+    orderedGroupCounts:
+    chargeProjectiles: []
+    maxChargeTime: 0
+    triggerCooldownForAnyChargeAmount: 0
+    isFinalVolley: 0
+    usesOptionalFinalProjectile: 0
+    finalProjectile: {fileID: 0}
+    finalVolley: {fileID: 11400000, guid: 20dc67766573122448f7b86533a1ed58, type: 2}
+    numberOfFinalProjectiles: 1
+    finalAmmoType: 14
+    finalCustomAmmoType: red button
+    angleFromAim: 0
+    alternateAngle: 0
+    angleVariance: 5
+    positionOffset: {x: 0, y: 0, z: 0}
+    mirror: 0
+    inverted: 0
+    ammoCost: 1
+    burstShotCount: 3
+    burstCooldownTime: 0.2
+    cooldownTime: 0.075
+    numberOfShotsInClip: 100
+    ignoredForReloadPurposes: 0
+    preventFiringDuringCharge: 0
+  rawOptionalReloadVolley: {fileID: 0}
+  ammo: 500
+  CanGainAmmo: 1
+  LocalInfiniteAmmo: 0
+  UsesBossDamageModifier: 0
+  CustomBossDamageModifier: -1
+  maxAmmo: 500
+  reloadTime: 3
+  blankDuringReload: 0
+  blankReloadRadius: 1
+  reflectDuringReload: 0
+  blankKnockbackPower: 20
+  blankDamageToEnemies: 0
+  blankDamageScalingOnEmptyClip: 1
+  doesScreenShake: 1
+  gunScreenShake:
+    magnitude: 0.1
+    speed: 6
+    time: 0.06
+    falloff: 0
+    direction: {x: 1, y: 0.2}
+    vibrationType: 10
+    simpleVibrationTime: 20
+    simpleVibrationStrength: 20
+  directionlessScreenShake: 0
+  damageModifier: 0
+  thrownObject: {fileID: 0}
+  procGunData: {fileID: 0}
+  activeReloadData:
+    damageMultiply: 1
+    knockbackMultiply: 1
+    usesOverrideAngleVariance: 0
+    overrideAngleVariance: 0
+    reloadSpeedMultiplier: 1
+    ActiveReloadStacks: 0
+    ActiveReloadIncrementsTier: 0
+    MaxTier: 5
+  ClearsCooldownsLikeAWP: 0
+  AppliesHoming: 0
+  AppliedHomingAngularVelocity: 180
+  AppliedHomingDetectRadius: 4
+  m_unswitchableGun: 0
+  shootAnimation: tachyon_gun_fire
+  usesContinuousFireAnimation: 1
+  reloadAnimation: tachyon_gun_reload
+  emptyReloadAnimation:
+  idleAnimation:
+  chargeAnimation:
+  dischargeAnimation:
+  emptyAnimation:
+  introAnimation:
+  finalShootAnimation:
+  enemyPreFireAnimation:
+  outOfAmmoAnimation:
+  criticalFireAnimation:
+  dodgeAnimation:
+  usesDirectionalIdleAnimations: 0
+  usesDirectionalAnimator: 0
+  preventRotation: 0
+  muzzleFlashEffects:
+    type: 4
+    effects:
+    - effects:
+      - effect: {fileID: 1499514364506569, guid: 04d0238465deabe4280eb563ba771fa5, type: 2}
+        orphaned: 0
+        attached: 1
+        persistsOnDeath: 0
+        usesZHeight: 1
+        zHeight: 1
+        alignment: 0
+        destructible: 0
+  usesContinuousMuzzleFlash: 1
+  finalMuzzleFlashEffects:
+    type: 0
+    effects: []
+  reloadEffects:
+    type: 0
+    effects: []
+  emptyReloadEffects:
+    type: 0
+    effects: []
+  activeReloadSuccessEffects:
+    type: 0
+    effects: []
+  activeReloadFailedEffects:
+    type: 0
+    effects: []
+  light: {fileID: 0}
+  baseLightIntensity: 0
+  shellCasing: {fileID: 0}
+  shellsToLaunchOnFire: 1
+  shellCasingOnFireFrameDelay: 0
+  shellsToLaunchOnReload: 0
+  reloadShellLaunchFrame: 0
+  clipObject: {fileID: 0}
+  clipsToLaunchOnReload: 1
+  reloadClipLaunchFrame: 0
+  prefabName:
+  rampBullets: 0
+  rampStartHeight: 2
+  rampTime: 1
+  IgnoresAngleQuantization: 0
+  IsTrickGun: 0
+  TrickGunAlternatesHandedness: 0
+  PreventOutlines: 0
+  alternateVolley: {fileID: 0}
+  alternateShootAnimation:
+  alternateReloadAnimation:
+  alternateIdleAnimation:
+  alternateSwitchGroup:
+  IsHeroSword: 0
+  HeroSwordDoesntBlank: 0
+  StarterGunForAchievement: 0
+  CanSneakAttack: 0
+  SneakAttackDamageMultiplier: 3
+  SuppressLaserSight: 0
+  RequiresFundsToShoot: 0
+  CurrencyCostPerShot: 1
+  weaponPanelSpriteOverride: {fileID: 0}
+  IsLuteCompanionBuff: 0
+  MovesPlayerForwardOnChargeFire: 0
+  LockedHorizontalOnCharge: 0
+  LockedHorizontalCenterFireOffset: -1
+  GoopReloadsFree: 0
+  IsUndertaleGun: 0
+  LocalActiveReload: 0
+  UsesRechargeLikeActiveItem: 0
+  ActiveItemStyleRechargeAmount: 100
+  CanAttackThroughObjects: 1
+  CanCriticalFire: 0
+  CriticalChance: 0.1
+  CriticalDamageMultiplier: 3
+  CriticalMuzzleFlashEffects:
+    type: 0
+    effects: []
+  CriticalReplacementProjectile: {fileID: 0}
+  GainsRateOfFireAsContinueAttack: 0
+  RateOfFireMultiplierAdditionPerSecond: 0
+  OnlyUsesIdleInWeaponBox: 0
+  DisablesRendererOnCooldown: 0
+  ObjectToInstantiateOnReload: {fileID: 0}
+  HasBeenPickedUp: 0
+--- !u!33 &33910219814528927
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1143678419636902}
+  m_Mesh: {fileID: 0}
+--- !u!23 &23172932620215786
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1143678419636902}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 0f0ee67f99d71244c82c2db66ef9fda7, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 0
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 0
+  m_AutoUVMaxDistance: 0
+  m_AutoUVMaxAngle: 0
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -1981987969
+  m_SortingLayer: 2
+  m_SortingOrder: 0
+--- !u!114 &114755452248024810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1143678419636902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aab037bf7c2ce7343b005114c0e6a2e1, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  automaticallyManagesDepth: 1
+  ignoresTiltworldDepth: 0
+  depthUsesTrimmedBounds: 0
+  allowDefaultLayer: 0
+  attachParent: {fileID: 0}
+  OverrideMaterialMode: 0
+  independentOrientation: 0
+  autodetectFootprint: 1
+  customFootprintOrigin:
+    x: 0
+    y: 0
+  customFootprint:
+    x: 0
+    y: 0
+  hasOffScreenCachedUpdate: 0
+  offScreenCachedCollection: {fileID: 0}
+  offScreenCachedID: -1
+  collection: {fileID: 114218175315326469, guid: 4d9a38e174fd6be47aa6223b1f10250b, type: 2}
+  _color: {r: 1, g: 1, b: 1, a: 1}
+  _scale: {x: 1, y: 1, z: 1}
+  _spriteId: 201
+  boxCollider2D: {fileID: 0}
+  boxCollider: {fileID: 0}
+  meshCollider: {fileID: 0}
+  meshColliderPositions: []
+  meshColliderMesh: {fileID: 0}
+  CachedPerpState: 0
+  m_heightOffGround: 0
+  renderLayer: 0
+  IsBraveOutlineSprite: 0
+  IsZDepthDirty: 0
+  ApplyEmissivePropertyBlock: 0
+  GenerateUV2: 0
+  LockUV2OnFrameOne: 0
+  StaticPositions: 0
+--- !u!114 &114231209458741887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1143678419636902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25bc20faa5e64aa45ace06824a2d9bed, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  attachPoints:
+  - {fileID: 4588384261734078}
+  - {fileID: 4467668401630930}
+  - {fileID: 4396280068062078}
+  - {fileID: 4145641874113831}
+  deactivateUnusedAttachPoints: 0
+  disableEmissionOnUnusedParticleSystems: 0
+  ignorePosition: 0
+  ignoreScale: 0
+  ignoreRotation: 0
+  centerUnusedAttachPoints: 0
+--- !u!114 &114229862523633773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1143678419636902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 858693f8db5b6d94ba3af909ccf0a16b, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  library: {fileID: 114274415460891155, guid: 5274a31169f7cce4a9cbe9ed5fde8efc, type: 2}
+  defaultClipId: 37
+  AdditionalCameraVisibilityRadius: 0
+  AnimateDuringBossIntros: 0
+  AlwaysIgnoreTimeScale: 0
+  ForceSetEveryFrame: 0
+  playAutomatically: 0
+  IsFrameBlendedAnimation: 0
+  clipTime: 0
+  deferNextStartClip: 0
+--- !u!114 &114080959615912412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1143678419636902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6e00452ca7999142b2e9fe55da9cea0, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  ProxyEncounterGuid:
+  m_encounterGuid: 721caf38fccc4967a9ec97b86fd6ee5f
+  m_doNotificationOnEncounter: 1
+  SuppressInInventory: 0
+  m_journalData:
+    SuppressInAmmonomicon: 0
+    SuppressKnownState: 0
+    DisplayOnLoadingScreen: 0
+    RequiresLightBackgroundInLoadingScreen: 0
+    PrimaryDisplayName: '#TACHYONGUN_ENCNAME'
+    NotificationPanelDescription: '#TACHYONGUN_SHORTDESC'
+    AmmonomiconFullEntry: '#TACHYONGUN_LONGDESC'
+    AmmonomiconSprite: tachyon_gun_idle_001
+    IsEnemy: 0
+    enemyPortraitSprite: {fileID: 0}
+    SpecialIdentifier: 0
+  m_ignoreDifferentiator: 0
+  m_prerequisites:
+  - prerequisiteType: 4
+    prerequisiteOperation: 0
+    statToCheck: 0
+    maxToCheck: 0
+    comparisonValue: 0
+    useSessionStatValue: 0
+    encounteredObjectGuid:
+    encounteredRoom: {fileID: 0}
+    requiredNumberOfEncounters: 0
+    requiredCharacter: 0
+    requireCharacter: 0
+    requiredTileset: 0
+    requireTileset: 0
+    saveFlagToCheck: 10504
+    requireFlag: 1
+    requireDemoMode: 0
+  m_usesPurpleNotifications: 0
+--- !u!114 &114763452241170824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1143678419636902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcc3c700be284ff468e6908d22c87d40, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  idleVFX: {fileID: 114862501908374179}
+--- !u!1 &1786091359318437
+GameObject:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - component: {fileID: 4221891465810123}
+  m_Layer: 0
+  m_Name: Barrel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4221891465810123
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1786091359318437}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.0625, y: 0.6875, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4436652021129160}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!1 &1005761733455262
+GameObject:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - component: {fileID: 4145641874113831}
+  m_Layer: 0
+  m_Name: Casing
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4145641874113831
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1005761733455262}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.6875, y: 0.375, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4436652021129160}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!1 &1467218297422715
+GameObject:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - component: {fileID: 4396280068062078}
+  m_Layer: 0
+  m_Name: Clip
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4396280068062078
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1467218297422715}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.75, y: 0.1875, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4436652021129160}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!1 &1198661526276958
+GameObject:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - component: {fileID: 4588384261734078}
+  m_Layer: 0
+  m_Name: PrimaryHand
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4588384261734078
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1198661526276958}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.1875, y: 0.3125, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4436652021129160}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!1 &1192704458247360
+GameObject:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - component: {fileID: 4467668401630930}
+  m_Layer: 0
+  m_Name: SecondaryHand
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4467668401630930
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1192704458247360}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.25, y: 0.25, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4436652021129160}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!1 &1856568633605838
+GameObject:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - component: {fileID: 4078552624024884}
+  m_Layer: 22
+  m_Name: Muzzle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4078552624024884
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1856568633605838}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.8758478, y: 0.94034195, z: 0.94034195}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4436652021129160}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!1 &1262523339059742
+GameObject:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - component: {fileID: 4869956735109121}
+  - component: {fileID: 33344527234102177}
+  - component: {fileID: 23079231624425517}
+  - component: {fileID: 114639912691013495}
+  - component: {fileID: 114862501908374179}
+  m_Layer: 22
+  m_Name: idlevfx
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4869956735109121
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1262523339059742}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.0625, y: 0.6875, z: -0.875}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4436652021129160}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!33 &33344527234102177
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1262523339059742}
+  m_Mesh: {fileID: 0}
+--- !u!23 &23079231624425517
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1262523339059742}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: c6a7f22da3889fc479c7b1da61e4504c, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 0
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 0
+  m_AutoUVMaxDistance: 0
+  m_AutoUVMaxAngle: 0
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -1981987969
+  m_SortingLayer: 2
+  m_SortingOrder: 0
+--- !u!114 &114639912691013495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1262523339059742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aab037bf7c2ce7343b005114c0e6a2e1, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  automaticallyManagesDepth: 1
+  ignoresTiltworldDepth: 0
+  depthUsesTrimmedBounds: 0
+  allowDefaultLayer: 0
+  attachParent: {fileID: 114755452248024810}
+  OverrideMaterialMode: 0
+  independentOrientation: 0
+  autodetectFootprint: 1
+  customFootprintOrigin:
+    x: 0
+    y: 0
+  customFootprint:
+    x: 0
+    y: 0
+  hasOffScreenCachedUpdate: 0
+  offScreenCachedCollection: {fileID: 0}
+  offScreenCachedID: -1
+  collection: {fileID: 114688352925809671, guid: ff9732f2d7c0fad4093c1522ab1c8b2e, type: 2}
+  _color: {r: 1, g: 1, b: 1, a: 1}
+  _scale: {x: 1, y: 1, z: 1}
+  _spriteId: 162
+  boxCollider2D: {fileID: 0}
+  boxCollider: {fileID: 0}
+  meshCollider: {fileID: 0}
+  meshColliderPositions: []
+  meshColliderMesh: {fileID: 0}
+  CachedPerpState: 1
+  m_heightOffGround: 0.25
+  renderLayer: 2
+  IsBraveOutlineSprite: 0
+  IsZDepthDirty: 0
+  ApplyEmissivePropertyBlock: 0
+  GenerateUV2: 0
+  LockUV2OnFrameOne: 0
+  StaticPositions: 0
+--- !u!114 &114862501908374179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1262523339059742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 858693f8db5b6d94ba3af909ccf0a16b, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  library: {fileID: 114610168588981290, guid: 1129038ea8aaa8c468b4fc0639574c0b, type: 2}
+  defaultClipId: 31
+  AdditionalCameraVisibilityRadius: 0
+  AnimateDuringBossIntros: 0
+  AlwaysIgnoreTimeScale: 0
+  ForceSetEveryFrame: 0
+  playAutomatically: 1
+  IsFrameBlendedAnimation: 0
+  clipTime: 0
+  deferNextStartClip: 0

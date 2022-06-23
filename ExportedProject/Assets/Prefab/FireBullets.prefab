@@ -1,0 +1,343 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1571717131706656}
+  m_IsPrefabParent: 1
+--- !u!1 &1571717131706656
+GameObject:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - component: {fileID: 4406804679205079}
+  - component: {fileID: 33213982872930371}
+  - component: {fileID: 23314838583772405}
+  - component: {fileID: 114289689145707860}
+  - component: {fileID: 114834306481654367}
+  - component: {fileID: 114068964596278967}
+  m_Layer: 22
+  m_Name: FireBullets
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4406804679205079
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1571717131706656}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!33 &33213982872930371
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1571717131706656}
+  m_Mesh: {fileID: 0}
+--- !u!23 &23314838583772405
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1571717131706656}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 2c418ab54553d214dadffeaf890d848b, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 0
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 0
+  m_AutoUVMaxDistance: 0
+  m_AutoUVMaxAngle: 0
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -1981987969
+  m_SortingLayer: 2
+  m_SortingOrder: 0
+--- !u!114 &114289689145707860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1571717131706656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aab037bf7c2ce7343b005114c0e6a2e1, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  automaticallyManagesDepth: 1
+  ignoresTiltworldDepth: 0
+  depthUsesTrimmedBounds: 0
+  allowDefaultLayer: 0
+  attachParent: {fileID: 0}
+  OverrideMaterialMode: 0
+  independentOrientation: 0
+  autodetectFootprint: 1
+  customFootprintOrigin:
+    x: 0
+    y: 0
+  customFootprint:
+    x: 0
+    y: 0
+  hasOffScreenCachedUpdate: 0
+  offScreenCachedCollection: {fileID: 0}
+  offScreenCachedID: -1
+  collection: {fileID: 114575599614822933, guid: 0fea01d2a96c5c24c8ba5249a7b29359, type: 2}
+  _color: {r: 1, g: 1, b: 1, a: 1}
+  _scale: {x: 1, y: 1, z: 1}
+  _spriteId: 607
+  boxCollider2D: {fileID: 0}
+  boxCollider: {fileID: 0}
+  meshCollider: {fileID: 0}
+  meshColliderPositions: []
+  meshColliderMesh: {fileID: 0}
+  CachedPerpState: 0
+  m_heightOffGround: 0
+  renderLayer: 0
+  IsBraveOutlineSprite: 0
+  IsZDepthDirty: 0
+  ApplyEmissivePropertyBlock: 0
+  GenerateUV2: 0
+  LockUV2OnFrameOne: 0
+  StaticPositions: 0
+--- !u!114 &114834306481654367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1571717131706656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6e00452ca7999142b2e9fe55da9cea0, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  ProxyEncounterGuid:
+  m_encounterGuid: e7fcef6f09d147019854dc3f49a6a76e
+  m_doNotificationOnEncounter: 1
+  SuppressInInventory: 0
+  m_journalData:
+    SuppressInAmmonomicon: 0
+    SuppressKnownState: 0
+    DisplayOnLoadingScreen: 0
+    RequiresLightBackgroundInLoadingScreen: 1
+    PrimaryDisplayName: '#FIREBULLETS_ENCNAME'
+    NotificationPanelDescription: '#FIREBULLETS_SHORTDESC'
+    AmmonomiconFullEntry: '#FIREBULLETS_LONGDESC'
+    AmmonomiconSprite: flameshot_001
+    IsEnemy: 0
+    enemyPortraitSprite: {fileID: 0}
+    SpecialIdentifier: 0
+  m_ignoreDifferentiator: 0
+  m_prerequisites:
+  - prerequisiteType: 4
+    prerequisiteOperation: 0
+    statToCheck: 0
+    maxToCheck: 0
+    comparisonValue: 0
+    useSessionStatValue: 0
+    encounteredObjectGuid:
+    encounteredRoom: {fileID: 0}
+    requiredNumberOfEncounters: 0
+    requiredCharacter: 0
+    requireCharacter: 0
+    requiredTileset: 0
+    requireTileset: 0
+    saveFlagToCheck: 200008
+    requireFlag: 1
+    requireDemoMode: 0
+  m_usesPurpleNotifications: 0
+--- !u!114 &114068964596278967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1571717131706656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e327292d02d40184281e9acf71c6a608, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  PickupObjectId: 295
+  quality: 3
+  additionalMagnificenceModifier: 0
+  ItemSpansBaseQualityTiers: 0
+  ItemRespectsHeartMagnificence: 0
+  associatedItemChanceMods: []
+  contentSource: 0
+  ShouldBeExcludedFromShops: 0
+  CanBeDropped: 1
+  PreventStartingOwnerFromDropping: 0
+  PersistsOnDeath: 0
+  RespawnsIfPitfall: 0
+  PreventSaveSerialization: 0
+  IgnoredByRat: 0
+  SaveFlagToSetOnAcquisition: 0
+  itemName: Fire Bullets
+  ForcedPositionInAmmonomicon: 88
+  UsesCustomCost: 0
+  CustomCost: 90
+  PersistsOnPurchase: 0
+  CanBeSold: 1
+  passiveStatModifiers: []
+  ArmorToGainOnInitialPickup: 0
+  minimapIcon: {fileID: 0}
+  chanceOfActivating: 0.2
+  chanceFromBeamPerSecond: 0.25
+  TintBullets: 1
+  TintBeams: 1
+  TintColor: {r: 1, g: 0, b: 0, a: 1}
+  TintPriority: 5
+  ParticlesToAdd: {fileID: 0}
+  AddsDamageType: 0
+  DamageTypesToAdd: 0
+  AppliesSpeedModifier: 0
+  SpeedModifierEffect:
+    AffectsPlayers: 1
+    AffectsEnemies: 1
+    effectIdentifier: effect
+    resistanceType: 0
+    stackMode: 0
+    duration: 10
+    maxStackedDuration: -1
+    AppliesTint: 0
+    TintColor: {r: 1, g: 1, b: 1, a: 0.5}
+    AppliesDeathTint: 0
+    DeathTintColor: {r: 0.388, g: 0.388, b: 0.388, a: 1}
+    AppliesOutlineTint: 0
+    OutlineTintColor: {r: 0, g: 0, b: 0, a: 1}
+    OverheadVFX: {fileID: 0}
+    PlaysVFXOnActor: 0
+    SpeedMultiplier: 1
+    CooldownMultiplier: 1
+    OnlyAffectPlayerWhenGrounded: 0
+  AppliesDamageOverTime: 0
+  HealthModifierEffect:
+    AffectsPlayers: 0
+    AffectsEnemies: 1
+    effectIdentifier: poison
+    resistanceType: 0
+    stackMode: 0
+    duration: 10
+    maxStackedDuration: -1
+    AppliesTint: 1
+    TintColor: {r: 0, g: 0.99607843, b: 0.21568628, a: 1}
+    AppliesDeathTint: 0
+    DeathTintColor: {r: 0.388, g: 0.388, b: 0.388, a: 1}
+    AppliesOutlineTint: 0
+    OutlineTintColor: {r: 0, g: 0, b: 0, a: 1}
+    OverheadVFX: {fileID: 1358905324782400, guid: b7ba0ece27b8d8a47bd3c915adc74c0b, type: 2}
+    PlaysVFXOnActor: 0
+    DamagePerSecondToEnemies: 5
+    ignitesGoops: 0
+  AppliesCharm: 0
+  CharmModifierEffect:
+    AffectsPlayers: 1
+    AffectsEnemies: 1
+    effectIdentifier: effect
+    resistanceType: 0
+    stackMode: 0
+    duration: 10
+    maxStackedDuration: -1
+    AppliesTint: 0
+    TintColor: {r: 1, g: 1, b: 1, a: 0.5}
+    AppliesDeathTint: 0
+    DeathTintColor: {r: 0.388, g: 0.388, b: 0.388, a: 1}
+    AppliesOutlineTint: 0
+    OutlineTintColor: {r: 0, g: 0, b: 0, a: 1}
+    OverheadVFX: {fileID: 0}
+    PlaysVFXOnActor: 0
+  AppliesFreeze: 0
+  FreezeModifierEffect:
+    AffectsPlayers: 0
+    AffectsEnemies: 1
+    effectIdentifier: freeze
+    resistanceType: 3
+    stackMode: 3
+    duration: 10
+    maxStackedDuration: -1
+    AppliesTint: 1
+    TintColor: {r: 0.1753352, g: 0.3951481, b: 1, a: 0.84313726}
+    AppliesDeathTint: 0
+    DeathTintColor: {r: 0.388, g: 0.388, b: 0.388, a: 1}
+    AppliesOutlineTint: 0
+    OutlineTintColor: {r: 0, g: 0, b: 0, a: 1}
+    OverheadVFX: {fileID: 0}
+    PlaysVFXOnActor: 0
+    FreezeAmount: 25
+    UnfreezeDamagePercent: 0.3333
+    FreezeCrystals:
+    - {fileID: 1212515179481489, guid: 14d0490e9659ffe46a19c1dad149e21c, type: 2}
+    - {fileID: 1648681924873647, guid: 22f9e7a2704f66147bd834c8c8553af1, type: 2}
+    - {fileID: 1894218223550682, guid: f4cda2b88fbe7044d854938615f4396f, type: 2}
+    crystalRot: 8
+    crystalVariation: {x: 0.05, y: 0.05}
+    debrisMinForce: 5
+    debrisMaxForce: 5
+    debrisAngleVariance: 15
+    vfxExplosion: {fileID: 1570038918749663, guid: 1cb5907b0829dad4fbd625c868f1d7a7, type: 2}
+  FreezeScalesWithDamage: 0
+  FreezeAmountPerDamage: 1
+  AppliesFire: 1
+  FireModifierEffect:
+    AffectsPlayers: 1
+    AffectsEnemies: 1
+    effectIdentifier: fire
+    resistanceType: 0
+    stackMode: 0
+    duration: 4
+    maxStackedDuration: -1
+    AppliesTint: 1
+    TintColor: {r: 1, g: 0, b: 0, a: 1}
+    AppliesDeathTint: 1
+    DeathTintColor: {r: 0.38823533, g: 0.38823533, b: 0.38823533, a: 1}
+    AppliesOutlineTint: 0
+    OutlineTintColor: {r: 0, g: 0, b: 0, a: 1}
+    OverheadVFX: {fileID: 0}
+    PlaysVFXOnActor: 0
+    DamagePerSecondToEnemies: 4
+    ignitesGoops: 1
+    FlameVfx:
+    - {fileID: 1545371657542627, guid: b902367983a670a4885e1f79b72f129c, type: 2}
+    - {fileID: 1278961468349053, guid: 86d40876106a97340adcaac90d7d4fc9, type: 2}
+    flameNumPerSquareUnit: 10
+    flameBuffer: {x: 0.0625, y: 0.3}
+    flameFpsVariation: 0.5
+    flameMoveChance: 1
+    IsGreenFire: 0
+  ConfersElectricityImmunity: 0
+  AppliesTransmog: 0
+  TransmogTargetGuid:
+  Synergies:
+  - RequiredSynergy: 117
+    ChanceMultiplier: 3

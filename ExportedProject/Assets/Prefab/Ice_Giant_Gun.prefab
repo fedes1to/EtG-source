@@ -1,0 +1,766 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1070998057710007}
+  m_IsPrefabParent: 1
+--- !u!1 &1070998057710007
+GameObject:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - component: {fileID: 4083303172975051}
+  - component: {fileID: 114886605626477073}
+  - component: {fileID: 33389616574418906}
+  - component: {fileID: 23686227224661813}
+  - component: {fileID: 114135626250792720}
+  - component: {fileID: 114332441338680906}
+  - component: {fileID: 114376850627252057}
+  - component: {fileID: 114439079260842653}
+  - component: {fileID: 114582892549213012}
+  - component: {fileID: 114889940342087091}
+  m_Layer: 22
+  m_Name: Ice_Giant_Gun
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4083303172975051
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1070998057710007}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.251388, y: -1.4410856, z: -1.4410856}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4996044355238959}
+  - {fileID: 4358538848684826}
+  - {fileID: 4729369751865195}
+  - {fileID: 4396603316049490}
+  - {fileID: 4420924068172814}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &114886605626477073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1070998057710007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d7100183e88ef1419d909794737a72e, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  PickupObjectId: 387
+  quality: 3
+  additionalMagnificenceModifier: 0
+  ItemSpansBaseQualityTiers: 0
+  ItemRespectsHeartMagnificence: 0
+  associatedItemChanceMods: []
+  contentSource: 0
+  ShouldBeExcludedFromShops: 0
+  CanBeDropped: 1
+  PreventStartingOwnerFromDropping: 0
+  PersistsOnDeath: 0
+  RespawnsIfPitfall: 0
+  PreventSaveSerialization: 0
+  IgnoredByRat: 0
+  SaveFlagToSetOnAcquisition: 0
+  itemName:
+  ForcedPositionInAmmonomicon: 161
+  UsesCustomCost: 0
+  CustomCost: 40
+  PersistsOnPurchase: 0
+  CanBeSold: 1
+  gunName: Ice Giant Handgun
+  gunSwitchGroup: FrostGiant
+  isAudioLoop: 0
+  lowersAudioWhileFiring: 0
+  gunClass: 35
+  currentGunStatModifiers: []
+  passiveStatModifiers: []
+  currentGunDamageTypeModifiers: []
+  ArmorToGainOnPickup: 0
+  barrelOffset: {fileID: 4996044355238959}
+  muzzleOffset: {fileID: 0}
+  chargeOffset: {fileID: 0}
+  reloadOffset: {fileID: 4420924068172814}
+  carryPixelOffset:
+    x: 4
+    y: 0
+  carryPixelUpOffset:
+    x: 0
+    y: 0
+  carryPixelDownOffset:
+    x: 0
+    y: 0
+  UsesPerCharacterCarryPixelOffsets: 0
+  PerCharacterPixelOffsets: []
+  leftFacingPixelOffset:
+    x: 0
+    y: 0
+  gunHandedness: 0
+  overrideOutOfAmmoHandedness: 0
+  additionalHandState: 0
+  gunPosition: 0
+  forceFlat: 0
+  rawVolley: {fileID: 11400000, guid: 7187b85564acda34fa0eab42799d713b, type: 2}
+  singleModule:
+    shootStyle: 0
+    ammoType: 1
+    customAmmoType:
+    projectiles:
+    - {fileID: 114204335225934309, guid: f4f2b5a295283494bb12fe918eb0a735, type: 2}
+    sequenceStyle: 0
+    orderedGroupCounts:
+    chargeProjectiles: []
+    maxChargeTime: 0
+    triggerCooldownForAnyChargeAmount: 0
+    isFinalVolley: 0
+    usesOptionalFinalProjectile: 1
+    finalProjectile: {fileID: 114423946893200844, guid: af50f34b41417754cad832b792435a23, type: 2}
+    finalVolley: {fileID: 0}
+    numberOfFinalProjectiles: 1
+    finalAmmoType: 14
+    finalCustomAmmoType: white
+    angleFromAim: 0
+    alternateAngle: 0
+    angleVariance: 12
+    positionOffset: {x: 0, y: 0, z: 0}
+    mirror: 0
+    inverted: 0
+    ammoCost: 1
+    burstShotCount: 3
+    burstCooldownTime: 0.2
+    cooldownTime: 0.01
+    numberOfShotsInClip: 8
+    ignoredForReloadPurposes: 0
+    preventFiringDuringCharge: 0
+  rawOptionalReloadVolley: {fileID: 0}
+  ammo: 130
+  CanGainAmmo: 1
+  LocalInfiniteAmmo: 0
+  UsesBossDamageModifier: 0
+  CustomBossDamageModifier: -1
+  maxAmmo: 130
+  reloadTime: 1.6
+  blankDuringReload: 0
+  blankReloadRadius: 1
+  reflectDuringReload: 0
+  blankKnockbackPower: 20
+  blankDamageToEnemies: 0
+  blankDamageScalingOnEmptyClip: 1
+  doesScreenShake: 1
+  gunScreenShake:
+    magnitude: 0.5
+    speed: 6
+    time: 0.13
+    falloff: 0
+    direction: {x: 0, y: 0}
+    vibrationType: 10
+    simpleVibrationTime: 20
+    simpleVibrationStrength: 20
+  directionlessScreenShake: 0
+  damageModifier: 0
+  thrownObject: {fileID: 0}
+  procGunData: {fileID: 0}
+  activeReloadData:
+    damageMultiply: 1
+    knockbackMultiply: 1
+    usesOverrideAngleVariance: 0
+    overrideAngleVariance: 0
+    reloadSpeedMultiplier: 1
+    ActiveReloadStacks: 0
+    ActiveReloadIncrementsTier: 0
+    MaxTier: 5
+  ClearsCooldownsLikeAWP: 0
+  AppliesHoming: 0
+  AppliedHomingAngularVelocity: 180
+  AppliedHomingDetectRadius: 4
+  m_unswitchableGun: 0
+  shootAnimation: ice_giant_fire
+  usesContinuousFireAnimation: 0
+  reloadAnimation: ice_giant_reload
+  emptyReloadAnimation:
+  idleAnimation:
+  chargeAnimation:
+  dischargeAnimation:
+  emptyAnimation:
+  introAnimation: ice_giant_gun_intro
+  finalShootAnimation:
+  enemyPreFireAnimation:
+  outOfAmmoAnimation:
+  criticalFireAnimation:
+  dodgeAnimation:
+  usesDirectionalIdleAnimations: 0
+  usesDirectionalAnimator: 0
+  preventRotation: 0
+  muzzleFlashEffects:
+    type: 2
+    effects:
+    - effects:
+      - effect: {fileID: 1993972867515413, guid: 9967b828f2209964ba2bdc0d506cf6de, type: 2}
+        orphaned: 1
+        attached: 1
+        persistsOnDeath: 0
+        usesZHeight: 0
+        zHeight: 0
+        alignment: 0
+        destructible: 0
+  usesContinuousMuzzleFlash: 0
+  finalMuzzleFlashEffects:
+    type: 0
+    effects: []
+  reloadEffects:
+    type: 4
+    effects:
+    - effects:
+      - effect: {fileID: 1572729456573728, guid: 7c532d0d56d72564e9699161c8a2e616, type: 2}
+        orphaned: 1
+        attached: 0
+        persistsOnDeath: 0
+        usesZHeight: 1
+        zHeight: 1
+        alignment: 0
+        destructible: 0
+  emptyReloadEffects:
+    type: 0
+    effects: []
+  activeReloadSuccessEffects:
+    type: 0
+    effects: []
+  activeReloadFailedEffects:
+    type: 0
+    effects: []
+  light: {fileID: 0}
+  baseLightIntensity: 0
+  shellCasing: {fileID: 1049213465576358, guid: f1084182b6919f54db0c535224ee8407, type: 2}
+  shellsToLaunchOnFire: 0
+  shellCasingOnFireFrameDelay: 1
+  shellsToLaunchOnReload: 6
+  reloadShellLaunchFrame: 2
+  clipObject: {fileID: 0}
+  clipsToLaunchOnReload: 0
+  reloadClipLaunchFrame: 0
+  prefabName:
+  rampBullets: 0
+  rampStartHeight: 2
+  rampTime: 1
+  IgnoresAngleQuantization: 0
+  IsTrickGun: 0
+  TrickGunAlternatesHandedness: 0
+  PreventOutlines: 0
+  alternateVolley: {fileID: 0}
+  alternateShootAnimation:
+  alternateReloadAnimation:
+  alternateIdleAnimation:
+  alternateSwitchGroup:
+  IsHeroSword: 0
+  HeroSwordDoesntBlank: 0
+  StarterGunForAchievement: 0
+  CanSneakAttack: 0
+  SneakAttackDamageMultiplier: 3
+  SuppressLaserSight: 0
+  RequiresFundsToShoot: 0
+  CurrencyCostPerShot: 1
+  weaponPanelSpriteOverride: {fileID: 0}
+  IsLuteCompanionBuff: 0
+  MovesPlayerForwardOnChargeFire: 0
+  LockedHorizontalOnCharge: 0
+  LockedHorizontalCenterFireOffset: -1
+  GoopReloadsFree: 0
+  IsUndertaleGun: 0
+  LocalActiveReload: 0
+  UsesRechargeLikeActiveItem: 0
+  ActiveItemStyleRechargeAmount: 100
+  CanAttackThroughObjects: 0
+  CanCriticalFire: 0
+  CriticalChance: 0.1
+  CriticalDamageMultiplier: 3
+  CriticalMuzzleFlashEffects:
+    type: 0
+    effects: []
+  CriticalReplacementProjectile: {fileID: 0}
+  GainsRateOfFireAsContinueAttack: 0
+  RateOfFireMultiplierAdditionPerSecond: 0
+  OnlyUsesIdleInWeaponBox: 0
+  DisablesRendererOnCooldown: 0
+  ObjectToInstantiateOnReload: {fileID: 0}
+  HasBeenPickedUp: 0
+--- !u!33 &33389616574418906
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1070998057710007}
+  m_Mesh: {fileID: 0}
+--- !u!23 &23686227224661813
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1070998057710007}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 5075e71d4dcf0254a8c4403e694f106e, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 0
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 0
+  m_AutoUVMaxDistance: 0
+  m_AutoUVMaxAngle: 0
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -1981987969
+  m_SortingLayer: 2
+  m_SortingOrder: 0
+--- !u!114 &114135626250792720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1070998057710007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aab037bf7c2ce7343b005114c0e6a2e1, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  automaticallyManagesDepth: 1
+  ignoresTiltworldDepth: 0
+  depthUsesTrimmedBounds: 0
+  allowDefaultLayer: 0
+  attachParent: {fileID: 0}
+  OverrideMaterialMode: 0
+  independentOrientation: 0
+  autodetectFootprint: 1
+  customFootprintOrigin:
+    x: 0
+    y: 0
+  customFootprint:
+    x: 0
+    y: 0
+  hasOffScreenCachedUpdate: 0
+  offScreenCachedCollection: {fileID: 0}
+  offScreenCachedID: -1
+  collection: {fileID: 114137780894914561, guid: 36ede74425eccd6498ea0927800f3a3b, type: 2}
+  _color: {r: 1, g: 1, b: 1, a: 1}
+  _scale: {x: 1, y: 1, z: 1}
+  _spriteId: 816
+  boxCollider2D: {fileID: 0}
+  boxCollider: {fileID: 0}
+  meshCollider: {fileID: 0}
+  meshColliderPositions: []
+  meshColliderMesh: {fileID: 0}
+  CachedPerpState: 0
+  m_heightOffGround: 0
+  renderLayer: 0
+  IsBraveOutlineSprite: 0
+  IsZDepthDirty: 0
+  ApplyEmissivePropertyBlock: 0
+  GenerateUV2: 0
+  LockUV2OnFrameOne: 0
+  StaticPositions: 0
+--- !u!114 &114332441338680906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1070998057710007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 858693f8db5b6d94ba3af909ccf0a16b, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  library: {fileID: 114620688195828747, guid: ddc60fc8b57b37c4e92110ffa7af954c, type: 2}
+  defaultClipId: 230
+  AdditionalCameraVisibilityRadius: 0
+  AnimateDuringBossIntros: 0
+  AlwaysIgnoreTimeScale: 0
+  ForceSetEveryFrame: 0
+  playAutomatically: 0
+  IsFrameBlendedAnimation: 0
+  clipTime: 0
+  deferNextStartClip: 0
+--- !u!114 &114376850627252057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1070998057710007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25bc20faa5e64aa45ace06824a2d9bed, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  attachPoints:
+  - {fileID: 4729369751865195}
+  - {fileID: 4396603316049490}
+  - {fileID: 4358538848684826}
+  deactivateUnusedAttachPoints: 0
+  disableEmissionOnUnusedParticleSystems: 0
+  ignorePosition: 0
+  ignoreScale: 0
+  ignoreRotation: 0
+  centerUnusedAttachPoints: 0
+--- !u!114 &114439079260842653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1070998057710007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83aa346fc2e286545b444f73b9f96245, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 1
+  isStaticObject: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
+--- !u!114 &114582892549213012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1070998057710007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6e00452ca7999142b2e9fe55da9cea0, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  ProxyEncounterGuid:
+  m_encounterGuid: cc4afd3080fa47c5b36190e2c7e1b7ac
+  m_doNotificationOnEncounter: 1
+  SuppressInInventory: 0
+  m_journalData:
+    SuppressInAmmonomicon: 0
+    SuppressKnownState: 0
+    DisplayOnLoadingScreen: 0
+    RequiresLightBackgroundInLoadingScreen: 0
+    PrimaryDisplayName: '#ICEGIANT_ENCNAME'
+    NotificationPanelDescription: '#ICEGIANT_SHORTDESC'
+    AmmonomiconFullEntry: '#ICEGIANT_LONGDESC'
+    AmmonomiconSprite: ice_giant_gun_idle_001
+    IsEnemy: 0
+    enemyPortraitSprite: {fileID: 0}
+    SpecialIdentifier: 0
+  m_ignoreDifferentiator: 0
+  m_prerequisites:
+  - prerequisiteType: 4
+    prerequisiteOperation: 0
+    statToCheck: 0
+    maxToCheck: 0
+    comparisonValue: 0
+    useSessionStatValue: 0
+    encounteredObjectGuid:
+    encounteredRoom: {fileID: 0}
+    requiredNumberOfEncounters: 0
+    requiredCharacter: 0
+    requireCharacter: 0
+    requiredTileset: 0
+    requireTileset: 0
+    saveFlagToCheck: 300004
+    requireFlag: 1
+    requireDemoMode: 0
+  m_usesPurpleNotifications: 0
+--- !u!114 &114889940342087091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1070998057710007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c72d01584fb68a74ea1b7d6ebc0fb384, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  RequiredSynergy: 359
+  TriggeredOnReload: 1
+  AuraRadius: 4
+  HasOverrideDuration: 0
+  OverrideDuration: 0.05
+  DoPoison: 0
+  PoisonEffect:
+    AffectsPlayers: 1
+    AffectsEnemies: 1
+    effectIdentifier: effect
+    resistanceType: 0
+    stackMode: 0
+    duration: 10
+    maxStackedDuration: -1
+    AppliesTint: 0
+    TintColor: {r: 1, g: 1, b: 1, a: 0.5}
+    AppliesDeathTint: 0
+    DeathTintColor: {r: 0.388, g: 0.388, b: 0.388, a: 1}
+    AppliesOutlineTint: 0
+    OutlineTintColor: {r: 0, g: 0, b: 0, a: 1}
+    OverheadVFX: {fileID: 0}
+    PlaysVFXOnActor: 0
+    DamagePerSecondToEnemies: 10
+    ignitesGoops: 0
+  DoFreeze: 1
+  FreezeEffect:
+    AffectsPlayers: 0
+    AffectsEnemies: 1
+    effectIdentifier: freeze
+    resistanceType: 3
+    stackMode: 3
+    duration: 10
+    maxStackedDuration: -1
+    AppliesTint: 1
+    TintColor: {r: 0.1753352, g: 0.3951481, b: 1, a: 0.84313726}
+    AppliesDeathTint: 0
+    DeathTintColor: {r: 0.388, g: 0.388, b: 0.388, a: 1}
+    AppliesOutlineTint: 0
+    OutlineTintColor: {r: 0, g: 0, b: 0, a: 1}
+    OverheadVFX: {fileID: 0}
+    PlaysVFXOnActor: 0
+    FreezeAmount: 180
+    UnfreezeDamagePercent: 0.3333
+    FreezeCrystals:
+    - {fileID: 1212515179481489, guid: 14d0490e9659ffe46a19c1dad149e21c, type: 2}
+    - {fileID: 1648681924873647, guid: 22f9e7a2704f66147bd834c8c8553af1, type: 2}
+    - {fileID: 1894218223550682, guid: f4cda2b88fbe7044d854938615f4396f, type: 2}
+    crystalRot: 8
+    crystalVariation: {x: 0.05, y: 0.05}
+    debrisMinForce: 5
+    debrisMaxForce: 5
+    debrisAngleVariance: 15
+    vfxExplosion: {fileID: 1570038918749663, guid: 1cb5907b0829dad4fbd625c868f1d7a7, type: 2}
+  DoBurn: 0
+  FireEffect:
+    AffectsPlayers: 1
+    AffectsEnemies: 1
+    effectIdentifier: effect
+    resistanceType: 0
+    stackMode: 0
+    duration: 10
+    maxStackedDuration: -1
+    AppliesTint: 0
+    TintColor: {r: 1, g: 1, b: 1, a: 0.5}
+    AppliesDeathTint: 0
+    DeathTintColor: {r: 0.388, g: 0.388, b: 0.388, a: 1}
+    AppliesOutlineTint: 0
+    OutlineTintColor: {r: 0, g: 0, b: 0, a: 1}
+    OverheadVFX: {fileID: 0}
+    PlaysVFXOnActor: 0
+    DamagePerSecondToEnemies: 10
+    ignitesGoops: 0
+    FlameVfx: []
+    flameNumPerSquareUnit: 10
+    flameBuffer: {x: 0.0625, y: 0.0625}
+    flameFpsVariation: 0.5
+    flameMoveChance: 0.2
+    IsGreenFire: 0
+  DoCharm: 0
+  CharmEffect:
+    AffectsPlayers: 1
+    AffectsEnemies: 1
+    effectIdentifier: effect
+    resistanceType: 0
+    stackMode: 0
+    duration: 10
+    maxStackedDuration: -1
+    AppliesTint: 0
+    TintColor: {r: 1, g: 1, b: 1, a: 0.5}
+    AppliesDeathTint: 0
+    DeathTintColor: {r: 0.388, g: 0.388, b: 0.388, a: 1}
+    AppliesOutlineTint: 0
+    OutlineTintColor: {r: 0, g: 0, b: 0, a: 1}
+    OverheadVFX: {fileID: 0}
+    PlaysVFXOnActor: 0
+  DoSlow: 0
+  SpeedEffect:
+    AffectsPlayers: 1
+    AffectsEnemies: 1
+    effectIdentifier: effect
+    resistanceType: 0
+    stackMode: 0
+    duration: 10
+    maxStackedDuration: -1
+    AppliesTint: 0
+    TintColor: {r: 1, g: 1, b: 1, a: 0.5}
+    AppliesDeathTint: 0
+    DeathTintColor: {r: 0.388, g: 0.388, b: 0.388, a: 1}
+    AppliesOutlineTint: 0
+    OutlineTintColor: {r: 0, g: 0, b: 0, a: 1}
+    OverheadVFX: {fileID: 0}
+    PlaysVFXOnActor: 0
+    SpeedMultiplier: 1
+    CooldownMultiplier: 1
+    OnlyAffectPlayerWhenGrounded: 0
+  DoStun: 0
+  StunDuration: 1
+--- !u!1 &1190595037675859
+GameObject:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - component: {fileID: 4996044355238959}
+  m_Layer: 0
+  m_Name: Barrel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4996044355238959
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1190595037675859}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.257, y: 1.445, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4083303172975051}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!1 &1921977712249913
+GameObject:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - component: {fileID: 4358538848684826}
+  m_Layer: 0
+  m_Name: Casing
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4358538848684826
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1921977712249913}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.8125, y: 0.5625, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4083303172975051}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!1 &1547609844815853
+GameObject:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - component: {fileID: 4729369751865195}
+  m_Layer: 0
+  m_Name: PrimaryHand
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4729369751865195
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1547609844815853}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.625, y: 0.875, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4083303172975051}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!1 &1291701067700015
+GameObject:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - component: {fileID: 4396603316049490}
+  m_Layer: 0
+  m_Name: SecondaryHand
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4396603316049490
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1291701067700015}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.6875, y: 1.125, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4083303172975051}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!1 &1484201609158439
+GameObject:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - component: {fileID: 4420924068172814}
+  m_Layer: 0
+  m_Name: Reload
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4420924068172814
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1484201609158439}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.123, y: 1.097, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4083303172975051}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}

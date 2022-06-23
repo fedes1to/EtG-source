@@ -1,0 +1,1069 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1948451330568296}
+  m_IsPrefabParent: 1
+--- !u!1 &1948451330568296
+GameObject:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - component: {fileID: 4372277619668077}
+  - component: {fileID: 114117315255997801}
+  - component: {fileID: 114068972064267889}
+  - component: {fileID: 114303839433380366}
+  - component: {fileID: 114523338470427527}
+  - component: {fileID: 114052601586084487}
+  - component: {fileID: 33323101130110397}
+  - component: {fileID: 23776849761823834}
+  - component: {fileID: 114022519368984489}
+  - component: {fileID: 114462507542035999}
+  - component: {fileID: 114184330476452092}
+  - component: {fileID: 114479324720456750}
+  - component: {fileID: 114636191515633737}
+  - component: {fileID: 114416744274338534}
+  - component: {fileID: 114883867990073429}
+  - component: {fileID: 114463206424965304}
+  m_Layer: 28
+  m_Name: SackKnight
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4372277619668077
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1948451330568296}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4249387778424540}
+  - {fileID: 4394637446139707}
+  - {fileID: 4023774210903242}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &114117315255997801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1948451330568296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6d6e26d8dd7ea642badf31565daa70a, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  CollideWithTileMap: 1
+  CollideWithOthers: 1
+  Velocity: {x: 0, y: 0}
+  CapVelocity: 0
+  MaxVelocity: {x: 0, y: 0}
+  ForceAlwaysUpdate: 0
+  CanPush: 0
+  CanBePushed: 0
+  PushSpeedModifier: 1
+  CanCarry: 0
+  CanBeCarried: 1
+  PreventPiercing: 0
+  SkipEmptyColliders: 0
+  TK2DSprite: {fileID: 0}
+  RecheckTriggers: 0
+  UpdateCollidersOnRotation: 0
+  UpdateCollidersOnScale: 0
+  AxialScale: {x: 1, y: 1}
+  DebugParams:
+    ShowPosition: 0
+    PositionHistory: 0
+    ShowVelocity: 0
+    ShowSlope: 0
+  IgnorePixelGrid: 0
+  PixelColliders:
+  - Enabled: 1
+    CollisionLayer: 3
+    IsTrigger: 0
+    ColliderGenerationMode: 0
+    BagleUseFirstFrameOnly: 1
+    SpecifyBagelFrame:
+    BagelColliderNumber: 0
+    ManualOffsetX: 14
+    ManualOffsetY: 6
+    ManualWidth: 10
+    ManualHeight: 4
+    ManualRadius: 0
+    ManualDiameter: 0
+    ManualLeftX: 0
+    ManualLeftY: 0
+    ManualRightX: 0
+    ManualRightY: 0
+    Sprite: {fileID: 0}
+    m_offset:
+      x: 0
+      y: 0
+    m_transformOffset:
+      x: 0
+      y: 0
+    m_dimensions:
+      x: 0
+      y: 0
+    m_rotation: 0
+  - Enabled: 1
+    CollisionLayer: 2
+    IsTrigger: 0
+    ColliderGenerationMode: 0
+    BagleUseFirstFrameOnly: 1
+    SpecifyBagelFrame:
+    BagelColliderNumber: 0
+    ManualOffsetX: 13
+    ManualOffsetY: 6
+    ManualWidth: 12
+    ManualHeight: 10
+    ManualRadius: 0
+    ManualDiameter: 0
+    ManualLeftX: 0
+    ManualLeftY: 0
+    ManualRightX: 0
+    ManualRightY: 0
+    Sprite: {fileID: 114022519368984489}
+    m_offset:
+      x: 0
+      y: 0
+    m_transformOffset:
+      x: 0
+      y: 0
+    m_dimensions:
+      x: 0
+      y: 0
+    m_rotation: 0
+  m_position:
+    m_position:
+      x: 0
+      y: 0
+    m_remainder: {x: 0, y: 0}
+--- !u!114 &114068972064267889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1948451330568296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ba4aa78d8e99464390948970a3f689e, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  placeableWidth: 1
+  placeableHeight: 1
+  difficulty: 0
+  isPassable: 1
+  ActorName: SackKnight
+  OverrideDisplayName:
+  actorTypes: 0
+  HasShadow: 1
+  ShadowPrefab: {fileID: 0}
+  ShadowObject: {fileID: 0}
+  ShadowHeightOffGround: 0
+  ShadowParent: {fileID: 0}
+  ActorShadowOffset: {x: -0.0625, y: 0, z: 0}
+  DoDustUps: 1
+  DustUpInterval: 0.125
+  OverrideDustUp: {fileID: 0}
+  FreezeDispelFactor: 20
+  ImmuneToAllEffects: 0
+  EffectResistances: []
+  OverrideColorOverridden: 0
+  EnemyId: 66
+  EnemyGuid: c6c8e59d0f5d41969c74e802c9d67d07
+  ForcedPositionInAmmonomicon: -1
+  SetsFlagOnDeath: 0
+  FlagToSetOnDeath: 0
+  SetsFlagOnActivation: 0
+  FlagToSetOnActivation: 0
+  SetsCharacterSpecificFlagOnDeath: 0
+  CharacterSpecificFlagToSetOnDeath: 0
+  IsNormalEnemy: 0
+  IsSignatureEnemy: 0
+  IsHarmlessEnemy: 0
+  CompanionSettings:
+    WarpsToRandomPoint: 0
+  MovementSpeed: 6
+  PathableTiles: 2
+  LosPoint: {fileID: 0}
+  DiesOnCollison: 0
+  CollisionDamage: 0.5
+  CollisionKnockbackStrength: 5
+  CollisionDamageTypes: 0
+  EnemyCollisionKnockbackStrengthOverride: -1
+  CollisionVFX:
+    type: 0
+    effects: []
+  NonActorCollisionVFX:
+    type: 0
+    effects: []
+  CollisionSetsPlayerOnFire: 0
+  TryDodgeBullets: 0
+  AvoidRadius: 4
+  ReflectsProjectilesWhileInvulnerable: 0
+  HitByEnemyBullets: 0
+  HasOverrideDodgeRollDeath: 0
+  OverrideDodgeRollDeath:
+  CanDropCurrency: 0
+  AdditionalSingleCoinDropChance: 0
+  CanDropItems: 0
+  CustomLootTable: {fileID: 0}
+  CanDropDuplicateItems: 0
+  CustomLootTableMinDrops: 1
+  CustomLootTableMaxDrops: 1
+  CustomChestTable: {fileID: 0}
+  ChanceToDropCustomChest: 0
+  IgnoreForRoomClear: 1
+  SpawnLootAtRewardChestPos: 0
+  CorpseObject: {fileID: 1892509127892452, guid: 0655daefb355da142a8589e8c2aaedb1, type: 2}
+  CorpseShadow: 1
+  TransferShadowToCorpse: 0
+  shadowDeathType: 10
+  PreventDeathKnockback: 0
+  OnCorpseVFX:
+    type: 0
+    effects: []
+  OnEngagedVFX: {fileID: 0}
+  OnEngagedVFXAnchor: 0
+  shadowHeightOffset: 0
+  invisibleUntilAwaken: 0
+  procedurallyOutlined: 1
+  forceUsesTrimmedBounds: 1
+  reinforceType: 0
+  optionalPalette: {fileID: 0}
+  UsesVaryingEmissiveShaderPropertyBlock: 0
+  OverrideBuffEffectPosition: {fileID: 0}
+  EnemySwitchState:
+  OverrideSpawnReticleAudio:
+  OverrideSpawnAppearAudio:
+  UseMovementAudio: 0
+  StartMovingEvent:
+  StopMovingEvent:
+  animationAudioEvents:
+  - eventTag: footstep
+    eventName: Play_CHR_metalBullet_step_01
+  HealthOverrides: []
+  IdentifierForEffects: 0
+  BehaviorOverridesVelocity: 0
+  BehaviorVelocity: {x: 0, y: 0}
+  OverridePathVelocity: {}
+  AlwaysShowOffscreenArrow: 0
+  BlackPhantomProperties:
+    BonusHealthPercentIncrease: 0
+    BonusHealthFlatIncrease: 0
+    MaxTotalHealth: 175
+    CooldownMultiplier: 0.66
+    MovementSpeedMultiplier: 1.5
+    LocalTimeScaleMultiplier: 1
+    BulletSpeedMultiplier: 1
+    GradientScale: 0.75
+    ContrastPower: 1.3
+  ForceBlackPhantomParticles: 0
+  OverrideBlackPhantomParticlesCollider: 0
+  BlackPhantomParticlesCollider: 0
+  PreventFallingInPitsEver: 0
+--- !u!114 &114303839433380366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1948451330568296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 301eb88be2851694f82c3a4de315a602, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  overrideMaterialDefinition: {fileID: 0}
+  overrideHitEffect:
+    effects: []
+  overrideHitEffectPool:
+    type: 0
+    effects: []
+  additionalHitEffects: []
+  SuppressAllHitEffects: 0
+--- !u!114 &114523338470427527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1948451330568296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: daff7bb4fa885db4e9c997e01d349b56, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  quantizeHealth: 0
+  quantizedIncrement: 0.5
+  flashesOnDamage: 1
+  incorporealityOnDamage: 0
+  incorporealityTime: 1
+  PreventAllDamage: 0
+  persistsOnDeath: 0
+  maximumHealth: 15000
+  currentHealth: 15
+  currentArmor: 0
+  usesInvulnerabilityPeriod: 0
+  invulnerabilityPeriod: 0.5
+  useFortunesFavorInvulnerability: 0
+  deathEffect: {fileID: 0}
+  damagedAudioEvent:
+  overrideDeathAudioEvent:
+  overrideDeathAnimation:
+  shakesCameraOnDamage: 0
+  cameraShakeOnDamage:
+    magnitude: 0.35
+    speed: 6
+    time: 0.06
+    falloff: 0
+    direction: {x: 0, y: 0}
+    vibrationType: 10
+    simpleVibrationTime: 20
+    simpleVibrationStrength: 20
+  damageTypeModifiers: []
+  healthIsNumberOfHits: 0
+  OnlyAllowSpecialBossDamage: 0
+  spawnBulletScript: 0
+  chanceToSpawnBulletScript: 0
+  overrideDeathAnimBulletScript:
+  noCorpseWhenBulletScriptDeath: 0
+  bulletScriptType: 0
+  bulletScript:
+    scriptTypeName:
+  bossHealthBar: 0
+  overrideBossName:
+  forcePreventVictoryMusic: 0
+  GlobalPixelColliderDamageMultiplier: 1
+--- !u!114 &114052601586084487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1948451330568296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c980374f410b048499ccc9811422658c, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  weight: 35
+  deathMultiplier: 4
+  knockbackWhileReflecting: 0
+  shouldBounce: 1
+  collisionDecay: 0.5
+--- !u!33 &33323101130110397
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1948451330568296}
+  m_Mesh: {fileID: 0}
+--- !u!23 &23776849761823834
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1948451330568296}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 1e8a7a3b2ac5b564da1a701d51f62b9d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 0
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 0
+  m_AutoUVMaxDistance: 0
+  m_AutoUVMaxAngle: 0
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -1981987969
+  m_SortingLayer: 2
+  m_SortingOrder: 0
+--- !u!114 &114022519368984489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1948451330568296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aab037bf7c2ce7343b005114c0e6a2e1, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  automaticallyManagesDepth: 1
+  ignoresTiltworldDepth: 0
+  depthUsesTrimmedBounds: 0
+  allowDefaultLayer: 0
+  attachParent: {fileID: 0}
+  OverrideMaterialMode: 0
+  independentOrientation: 0
+  autodetectFootprint: 1
+  customFootprintOrigin:
+    x: 0
+    y: 0
+  customFootprint:
+    x: 0
+    y: 0
+  hasOffScreenCachedUpdate: 0
+  offScreenCachedCollection: {fileID: 0}
+  offScreenCachedID: -1
+  collection: {fileID: 114211571202268607, guid: 1166fa628710fc64aa1640b5575010b0, type: 2}
+  _color: {r: 1, g: 1, b: 1, a: 1}
+  _scale: {x: 1, y: 1, z: 1}
+  _spriteId: 562
+  boxCollider2D: {fileID: 0}
+  boxCollider: {fileID: 0}
+  meshCollider: {fileID: 0}
+  meshColliderPositions: []
+  meshColliderMesh: {fileID: 0}
+  CachedPerpState: 0
+  m_heightOffGround: 0
+  renderLayer: 0
+  IsBraveOutlineSprite: 0
+  IsZDepthDirty: 0
+  ApplyEmissivePropertyBlock: 0
+  GenerateUV2: 0
+  LockUV2OnFrameOne: 0
+  StaticPositions: 0
+--- !u!114 &114462507542035999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1948451330568296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 858693f8db5b6d94ba3af909ccf0a16b, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  library: {fileID: 114810717925287576, guid: 3ce83fef7fc613a41835ab3388da8838, type: 2}
+  defaultClipId: 110
+  AdditionalCameraVisibilityRadius: 0
+  AnimateDuringBossIntros: 0
+  AlwaysIgnoreTimeScale: 0
+  ForceSetEveryFrame: 0
+  playAutomatically: 1
+  IsFrameBlendedAnimation: 0
+  clipTime: 0
+  deferNextStartClip: 0
+--- !u!114 &114184330476452092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1948451330568296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17e45053a45c92d49b882037d5e54712, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  ChildAnimator: {fileID: 0}
+  SpecifyAiActor: {fileID: 0}
+  facingType: 2
+  DirectionParent: {fileID: 0}
+  faceSouthWhenStopped: 0
+  faceTargetWhenStopped: 0
+  AnimatedFacingDirection: -90
+  directionalType: 10
+  RotationQuantizeTo: 0
+  RotationOffset: 0
+  ForceKillVfxOnPreDeath: 0
+  SuppressAnimatorFallback: 0
+  IsBodySprite: 1
+  IdleAnimation:
+    Type: 2
+    Prefix: junk_idle
+    AnimNames:
+    - 
+    - 
+    Flipped: 0000000000000000
+  MoveAnimation:
+    Type: 2
+    Prefix: junk_move
+    AnimNames:
+    - 
+    - 
+    Flipped: 0000000000000000
+  FlightAnimation:
+    Type: 0
+    Prefix:
+    AnimNames: []
+    Flipped:
+  HitAnimation:
+    Type: 0
+    Prefix: hit
+    AnimNames: []
+    Flipped:
+  HitReactChance: 1
+  MinTimeBetweenHitReacts: 0
+  HitType: 0
+  TalkAnimation:
+    Type: 2
+    Prefix: junk_talk
+    AnimNames:
+    - 
+    - 
+    Flipped: 0000000000000000
+  OtherAnimations:
+  - name: attack
+    anim:
+      Type: 2
+      Prefix: junk_attack
+      AnimNames:
+      - 
+      - 
+      Flipped: 0000000000000000
+  - name: shield
+    anim:
+      Type: 2
+      Prefix: junk_shspcg_shield
+      AnimNames:
+      - 
+      - 
+      Flipped: 0000000000000000
+  - name: sacrifice
+    anim:
+      Type: 2
+      Prefix: junk_shspcg_sacrifice
+      AnimNames:
+      - 
+      - 
+      Flipped: 0000000000000000
+  - name: rocket
+    anim:
+      Type: 2
+      Prefix: junk_g_rocket
+      AnimNames:
+      - 
+      - 
+      Flipped: 0000000000000000
+  - name: fire
+    anim:
+      Type: 2
+      Prefix: junk_g_fire
+      AnimNames:
+      - 
+      - 
+      Flipped: 0000000000000000
+  OtherVFX:
+  - name: attack
+    anchorTransform: {fileID: 0}
+    vfxPool:
+      type: 3
+      effects:
+      - effects:
+        - effect: {fileID: 1275611113105334, guid: 8b3952860442d9d4aac950fe5a3c9d9d, type: 2}
+          orphaned: 1
+          attached: 0
+          persistsOnDeath: 1
+          usesZHeight: 1
+          zHeight: 5
+          alignment: 0
+          destructible: 0
+      - effects:
+        - effect: {fileID: 1572165790694209, guid: 1fff0dadecaa1a64c89a2ed955573ee5, type: 2}
+          orphaned: 1
+          attached: 0
+          persistsOnDeath: 1
+          usesZHeight: 1
+          zHeight: 5
+          alignment: 0
+          destructible: 0
+      - effects:
+        - effect: {fileID: 1846562178194116, guid: c619d1cfcda74ef439689957e43a9af2, type: 2}
+          orphaned: 1
+          attached: 0
+          persistsOnDeath: 1
+          usesZHeight: 1
+          zHeight: 5
+          alignment: 0
+          destructible: 0
+      - effects:
+        - effect: {fileID: 1243160857219687, guid: 082d6203f50dfae49b5a68c5a34ef748, type: 2}
+          orphaned: 1
+          attached: 0
+          persistsOnDeath: 1
+          usesZHeight: 1
+          zHeight: 5
+          alignment: 0
+          destructible: 0
+  - name: mechSwordR
+    anchorTransform: {fileID: 0}
+    vfxPool:
+      type: 4
+      effects:
+      - effects:
+        - effect: {fileID: 1273292924148753, guid: 097a54cfe0a41334daf70a44dd294f18, type: 2}
+          orphaned: 0
+          attached: 1
+          persistsOnDeath: 1
+          usesZHeight: 1
+          zHeight: 5
+          alignment: 0
+          destructible: 0
+      - effects:
+        - effect: {fileID: 1572165790694209, guid: 1fff0dadecaa1a64c89a2ed955573ee5, type: 2}
+          orphaned: 1
+          attached: 0
+          persistsOnDeath: 1
+          usesZHeight: 1
+          zHeight: 5
+          alignment: 0
+          destructible: 0
+      - effects:
+        - effect: {fileID: 1846562178194116, guid: c619d1cfcda74ef439689957e43a9af2, type: 2}
+          orphaned: 1
+          attached: 0
+          persistsOnDeath: 1
+          usesZHeight: 1
+          zHeight: 5
+          alignment: 0
+          destructible: 0
+      - effects:
+        - effect: {fileID: 1243160857219687, guid: 082d6203f50dfae49b5a68c5a34ef748, type: 2}
+          orphaned: 1
+          attached: 0
+          persistsOnDeath: 1
+          usesZHeight: 1
+          zHeight: 5
+          alignment: 0
+          destructible: 0
+  - name: mechSwordL
+    anchorTransform: {fileID: 0}
+    vfxPool:
+      type: 4
+      effects:
+      - effects:
+        - effect: {fileID: 1002578759612955, guid: f37948b1fc4f7af44bf41d204365a083, type: 2}
+          orphaned: 0
+          attached: 1
+          persistsOnDeath: 1
+          usesZHeight: 1
+          zHeight: 5
+          alignment: 0
+          destructible: 0
+      - effects:
+        - effect: {fileID: 1572165790694209, guid: 1fff0dadecaa1a64c89a2ed955573ee5, type: 2}
+          orphaned: 1
+          attached: 0
+          persistsOnDeath: 1
+          usesZHeight: 1
+          zHeight: 5
+          alignment: 0
+          destructible: 0
+      - effects:
+        - effect: {fileID: 1846562178194116, guid: c619d1cfcda74ef439689957e43a9af2, type: 2}
+          orphaned: 1
+          attached: 0
+          persistsOnDeath: 1
+          usesZHeight: 1
+          zHeight: 5
+          alignment: 0
+          destructible: 0
+      - effects:
+        - effect: {fileID: 1243160857219687, guid: 082d6203f50dfae49b5a68c5a34ef748, type: 2}
+          orphaned: 1
+          attached: 0
+          persistsOnDeath: 1
+          usesZHeight: 1
+          zHeight: 5
+          alignment: 0
+          destructible: 0
+  - name: mechGunVFX
+    anchorTransform: {fileID: 4023774210903242}
+    vfxPool:
+      type: 4
+      effects:
+      - effects:
+        - effect: {fileID: 1057312596636452, guid: 634eb16067a619b438edfa78a077b553, type: 2}
+          orphaned: 1
+          attached: 1
+          persistsOnDeath: 1
+          usesZHeight: 1
+          zHeight: 1
+          alignment: 1
+          destructible: 0
+      - effects:
+        - effect: {fileID: 1572165790694209, guid: 1fff0dadecaa1a64c89a2ed955573ee5, type: 2}
+          orphaned: 1
+          attached: 0
+          persistsOnDeath: 1
+          usesZHeight: 1
+          zHeight: 5
+          alignment: 0
+          destructible: 0
+      - effects:
+        - effect: {fileID: 1846562178194116, guid: c619d1cfcda74ef439689957e43a9af2, type: 2}
+          orphaned: 1
+          attached: 0
+          persistsOnDeath: 1
+          usesZHeight: 1
+          zHeight: 5
+          alignment: 0
+          destructible: 0
+      - effects:
+        - effect: {fileID: 1243160857219687, guid: 082d6203f50dfae49b5a68c5a34ef748, type: 2}
+          orphaned: 1
+          attached: 0
+          persistsOnDeath: 1
+          usesZHeight: 1
+          zHeight: 5
+          alignment: 0
+          destructible: 0
+  OtherScreenShake: []
+  IdleFidgetAnimations: []
+--- !u!114 &114479324720456750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1948451330568296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b976a500c4f56cb4fb1f2892767fd2d3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  SuppressPlayerEnteredRoom: 0
+--- !u!114 &114636191515633737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1948451330568296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f71f521d562bfa743af7feb5982314c9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  _objectReferences:
+  - {fileID: 1358905324782400, guid: b7ba0ece27b8d8a47bd3c915adc74c0b, type: 2}
+  _serializedStateKeys:
+  - OverrideBehaviors
+  - TargetBehaviors
+  - MovementBehaviors
+  - AttackBehaviors
+  - OtherBehaviors
+  _serializedStateValues:
+  - '[]'
+  - '[{"Radius":35.0,"LineOfSight":true,"ObjectPermanence":true,"SearchInterval":0.25,"PauseOnTargetSwitch":false,"PauseTime":0.25,"$type":"TargetPlayerBehavior"}]'
+  - '[{"PathInterval":0.25,"DisableInCombat":true,"IdealRadius":3.0,"CatchUpRadius":8.0,"CatchUpAccelTime":3.0,"CatchUpSpeed":6.0,"CatchUpMaxSpeed":10.0,"CatchUpAnimation":"","CatchUpOutAnimation":"","IdleAnimations":[],"CanRollOverPits":true,"RollAnimation":"roll","$type":"CompanionFollowPlayerBehavior"},{"StopWhenInRange":false,"CustomRange":-1.0,"LineOfSight":true,"ReturnToSpawn":false,"SpawnTetherDistance":0.0,"PathInterval":0.25,"SpecifyRange":false,"MinActiveRange":0.0,"MaxActiveRange":0.0,"$type":"SeekTargetBehavior"}]'
+  - '[{"KnightCommanderCooldownTime":10.0,"HolyKnightCooldownTime":7.0,"AngelicKnightCooldownTime":5.0,"BlankRadius":7.0,"$type":"SackKnightShieldBehavior"},{"maxAttackDistance":1.0,"minAttackDistance":0.100000001490116,"SquireAttackDamage":3.0,"HedgeKnightAttackDamage":5.0,"KnightAttackDamage":7.0,"KnightLieutenantAttackDamage":9.0,"KnightCommanderAttackDamage":30.0,"HolyKnightAttackDamage":40.0,"MechAttackDamage":20.0,"AngelicKnightAttackDuration":8.0,"AngelicKnightAngleVariance":30.0,"SquireCooldownTime":3.0,"HedgeKnightCooldownTime":1.75,"KnightCooldownTime":0.5,"KnightLieutenantCooldownTime":0.5,"KnightCommanderCooldownTime":1.5,"HolyKnightCooldownTime":1.5,"AngelicKnightCooldownTime":3.0,"AngelicKnightDesiredDistance":6.0,"MechCooldownTime":2.0,"MechGunWeight":1.0,"MechRocketWeight":1.0,"MechSwordWeight":1.0,"SwordHitVFX":"attack","PoisonEffectForTrashSynergy":{"DamagePerSecondToEnemies":4.0,"ignitesGoops":false,"AffectsPlayers":false,"AffectsEnemies":true,"effectIdentifier":"poison","resistanceType":"None","stackMode":"Refresh","duration":3.5,"maxStackedDuration":-1.0,"AppliesTint":true,"TintColor":{"r":0.0,"g":0.996078431606293,"b":0.215686276555061,"a":1.0},"AppliesDeathTint":false,"DeathTintColor":{"r":0.388000011444092,"g":0.388000011444092,"b":0.388000011444092,"a":1.0},"AppliesOutlineTint":false,"OutlineTintColor":{"r":0.0,"g":0.0,"b":0.0,"a":1.0},"OverheadVFX":0,"PlaysVFXOnActor":false},"$type":"SackKnightAttackBehavior"}]'
+  - '[]'
+  InstantFirstTick: 0
+  TickInterval: 0.1
+  PostAwakenDelay: 0
+  RemoveDelayOnReinforce: 0
+  OverrideStartingFacingDirection: 0
+  StartingFacingDirection: -90
+  SkipTimingDifferentiator: 0
+--- !u!114 &114416744274338534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1948451330568296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 407ec914435ef6a4796e1993d1e82492, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  CanInterceptBullets: 0
+  IsCopDead: 0
+  IsCop: 0
+  CopDeathStatModifier:
+    statToBoost: 0
+    modifyType: 0
+    amount: 0
+    isMeatBunBuff: 0
+  CurseOnCopDeath: 2
+  CanCrossPits: 0
+  BlanksOnActiveItemUsed: 0
+  InternalBlankCooldown: 10
+  HasStealthMode: 0
+  PredictsChests: 0
+  PredictsChestSynergy: 0
+  CanBePet: 0
+  companionID: 0
+  TeaSynergyHeatRing: {}
+  m_pettingDoer: {fileID: 0}
+  m_petOffset: {x: 0, y: 0}
+  CurrentForm: 0
+--- !u!114 &114883867990073429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1948451330568296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecf22b9d5193fc4786c6bd88f8e24eb, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Bullets:
+  - Name: angel
+    BulletObject: {fileID: 1985355745204205, guid: 37c6a53ffd65d224fb3802d0f3f7d9d8, type: 2}
+    OverrideProjectile: 1
+    ProjectileData:
+      damage: 10
+      speed: 23
+      range: 100
+      force: 30
+      damping: 0
+      UsesCustomAccelerationCurve: 0
+      AccelerationCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 0
+        m_PostInfinity: 0
+        m_RotationOrder: 0
+      CustomAccelerationCurveDuration: 0
+      onDestroyBulletScript:
+        scriptTypeName:
+    PlayAudio: 0
+    AudioSwitch:
+    AudioEvent:
+    AudioLimitOncePerFrame: 0
+    AudioLimitOncePerAttack: 0
+    MuzzleFlashEffects:
+      type: 0
+      effects: []
+    MuzzleLimitOncePerFrame: 0
+    MuzzleInheritsTransformDirection: 0
+    SpawnShells: 0
+    ShellTransform: {fileID: 0}
+    ShellPrefab: {fileID: 0}
+    ShellForce: 0
+    ShellForceVariance: 0
+    DontRotateShell: 0
+    ShellGroundOffset: 0
+    ShellsLimitOncePerFrame: 0
+    rampBullets: 0
+    rampStartHeight: 0
+    rampTime: 0
+    conditionalMinDegFromNorth: 0
+    forceCanHitEnemies: 0
+    suppressHitEffectsIfOffscreen: 0
+    preloadCount: 0
+  - Name: mechRocket
+    BulletObject: {fileID: 1924261968871001, guid: cb84d30f0d164b54ca9f6119054b869d, type: 2}
+    OverrideProjectile: 0
+    ProjectileData:
+      damage: 10
+      speed: 23
+      range: 100
+      force: 30
+      damping: 0
+      UsesCustomAccelerationCurve: 0
+      AccelerationCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 0
+        m_PostInfinity: 0
+        m_RotationOrder: 0
+      CustomAccelerationCurveDuration: 0
+      onDestroyBulletScript:
+        scriptTypeName:
+    PlayAudio: 0
+    AudioSwitch:
+    AudioEvent:
+    AudioLimitOncePerFrame: 0
+    AudioLimitOncePerAttack: 0
+    MuzzleFlashEffects:
+      type: 0
+      effects: []
+    MuzzleLimitOncePerFrame: 0
+    MuzzleInheritsTransformDirection: 0
+    SpawnShells: 0
+    ShellTransform: {fileID: 0}
+    ShellPrefab: {fileID: 0}
+    ShellForce: 0
+    ShellForceVariance: 0
+    DontRotateShell: 0
+    ShellGroundOffset: 0
+    ShellsLimitOncePerFrame: 0
+    rampBullets: 0
+    rampStartHeight: 0
+    rampTime: 0
+    conditionalMinDegFromNorth: 0
+    forceCanHitEnemies: 0
+    suppressHitEffectsIfOffscreen: 0
+    preloadCount: 0
+  - Name: blaster
+    BulletObject: {fileID: 1799989925414092, guid: 828ba5ec5a82b0142b8aa1639e58184f, type: 2}
+    OverrideProjectile: 0
+    ProjectileData:
+      damage: 10
+      speed: 23
+      range: 100
+      force: 30
+      damping: 0
+      UsesCustomAccelerationCurve: 0
+      AccelerationCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 0
+        m_PostInfinity: 0
+        m_RotationOrder: 0
+      CustomAccelerationCurveDuration: 0
+      onDestroyBulletScript:
+        scriptTypeName:
+    PlayAudio: 0
+    AudioSwitch:
+    AudioEvent:
+    AudioLimitOncePerFrame: 0
+    AudioLimitOncePerAttack: 0
+    MuzzleFlashEffects:
+      type: 0
+      effects: []
+    MuzzleLimitOncePerFrame: 0
+    MuzzleInheritsTransformDirection: 0
+    SpawnShells: 0
+    ShellTransform: {fileID: 0}
+    ShellPrefab: {fileID: 0}
+    ShellForce: 0
+    ShellForceVariance: 0
+    DontRotateShell: 0
+    ShellGroundOffset: 0
+    ShellsLimitOncePerFrame: 0
+    rampBullets: 0
+    rampStartHeight: 0
+    rampTime: 0
+    conditionalMinDegFromNorth: 0
+    forceCanHitEnemies: 0
+    suppressHitEffectsIfOffscreen: 0
+    preloadCount: 0
+  useDefaultBulletIfMissing: 0
+  transforms:
+  - {fileID: 4249387778424540}
+  - {fileID: 4394637446139707}
+  FixedPlayerPosition: {}
+--- !u!114 &114463206424965304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1948451330568296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25bc20faa5e64aa45ace06824a2d9bed, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  attachPoints:
+  - {fileID: 4023774210903242}
+  deactivateUnusedAttachPoints: 0
+  disableEmissionOnUnusedParticleSystems: 0
+  ignorePosition: 0
+  ignoreScale: 0
+  ignoreRotation: 0
+  centerUnusedAttachPoints: 0
+--- !u!1 &1194811911112392
+GameObject:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - component: {fileID: 4249387778424540}
+  m_Layer: 0
+  m_Name: left shoot point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4249387778424540
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1194811911112392}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.625, y: 1.1875, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4372277619668077}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1700430045578109
+GameObject:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - component: {fileID: 4394637446139707}
+  m_Layer: 0
+  m_Name: right shoot point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4394637446139707
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1700430045578109}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.6875, y: 1.1875, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4372277619668077}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!1 &1275615022154174
+GameObject:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - component: {fileID: 4023774210903242}
+  m_Layer: 0
+  m_Name: gun
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4023774210903242
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1275615022154174}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.25, y: 0.6875, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4372277619668077}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}

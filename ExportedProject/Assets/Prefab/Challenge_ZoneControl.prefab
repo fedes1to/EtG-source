@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1614859381955261}
+  m_IsPrefabParent: 1
+--- !u!1 &1614859381955261
+GameObject:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - component: {fileID: 4102222591472468}
+  - component: {fileID: 114894853418644502}
+  m_Layer: 0
+  m_Name: Challenge_ZoneControl
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4102222591472468
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1614859381955261}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &114894853418644502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1614859381955261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2c4bb54e217e334ba2a1f5117b356d3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  DisplayName: '#CH_ZONE_CONTROL'
+  AlternateLanguageDisplayName:
+  AtlasSpriteName: Zone_Control_icon_001
+  ValidInBossChambers: 0
+  MutuallyExclusive:
+  - {fileID: 114765525228907997, guid: 491b78ddbba1bcb4d8097bd1f4a54afd, type: 2}
+  BoxPlaceable: {fileID: 11400000, guid: a7649366a57469e4bb5d928823aa347b, type: 2}
+  AuraRadius: 6
+  WinTimer: 5.5
+  DecayScale: 0.1
+  MinBoxes: 2
+  ExtraBoxAboveArea: 300
+  ExtraBoxEveryArea: 500

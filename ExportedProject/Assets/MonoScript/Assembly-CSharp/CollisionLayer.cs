@@ -1,0 +1,20 @@
+public enum CollisionLayer
+{
+	PlayerHitBox,
+	PlayerCollider,
+	EnemyHitBox,
+	EnemyCollider,
+	Projectile,
+	LowObstacle,
+	HighObstacle,
+	Pickup,
+	BulletBlocker,
+	EnemyBlocker,
+	PlayerBlocker,
+	MovingPlatform,
+	BulletBreakable,
+	BeamBlocker,
+	TileBlocker,
+	EnemyBulletBlocker,
+	Trap
+}

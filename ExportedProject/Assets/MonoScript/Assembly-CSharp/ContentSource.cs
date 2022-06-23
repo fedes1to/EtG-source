@@ -1,0 +1,9 @@
+public enum ContentSource
+{
+	BASE = 0,
+	CONTENT_UPDATE_01 = 1,
+	CONTENT_UPDATE_01_FINAL = 2,
+	CONTENT_UPDATE_02 = 3,
+	CONTENT_UPDATE_03 = 4,
+	EXCLUDED = 999
+}

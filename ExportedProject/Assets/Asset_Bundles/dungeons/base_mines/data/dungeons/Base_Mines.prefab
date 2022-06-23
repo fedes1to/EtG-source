@@ -1,0 +1,251 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1438326249383237}
+  m_IsPrefabParent: 1
+--- !u!1 &1438326249383237
+GameObject:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - component: {fileID: 4712549200313940}
+  - component: {fileID: 114191587038056617}
+  m_Layer: 0
+  m_Name: Base_Mines
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4712549200313940
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1438326249383237}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &114191587038056617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1438326249383237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a056047946ea8594680ca4c320f653ae, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  contentSource: 0
+  DungeonSeed: 0
+  DungeonShortName: '#MINES_SHORTNAME'
+  DungeonFloorName: '#MINES_NAME'
+  DungeonFloorLevelTextOverride: no override
+  LevelOverrideType: 0
+  debugSettings:
+    RAPID_DEBUG_DUNGEON_ITERATION_SEEKER: 0
+    RAPID_DEBUG_DUNGEON_ITERATION: 0
+    RAPID_DEBUG_DUNGEON_COUNT: 50
+    GENERATION_VIEWER_MODE: 0
+    FULL_MINIMAP_VISIBILITY: 0
+    COOP_TEST: 0
+    DISABLE_ENEMIES: 0
+    DISABLE_LOOPS: 1
+    DISABLE_SECRET_ROOM_COVERS: 0
+    DISABLE_OUTLINES: 0
+    WALLS_ARE_PITS: 0
+  PatternSettings:
+    flows:
+    - {fileID: 11400000, guid: 832dec98fe3ba914b8547784b5b220e6, type: 2}
+    - {fileID: 11400000, guid: c4c78dc788030f54aaa6808439755edb, type: 2}
+    - {fileID: 11400000, guid: 73bec1e52c72ebf4187b0618edf5b3df, type: 2}
+    - {fileID: 11400000, guid: 9f52821be4c6d994cacbe27239b20ec3, type: 2}
+    - {fileID: 11400000, guid: 936e7c21f2384194fa270b86c38293e8, type: 2}
+    mandatoryExtraRooms: []
+    optionalExtraRooms: []
+    MAX_GENERATION_ATTEMPTS: 250
+    DEBUG_RENDER_CANVASES_SEPARATELY: 0
+  ForceRegenerationOfCharacters: 0
+  ActuallyGenerateTilemap: 1
+  decoSettings:
+    standardRoomVisualSubtypes:
+      elements:
+      - annotation: stone with wood borders
+        value: 0
+        weight: 0.3
+        additionalPrerequisites: []
+      - annotation: rocky mines
+        value: 1
+        weight: 0.3
+        additionalPrerequisites: []
+      - annotation: shop
+        value: 2
+        weight: 0
+        additionalPrerequisites: []
+      - annotation: wood panel
+        value: 3
+        weight: 0.1
+        additionalPrerequisites: []
+      - annotation: gold rocky mines
+        value: 4
+        weight: 0.3
+        additionalPrerequisites: []
+    decalLayerStyle: 99
+    decalSize: 3
+    decalSpacing: 1
+    decalExpansion: 2
+    patternLayerStyle: 99
+    patternSize: 3
+    patternSpacing: 3
+    patternExpansion: 2
+    decoPatchFrequency: 0.01
+    ambientLightColor: {r: 0.49124134, g: 0.55067265, b: 0.5661765, a: 1}
+    ambientLightColorTwo: {r: 0.38305578, g: 0.45637628, b: 0.47794116, a: 1}
+    lowQualityAmbientLightColor: {r: 1.0294118, g: 0.948082, b: 0.88559693, a: 1}
+    lowQualityAmbientLightColorTwo: {r: 1, g: 0.8862745, b: 0.98039216, a: 1}
+    lowQualityCheapLightVector: {x: 1, y: 0, z: -1, w: 0}
+    UsesAlienFXFloorColor: 1
+    AlienFXFloorColor: {r: 1, g: 0.86369175, b: 0.29411763, a: 1}
+    generateLights: 1
+    lightCullingPercentage: 0.2
+    lightOverlapRadius: 8
+    nearestAllowedLight: 12
+    minLightExpanseWidth: 2
+    lightHeight: -2
+    lightCookies: []
+    debug_view: 0
+  tileIndices:
+    tilesetId: 16
+    dungeonCollection: {fileID: 114796655378681514, guid: e713f35161b508b468ecb91d99a16514, type: 2}
+    dungeonCollectionSupportsDiagonalWalls: 0
+    aoTileIndices:
+      AOFloorTileIndex: 0
+      AOBottomWallBaseTileIndex: 1
+      AOBottomWallTileRightIndex: 2
+      AOBottomWallTileLeftIndex: 3
+      AOBottomWallTileBothIndex: 4
+      AOTopFacewallRightIndex: 6
+      AOTopFacewallLeftIndex: 5
+      AOTopFacewallBothIndex: 7
+      AOFloorWallLeft: 5
+      AOFloorWallRight: 6
+      AOFloorWallBoth: 7
+      AOFloorPizzaSliceLeft: 8
+      AOFloorPizzaSliceRight: 9
+      AOFloorPizzaSliceBoth: 10
+      AOFloorPizzaSliceLeftWallRight: 11
+      AOFloorPizzaSliceRightWallLeft: 12
+      AOFloorWallUpAndLeft: 13
+      AOFloorWallUpAndRight: 14
+      AOFloorWallUpAndBoth: 15
+      AOFloorDiagonalWallNortheast: -1
+      AOFloorDiagonalWallNortheastLower: -1
+      AOFloorDiagonalWallNortheastLowerJoint: -1
+      AOFloorDiagonalWallNorthwest: -1
+      AOFloorDiagonalWallNorthwestLower: -1
+      AOFloorDiagonalWallNorthwestLowerJoint: -1
+      AOBottomWallDiagonalNortheast: -1
+      AOBottomWallDiagonalNorthwest: -1
+    placeBorders: 1
+    placePits: 0
+    chestHighWallIndices:
+    - index: 41
+      likelihood: 0.5
+      overrideLayerIndex: 0
+      overrideIndex: 0
+    decalIndexGrid: {fileID: 0}
+    patternIndexGrid: {fileID: 0}
+    globalSecondBorderTiles:
+    edgeDecorationTiles: {fileID: 0}
+  roomMaterialDefinitions:
+  - {fileID: 11400000, guid: 0628b112ba487e5448b2ddf544401dfb, type: 2}
+  - {fileID: 11400000, guid: 110ec84385a5f4947a5624b8f069105a, type: 2}
+  - {fileID: 11400000, guid: 0c3f31b2ce030c5459a5e25a7555ecb1, type: 2}
+  - {fileID: 11400000, guid: eef5b330e39c6c14aacdf0e513216a8c, type: 2}
+  - {fileID: 11400000, guid: d10340c8fc601124fa2d6e9074cc521b, type: 2}
+  - {fileID: 11400000, guid: 0628b112ba487e5448b2ddf544401dfb, type: 2}
+  - {fileID: 11400000, guid: 0628b112ba487e5448b2ddf544401dfb, type: 2}
+  - {fileID: 11400000, guid: a08c666f28f57a049a75c709a2631f6e, type: 2}
+  dungeonWingDefinitions: []
+  pathGridDefinitions:
+  - {fileID: 11400000, guid: 9c555139c68e63b40b5ca4062b65f60b, type: 2}
+  dungeonDustups:
+    runDustup: {fileID: 1772376454597429, guid: 3fb8b5dbe43312e4cae3b63f092034b8, type: 2}
+    waterDustup: {fileID: 1117342692334000, guid: 9345bf0f675de494dbb897c9647551db, type: 2}
+    additionalWaterDustup: {fileID: 1736450631130942, guid: 0cb20b3a54562c748b4863a37e6bbee9, type: 2}
+    rollNorthDustup: {fileID: 0}
+    rollNorthEastDustup: {fileID: 1210049675503403, guid: 4617305f56136474bb3d420f8da2bd7c, type: 2}
+    rollEastDustup: {fileID: 1461101285022432, guid: bce6b439152b56c4ead37b8a1c54a94c, type: 2}
+    rollSouthEastDustup: {fileID: 1540544591636885, guid: 3331353b1c78efb4a897ab48f9cfeac5, type: 2}
+    rollSouthDustup: {fileID: 1549219079854188, guid: 8cfb3828fa196814a9be88a70ba6e14c, type: 2}
+    rollSouthWestDustup: {fileID: 0}
+    rollWestDustup: {fileID: 0}
+    rollNorthWestDustup: {fileID: 0}
+    rollLandDustup: {fileID: 1887239652433194, guid: 31e1e49acf6500948b506218383a67a2, type: 2}
+  damageTypeEffectMatrix: {fileID: 11400000, guid: 1776e73cb8ebb23459e21d18f86a3f46, type: 2}
+  stampData: {fileID: 11400000, guid: 6cbdfdf2722bb154e840bb9a663093fb, type: 2}
+  UsesCustomFloorIdea: 0
+  FloorIdea:
+    ValidEasyEnemyPlaceables: []
+    ValidHardEnemyPlaceables: []
+    UseWallSawblades: 0
+    UseRollingLogsVertical: 1
+    UseRollingLogsHorizontal: 1
+    UseFloorPitTraps: 0
+    UseFloorFlameTraps: 0
+    UseFloorSpikeTraps: 0
+    UseFloorConveyorBelts: 0
+    UseCaveIns: 1
+    UseAlarmMushrooms: 0
+    UseMineCarts: 1
+    UseChandeliers: 0
+    CanIncludePits: 1
+  PlaceDoors: 1
+  doorObjects: {fileID: 11400000, guid: 1ba51fabf8818d24f9c7540d6aefc798, type: 2}
+  lockedDoorObjects: {fileID: 0}
+  oneWayDoorObjects: {fileID: 11400000, guid: 067c329f1e4eeca4db576edf01ebdc54, type: 2}
+  oneWayDoorPressurePlate: {fileID: 1003323709835150, guid: 033709b94c64ad54eb9a23980bd1f6b4, type: 2}
+  phantomBlockerDoorObjects: {fileID: 11400000, guid: e7ce988e3aa8f614db1e5f969560cd05, type: 2}
+  alternateDoorObjectsNakatomi: {fileID: 0}
+  UsesWallWarpWingDoors: 0
+  WarpWingDoorPrefab: {fileID: 0}
+  baseChestContents: {fileID: 11400000, guid: fb5780da38396c940af7bf9745bf59e9, type: 2}
+  SecretRoomSimpleTriggersFacewall:
+  - {fileID: 1491176893621084, guid: c05697cec4d075243846d3c16d4f0347, type: 2}
+  SecretRoomSimpleTriggersSidewall:
+  - {fileID: 1170527879791092, guid: 38cb88ee82aa5b741b1461ed75a46860, type: 2}
+  SecretRoomComplexTriggers: []
+  SecretRoomDoorSparkVFX: {fileID: 1081327193711146, guid: e68fe909e0de71542a0e807376ec0eef, type: 2}
+  SecretRoomHorizontalPoofVFX: {fileID: 1627342733197064, guid: 7a7d95d499a5d2743b6d05965732e85e, type: 2}
+  SecretRoomVerticalPoofVFX: {fileID: 1693550204220779, guid: e285d40cc9b82414fb543b47a37915e2, type: 2}
+  RatTrapdoor: {fileID: 1114854223926400, guid: 43f8e9fa9910e104384effd147db0095, type: 2}
+  NormalRatGUID: 6ad1cafc268f4214a101dca7af61bc91
+  sharedSettingsPrefab: {fileID: 114899820325038807, guid: e8806f5323cc6e24ab9cf18cf152287d, type: 2}
+  BossMasteryTokenItemId: 468
+  UsesOverrideTertiaryBossSets: 0
+  OverrideTertiaryRewardSets: []
+  defaultPlayerPrefab: {fileID: 1032951031350673, guid: 9b5bd4a248728da468e7a0db8c3a9d9d, type: 2}
+  StripPlayerOnArrival: 0
+  SuppressEmergencyCrates: 0
+  SetTutorialFlag: 0
+  PlayerIsLight: 1
+  PlayerLightColor: {r: 0.9558824, g: 0.7169118, b: 0.3584559, a: 1}
+  PlayerLightIntensity: 4
+  PlayerLightRadius: 4
+  PrefabsToAutoSpawn: []
+  musicEventName: Play_MUS_mines_theme_01

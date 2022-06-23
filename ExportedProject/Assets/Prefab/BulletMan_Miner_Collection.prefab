@@ -1,0 +1,4696 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1426127375822326}
+  m_IsPrefabParent: 1
+--- !u!1 &1426127375822326
+GameObject:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - component: {fileID: 4569571865275966}
+  - component: {fileID: 114027544913076628}
+  m_Layer: 0
+  m_Name: BulletMan_Miner_Collection
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4569571865275966
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1426127375822326}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &114027544913076628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1426127375822326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88a3598ad548b6f4ba107e0e1968fdb3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  version: 3
+  materialIdsValid: 1
+  needMaterialInstance: 0
+  spriteDefinitions:
+  - name: bulletman_miner_hit_front_right_001
+    boundsDataCenter: {x: 1.21875, y: 1.4375, z: 0}
+    boundsDataExtents: {x: 1.1875, y: 1.375, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.625, y: 0.75000006, z: 0}
+    position1: {x: 1.8125, y: 0.75000006, z: 0}
+    position2: {x: 0.625, y: 2.125, z: 0}
+    position3: {x: 1.8125, y: 2.125, z: 0}
+    uvs:
+    - {x: 0.0039101564, y: 0.0039101564}
+    - {x: 0.078121096, y: 0.0039101564}
+    - {x: 0.0039101564, y: 0.089839846}
+    - {x: 0.078121096, y: 0.089839846}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.21875, y: 1.4375, z: 0}
+    - {x: 0.59375, y: 0.6875, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_death_side_right_001
+    boundsDataCenter: {x: 1.21875, y: 1.6875, z: 0}
+    boundsDataExtents: {x: 1.0625, y: 1.375, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.6875, y: 1, z: 0}
+    position1: {x: 1.75, y: 1, z: 0}
+    position2: {x: 0.6875, y: 2.375, z: 0}
+    position3: {x: 1.75, y: 2.375, z: 0}
+    uvs:
+    - {x: 0.0039101564, y: 0.5429727}
+    - {x: 0.070308596, y: 0.5429727}
+    - {x: 0.0039101564, y: 0.6289023}
+    - {x: 0.070308596, y: 0.6289023}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.21875, y: 1.6875, z: 0}
+    - {x: 0.53125, y: 0.6875, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_death_front_right_003
+    boundsDataCenter: {x: 1.375, y: 1.4375, z: 0}
+    boundsDataExtents: {x: 1.25, y: 1.125, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.75, y: 0.875, z: 0}
+    position1: {x: 2, y: 0.875, z: 0}
+    position2: {x: 0.75, y: 2, z: 0}
+    position3: {x: 2, y: 2, z: 0}
+    uvs:
+    - {x: 0.0039101564, y: 0.7304727}
+    - {x: 0.0039101564, y: 0.8085898}
+    - {x: 0.074214846, y: 0.7304727}
+    - {x: 0.074214846, y: 0.8085898}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.375, y: 1.4375, z: 0}
+    - {x: 0.625, y: 0.5625, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_death_side_left_003
+    boundsDataCenter: {x: 1.15625, y: 1.25, z: 0}
+    boundsDataExtents: {x: 1.3125, y: 0.875, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.5, y: 0.8125, z: 0}
+    position1: {x: 1.8125, y: 0.8125, z: 0}
+    position2: {x: 0.5, y: 1.6875, z: 0}
+    position3: {x: 1.8125, y: 1.6875, z: 0}
+    uvs:
+    - {x: 0.3906289, y: 0.0039101564}
+    - {x: 0.47265235, y: 0.0039101564}
+    - {x: 0.3906289, y: 0.058589842}
+    - {x: 0.47265235, y: 0.058589842}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.15625, y: 1.25, z: 0}
+    - {x: 0.65625, y: 0.4375, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_death_side_right_003
+    boundsDataCenter: {x: 1.28125, y: 1.25, z: 0}
+    boundsDataExtents: {x: 1.3125, y: 0.875, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.625, y: 0.8125, z: 0}
+    position1: {x: 1.9375, y: 0.8125, z: 0}
+    position2: {x: 0.625, y: 1.6875, z: 0}
+    position3: {x: 1.9375, y: 1.6875, z: 0}
+    uvs:
+    - {x: 0.23047265, y: 0.71094143}
+    - {x: 0.3124961, y: 0.71094143}
+    - {x: 0.23047265, y: 0.76562107}
+    - {x: 0.3124961, y: 0.76562107}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.28125, y: 1.25, z: 0}
+    - {x: 0.65625, y: 0.4375, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_death_back_002
+    boundsDataCenter: {x: 1.25, y: 1.1875, z: 0}
+    boundsDataExtents: {x: 0.875, y: 0.99999994, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.8125, y: 0.68750006, z: 0}
+    position1: {x: 1.6875, y: 0.68750006, z: 0}
+    position2: {x: 0.8125, y: 1.6875, z: 0}
+    position3: {x: 1.6875, y: 1.6875, z: 0}
+    uvs:
+    - {x: 0.47266015, y: 0.58594143}
+    - {x: 0.5273398, y: 0.58594143}
+    - {x: 0.47266015, y: 0.64843357}
+    - {x: 0.5273398, y: 0.64843357}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.25, y: 1.1875, z: 0}
+    - {x: 0.4375, y: 0.49999997, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_death_front_left_003
+    boundsDataCenter: {x: 0.9375, y: 1.4375, z: 0}
+    boundsDataExtents: {x: 1.25, y: 1.125, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.3125, y: 0.875, z: 0}
+    position1: {x: 1.5625, y: 0.875, z: 0}
+    position2: {x: 0.3125, y: 2, z: 0}
+    position3: {x: 1.5625, y: 2, z: 0}
+    uvs:
+    - {x: 0.078128904, y: 0.5429727}
+    - {x: 0.078128904, y: 0.6210898}
+    - {x: 0.1484336, y: 0.5429727}
+    - {x: 0.1484336, y: 0.6210898}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.9375, y: 1.4375, z: 0}
+    - {x: 0.625, y: 0.5625, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_death_back_right_001
+    boundsDataCenter: {x: 1.53125, y: 1.5, z: 0}
+    boundsDataExtents: {x: 1.0625, y: 1.25, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 1, y: 0.875, z: 0}
+    position1: {x: 2.0625, y: 0.875, z: 0}
+    position2: {x: 1, y: 2.125, z: 0}
+    position3: {x: 2.0625, y: 2.125, z: 0}
+    uvs:
+    - {x: 0.082035154, y: 0.7148477}
+    - {x: 0.1484336, y: 0.7148477}
+    - {x: 0.082035154, y: 0.7929648}
+    - {x: 0.1484336, y: 0.7929648}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.53125, y: 1.5, z: 0}
+    - {x: 0.53125, y: 0.625, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_idle_front_left_003
+    boundsDataCenter: {x: 1.25, y: 1.46875, z: 0}
+    boundsDataExtents: {x: 0.875, y: 1.1875, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.8125, y: 0.875, z: 0}
+    position1: {x: 1.6875, y: 0.875, z: 0}
+    position2: {x: 0.8125, y: 2.0625, z: 0}
+    position3: {x: 1.6875, y: 2.0625, z: 0}
+    uvs:
+    - {x: 0.3515664, y: 0.8554727}
+    - {x: 0.4062461, y: 0.8554727}
+    - {x: 0.3515664, y: 0.92968357}
+    - {x: 0.4062461, y: 0.92968357}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.25, y: 1.46875, z: 0}
+    - {x: 0.4375, y: 0.59375, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_pitfall_005
+    boundsDataCenter: {x: 1.375, y: 1.375, z: 0}
+    boundsDataExtents: {x: 0.25, y: 0.25000012, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 1.25, y: 1.25, z: 0}
+    position1: {x: 1.5, y: 1.25, z: 0}
+    position2: {x: 1.25, y: 1.5000001, z: 0}
+    position3: {x: 1.5, y: 1.5000001, z: 0}
+    uvs:
+    - {x: 0.14453515, y: 0.9726602}
+    - {x: 0.16015235, y: 0.9726602}
+    - {x: 0.14453515, y: 0.9882773}
+    - {x: 0.16015235, y: 0.9882773}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.375, y: 1.375, z: 0}
+    - {x: 0.125, y: 0.12500006, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_death_front_left_005
+    boundsDataCenter: {x: 0.9375, y: 1.28125, z: 0}
+    boundsDataExtents: {x: 1.25, y: 1.1875, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.3125, y: 0.68750006, z: 0}
+    position1: {x: 1.5625, y: 0.68750006, z: 0}
+    position2: {x: 0.3125, y: 1.875, z: 0}
+    position3: {x: 1.5625, y: 1.875, z: 0}
+    uvs:
+    - {x: 0.0039101564, y: 0.19141015}
+    - {x: 0.0039101564, y: 0.26952735}
+    - {x: 0.078121096, y: 0.19141015}
+    - {x: 0.078121096, y: 0.26952735}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.9375, y: 1.28125, z: 0}
+    - {x: 0.625, y: 0.59375, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_move_front_right_004-001
+    boundsDataCenter: {x: 1.25, y: 1.78125, z: 0}
+    boundsDataExtents: {x: 0.875, y: 1.3125, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.8125, y: 1.125, z: 0}
+    position1: {x: 1.6875, y: 1.125, z: 0}
+    position2: {x: 0.8125, y: 2.4375, z: 0}
+    position3: {x: 1.6875, y: 2.4375, z: 0}
+    uvs:
+    - {x: 0.23047265, y: 0.53125393}
+    - {x: 0.28515235, y: 0.53125393}
+    - {x: 0.23047265, y: 0.6132773}
+    - {x: 0.28515235, y: 0.6132773}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.25, y: 1.78125, z: 0}
+    - {x: 0.4375, y: 0.65625, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_death_front_right_001
+    boundsDataCenter: {x: 1.375, y: 1.84375, z: 0}
+    boundsDataExtents: {x: 1, y: 1.3125, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.875, y: 1.1875, z: 0}
+    position1: {x: 1.875, y: 1.1875, z: 0}
+    position2: {x: 0.875, y: 2.5, z: 0}
+    position3: {x: 1.875, y: 2.5, z: 0}
+    uvs:
+    - {x: 0.2187539, y: 0.7929727}
+    - {x: 0.2812461, y: 0.7929727}
+    - {x: 0.2187539, y: 0.87499607}
+    - {x: 0.2812461, y: 0.87499607}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.375, y: 1.84375, z: 0}
+    - {x: 0.5, y: 0.65625, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_move_front_left_006_copy
+    boundsDataCenter: {x: 1.28125, y: 1.5, z: 0}
+    boundsDataExtents: {x: 1.0625, y: 1.25, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.75, y: 0.875, z: 0}
+    position1: {x: 1.8125, y: 0.875, z: 0}
+    position2: {x: 0.75, y: 2.125, z: 0}
+    position3: {x: 1.8125, y: 2.125, z: 0}
+    uvs:
+    - {x: 0.14453515, y: 0.8007852}
+    - {x: 0.2109336, y: 0.8007852}
+    - {x: 0.14453515, y: 0.8789023}
+    - {x: 0.2109336, y: 0.8789023}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.28125, y: 1.5, z: 0}
+    - {x: 0.53125, y: 0.625, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_move_front_right_002-001
+    boundsDataCenter: {x: 1.34375, y: 1.59375, z: 0}
+    boundsDataExtents: {x: 0.9375, y: 1.3125, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.875, y: 0.9375, z: 0}
+    position1: {x: 1.8125, y: 0.9375, z: 0}
+    position2: {x: 0.875, y: 2.25, z: 0}
+    position3: {x: 1.8125, y: 2.25, z: 0}
+    uvs:
+    - {x: 0.29297265, y: 0.082035154}
+    - {x: 0.3515586, y: 0.082035154}
+    - {x: 0.29297265, y: 0.1640586}
+    - {x: 0.3515586, y: 0.1640586}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.34375, y: 1.59375, z: 0}
+    - {x: 0.46875, y: 0.65625, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_idle_back_001
+    boundsDataCenter: {x: 1.25, y: 1.53125, z: 0}
+    boundsDataExtents: {x: 0.875, y: 1.3125, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.8125, y: 0.875, z: 0}
+    position1: {x: 1.6875, y: 0.875, z: 0}
+    position2: {x: 0.8125, y: 2.1875, z: 0}
+    position3: {x: 1.6875, y: 2.1875, z: 0}
+    uvs:
+    - {x: 0.2343789, y: 0.4375039}
+    - {x: 0.2890586, y: 0.4375039}
+    - {x: 0.2343789, y: 0.5195273}
+    - {x: 0.2890586, y: 0.5195273}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.25, y: 1.53125, z: 0}
+    - {x: 0.4375, y: 0.65625, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_teleport_in_001
+    boundsDataCenter: {x: 1.25, y: 1.34375, z: 0}
+    boundsDataExtents: {x: 0.75, y: 1.1875, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.875, y: 0.75000006, z: 0}
+    position1: {x: 1.625, y: 0.75000006, z: 0}
+    position2: {x: 0.875, y: 1.9375, z: 0}
+    position3: {x: 1.625, y: 1.9375, z: 0}
+    uvs:
+    - {x: 0.41797265, y: 0.58594143}
+    - {x: 0.46483985, y: 0.58594143}
+    - {x: 0.41797265, y: 0.6601523}
+    - {x: 0.46483985, y: 0.6601523}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.25, y: 1.34375, z: 0}
+    - {x: 0.375, y: 0.59375, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_death_front_left_002
+    boundsDataCenter: {x: 0.9375, y: 1.6875, z: 0}
+    boundsDataExtents: {x: 1.25, y: 1.125, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.3125, y: 1.125, z: 0}
+    position1: {x: 1.5625, y: 1.125, z: 0}
+    position2: {x: 0.3125, y: 2.25, z: 0}
+    position3: {x: 1.5625, y: 2.25, z: 0}
+    uvs:
+    - {x: 0.078128904, y: 0.6289102}
+    - {x: 0.078128904, y: 0.7070273}
+    - {x: 0.1484336, y: 0.6289102}
+    - {x: 0.1484336, y: 0.7070273}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.9375, y: 1.6875, z: 0}
+    - {x: 0.625, y: 0.5625, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_move_front_right_003-001
+    boundsDataCenter: {x: 1.34375, y: 1.4375, z: 0}
+    boundsDataExtents: {x: 0.9375, y: 1.375, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.875, y: 0.75000006, z: 0}
+    position1: {x: 1.8125, y: 0.75000006, z: 0}
+    position2: {x: 0.875, y: 2.125, z: 0}
+    position3: {x: 1.8125, y: 2.125, z: 0}
+    uvs:
+    - {x: 0.1562539, y: 0.0039101564}
+    - {x: 0.21483985, y: 0.0039101564}
+    - {x: 0.1562539, y: 0.089839846}
+    - {x: 0.21483985, y: 0.089839846}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.34375, y: 1.4375, z: 0}
+    - {x: 0.46875, y: 0.6875, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_death_front_left_001
+    boundsDataCenter: {x: 0.9375, y: 1.84375, z: 0}
+    boundsDataExtents: {x: 1, y: 1.3125, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.4375, y: 1.1875, z: 0}
+    position1: {x: 1.4375, y: 1.1875, z: 0}
+    position2: {x: 0.4375, y: 2.5, z: 0}
+    position3: {x: 1.4375, y: 2.5, z: 0}
+    uvs:
+    - {x: 0.2187539, y: 0.88281643}
+    - {x: 0.2812461, y: 0.88281643}
+    - {x: 0.2187539, y: 0.9648398}
+    - {x: 0.2812461, y: 0.9648398}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.9375, y: 1.84375, z: 0}
+    - {x: 0.5, y: 0.65625, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_hit_front_left_001
+    boundsDataCenter: {x: 1.15625, y: 1.4375, z: 0}
+    boundsDataExtents: {x: 1.1875, y: 1.375, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.5625, y: 0.75000006, z: 0}
+    position1: {x: 1.75, y: 0.75000006, z: 0}
+    position2: {x: 0.5625, y: 2.125, z: 0}
+    position3: {x: 1.75, y: 2.125, z: 0}
+    uvs:
+    - {x: 0.0039101564, y: 0.097660154}
+    - {x: 0.078121096, y: 0.097660154}
+    - {x: 0.0039101564, y: 0.18358985}
+    - {x: 0.078121096, y: 0.18358985}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.15625, y: 1.4375, z: 0}
+    - {x: 0.59375, y: 0.6875, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_death_back_left_001
+    boundsDataCenter: {x: 0.96875, y: 1.5, z: 0}
+    boundsDataExtents: {x: 1.0625, y: 1.25, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.4375, y: 0.875, z: 0}
+    position1: {x: 1.5, y: 0.875, z: 0}
+    position2: {x: 0.4375, y: 2.125, z: 0}
+    position3: {x: 1.5, y: 2.125, z: 0}
+    uvs:
+    - {x: 0.14453515, y: 0.8867227}
+    - {x: 0.2109336, y: 0.8867227}
+    - {x: 0.14453515, y: 0.9648398}
+    - {x: 0.2109336, y: 0.9648398}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.96875, y: 1.5, z: 0}
+    - {x: 0.53125, y: 0.625, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_death_front_right_005
+    boundsDataCenter: {x: 1.375, y: 1.28125, z: 0}
+    boundsDataExtents: {x: 1.25, y: 1.1875, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.75, y: 0.68750006, z: 0}
+    position1: {x: 2, y: 0.68750006, z: 0}
+    position2: {x: 0.75, y: 1.875, z: 0}
+    position3: {x: 2, y: 1.875, z: 0}
+    uvs:
+    - {x: 0.0039101564, y: 0.27734765}
+    - {x: 0.0039101564, y: 0.35546485}
+    - {x: 0.078121096, y: 0.27734765}
+    - {x: 0.078121096, y: 0.35546485}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.375, y: 1.28125, z: 0}
+    - {x: 0.625, y: 0.59375, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_move_front_left_003
+    boundsDataCenter: {x: 1.21875, y: 1.4375, z: 0}
+    boundsDataExtents: {x: 0.9375, y: 1.375, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.75, y: 0.75000006, z: 0}
+    position1: {x: 1.6875, y: 0.75000006, z: 0}
+    position2: {x: 0.75, y: 2.125, z: 0}
+    position3: {x: 1.6875, y: 2.125, z: 0}
+    uvs:
+    - {x: 0.1562539, y: 0.097660154}
+    - {x: 0.21483985, y: 0.097660154}
+    - {x: 0.1562539, y: 0.18358985}
+    - {x: 0.21483985, y: 0.18358985}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.21875, y: 1.4375, z: 0}
+    - {x: 0.46875, y: 0.6875, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_idle_front_left_001
+    boundsDataCenter: {x: 1.25, y: 1.53125, z: 0}
+    boundsDataExtents: {x: 0.875, y: 1.3125, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.8125, y: 0.875, z: 0}
+    position1: {x: 1.6875, y: 0.875, z: 0}
+    position2: {x: 0.8125, y: 2.1875, z: 0}
+    position3: {x: 1.6875, y: 2.1875, z: 0}
+    uvs:
+    - {x: 0.23047265, y: 0.6210977}
+    - {x: 0.28515235, y: 0.6210977}
+    - {x: 0.23047265, y: 0.70312107}
+    - {x: 0.28515235, y: 0.70312107}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.25, y: 1.53125, z: 0}
+    - {x: 0.4375, y: 0.65625, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_idle_front_left_002
+    boundsDataCenter: {x: 1.25, y: 1.5, z: 0}
+    boundsDataExtents: {x: 0.875, y: 1.25, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.8125, y: 0.875, z: 0}
+    position1: {x: 1.6875, y: 0.875, z: 0}
+    position2: {x: 0.8125, y: 2.125, z: 0}
+    position3: {x: 1.6875, y: 2.125, z: 0}
+    uvs:
+    - {x: 0.35547265, y: 0.61719143}
+    - {x: 0.41015235, y: 0.61719143}
+    - {x: 0.35547265, y: 0.69530857}
+    - {x: 0.41015235, y: 0.69530857}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.25, y: 1.5, z: 0}
+    - {x: 0.4375, y: 0.625, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_move_front_left_006
+    boundsDataCenter: {x: 1.28125, y: 1.5, z: 0}
+    boundsDataExtents: {x: 1.0625, y: 1.25, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.75, y: 0.875, z: 0}
+    position1: {x: 1.8125, y: 0.875, z: 0}
+    position2: {x: 0.75, y: 2.125, z: 0}
+    position3: {x: 1.8125, y: 2.125, z: 0}
+    uvs:
+    - {x: 0.1562539, y: 0.5351602}
+    - {x: 0.22265235, y: 0.5351602}
+    - {x: 0.1562539, y: 0.6132773}
+    - {x: 0.22265235, y: 0.6132773}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.28125, y: 1.5, z: 0}
+    - {x: 0.53125, y: 0.625, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_move_front_right_005
+    boundsDataCenter: {x: 1.1875, y: 1.625, z: 0}
+    boundsDataExtents: {x: 1, y: 1.375, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.6875, y: 0.9375, z: 0}
+    position1: {x: 1.6875, y: 0.9375, z: 0}
+    position2: {x: 0.6875, y: 2.3125, z: 0}
+    position3: {x: 1.6875, y: 2.3125, z: 0}
+    uvs:
+    - {x: 0.0039101564, y: 0.8164102}
+    - {x: 0.066402346, y: 0.8164102}
+    - {x: 0.0039101564, y: 0.9023398}
+    - {x: 0.066402346, y: 0.9023398}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.1875, y: 1.625, z: 0}
+    - {x: 0.5, y: 0.6875, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_move_front_right_004
+    boundsDataCenter: {x: 1.1875, y: 1.78125, z: 0}
+    boundsDataExtents: {x: 0.875, y: 1.3125, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.75, y: 1.125, z: 0}
+    position1: {x: 1.625, y: 1.125, z: 0}
+    position2: {x: 0.75, y: 2.4375, z: 0}
+    position3: {x: 1.625, y: 2.4375, z: 0}
+    uvs:
+    - {x: 0.29297265, y: 0.5273477}
+    - {x: 0.34765235, y: 0.5273477}
+    - {x: 0.29297265, y: 0.60937107}
+    - {x: 0.34765235, y: 0.60937107}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.1875, y: 1.78125, z: 0}
+    - {x: 0.4375, y: 0.65625, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_death_front_004
+    boundsDataCenter: {x: 1.25, y: 1.46875, z: 0}
+    boundsDataExtents: {x: 0.875, y: 1.0625, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.8125, y: 0.9375, z: 0}
+    position1: {x: 1.6875, y: 0.9375, z: 0}
+    position2: {x: 0.8125, y: 2, z: 0}
+    position3: {x: 1.6875, y: 2, z: 0}
+    uvs:
+    - {x: 0.4765664, y: 0.76562893}
+    - {x: 0.53124607, y: 0.76562893}
+    - {x: 0.4765664, y: 0.8320273}
+    - {x: 0.53124607, y: 0.8320273}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.25, y: 1.46875, z: 0}
+    - {x: 0.4375, y: 0.53125, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_move_front_right_003
+    boundsDataCenter: {x: 1.3125, y: 1.46875, z: 0}
+    boundsDataExtents: {x: 1, y: 1.3125, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.8125, y: 0.8125, z: 0}
+    position1: {x: 1.8125, y: 0.8125, z: 0}
+    position2: {x: 0.8125, y: 2.125, z: 0}
+    position3: {x: 1.8125, y: 2.125, z: 0}
+    uvs:
+    - {x: 0.085941404, y: 0.0039101564}
+    - {x: 0.1484336, y: 0.0039101564}
+    - {x: 0.085941404, y: 0.085933596}
+    - {x: 0.1484336, y: 0.085933596}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.3125, y: 1.46875, z: 0}
+    - {x: 0.5, y: 0.65625, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_death_front_right_002
+    boundsDataCenter: {x: 1.375, y: 1.6875, z: 0}
+    boundsDataExtents: {x: 1.25, y: 1.125, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.75, y: 1.125, z: 0}
+    position1: {x: 2, y: 1.125, z: 0}
+    position2: {x: 0.75, y: 2.25, z: 0}
+    position3: {x: 2, y: 2.25, z: 0}
+    uvs:
+    - {x: 0.082035154, y: 0.36328515}
+    - {x: 0.082035154, y: 0.44140235}
+    - {x: 0.15233985, y: 0.36328515}
+    - {x: 0.15233985, y: 0.44140235}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.375, y: 1.6875, z: 0}
+    - {x: 0.625, y: 0.5625, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_death_back_001
+    boundsDataCenter: {x: 1.25, y: 1.40625, z: 0}
+    boundsDataExtents: {x: 0.875, y: 1.1875, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.8125, y: 0.8125, z: 0}
+    position1: {x: 1.6875, y: 0.8125, z: 0}
+    position2: {x: 0.8125, y: 2, z: 0}
+    position3: {x: 1.6875, y: 2, z: 0}
+    uvs:
+    - {x: 0.3515664, y: 0.93750393}
+    - {x: 0.3515664, y: 0.99218357}
+    - {x: 0.42577735, y: 0.93750393}
+    - {x: 0.42577735, y: 0.99218357}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.25, y: 1.40625, z: 0}
+    - {x: 0.4375, y: 0.59375, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_death_side_left_001
+    boundsDataCenter: {x: 1.21875, y: 1.6875, z: 0}
+    boundsDataExtents: {x: 1.0625, y: 1.375, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.6875, y: 1, z: 0}
+    position1: {x: 1.75, y: 1, z: 0}
+    position2: {x: 0.6875, y: 2.375, z: 0}
+    position3: {x: 1.75, y: 2.375, z: 0}
+    uvs:
+    - {x: 0.0039101564, y: 0.6367227}
+    - {x: 0.070308596, y: 0.6367227}
+    - {x: 0.0039101564, y: 0.7226523}
+    - {x: 0.070308596, y: 0.7226523}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.21875, y: 1.6875, z: 0}
+    - {x: 0.53125, y: 0.6875, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_idle_front_left_004
+    boundsDataCenter: {x: 1.25, y: 1.5, z: 0}
+    boundsDataExtents: {x: 0.875, y: 1.25, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.8125, y: 0.875, z: 0}
+    position1: {x: 1.6875, y: 0.875, z: 0}
+    position2: {x: 0.8125, y: 2.125, z: 0}
+    position3: {x: 1.6875, y: 2.125, z: 0}
+    uvs:
+    - {x: 0.3593789, y: 0.33984765}
+    - {x: 0.4140586, y: 0.33984765}
+    - {x: 0.3593789, y: 0.41796485}
+    - {x: 0.4140586, y: 0.41796485}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.25, y: 1.5, z: 0}
+    - {x: 0.4375, y: 0.625, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_death_front_003
+    boundsDataCenter: {x: 1.25, y: 1.71875, z: 0}
+    boundsDataExtents: {x: 0.875, y: 1.0625, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.8125, y: 1.1875, z: 0}
+    position1: {x: 1.6875, y: 1.1875, z: 0}
+    position2: {x: 0.8125, y: 2.25, z: 0}
+    position3: {x: 1.6875, y: 2.25, z: 0}
+    uvs:
+    - {x: 0.4765664, y: 0.8398477}
+    - {x: 0.53124607, y: 0.8398477}
+    - {x: 0.4765664, y: 0.90624607}
+    - {x: 0.53124607, y: 0.90624607}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.25, y: 1.71875, z: 0}
+    - {x: 0.4375, y: 0.53125, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_death_back_left_002
+    boundsDataCenter: {x: 0.78125, y: 1.3125, z: 0}
+    boundsDataExtents: {x: 1.0625, y: 1.125, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.25, y: 0.75000006, z: 0}
+    position1: {x: 1.3125, y: 0.75000006, z: 0}
+    position2: {x: 0.25, y: 1.875, z: 0}
+    position3: {x: 1.3125, y: 1.875, z: 0}
+    uvs:
+    - {x: 0.16016015, y: 0.4531289}
+    - {x: 0.2265586, y: 0.4531289}
+    - {x: 0.16016015, y: 0.52343357}
+    - {x: 0.2265586, y: 0.52343357}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.78125, y: 1.3125, z: 0}
+    - {x: 0.53125, y: 0.5625, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_idle_front_right_004
+    boundsDataCenter: {x: 1.25, y: 1.5, z: 0}
+    boundsDataExtents: {x: 0.875, y: 1.25, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.8125, y: 0.875, z: 0}
+    position1: {x: 1.6875, y: 0.875, z: 0}
+    position2: {x: 0.8125, y: 2.125, z: 0}
+    position3: {x: 1.6875, y: 2.125, z: 0}
+    uvs:
+    - {x: 0.37891015, y: 0.24609765}
+    - {x: 0.43358985, y: 0.24609765}
+    - {x: 0.37891015, y: 0.32421485}
+    - {x: 0.43358985, y: 0.32421485}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.25, y: 1.5, z: 0}
+    - {x: 0.4375, y: 0.625, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_teleport_in_002
+    boundsDataCenter: {x: 1.25, y: 1.78125, z: 0}
+    boundsDataExtents: {x: 0.875, y: 1.3125, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.8125, y: 1.125, z: 0}
+    position1: {x: 1.6875, y: 1.125, z: 0}
+    position2: {x: 0.8125, y: 2.4375, z: 0}
+    position3: {x: 1.6875, y: 2.4375, z: 0}
+    uvs:
+    - {x: 0.29297265, y: 0.61719143}
+    - {x: 0.34765235, y: 0.61719143}
+    - {x: 0.29297265, y: 0.6992148}
+    - {x: 0.34765235, y: 0.6992148}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.25, y: 1.78125, z: 0}
+    - {x: 0.4375, y: 0.65625, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_move_front_right_002
+    boundsDataCenter: {x: 1.3125, y: 1.59375, z: 0}
+    boundsDataExtents: {x: 1, y: 1.3125, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.8125, y: 0.9375, z: 0}
+    position1: {x: 1.8125, y: 0.9375, z: 0}
+    position2: {x: 0.8125, y: 2.25, z: 0}
+    position3: {x: 1.8125, y: 2.25, z: 0}
+    uvs:
+    - {x: 0.085941404, y: 0.093753904}
+    - {x: 0.1484336, y: 0.093753904}
+    - {x: 0.085941404, y: 0.17577735}
+    - {x: 0.1484336, y: 0.17577735}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.3125, y: 1.59375, z: 0}
+    - {x: 0.5, y: 0.65625, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_pitfall_004
+    boundsDataCenter: {x: 1.34375, y: 1.40625, z: 0}
+    boundsDataExtents: {x: 0.5625, y: 0.4375, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 1.0625, y: 1.1875, z: 0}
+    position1: {x: 1.625, y: 1.1875, z: 0}
+    position2: {x: 1.0625, y: 1.625, z: 0}
+    position3: {x: 1.625, y: 1.625, z: 0}
+    uvs:
+    - {x: 0.41797265, y: 0.6679727}
+    - {x: 0.4531211, y: 0.6679727}
+    - {x: 0.41797265, y: 0.69530857}
+    - {x: 0.4531211, y: 0.69530857}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.34375, y: 1.40625, z: 0}
+    - {x: 0.28125, y: 0.21875, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_move_front_left_003_copy
+    boundsDataCenter: {x: 1.1875, y: 1.46875, z: 0}
+    boundsDataExtents: {x: 1, y: 1.3125, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.6875, y: 0.8125, z: 0}
+    position1: {x: 1.6875, y: 0.8125, z: 0}
+    position2: {x: 0.6875, y: 2.125, z: 0}
+    position3: {x: 1.6875, y: 2.125, z: 0}
+    uvs:
+    - {x: 0.085941404, y: 0.18359765}
+    - {x: 0.1484336, y: 0.18359765}
+    - {x: 0.085941404, y: 0.2656211}
+    - {x: 0.1484336, y: 0.2656211}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.1875, y: 1.46875, z: 0}
+    - {x: 0.5, y: 0.65625, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_teleport_in_003
+    boundsDataCenter: {x: 1.25, y: 2, z: 0}
+    boundsDataExtents: {x: 1, y: 1.2499999, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.75, y: 1.3750001, z: 0}
+    position1: {x: 1.75, y: 1.3750001, z: 0}
+    position2: {x: 0.75, y: 2.625, z: 0}
+    position3: {x: 1.75, y: 2.625, z: 0}
+    uvs:
+    - {x: 0.1562539, y: 0.2890664}
+    - {x: 0.1562539, y: 0.3515586}
+    - {x: 0.2343711, y: 0.2890664}
+    - {x: 0.2343711, y: 0.3515586}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.25, y: 2, z: 0}
+    - {x: 0.5, y: 0.62499994, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_move_front_left_002_copy
+    boundsDataCenter: {x: 1.1875, y: 1.59375, z: 0}
+    boundsDataExtents: {x: 1, y: 1.3125, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.6875, y: 0.9375, z: 0}
+    position1: {x: 1.6875, y: 0.9375, z: 0}
+    position2: {x: 0.6875, y: 2.25, z: 0}
+    position3: {x: 1.6875, y: 2.25, z: 0}
+    uvs:
+    - {x: 0.085941404, y: 0.2734414}
+    - {x: 0.1484336, y: 0.2734414}
+    - {x: 0.085941404, y: 0.35546485}
+    - {x: 0.1484336, y: 0.35546485}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.1875, y: 1.59375, z: 0}
+    - {x: 0.5, y: 0.65625, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_pitfall_001
+    boundsDataCenter: {x: 1.28125, y: 1.4375, z: 0}
+    boundsDataExtents: {x: 0.9375, y: 1.25, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.8125, y: 0.8125, z: 0}
+    position1: {x: 1.75, y: 0.8125, z: 0}
+    position2: {x: 0.8125, y: 2.0625, z: 0}
+    position3: {x: 1.75, y: 2.0625, z: 0}
+    uvs:
+    - {x: 0.3593789, y: 0.070316404}
+    - {x: 0.41796485, y: 0.070316404}
+    - {x: 0.3593789, y: 0.1484336}
+    - {x: 0.41796485, y: 0.1484336}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.28125, y: 1.4375, z: 0}
+    - {x: 0.46875, y: 0.625, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_teleport_in_004
+    boundsDataCenter: {x: 1.25, y: 1.4375, z: 0}
+    boundsDataExtents: {x: 0.875, y: 1.25, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.8125, y: 0.8125, z: 0}
+    position1: {x: 1.6875, y: 0.8125, z: 0}
+    position2: {x: 0.8125, y: 2.0625, z: 0}
+    position3: {x: 1.6875, y: 2.0625, z: 0}
+    uvs:
+    - {x: 0.43359765, y: 0.1562539}
+    - {x: 0.48827735, y: 0.1562539}
+    - {x: 0.43359765, y: 0.2343711}
+    - {x: 0.48827735, y: 0.2343711}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.25, y: 1.4375, z: 0}
+    - {x: 0.4375, y: 0.625, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_move_front_left_002
+    boundsDataCenter: {x: 1.21875, y: 1.59375, z: 0}
+    boundsDataExtents: {x: 0.9375, y: 1.3125, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.75, y: 0.9375, z: 0}
+    position1: {x: 1.6875, y: 0.9375, z: 0}
+    position2: {x: 0.75, y: 2.25, z: 0}
+    position3: {x: 1.6875, y: 2.25, z: 0}
+    uvs:
+    - {x: 0.30078515, y: 0.0039101564}
+    - {x: 0.30078515, y: 0.062496092}
+    - {x: 0.3828086, y: 0.0039101564}
+    - {x: 0.3828086, y: 0.062496092}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.21875, y: 1.59375, z: 0}
+    - {x: 0.46875, y: 0.65625, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_move_front_right_001-001
+    boundsDataCenter: {x: 1.25, y: 1.78125, z: 0}
+    boundsDataExtents: {x: 0.875, y: 1.3125, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.8125, y: 1.125, z: 0}
+    position1: {x: 1.6875, y: 1.125, z: 0}
+    position2: {x: 0.8125, y: 2.4375, z: 0}
+    position3: {x: 1.6875, y: 2.4375, z: 0}
+    uvs:
+    - {x: 0.2968789, y: 0.34766015}
+    - {x: 0.3515586, y: 0.34766015}
+    - {x: 0.2968789, y: 0.4296836}
+    - {x: 0.3515586, y: 0.4296836}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.25, y: 1.78125, z: 0}
+    - {x: 0.4375, y: 0.65625, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_death_back_004
+    boundsDataCenter: {x: 1.25, y: 0.625, z: 0}
+    boundsDataExtents: {x: 0.75, y: 1.25, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.875, y: 0, z: 0}
+    position1: {x: 1.625, y: 0, z: 0}
+    position2: {x: 0.875, y: 1.25, z: 0}
+    position3: {x: 1.625, y: 1.25, z: 0}
+    uvs:
+    - {x: 0.43359765, y: 0.92969143}
+    - {x: 0.43359765, y: 0.97655857}
+    - {x: 0.5117148, y: 0.92969143}
+    - {x: 0.5117148, y: 0.97655857}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.25, y: 0.625, z: 0}
+    - {x: 0.375, y: 0.625, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_death_front_001
+    boundsDataCenter: {x: 1.25, y: 2.03125, z: 0}
+    boundsDataExtents: {x: 0.875, y: 1.1875, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.8125, y: 1.4375, z: 0}
+    position1: {x: 1.6875, y: 1.4375, z: 0}
+    position2: {x: 0.8125, y: 2.625, z: 0}
+    position3: {x: 1.6875, y: 2.625, z: 0}
+    uvs:
+    - {x: 0.4140664, y: 0.76562893}
+    - {x: 0.4687461, y: 0.76562893}
+    - {x: 0.4140664, y: 0.8398398}
+    - {x: 0.4687461, y: 0.8398398}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.25, y: 2.03125, z: 0}
+    - {x: 0.4375, y: 0.59375, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_move_front_right_006-001
+    boundsDataCenter: {x: 1.28125, y: 1.5, z: 0}
+    boundsDataExtents: {x: 1.0625, y: 1.25, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.75, y: 0.875, z: 0}
+    position1: {x: 1.8125, y: 0.875, z: 0}
+    position2: {x: 0.75, y: 2.125, z: 0}
+    position3: {x: 1.8125, y: 2.125, z: 0}
+    uvs:
+    - {x: 0.1562539, y: 0.6210977}
+    - {x: 0.22265235, y: 0.6210977}
+    - {x: 0.1562539, y: 0.6992148}
+    - {x: 0.22265235, y: 0.6992148}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.28125, y: 1.5, z: 0}
+    - {x: 0.53125, y: 0.625, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_death_side_right_002
+    boundsDataCenter: {x: 1.28125, y: 1.5, z: 0}
+    boundsDataExtents: {x: 1.3125, y: 1.125, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.625, y: 0.9375, z: 0}
+    position1: {x: 1.9375, y: 0.9375, z: 0}
+    position2: {x: 0.625, y: 2.0625, z: 0}
+    position3: {x: 1.9375, y: 2.0625, z: 0}
+    uvs:
+    - {x: 0.0039101564, y: 0.36328515}
+    - {x: 0.0039101564, y: 0.4453086}
+    - {x: 0.074214846, y: 0.36328515}
+    - {x: 0.074214846, y: 0.4453086}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.28125, y: 1.5, z: 0}
+    - {x: 0.65625, y: 0.5625, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_death_front_right_004
+    boundsDataCenter: {x: 1.375, y: 1.3125, z: 0}
+    boundsDataExtents: {x: 1.25, y: 1.125, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.75, y: 0.75000006, z: 0}
+    position1: {x: 2, y: 0.75000006, z: 0}
+    position2: {x: 0.75, y: 1.875, z: 0}
+    position3: {x: 2, y: 1.875, z: 0}
+    uvs:
+    - {x: 0.082035154, y: 0.36328515}
+    - {x: 0.082035154, y: 0.44140235}
+    - {x: 0.15233985, y: 0.36328515}
+    - {x: 0.15233985, y: 0.44140235}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.375, y: 1.3125, z: 0}
+    - {x: 0.625, y: 0.5625, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_pitfall_002
+    boundsDataCenter: {x: 1.25, y: 1.46875, z: 0}
+    boundsDataExtents: {x: 0.875, y: 0.9375, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.8125, y: 1, z: 0}
+    position1: {x: 1.6875, y: 1, z: 0}
+    position2: {x: 0.8125, y: 1.9375, z: 0}
+    position3: {x: 1.6875, y: 1.9375, z: 0}
+    uvs:
+    - {x: 0.53906643, y: 0.79687893}
+    - {x: 0.59374607, y: 0.79687893}
+    - {x: 0.53906643, y: 0.8554648}
+    - {x: 0.59374607, y: 0.8554648}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.25, y: 1.46875, z: 0}
+    - {x: 0.4375, y: 0.46875, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_death_front_002
+    boundsDataCenter: {x: 1.25, y: 1.84375, z: 0}
+    boundsDataExtents: {x: 0.875, y: 1.0625, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.8125, y: 1.3125, z: 0}
+    position1: {x: 1.6875, y: 1.3125, z: 0}
+    position2: {x: 0.8125, y: 2.375, z: 0}
+    position3: {x: 1.6875, y: 2.375, z: 0}
+    uvs:
+    - {x: 0.5195352, y: 0.91406643}
+    - {x: 0.5742148, y: 0.91406643}
+    - {x: 0.5195352, y: 0.9804648}
+    - {x: 0.5742148, y: 0.9804648}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.25, y: 1.84375, z: 0}
+    - {x: 0.4375, y: 0.53125, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_death_back_left_004
+    boundsDataCenter: {x: 0.625, y: 0.81250006, z: 0}
+    boundsDataExtents: {x: 1.125, y: 1.1250001, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.0625, y: 0.25, z: 0}
+    position1: {x: 1.1875, y: 0.25, z: 0}
+    position2: {x: 0.0625, y: 1.3750001, z: 0}
+    position3: {x: 1.1875, y: 1.3750001, z: 0}
+    uvs:
+    - {x: 0.2187539, y: 0.19141015}
+    - {x: 0.2890586, y: 0.19141015}
+    - {x: 0.2187539, y: 0.26171485}
+    - {x: 0.2890586, y: 0.26171485}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.625, y: 0.81250006, z: 0}
+    - {x: 0.5625, y: 0.56250006, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_death_back_right_003
+    boundsDataCenter: {x: 1.8125, y: 0.78125, z: 0}
+    boundsDataExtents: {x: 1.125, y: 1.0625, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 1.25, y: 0.25, z: 0}
+    position1: {x: 2.375, y: 0.25, z: 0}
+    position2: {x: 1.25, y: 1.3125, z: 0}
+    position3: {x: 2.375, y: 1.3125, z: 0}
+    uvs:
+    - {x: 0.2421914, y: 0.26953515}
+    - {x: 0.2421914, y: 0.33983985}
+    - {x: 0.30858985, y: 0.26953515}
+    - {x: 0.30858985, y: 0.33983985}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.8125, y: 0.78125, z: 0}
+    - {x: 0.5625, y: 0.53125, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_idle_front_right_002
+    boundsDataCenter: {x: 1.25, y: 1.5, z: 0}
+    boundsDataExtents: {x: 0.875, y: 1.25, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.8125, y: 0.875, z: 0}
+    position1: {x: 1.6875, y: 0.875, z: 0}
+    position2: {x: 0.8125, y: 2.125, z: 0}
+    position3: {x: 1.6875, y: 2.125, z: 0}
+    uvs:
+    - {x: 0.48828515, y: 0.066410154}
+    - {x: 0.5429648, y: 0.066410154}
+    - {x: 0.48828515, y: 0.14452735}
+    - {x: 0.5429648, y: 0.14452735}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.25, y: 1.5, z: 0}
+    - {x: 0.4375, y: 0.625, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_death_back_003
+    boundsDataCenter: {x: 1.25, y: 0.625, z: 0}
+    boundsDataExtents: {x: 0.75, y: 1, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.875, y: 0.125, z: 0}
+    position1: {x: 1.625, y: 0.125, z: 0}
+    position2: {x: 0.875, y: 1.125, z: 0}
+    position3: {x: 1.625, y: 1.125, z: 0}
+    uvs:
+    - {x: 0.44141015, y: 0.2421914}
+    - {x: 0.48827735, y: 0.2421914}
+    - {x: 0.44141015, y: 0.3046836}
+    - {x: 0.48827735, y: 0.3046836}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.25, y: 0.625, z: 0}
+    - {x: 0.375, y: 0.5, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_move_front_left_001
+    boundsDataCenter: {x: 1.3125, y: 1.78125, z: 0}
+    boundsDataExtents: {x: 0.875, y: 1.3125, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.875, y: 1.125, z: 0}
+    position1: {x: 1.75, y: 1.125, z: 0}
+    position2: {x: 0.875, y: 2.4375, z: 0}
+    position3: {x: 1.75, y: 2.4375, z: 0}
+    uvs:
+    - {x: 0.2968789, y: 0.4375039}
+    - {x: 0.3515586, y: 0.4375039}
+    - {x: 0.2968789, y: 0.5195273}
+    - {x: 0.3515586, y: 0.5195273}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.3125, y: 1.78125, z: 0}
+    - {x: 0.4375, y: 0.65625, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_death_front_left_004
+    boundsDataCenter: {x: 0.9375, y: 1.3125, z: 0}
+    boundsDataExtents: {x: 1.25, y: 1.125, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.3125, y: 0.75000006, z: 0}
+    position1: {x: 1.5625, y: 0.75000006, z: 0}
+    position2: {x: 0.3125, y: 1.875, z: 0}
+    position3: {x: 1.5625, y: 1.875, z: 0}
+    uvs:
+    - {x: 0.082035154, y: 0.44922265}
+    - {x: 0.082035154, y: 0.5273398}
+    - {x: 0.15233985, y: 0.44922265}
+    - {x: 0.15233985, y: 0.5273398}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.9375, y: 1.3125, z: 0}
+    - {x: 0.625, y: 0.5625, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_death_back_right_002
+    boundsDataCenter: {x: 1.71875, y: 1.3125, z: 0}
+    boundsDataExtents: {x: 1.0625, y: 1.125, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 1.1875, y: 0.75000006, z: 0}
+    position1: {x: 2.25, y: 0.75000006, z: 0}
+    position2: {x: 1.1875, y: 1.875, z: 0}
+    position3: {x: 2.25, y: 1.875, z: 0}
+    uvs:
+    - {x: 0.22266015, y: 0.3593789}
+    - {x: 0.2890586, y: 0.3593789}
+    - {x: 0.22266015, y: 0.4296836}
+    - {x: 0.2890586, y: 0.4296836}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.71875, y: 1.3125, z: 0}
+    - {x: 0.53125, y: 0.5625, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_move_front_left_004
+    boundsDataCenter: {x: 1.3125, y: 1.78125, z: 0}
+    boundsDataExtents: {x: 0.875, y: 1.3125, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.875, y: 1.125, z: 0}
+    position1: {x: 1.75, y: 1.125, z: 0}
+    position2: {x: 0.875, y: 2.4375, z: 0}
+    position3: {x: 1.75, y: 2.4375, z: 0}
+    uvs:
+    - {x: 0.31641015, y: 0.2500039}
+    - {x: 0.37108985, y: 0.2500039}
+    - {x: 0.31641015, y: 0.33202735}
+    - {x: 0.37108985, y: 0.33202735}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.3125, y: 1.78125, z: 0}
+    - {x: 0.4375, y: 0.65625, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_death_side_right_004
+    boundsDataCenter: {x: 1.28125, y: 1.25, z: 0}
+    boundsDataExtents: {x: 1.3125, y: 0.875, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.625, y: 0.8125, z: 0}
+    position1: {x: 1.9375, y: 0.8125, z: 0}
+    position2: {x: 0.625, y: 1.6875, z: 0}
+    position3: {x: 1.9375, y: 1.6875, z: 0}
+    uvs:
+    - {x: 0.48047265, y: 0.0039101564}
+    - {x: 0.56249607, y: 0.0039101564}
+    - {x: 0.48047265, y: 0.058589842}
+    - {x: 0.56249607, y: 0.058589842}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.28125, y: 1.25, z: 0}
+    - {x: 0.65625, y: 0.4375, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_death_side_left_002
+    boundsDataCenter: {x: 1.15625, y: 1.5, z: 0}
+    boundsDataExtents: {x: 1.3125, y: 1.125, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.5, y: 0.9375, z: 0}
+    position1: {x: 1.8125, y: 0.9375, z: 0}
+    position2: {x: 0.5, y: 2.0625, z: 0}
+    position3: {x: 1.8125, y: 2.0625, z: 0}
+    uvs:
+    - {x: 0.0039101564, y: 0.4531289}
+    - {x: 0.0039101564, y: 0.5351523}
+    - {x: 0.074214846, y: 0.4531289}
+    - {x: 0.074214846, y: 0.5351523}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.15625, y: 1.5, z: 0}
+    - {x: 0.65625, y: 0.5625, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_move_front_left_005
+    boundsDataCenter: {x: 1.3125, y: 1.625, z: 0}
+    boundsDataExtents: {x: 1, y: 1.375, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.8125, y: 0.9375, z: 0}
+    position1: {x: 1.8125, y: 0.9375, z: 0}
+    position2: {x: 0.8125, y: 2.3125, z: 0}
+    position3: {x: 1.8125, y: 2.3125, z: 0}
+    uvs:
+    - {x: 0.0039101564, y: 0.9101602}
+    - {x: 0.066402346, y: 0.9101602}
+    - {x: 0.0039101564, y: 0.9960898}
+    - {x: 0.066402346, y: 0.9960898}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.3125, y: 1.625, z: 0}
+    - {x: 0.5, y: 0.6875, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_death_back_left_003
+    boundsDataCenter: {x: 0.6875, y: 0.78125, z: 0}
+    boundsDataExtents: {x: 1.125, y: 1.0625, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.125, y: 0.25, z: 0}
+    position1: {x: 1.25, y: 0.25, z: 0}
+    position2: {x: 0.125, y: 1.3125, z: 0}
+    position3: {x: 1.25, y: 1.3125, z: 0}
+    uvs:
+    - {x: 0.2968789, y: 0.1718789}
+    - {x: 0.2968789, y: 0.2421836}
+    - {x: 0.36327735, y: 0.1718789}
+    - {x: 0.36327735, y: 0.2421836}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.6875, y: 0.78125, z: 0}
+    - {x: 0.5625, y: 0.53125, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_move_front_right_006
+    boundsDataCenter: {x: 1.21875, y: 1.5, z: 0}
+    boundsDataExtents: {x: 1.0625, y: 1.25, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.6875, y: 0.875, z: 0}
+    position1: {x: 1.75, y: 0.875, z: 0}
+    position2: {x: 0.6875, y: 2.125, z: 0}
+    position3: {x: 1.75, y: 2.125, z: 0}
+    uvs:
+    - {x: 0.1562539, y: 0.7070352}
+    - {x: 0.22265235, y: 0.7070352}
+    - {x: 0.1562539, y: 0.7851523}
+    - {x: 0.22265235, y: 0.7851523}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.21875, y: 1.5, z: 0}
+    - {x: 0.53125, y: 0.625, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_death_back_right_004
+    boundsDataCenter: {x: 1.875, y: 0.81250006, z: 0}
+    boundsDataExtents: {x: 1.125, y: 1.1250001, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 1.3125, y: 0.25, z: 0}
+    position1: {x: 2.4375, y: 0.25, z: 0}
+    position2: {x: 1.3125, y: 1.3750001, z: 0}
+    position3: {x: 2.4375, y: 1.3750001, z: 0}
+    uvs:
+    - {x: 0.22266015, y: 0.0039101564}
+    - {x: 0.29296485, y: 0.0039101564}
+    - {x: 0.22266015, y: 0.074214846}
+    - {x: 0.29296485, y: 0.074214846}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.875, y: 0.81250006, z: 0}
+    - {x: 0.5625, y: 0.56250006, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_pitfall_003
+    boundsDataCenter: {x: 1.25, y: 1.40625, z: 0}
+    boundsDataExtents: {x: 0.75, y: 0.6875, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.875, y: 1.0625, z: 0}
+    position1: {x: 1.625, y: 1.0625, z: 0}
+    position2: {x: 0.875, y: 1.75, z: 0}
+    position3: {x: 1.625, y: 1.75, z: 0}
+    uvs:
+    - {x: 0.53906643, y: 0.8632852}
+    - {x: 0.58593357, y: 0.8632852}
+    - {x: 0.53906643, y: 0.90624607}
+    - {x: 0.58593357, y: 0.90624607}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.25, y: 1.40625, z: 0}
+    - {x: 0.375, y: 0.34375, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_death_side_right_004_copy
+    boundsDataCenter: {x: 1.15625, y: 1.25, z: 0}
+    boundsDataExtents: {x: 1.3125, y: 0.875, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.5, y: 0.8125, z: 0}
+    position1: {x: 1.8125, y: 0.8125, z: 0}
+    position2: {x: 0.5, y: 1.6875, z: 0}
+    position3: {x: 1.8125, y: 1.6875, z: 0}
+    uvs:
+    - {x: 0.3203164, y: 0.7070352}
+    - {x: 0.40233985, y: 0.7070352}
+    - {x: 0.3203164, y: 0.7617148}
+    - {x: 0.40233985, y: 0.7617148}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.15625, y: 1.25, z: 0}
+    - {x: 0.65625, y: 0.4375, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_idle_front_right_003
+    boundsDataCenter: {x: 1.25, y: 1.46875, z: 0}
+    boundsDataExtents: {x: 0.875, y: 1.1875, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.8125, y: 0.875, z: 0}
+    position1: {x: 1.6875, y: 0.875, z: 0}
+    position2: {x: 0.8125, y: 2.0625, z: 0}
+    position3: {x: 1.6875, y: 2.0625, z: 0}
+    uvs:
+    - {x: 0.4140664, y: 0.8476602}
+    - {x: 0.4687461, y: 0.8476602}
+    - {x: 0.4140664, y: 0.92187107}
+    - {x: 0.4687461, y: 0.92187107}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.25, y: 1.46875, z: 0}
+    - {x: 0.4375, y: 0.59375, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_move_front_left_005_copy
+    boundsDataCenter: {x: 1.3125, y: 1.625, z: 0}
+    boundsDataExtents: {x: 1, y: 1.375, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.8125, y: 0.9375, z: 0}
+    position1: {x: 1.8125, y: 0.9375, z: 0}
+    position2: {x: 0.8125, y: 2.3125, z: 0}
+    position3: {x: 1.8125, y: 2.3125, z: 0}
+    uvs:
+    - {x: 0.074222654, y: 0.8164102}
+    - {x: 0.13671485, y: 0.8164102}
+    - {x: 0.074222654, y: 0.9023398}
+    - {x: 0.13671485, y: 0.9023398}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.3125, y: 1.625, z: 0}
+    - {x: 0.5, y: 0.6875, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_idle_back_002
+    boundsDataCenter: {x: 1.25, y: 1.5, z: 0}
+    boundsDataExtents: {x: 0.875, y: 1.25, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.8125, y: 0.875, z: 0}
+    position1: {x: 1.6875, y: 0.875, z: 0}
+    position2: {x: 0.8125, y: 2.125, z: 0}
+    position3: {x: 1.6875, y: 2.125, z: 0}
+    uvs:
+    - {x: 0.3593789, y: 0.42578515}
+    - {x: 0.4140586, y: 0.42578515}
+    - {x: 0.3593789, y: 0.5039023}
+    - {x: 0.4140586, y: 0.5039023}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.25, y: 1.5, z: 0}
+    - {x: 0.4375, y: 0.625, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_move_front_right_005-001
+    boundsDataCenter: {x: 1.25, y: 1.625, z: 0}
+    boundsDataExtents: {x: 1, y: 1.375, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.75, y: 0.9375, z: 0}
+    position1: {x: 1.75, y: 0.9375, z: 0}
+    position2: {x: 0.75, y: 2.3125, z: 0}
+    position3: {x: 1.75, y: 2.3125, z: 0}
+    uvs:
+    - {x: 0.074222654, y: 0.9101602}
+    - {x: 0.13671485, y: 0.9101602}
+    - {x: 0.074222654, y: 0.9960898}
+    - {x: 0.13671485, y: 0.9960898}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.25, y: 1.625, z: 0}
+    - {x: 0.5, y: 0.6875, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_move_front_right_001
+    boundsDataCenter: {x: 1.1875, y: 1.78125, z: 0}
+    boundsDataExtents: {x: 0.875, y: 1.3125, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.75, y: 1.125, z: 0}
+    position1: {x: 1.625, y: 1.125, z: 0}
+    position2: {x: 0.75, y: 2.4375, z: 0}
+    position3: {x: 1.625, y: 2.4375, z: 0}
+    uvs:
+    - {x: 0.37109765, y: 0.1562539}
+    - {x: 0.42577735, y: 0.1562539}
+    - {x: 0.37109765, y: 0.23827735}
+    - {x: 0.42577735, y: 0.23827735}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.1875, y: 1.78125, z: 0}
+    - {x: 0.4375, y: 0.65625, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_move_front_left_001_copy
+    boundsDataCenter: {x: 1.3125, y: 1.78125, z: 0}
+    boundsDataExtents: {x: 0.875, y: 1.3125, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.875, y: 1.125, z: 0}
+    position1: {x: 1.75, y: 1.125, z: 0}
+    position2: {x: 0.875, y: 2.4375, z: 0}
+    position3: {x: 1.75, y: 2.4375, z: 0}
+    uvs:
+    - {x: 0.42578515, y: 0.066410154}
+    - {x: 0.48046485, y: 0.066410154}
+    - {x: 0.42578515, y: 0.1484336}
+    - {x: 0.48046485, y: 0.1484336}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.3125, y: 1.78125, z: 0}
+    - {x: 0.4375, y: 0.65625, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_idle_front_right_001
+    boundsDataCenter: {x: 1.25, y: 1.53125, z: 0}
+    boundsDataExtents: {x: 0.875, y: 1.3125, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.8125, y: 0.875, z: 0}
+    position1: {x: 1.6875, y: 0.875, z: 0}
+    position2: {x: 0.8125, y: 2.1875, z: 0}
+    position3: {x: 1.6875, y: 2.1875, z: 0}
+    uvs:
+    - {x: 0.2890664, y: 0.77344143}
+    - {x: 0.3437461, y: 0.77344143}
+    - {x: 0.2890664, y: 0.8554648}
+    - {x: 0.3437461, y: 0.8554648}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.25, y: 1.53125, z: 0}
+    - {x: 0.4375, y: 0.65625, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_move_front_left_004_copy
+    boundsDataCenter: {x: 1.3125, y: 1.78125, z: 0}
+    boundsDataExtents: {x: 0.875, y: 1.3125, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.875, y: 1.125, z: 0}
+    position1: {x: 1.75, y: 1.125, z: 0}
+    position2: {x: 0.875, y: 2.4375, z: 0}
+    position3: {x: 1.75, y: 2.4375, z: 0}
+    uvs:
+    - {x: 0.2890664, y: 0.8632852}
+    - {x: 0.3437461, y: 0.8632852}
+    - {x: 0.2890664, y: 0.94530857}
+    - {x: 0.3437461, y: 0.94530857}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.3125, y: 1.78125, z: 0}
+    - {x: 0.4375, y: 0.65625, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_met_in_004
+    boundsDataCenter: {x: 1.25, y: 2.125, z: 0}
+    boundsDataExtents: {x: 0.875, y: 1, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.8125, y: 1.625, z: 0}
+    position1: {x: 1.6875, y: 1.625, z: 0}
+    position2: {x: 0.8125, y: 2.625, z: 0}
+    position3: {x: 1.6875, y: 2.625, z: 0}
+    uvs:
+    - {x: 0.49609765, y: 0.65625393}
+    - {x: 0.5507773, y: 0.65625393}
+    - {x: 0.49609765, y: 0.71874607}
+    - {x: 0.5507773, y: 0.71874607}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.25, y: 2.125, z: 0}
+    - {x: 0.4375, y: 0.5, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_met_in_008
+    boundsDataCenter: {x: 1.25, y: 1.75, z: 0}
+    boundsDataExtents: {x: 0.875, y: 1, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.8125, y: 1.25, z: 0}
+    position1: {x: 1.6875, y: 1.25, z: 0}
+    position2: {x: 0.8125, y: 2.25, z: 0}
+    position3: {x: 1.6875, y: 2.25, z: 0}
+    uvs:
+    - {x: 0.53906643, y: 0.72656643}
+    - {x: 0.59374607, y: 0.72656643}
+    - {x: 0.53906643, y: 0.78905857}
+    - {x: 0.59374607, y: 0.78905857}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.25, y: 1.75, z: 0}
+    - {x: 0.4375, y: 0.5, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_met_in_001
+    boundsDataCenter: {x: 1.25, y: 1.4375, z: 0}
+    boundsDataExtents: {x: 0.875, y: 1.25, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.8125, y: 0.8125, z: 0}
+    position1: {x: 1.6875, y: 0.8125, z: 0}
+    position2: {x: 0.8125, y: 2.0625, z: 0}
+    position3: {x: 1.6875, y: 2.0625, z: 0}
+    uvs:
+    - {x: 0.3515664, y: 0.7695352}
+    - {x: 0.4062461, y: 0.7695352}
+    - {x: 0.3515664, y: 0.8476523}
+    - {x: 0.4062461, y: 0.8476523}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.25, y: 1.4375, z: 0}
+    - {x: 0.4375, y: 0.625, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_met_in_005
+    boundsDataCenter: {x: 1.25, y: 2.03125, z: 0}
+    boundsDataExtents: {x: 0.875, y: 0.9375, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.8125, y: 1.5625, z: 0}
+    position1: {x: 1.6875, y: 1.5625, z: 0}
+    position2: {x: 0.8125, y: 2.5, z: 0}
+    position3: {x: 1.6875, y: 2.5, z: 0}
+    uvs:
+    - {x: 0.5820352, y: 0.91406643}
+    - {x: 0.6367148, y: 0.91406643}
+    - {x: 0.5820352, y: 0.9726523}
+    - {x: 0.6367148, y: 0.9726523}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.25, y: 2.03125, z: 0}
+    - {x: 0.4375, y: 0.46875, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_met_in_006
+    boundsDataCenter: {x: 1.25, y: 1.96875, z: 0}
+    boundsDataExtents: {x: 0.875, y: 1.3125, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.8125, y: 1.3125, z: 0}
+    position1: {x: 1.6875, y: 1.3125, z: 0}
+    position2: {x: 0.8125, y: 2.625, z: 0}
+    position3: {x: 1.6875, y: 2.625, z: 0}
+    uvs:
+    - {x: 0.35547265, y: 0.5273477}
+    - {x: 0.41015235, y: 0.5273477}
+    - {x: 0.35547265, y: 0.60937107}
+    - {x: 0.41015235, y: 0.60937107}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.25, y: 1.96875, z: 0}
+    - {x: 0.4375, y: 0.65625, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_met_in_002
+    boundsDataCenter: {x: 1.25, y: 1.375, z: 0}
+    boundsDataExtents: {x: 1, y: 1.25, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.75, y: 0.75000006, z: 0}
+    position1: {x: 1.75, y: 0.75000006, z: 0}
+    position2: {x: 0.75, y: 2, z: 0}
+    position3: {x: 1.75, y: 2, z: 0}
+    uvs:
+    - {x: 0.22266015, y: 0.082035154}
+    - {x: 0.28515235, y: 0.082035154}
+    - {x: 0.22266015, y: 0.16015235}
+    - {x: 0.28515235, y: 0.16015235}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.25, y: 1.375, z: 0}
+    - {x: 0.5, y: 0.625, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_met_in_007
+    boundsDataCenter: {x: 1.25, y: 1.8125, z: 0}
+    boundsDataExtents: {x: 0.875, y: 1.25, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.8125, y: 1.1875, z: 0}
+    position1: {x: 1.6875, y: 1.1875, z: 0}
+    position2: {x: 0.8125, y: 2.4375, z: 0}
+    position3: {x: 1.6875, y: 2.4375, z: 0}
+    uvs:
+    - {x: 0.41016015, y: 0.70312893}
+    - {x: 0.41016015, y: 0.75780857}
+    - {x: 0.48827735, y: 0.70312893}
+    - {x: 0.48827735, y: 0.75780857}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.25, y: 1.8125, z: 0}
+    - {x: 0.4375, y: 0.625, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_met_in_003
+    boundsDataCenter: {x: 1.25, y: 1.90625, z: 0}
+    boundsDataExtents: {x: 0.875, y: 1.4375, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.8125, y: 1.1875, z: 0}
+    position1: {x: 1.6875, y: 1.1875, z: 0}
+    position2: {x: 0.8125, y: 2.625, z: 0}
+    position3: {x: 1.6875, y: 2.625, z: 0}
+    uvs:
+    - {x: 0.1562539, y: 0.19141015}
+    - {x: 0.2109336, y: 0.19141015}
+    - {x: 0.1562539, y: 0.2812461}
+    - {x: 0.2109336, y: 0.2812461}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.25, y: 1.90625, z: 0}
+    - {x: 0.4375, y: 0.71875, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_met_in_009
+    boundsDataCenter: {x: 1.25, y: 1.59375, z: 0}
+    boundsDataExtents: {x: 0.875, y: 1.0625, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.8125, y: 1.0625, z: 0}
+    position1: {x: 1.6875, y: 1.0625, z: 0}
+    position2: {x: 0.8125, y: 2.125, z: 0}
+    position3: {x: 1.6875, y: 2.125, z: 0}
+    uvs:
+    - {x: 0.41797265, y: 0.5117227}
+    - {x: 0.47265235, y: 0.5117227}
+    - {x: 0.41797265, y: 0.57812107}
+    - {x: 0.47265235, y: 0.57812107}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.25, y: 1.59375, z: 0}
+    - {x: 0.4375, y: 0.53125, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_met_in_010
+    boundsDataCenter: {x: 1.25, y: 1.5625, z: 0}
+    boundsDataExtents: {x: 0.875, y: 1.375, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.8125, y: 0.875, z: 0}
+    position1: {x: 1.6875, y: 0.875, z: 0}
+    position2: {x: 0.8125, y: 2.25, z: 0}
+    position3: {x: 1.6875, y: 2.25, z: 0}
+    uvs:
+    - {x: 0.16016015, y: 0.3593789}
+    - {x: 0.21483985, y: 0.3593789}
+    - {x: 0.16016015, y: 0.4453086}
+    - {x: 0.21483985, y: 0.4453086}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.25, y: 1.5625, z: 0}
+    - {x: 0.4375, y: 0.6875, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_met_in_011
+    boundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    boundsDataExtents: {x: 0.875, y: 0.875, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.8125, y: 0.875, z: 0}
+    position1: {x: 1.6875, y: 0.875, z: 0}
+    position2: {x: 0.8125, y: 1.75, z: 0}
+    position3: {x: 1.6875, y: 1.75, z: 0}
+    uvs:
+    - {x: 0.4218789, y: 0.33203515}
+    - {x: 0.4765586, y: 0.33203515}
+    - {x: 0.4218789, y: 0.38671485}
+    - {x: 0.4765586, y: 0.38671485}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.25, y: 1.3125, z: 0}
+    - {x: 0.4375, y: 0.4375, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_met_in_012
+    boundsDataCenter: {x: 1.25, y: 1.25, z: 0}
+    boundsDataExtents: {x: 0.875, y: 0.75, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.8125, y: 0.875, z: 0}
+    position1: {x: 1.6875, y: 0.875, z: 0}
+    position2: {x: 0.8125, y: 1.625, z: 0}
+    position3: {x: 1.6875, y: 1.625, z: 0}
+    uvs:
+    - {x: 0.4218789, y: 0.39453515}
+    - {x: 0.4218789, y: 0.44921485}
+    - {x: 0.4687461, y: 0.39453515}
+    - {x: 0.4687461, y: 0.44921485}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.25, y: 1.25, z: 0}
+    - {x: 0.4375, y: 0.375, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_met_in_013
+    boundsDataCenter: {x: 1.25, y: 1.21875, z: 0}
+    boundsDataExtents: {x: 0.875, y: 0.6875, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.8125, y: 0.875, z: 0}
+    position1: {x: 1.6875, y: 0.875, z: 0}
+    position2: {x: 0.8125, y: 1.5625, z: 0}
+    position3: {x: 1.6875, y: 1.5625, z: 0}
+    uvs:
+    - {x: 0.2890664, y: 0.95312893}
+    - {x: 0.3437461, y: 0.95312893}
+    - {x: 0.2890664, y: 0.9960898}
+    - {x: 0.3437461, y: 0.9960898}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.25, y: 1.21875, z: 0}
+    - {x: 0.4375, y: 0.34375, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_met_in_014
+    boundsDataCenter: {x: 1.25, y: 1.25, z: 0}
+    boundsDataExtents: {x: 0.875, y: 0.75, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.8125, y: 0.875, z: 0}
+    position1: {x: 1.6875, y: 0.875, z: 0}
+    position2: {x: 0.8125, y: 1.625, z: 0}
+    position3: {x: 1.6875, y: 1.625, z: 0}
+    uvs:
+    - {x: 0.4218789, y: 0.45703515}
+    - {x: 0.4765586, y: 0.45703515}
+    - {x: 0.4218789, y: 0.5039023}
+    - {x: 0.4765586, y: 0.5039023}
+    material: {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.25, y: 1.25, z: 0}
+    - {x: 0.4375, y: 0.375, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletman_miner_met_in_015
+    boundsDataCenter: {x: 1.25, y: 1.25, z: 0}
+    boundsDataExtents: {x: 0.875, y: 0.75, z: 0}
+    untrimmedBoundsDataCenter: {x: 1.25, y: 1.3125, z: 0}
+    untrimmedBoundsDataExtents: {x: 2.5, y: 2.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.8125, y: 0.875, z: 0}
+    position1: {x: 1.6875, y: 0.875, z: 0}
+    position2: {x: 0.8125, y: 1.625, z: 0}
+    position3: {x: 1.6875, y: 1.625, z: 0}
+    uvs:
+    - {x: 0.4765664, y: 0.39453515}
+    - {x: 0.4765664, y: 0.44921485}
+    - {x: 0.52343357, y: 0.39453515}
+    - {x: 0.52343357, y: 0.44921485}
+    material: {fileID: 2100000, guid: c6d61ede0880caf43bc20432a765577c, type: 2}
+    materialId: 1
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 1.25, y: 1.25, z: 0}
+    - {x: 0.4375, y: 0.375, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  SpriteIDsWithBagelColliders:
+  SpriteDefinedBagelColliders: []
+  SpriteIDsWithAttachPoints:
+  SpriteDefinedAttachPoints: []
+  SpriteIDsWithNeighborDependencies:
+  SpriteDefinedIndexNeighborDependencies: []
+  SpriteIDsWithAnimationSequences:
+  SpriteDefinedAnimationSequences: []
+  premultipliedAlpha: 0
+  shouldGenerateTilemapReflectionData: 0
+  material: {fileID: 0}
+  materials:
+  - {fileID: 2100000, guid: 5a9f080dde50aa54d9ede4d65c1ff9aa, type: 2}
+  - {fileID: 2100000, guid: c6d61ede0880caf43bc20432a765577c, type: 2}
+  textures:
+  - {fileID: 2800000, guid: 6b238a073b2bed640948df3d3060a97c, type: 3}
+  pngTextures: []
+  materialPngTextureId: 0000000000000000
+  textureFilterMode: 0
+  textureMipMaps: 0
+  allowMultipleAtlases: 0
+  spriteCollectionGUID: 43a65b1c888778e4d80a6f32e4add6c8
+  spriteCollectionName: BulletMan_Miner_Collection
+  assetName:
+  loadable: 0
+  invOrthoSize: 2
+  halfTargetHeight: 8
+  buildKey: 813345510
+  dataGuid: 0ee90467412549b488ae82eab3203975
+  managedSpriteCollection: 0
+  hasPlatformData: 0
+  spriteCollectionPlatforms: []
+  spriteCollectionPlatformGUIDs: []

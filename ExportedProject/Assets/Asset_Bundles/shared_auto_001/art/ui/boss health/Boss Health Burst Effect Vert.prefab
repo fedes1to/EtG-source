@@ -1,0 +1,158 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1677630175738043}
+  m_IsPrefabParent: 1
+--- !u!1 &1677630175738043
+GameObject:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - component: {fileID: 4796413749733585}
+  - component: {fileID: 114598751719283014}
+  - component: {fileID: 114173046182054551}
+  - component: {fileID: 114318412465324114}
+  - component: {fileID: 65903289381997304}
+  m_Layer: 14
+  m_Name: Boss Health Burst Effect Vert
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4796413749733585
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1677630175738043}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071067}
+  m_LocalPosition: {x: 1.1781616, y: -0.18475342, z: -0.0005}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -90.00001}
+--- !u!114 &114598751719283014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1677630175738043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 893e87bd62a8d4b44accf583b3e91449, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  anchorStyle: 0
+  isEnabled: 1
+  isVisible: 1
+  isInteractive: 1
+  tooltip:
+  pivot: 3
+  zindex: 0
+  color:
+    serializedVersion: 2
+    rgba: 4294967295
+  disabledColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  size: {x: 48, y: 48}
+  minSize: {x: 0, y: 0}
+  maxSize: {x: 0, y: 0}
+  clipChildren: 0
+  inverseClipChildren: 0
+  tabIndex: -1
+  canFocus: 0
+  autoFocus: 0
+  layout:
+    anchorStyle: 0
+    margins:
+      left: 1040
+      top: 404
+      right: 213
+      bottom: 289
+    owner: {fileID: 114598751719283014}
+  renderOrder: 14
+  isLocalized: 0
+  hotZoneScale: {x: 1, y: 1}
+  allowSignalEvents: 1
+  PrecludeUpdateCycle: 0
+  atlas: {fileID: 114709132063013320, guid: bb67a4a2a4f29af4182e39d9c94830be, type: 2}
+  spriteName: health_pop_001
+  flip: 0
+  fillDirection: 0
+  fillAmount: 1
+  invertFill: 0
+--- !u!114 &114173046182054551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1677630175738043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a947fcb65366f754593d8a1accc2d39f, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  animationName: ANIMATION
+  clip: {fileID: 114439467992014460, guid: 76bd9ee3084a6754686f5a5734438922, type: 2}
+  alternativeLoopClip: {fileID: 0}
+  percentChanceToPlayAlternative: 0.05
+  memberInfo:
+    Component: {fileID: 114598751719283014}
+    MemberName: SpriteName
+  loopType: 0
+  LoopSectionFrameTarget: 7
+  LoopSectionFirstLength: -1
+  LoopDelayMin: 0
+  LoopDelayMax: 0
+  maxOneFrameDelta: 0
+  length: 0.2
+  autoStart: 1
+  skipToEndOnStop: 0
+  playDirection: 0
+  UseDefaultSpriteNameProperty: 1
+--- !u!114 &114318412465324114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1677630175738043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46449459cce5e7540908550e82b2bf37, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  onlyDisable: 0
+  deparentOnStart: 0
+  childObjectToDisable: []
+  animator: {fileID: 0}
+  dfAnimation: {fileID: 0}
+  hasChildAnimators: 0
+  deparentAllChildren: 0
+  disableRendererOnDelay: 0
+  delayDestructionTime: 0
+  fadeTime: 0
+--- !u!65 &65903289381997304
+BoxCollider:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1677630175738043}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Size: {x: 0.118518524, y: 0.118518524, z: 0.001}
+  m_Center: {x: 0.059259262, y: 0, z: 0}

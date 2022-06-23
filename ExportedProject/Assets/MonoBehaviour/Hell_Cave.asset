@@ -1,0 +1,194 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98dcdffdee2454e49b01f8eb15c328d0, type: 3}
+  m_Name: Hell_Cave
+  m_EditorClassIdentifier:
+  wallShards:
+    elements:
+    - rawGameObject: {fileID: 1799628656948983, guid: 6a37c120a465c0b47b30396de31e4936, type: 2}
+      pickupId: -1
+      weight: 0.1
+      forceDuplicatesPossible: 0
+      additionalPrerequisites: []
+    - rawGameObject: {fileID: 1278751712823819, guid: 9acd7260d1eabd9408b0fbc908a8663f, type: 2}
+      pickupId: -1
+      weight: 0.1
+      forceDuplicatesPossible: 0
+      additionalPrerequisites: []
+    - rawGameObject: {fileID: 1667638317984257, guid: f7569114eb6974048a73a92b8c3fcfa1, type: 2}
+      pickupId: -1
+      weight: 0.2
+      forceDuplicatesPossible: 0
+      additionalPrerequisites: []
+    - rawGameObject: {fileID: 1087921136591326, guid: 874b6fd1942f3544ba1c7fe566859561, type: 2}
+      pickupId: -1
+      weight: 0.2
+      forceDuplicatesPossible: 0
+      additionalPrerequisites: []
+    - rawGameObject: {fileID: 1717584324029410, guid: b678a65ee42368a47be1221dca7ead1b, type: 2}
+      pickupId: -1
+      weight: 0.2
+      forceDuplicatesPossible: 0
+      additionalPrerequisites: []
+    - rawGameObject: {fileID: 1696215024620490, guid: 7d6525a99b5f07f4aadc05e70d9fdfbd, type: 2}
+      pickupId: -1
+      weight: 0.2
+      forceDuplicatesPossible: 0
+      additionalPrerequisites: []
+  bigWallShards:
+    elements: []
+  bigWallShardDamageThreshold: 10
+  fallbackVerticalTileMapEffects:
+  - effects:
+    - effect: {fileID: 1229574803286648, guid: 01ba5228b341e164da986fa4aa9b49bc, type: 2}
+      orphaned: 0
+      attached: 1
+      persistsOnDeath: 0
+      usesZHeight: 0
+      zHeight: 0
+      alignment: 1
+      destructible: 0
+  fallbackHorizontalTileMapEffects:
+  - effects:
+    - effect: {fileID: 1933185668961760, guid: 0efbe413d229c0c4c8638155f5d046ea, type: 2}
+      orphaned: 0
+      attached: 1
+      persistsOnDeath: 0
+      usesZHeight: 0
+      zHeight: 0
+      alignment: 1
+      destructible: 0
+  pitfallVFXPrefab: {fileID: 1800619984710538, guid: e4296d0bedad56b45adcc20399a59f95, type: 2}
+  UsePitAmbientVFX: 1
+  AmbientPitVFX:
+  - {fileID: 1731013207224000, guid: 4d2dc97f083afff46b76462cf72b305b, type: 2}
+  - {fileID: 1557800079884856, guid: 0d2fedbffcc08ea419fea019b46ce5fe, type: 2}
+  - {fileID: 1160961740763528, guid: 4f27ec2bf4c97f04d95f13e9c3b71f15, type: 2}
+  - {fileID: 1390518902933957, guid: a1429a5f7ebb5d14092254c4b2ba77f1, type: 2}
+  PitVFXMinCooldown: 15
+  PitVFXMaxCooldown: 40
+  ChanceToSpawnPitVFXOnCooldown: 0.125
+  UseChannelAmbientVFX: 0
+  ChannelVFXMinCooldown: 1
+  ChannelVFXMaxCooldown: 15
+  AmbientChannelVFX: []
+  stampFailChance: 0.2
+  overrideTableTable: {fileID: 0}
+  supportsPits: 1
+  doPitAO: 0
+  pitsAreOneDeep: 0
+  supportsDiagonalWalls: 0
+  supportsUpholstery: 0
+  carpetIsMainFloor: 0
+  carpetGrids: []
+  supportsChannels: 0
+  minChannelPools: 0
+  maxChannelPools: 3
+  channelTenacity: 0.75
+  channelGrids: []
+  supportsLavaOrLavalikeSquares: 1
+  lavaGrids:
+  - {fileID: 11400000, guid: d913af1a3a1a9d249a61d4d0c01c1e67, type: 2}
+  supportsIceSquares: 0
+  iceGrids: []
+  roomFloorBorderGrid: {fileID: 11400000, guid: 19f7a19e6e0d0454eb8f28255e862fc2, type: 2}
+  roomCeilingBorderGrid: {fileID: 11400000, guid: 2e99eea5e5c9c78418e2a2e9c81464c6, type: 2}
+  pitLayoutGrid: {fileID: 11400000, guid: b95f1aa4153ab9e41aeb32e9ae6c56b6, type: 2}
+  pitBorderFlatGrid: {fileID: 11400000, guid: 504f40ecd1f821e44813e4b8813330dd, type: 2}
+  pitBorderRaisedGrid: {fileID: 0}
+  additionalPitBorderFlatGrid: {fileID: 0}
+  outerCeilingBorderGrid: {fileID: 0}
+  floorSquareDensity: 0.05
+  floorSquares: []
+  usesFacewallGrids: 0
+  facewallGrids:
+  - grid: {fileID: 11400000, guid: 5224b1e500628c84b93f2d6817476466, type: 2}
+    minWidth: 3
+    maxWidth: 20
+    hasIntermediaries: 1
+    minIntermediaryBuffer: 4
+    maxIntermediaryBuffer: 6
+    minIntermediaryLength: 1
+    maxIntermediaryLength: 3
+    topsMatchBottoms: 1
+    middleSectionSequential: 0
+    canExistInCorners: 0
+    forceEdgesInCorners: 0
+    canAcceptWallDecoration: 0
+    canAcceptFloorDecoration: 1
+    forcedStampMatchingStyle: 0
+    canBePlacedInExits: 1
+    chanceToPlaceIfPossible: 0.15
+    perTileFailureRate: 0.05
+  usesInternalMaterialTransitions: 0
+  usesProceduralMaterialTransitions: 0
+  internalMaterialTransitions: []
+  secretRoomWallShardCollections: []
+  overrideStoneFloorType: 0
+  overrideFloorType: 0
+  useLighting: 1
+  lightPrefabs:
+    elements:
+    - rawGameObject: {fileID: 1842703421970518, guid: 76c7ff20eb8a51544bc890c188cb8057, type: 2}
+      pickupId: -1
+      weight: 1
+      forceDuplicatesPossible: 0
+      additionalPrerequisites: []
+  facewallLightStamps:
+  - width: 1
+    height: 2
+    relativeWeight: 1
+    placementRule: 0
+    occupySpace: 1
+    stampCategory: 2
+    preferredIntermediaryStamps: 0
+    intermediaryMatchingStyle: 0
+    requiresForcedMatchingStyle: 0
+    opulence: 1
+    roomTypeData: []
+    indexOfSymmetricPartner: -1
+    preventRoomRepeats: 0
+    objectReference: {fileID: 1024314296767688, guid: d57cc3a37ad6b3a4eb904db588ce3a92, type: 2}
+    CanBeTopWallLight: 1
+    CanBeCenterLight: 1
+    FallbackIndex: 0
+  sidewallLightStamps:
+  - width: 1
+    height: 2
+    relativeWeight: 1
+    placementRule: 3
+    occupySpace: 1
+    stampCategory: 2
+    preferredIntermediaryStamps: 0
+    intermediaryMatchingStyle: 0
+    requiresForcedMatchingStyle: 0
+    opulence: 1
+    roomTypeData: []
+    indexOfSymmetricPartner: -1
+    preventRoomRepeats: 0
+    objectReference: {fileID: 1134498844752738, guid: 512dc29b8d5a7604498cc856064ea1ee, type: 2}
+    CanBeTopWallLight: 1
+    CanBeCenterLight: 1
+    FallbackIndex: 0
+  usesDecalLayer: 1
+  decalIndexGrid: {fileID: 11400000, guid: 0f9a98125d118dd4b863a1d8001f0503, type: 2}
+  decalLayerStyle: 1
+  decalSize: 2
+  decalSpacing: 3
+  usesPatternLayer: 0
+  patternIndexGrid: {fileID: 0}
+  patternLayerStyle: 0
+  patternSize: 1
+  patternSpacing: 1
+  forceEdgesDiagonal: 0
+  exteriorFacadeBorderGrid: {fileID: 0}
+  facadeTopGrid: {fileID: 0}
+  bridgeGrid: {fileID: 0}

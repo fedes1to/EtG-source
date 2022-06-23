@@ -1,0 +1,3614 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1263659679745979}
+  m_IsPrefabParent: 1
+--- !u!1 &1263659679745979
+GameObject:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - component: {fileID: 4481667914912054}
+  - component: {fileID: 114480376934677816}
+  m_Layer: 0
+  m_Name: Bullet_Titan_Collection
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4481667914912054
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1263659679745979}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &114480376934677816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1263659679745979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88a3598ad548b6f4ba107e0e1968fdb3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  version: 3
+  materialIdsValid: 1
+  needMaterialInstance: 0
+  spriteDefinitions:
+  - name: bullettitan_idle_left_001
+    boundsDataCenter: {x: 3.78125, y: 4.15625, z: 0}
+    boundsDataExtents: {x: 2.9375, y: 4.9375, z: 0}
+    untrimmedBoundsDataCenter: {x: 3.78125, y: 3.71875, z: 0}
+    untrimmedBoundsDataExtents: {x: 7.5625, y: 7.4375, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 2.3125, y: 1.6875, z: 0}
+    position1: {x: 5.25, y: 1.6875, z: 0}
+    position2: {x: 2.3125, y: 6.625, z: 0}
+    position3: {x: 5.25, y: 6.625, z: 0}
+    uvs:
+    - {x: 0.003908203, y: 0.65136814}
+    - {x: 0.09570117, y: 0.65136814}
+    - {x: 0.003908203, y: 0.7285147}
+    - {x: 0.09570117, y: 0.7285147}
+    material: {fileID: 2100000, guid: 285ef50a4f51b4842aa21724efbc3833, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletitan_shadow_idle_001
+    boundsDataCenter: {x: 3.78125, y: 2.3125, z: 0}
+    boundsDataExtents: {x: 3.1875, y: 2.125, z: 0}
+    untrimmedBoundsDataCenter: {x: 3.78125, y: 3.71875, z: 0}
+    untrimmedBoundsDataExtents: {x: 7.5625, y: 7.4375, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 2.1875, y: 1.25, z: 0}
+    position1: {x: 5.375, y: 1.25, z: 0}
+    position2: {x: 2.1875, y: 3.375, z: 0}
+    position3: {x: 5.375, y: 3.375, z: 0}
+    uvs:
+    - {x: 0.33398634, y: 0.26171973}
+    - {x: 0.33398634, y: 0.31152245}
+    - {x: 0.40038866, y: 0.26171973}
+    - {x: 0.40038866, y: 0.31152245}
+    material: {fileID: 2100000, guid: 285ef50a4f51b4842aa21724efbc3833, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletitan_die_left_vfx_005
+    boundsDataCenter: {x: 3.25, y: 2.84375, z: 0}
+    boundsDataExtents: {x: 6.5, y: 5.6875, z: 0}
+    untrimmedBoundsDataCenter: {x: 3.78125, y: 3.71875, z: 0}
+    untrimmedBoundsDataExtents: {x: 7.5625, y: 7.4375, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0, y: 0, z: 0}
+    position1: {x: 6.5, y: 0, z: 0}
+    position2: {x: 0, y: 5.6875, z: 0}
+    position3: {x: 6.5, y: 5.6875, z: 0}
+    uvs:
+    - {x: 0.43359572, y: 0.0019541015}
+    - {x: 0.6367168, y: 0.0019541015}
+    - {x: 0.43359572, y: 0.09081934}
+    - {x: 0.6367168, y: 0.09081934}
+    material: {fileID: 2100000, guid: 285ef50a4f51b4842aa21724efbc3833, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletitan_shadow_die_right_003
+    boundsDataCenter: {x: 3.9375, y: 2.59375, z: 0}
+    boundsDataExtents: {x: 3.5, y: 3.4375, z: 0}
+    untrimmedBoundsDataCenter: {x: 3.78125, y: 3.71875, z: 0}
+    untrimmedBoundsDataExtents: {x: 7.5625, y: 7.4375, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 2.1875, y: 0.875, z: 0}
+    position1: {x: 5.6875, y: 0.875, z: 0}
+    position2: {x: 2.1875, y: 4.3125, z: 0}
+    position3: {x: 5.6875, y: 4.3125, z: 0}
+    uvs:
+    - {x: 0.70117384, y: 0.7753916}
+    - {x: 0.8105449, y: 0.7753916}
+    - {x: 0.70117384, y: 0.8291006}
+    - {x: 0.8105449, y: 0.8291006}
+    material: {fileID: 2100000, guid: 285ef50a4f51b4842aa21724efbc3833, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletitan_move_back_right_002
+    boundsDataCenter: {x: 3.8125, y: 4.4375, z: 0}
+    boundsDataExtents: {x: 3.125, y: 5.125, z: 0}
+    untrimmedBoundsDataCenter: {x: 3.78125, y: 3.71875, z: 0}
+    untrimmedBoundsDataExtents: {x: 7.5625, y: 7.4375, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 2.25, y: 1.8750001, z: 0}
+    position1: {x: 5.375, y: 1.8750001, z: 0}
+    position2: {x: 2.25, y: 7, z: 0}
+    position3: {x: 5.375, y: 7, z: 0}
+    uvs:
+    - {x: 0.7695332, y: 0.4814463}
+    - {x: 0.7695332, y: 0.5302725}
+    - {x: 0.92968553, y: 0.4814463}
+    - {x: 0.92968553, y: 0.5302725}
+    material: {fileID: 2100000, guid: 285ef50a4f51b4842aa21724efbc3833, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletitan_die_right_vfx_010
+    boundsDataCenter: {x: 4.0625, y: 3.96875, z: 0}
+    boundsDataExtents: {x: 6.25, y: 4.8125, z: 0}
+    untrimmedBoundsDataCenter: {x: 3.78125, y: 3.71875, z: 0}
+    untrimmedBoundsDataExtents: {x: 7.5625, y: 7.4375, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.9375, y: 1.5625, z: 0}
+    position1: {x: 7.1875, y: 1.5625, z: 0}
+    position2: {x: 0.9375, y: 6.375, z: 0}
+    position3: {x: 7.1875, y: 6.375, z: 0}
+    uvs:
+    - {x: 0.41797072, y: 0.18750098}
+    - {x: 0.6132793, y: 0.18750098}
+    - {x: 0.41797072, y: 0.26269433}
+    - {x: 0.6132793, y: 0.26269433}
+    material: {fileID: 2100000, guid: 285ef50a4f51b4842aa21724efbc3833, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletitan_move_back_left_003
+    boundsDataCenter: {x: 3.71875, y: 3.90625, z: 0}
+    boundsDataExtents: {x: 3.3125, y: 4.8125, z: 0}
+    untrimmedBoundsDataCenter: {x: 3.78125, y: 3.71875, z: 0}
+    untrimmedBoundsDataExtents: {x: 7.5625, y: 7.4375, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 2.0625, y: 1.5, z: 0}
+    position1: {x: 5.375, y: 1.5, z: 0}
+    position2: {x: 2.0625, y: 6.3125, z: 0}
+    position3: {x: 5.375, y: 6.3125, z: 0}
+    uvs:
+    - {x: 0.44922072, y: 0.5722666}
+    - {x: 0.44922072, y: 0.6240225}
+    - {x: 0.5996074, y: 0.5722666}
+    - {x: 0.5996074, y: 0.6240225}
+    material: {fileID: 2100000, guid: 285ef50a4f51b4842aa21724efbc3833, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletitan_die_right_vfx_008
+    boundsDataCenter: {x: 4.125, y: 3.71875, z: 0}
+    boundsDataExtents: {x: 6.375, y: 5.0625, z: 0}
+    untrimmedBoundsDataCenter: {x: 3.78125, y: 3.71875, z: 0}
+    untrimmedBoundsDataExtents: {x: 7.5625, y: 7.4375, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.9375, y: 1.1875, z: 0}
+    position1: {x: 7.3125, y: 1.1875, z: 0}
+    position2: {x: 0.9375, y: 6.25, z: 0}
+    position3: {x: 7.3125, y: 6.25, z: 0}
+    uvs:
+    - {x: 0.003908203, y: 0.09863379}
+    - {x: 0.20312305, y: 0.09863379}
+    - {x: 0.003908203, y: 0.17773339}
+    - {x: 0.20312305, y: 0.17773339}
+    material: {fileID: 2100000, guid: 285ef50a4f51b4842aa21724efbc3833, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletitan_shadow_die_left_003
+    boundsDataCenter: {x: 3.625, y: 2.59375, z: 0}
+    boundsDataExtents: {x: 3.5, y: 3.4375, z: 0}
+    untrimmedBoundsDataCenter: {x: 3.78125, y: 3.71875, z: 0}
+    untrimmedBoundsDataExtents: {x: 7.5625, y: 7.4375, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 1.875, y: 0.875, z: 0}
+    position1: {x: 5.375, y: 0.875, z: 0}
+    position2: {x: 1.875, y: 4.3125, z: 0}
+    position3: {x: 5.375, y: 4.3125, z: 0}
+    uvs:
+    - {x: 0.81836134, y: 0.7753916}
+    - {x: 0.9277324, y: 0.7753916}
+    - {x: 0.81836134, y: 0.8291006}
+    - {x: 0.9277324, y: 0.8291006}
+    material: {fileID: 2100000, guid: 285ef50a4f51b4842aa21724efbc3833, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletitan_die_right_vfx_006
+    boundsDataCenter: {x: 4.25, y: 3.03125, z: 0}
+    boundsDataExtents: {x: 6.625, y: 5.9375, z: 0}
+    untrimmedBoundsDataCenter: {x: 3.78125, y: 3.71875, z: 0}
+    untrimmedBoundsDataExtents: {x: 7.5625, y: 7.4375, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.9375, y: 0.0625, z: 0}
+    position1: {x: 7.5625, y: 0.0625, z: 0}
+    position2: {x: 0.9375, y: 6, z: 0}
+    position3: {x: 7.5625, y: 6, z: 0}
+    uvs:
+    - {x: 0.003908203, y: 0.0019541015}
+    - {x: 0.21093555, y: 0.0019541015}
+    - {x: 0.003908203, y: 0.09472559}
+    - {x: 0.21093555, y: 0.09472559}
+    material: {fileID: 2100000, guid: 285ef50a4f51b4842aa21724efbc3833, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletitan_die_right_003
+    boundsDataCenter: {x: 4.34375, y: 4.1875, z: 0}
+    boundsDataExtents: {x: 4.0625, y: 4.625, z: 0}
+    untrimmedBoundsDataCenter: {x: 3.78125, y: 3.71875, z: 0}
+    untrimmedBoundsDataExtents: {x: 7.5625, y: 7.4375, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 2.3125, y: 1.8750001, z: 0}
+    position1: {x: 6.375, y: 1.8750001, z: 0}
+    position2: {x: 2.3125, y: 6.5, z: 0}
+    position3: {x: 6.375, y: 6.5, z: 0}
+    uvs:
+    - {x: 0.8554707, y: 0.0019541015}
+    - {x: 0.9824199, y: 0.0019541015}
+    - {x: 0.8554707, y: 0.074217774}
+    - {x: 0.9824199, y: 0.074217774}
+    material: {fileID: 2100000, guid: 285ef50a4f51b4842aa21724efbc3833, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletitan_die_right_vfx_004
+    boundsDataCenter: {x: 4.28125, y: 2.75, z: 0}
+    boundsDataExtents: {x: 5.4375, y: 4.625, z: 0}
+    untrimmedBoundsDataCenter: {x: 3.78125, y: 3.71875, z: 0}
+    untrimmedBoundsDataExtents: {x: 7.5625, y: 7.4375, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 1.5625, y: 0.4375, z: 0}
+    position1: {x: 7, y: 0.4375, z: 0}
+    position2: {x: 1.5625, y: 5.0625, z: 0}
+    position3: {x: 7, y: 5.0625, z: 0}
+    uvs:
+    - {x: 0.8242207, y: 0.23046973}
+    - {x: 0.99413866, y: 0.23046973}
+    - {x: 0.8242207, y: 0.3027334}
+    - {x: 0.99413866, y: 0.3027334}
+    material: {fileID: 2100000, guid: 285ef50a4f51b4842aa21724efbc3833, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletitan_move_left_006
+    boundsDataCenter: {x: 3.78125, y: 4.3125, z: 0}
+    boundsDataExtents: {x: 3.5625, y: 5.125, z: 0}
+    untrimmedBoundsDataCenter: {x: 3.78125, y: 3.71875, z: 0}
+    untrimmedBoundsDataExtents: {x: 7.5625, y: 7.4375, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 1.9999999, y: 1.75, z: 0}
+    position1: {x: 5.5625, y: 1.75, z: 0}
+    position2: {x: 1.9999999, y: 6.875, z: 0}
+    position3: {x: 5.5625, y: 6.875, z: 0}
+    uvs:
+    - {x: 0.8242207, y: 0.3066416}
+    - {x: 0.8242207, y: 0.3623037}
+    - {x: 0.98437303, y: 0.3066416}
+    - {x: 0.98437303, y: 0.3623037}
+    material: {fileID: 2100000, guid: 285ef50a4f51b4842aa21724efbc3833, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletitan_move_right_003
+    boundsDataCenter: {x: 3.84375, y: 3.90625, z: 0}
+    boundsDataExtents: {x: 3.3125, y: 4.8125, z: 0}
+    untrimmedBoundsDataCenter: {x: 3.78125, y: 3.71875, z: 0}
+    untrimmedBoundsDataExtents: {x: 7.5625, y: 7.4375, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 2.1875, y: 1.5, z: 0}
+    position1: {x: 5.5, y: 1.5, z: 0}
+    position2: {x: 2.1875, y: 6.3125, z: 0}
+    position3: {x: 5.5, y: 6.3125, z: 0}
+    uvs:
+    - {x: 0.28515822, y: 0.5742197}
+    - {x: 0.28515822, y: 0.6259756}
+    - {x: 0.4355449, y: 0.5742197}
+    - {x: 0.4355449, y: 0.6259756}
+    material: {fileID: 2100000, guid: 285ef50a4f51b4842aa21724efbc3833, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletitan_die_left_vfx_007
+    boundsDataCenter: {x: 3.3125, y: 3.28125, z: 0}
+    boundsDataExtents: {x: 6.5, y: 5.6875, z: 0}
+    untrimmedBoundsDataCenter: {x: 3.78125, y: 3.71875, z: 0}
+    untrimmedBoundsDataExtents: {x: 7.5625, y: 7.4375, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.062499996, y: 0.4375, z: 0}
+    position1: {x: 6.5625, y: 0.4375, z: 0}
+    position2: {x: 0.062499996, y: 6.125, z: 0}
+    position3: {x: 6.5625, y: 6.125, z: 0}
+    uvs:
+    - {x: 0.6445332, y: 0.0019541015}
+    - {x: 0.8476543, y: 0.0019541015}
+    - {x: 0.6445332, y: 0.09081934}
+    - {x: 0.8476543, y: 0.09081934}
+    material: {fileID: 2100000, guid: 285ef50a4f51b4842aa21724efbc3833, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletitan_move_back_left_006
+    boundsDataCenter: {x: 3.78125, y: 4.3125, z: 0}
+    boundsDataExtents: {x: 3.5625, y: 5.125, z: 0}
+    untrimmedBoundsDataCenter: {x: 3.78125, y: 3.71875, z: 0}
+    untrimmedBoundsDataExtents: {x: 7.5625, y: 7.4375, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 1.9999999, y: 1.75, z: 0}
+    position1: {x: 5.5625, y: 1.75, z: 0}
+    position2: {x: 1.9999999, y: 6.875, z: 0}
+    position3: {x: 5.5625, y: 6.875, z: 0}
+    uvs:
+    - {x: 0.33398634, y: 0.33398536}
+    - {x: 0.33398634, y: 0.38964745}
+    - {x: 0.49413866, y: 0.33398536}
+    - {x: 0.49413866, y: 0.38964745}
+    material: {fileID: 2100000, guid: 285ef50a4f51b4842aa21724efbc3833, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletitan_move_right_005
+    boundsDataCenter: {x: 3.78125, y: 4.59375, z: 0}
+    boundsDataExtents: {x: 3.4375, y: 5.0625, z: 0}
+    untrimmedBoundsDataCenter: {x: 3.78125, y: 3.71875, z: 0}
+    untrimmedBoundsDataExtents: {x: 7.5625, y: 7.4375, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 2.0625, y: 2.0625, z: 0}
+    position1: {x: 5.5, y: 2.0625, z: 0}
+    position2: {x: 2.0625, y: 7.125, z: 0}
+    position3: {x: 5.5, y: 7.125, z: 0}
+    uvs:
+    - {x: 0.65429884, y: 0.43359473}
+    - {x: 0.7617168, y: 0.43359473}
+    - {x: 0.65429884, y: 0.51269436}
+    - {x: 0.7617168, y: 0.51269436}
+    material: {fileID: 2100000, guid: 285ef50a4f51b4842aa21724efbc3833, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletitan_move_back_right_005
+    boundsDataCenter: {x: 3.78125, y: 4.625, z: 0}
+    boundsDataExtents: {x: 3.4375, y: 5, z: 0}
+    untrimmedBoundsDataCenter: {x: 3.78125, y: 3.71875, z: 0}
+    untrimmedBoundsDataExtents: {x: 7.5625, y: 7.4375, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 2.0625, y: 2.125, z: 0}
+    position1: {x: 5.5, y: 2.125, z: 0}
+    position2: {x: 2.0625, y: 7.125, z: 0}
+    position3: {x: 5.5, y: 7.125, z: 0}
+    uvs:
+    - {x: 0.46679884, y: 0.5146494}
+    - {x: 0.46679884, y: 0.5683584}
+    - {x: 0.6230449, y: 0.5146494}
+    - {x: 0.6230449, y: 0.5683584}
+    material: {fileID: 2100000, guid: 285ef50a4f51b4842aa21724efbc3833, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bullettitan_idle_right_002
+    boundsDataCenter: {x: 3.78125, y: 4.09375, z: 0}
+    boundsDataExtents: {x: 2.9375, y: 4.9375, z: 0}
+    untrimmedBoundsDataCenter: {x: 3.78125, y: 3.71875, z: 0}
+    untrimmedBoundsDataExtents: {x: 7.5625, y: 7.4375, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 2.3125, y: 1.625, z: 0}
+    position1: {x: 5.25, y: 1.625, z: 0}
+    position2: {x: 2.3125, y: 6.5625, z: 0}
+    position3: {x: 5.25, y: 6.5625, z: 0}
+    uvs:
+    - {x: 0.84179884, y: 0.61718845}
+    - {x: 0.84179884, y: 0.663085}
+    - {x: 0.9960918, y: 0.61718845}
+    - {x: 0.9960918, y: 0.663085}
+    material: {fileID: 2100000, guid: 285ef50a4f51b4842aa21724efbc3833, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletitan_die_right_002
+    boundsDataCenter: {x: 4.34375, y: 4.625, z: 0}
+    boundsDataExtents: {x: 4.0625, y: 4.625, z: 0}
+    untrimmedBoundsDataCenter: {x: 3.78125, y: 3.71875, z: 0}
+    untrimmedBoundsDataExtents: {x: 7.5625, y: 7.4375, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 2.3125, y: 2.3125, z: 0}
+    position1: {x: 6.375, y: 2.3125, z: 0}
+    position2: {x: 2.3125, y: 6.9375, z: 0}
+    position3: {x: 6.375, y: 6.9375, z: 0}
+    uvs:
+    - {x: 0.8554707, y: 0.078125976}
+    - {x: 0.9824199, y: 0.078125976}
+    - {x: 0.8554707, y: 0.15038964}
+    - {x: 0.9824199, y: 0.15038964}
+    material: {fileID: 2100000, guid: 285ef50a4f51b4842aa21724efbc3833, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletitan_move_back_right_006
+    boundsDataCenter: {x: 3.78125, y: 4.3125, z: 0}
+    boundsDataExtents: {x: 3.5625, y: 5.125, z: 0}
+    untrimmedBoundsDataCenter: {x: 3.78125, y: 3.71875, z: 0}
+    untrimmedBoundsDataExtents: {x: 7.5625, y: 7.4375, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 1.9999999, y: 1.75, z: 0}
+    position1: {x: 5.5625, y: 1.75, z: 0}
+    position2: {x: 1.9999999, y: 6.875, z: 0}
+    position3: {x: 5.5625, y: 6.875, z: 0}
+    uvs:
+    - {x: 0.5019551, y: 0.33593848}
+    - {x: 0.5019551, y: 0.39160058}
+    - {x: 0.6621074, y: 0.33593848}
+    - {x: 0.6621074, y: 0.39160058}
+    material: {fileID: 2100000, guid: 285ef50a4f51b4842aa21724efbc3833, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bullet_titan_hand_001
+    boundsDataCenter: {x: 0.25, y: 0.25, z: 0}
+    boundsDataExtents: {x: 0.5, y: 0.5, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.25, y: 0.25, z: 0}
+    untrimmedBoundsDataExtents: {x: 0.5, y: 0.5, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0, y: 0, z: 0}
+    position1: {x: 0.5, y: 0, z: 0}
+    position2: {x: 0, y: 0.5, z: 0}
+    position3: {x: 0.5, y: 0.5, z: 0}
+    uvs:
+    - {x: 0.8242207, y: 0.18750098}
+    - {x: 0.8398418, y: 0.18750098}
+    - {x: 0.8242207, y: 0.19531152}
+    - {x: 0.8398418, y: 0.19531152}
+    material: {fileID: 2100000, guid: 285ef50a4f51b4842aa21724efbc3833, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletitan_die_right_vfx_009
+    boundsDataCenter: {x: 4.125, y: 3.875, z: 0}
+    boundsDataExtents: {x: 6.375, y: 4.875, z: 0}
+    untrimmedBoundsDataCenter: {x: 3.78125, y: 3.71875, z: 0}
+    untrimmedBoundsDataExtents: {x: 7.5625, y: 7.4375, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.9375, y: 1.4375, z: 0}
+    position1: {x: 7.3125, y: 1.4375, z: 0}
+    position2: {x: 0.9375, y: 6.3125, z: 0}
+    position3: {x: 7.3125, y: 6.3125, z: 0}
+    uvs:
+    - {x: 0.003908203, y: 0.18164161}
+    - {x: 0.20312305, y: 0.18164161}
+    - {x: 0.003908203, y: 0.25781152}
+    - {x: 0.20312305, y: 0.25781152}
+    material: {fileID: 2100000, guid: 285ef50a4f51b4842aa21724efbc3833, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletitan_move_back_right_007
+    boundsDataCenter: {x: 3.71875, y: 4.15625, z: 0}
+    boundsDataExtents: {x: 3.6875, y: 4.8125, z: 0}
+    untrimmedBoundsDataCenter: {x: 3.78125, y: 3.71875, z: 0}
+    untrimmedBoundsDataExtents: {x: 7.5625, y: 7.4375, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 1.875, y: 1.75, z: 0}
+    position1: {x: 5.5625, y: 1.75, z: 0}
+    position2: {x: 1.875, y: 6.5625, z: 0}
+    position3: {x: 5.5625, y: 6.5625, z: 0}
+    uvs:
+    - {x: 0.15039258, y: 0.39648536}
+    - {x: 0.15039258, y: 0.45410058}
+    - {x: 0.30077928, y: 0.39648536}
+    - {x: 0.30077928, y: 0.45410058}
+    material: {fileID: 2100000, guid: 285ef50a4f51b4842aa21724efbc3833, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletitan_move_right_007
+    boundsDataCenter: {x: 3.71875, y: 4.125, z: 0}
+    boundsDataExtents: {x: 3.6875, y: 4.875, z: 0}
+    untrimmedBoundsDataCenter: {x: 3.78125, y: 3.71875, z: 0}
+    untrimmedBoundsDataExtents: {x: 7.5625, y: 7.4375, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 1.875, y: 1.6875, z: 0}
+    position1: {x: 5.5625, y: 1.6875, z: 0}
+    position2: {x: 1.875, y: 6.5625, z: 0}
+    position3: {x: 5.5625, y: 6.5625, z: 0}
+    uvs:
+    - {x: 0.33398634, y: 0.39355567}
+    - {x: 0.33398634, y: 0.4511709}
+    - {x: 0.48632616, y: 0.39355567}
+    - {x: 0.48632616, y: 0.4511709}
+    material: {fileID: 2100000, guid: 285ef50a4f51b4842aa21724efbc3833, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletitan_die_left_vfx_010
+    boundsDataCenter: {x: 3.5, y: 3.96875, z: 0}
+    boundsDataExtents: {x: 6.25, y: 4.8125, z: 0}
+    untrimmedBoundsDataCenter: {x: 3.78125, y: 3.71875, z: 0}
+    untrimmedBoundsDataExtents: {x: 7.5625, y: 7.4375, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.375, y: 1.5625, z: 0}
+    position1: {x: 6.625, y: 1.5625, z: 0}
+    position2: {x: 0.375, y: 6.375, z: 0}
+    position3: {x: 6.625, y: 6.375, z: 0}
+    uvs:
+    - {x: 0.6210957, y: 0.18750098}
+    - {x: 0.8164043, y: 0.18750098}
+    - {x: 0.6210957, y: 0.26269433}
+    - {x: 0.8164043, y: 0.26269433}
+    material: {fileID: 2100000, guid: 285ef50a4f51b4842aa21724efbc3833, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletitan_die_right_001
+    boundsDataCenter: {x: 4.40625, y: 4.90625, z: 0}
+    boundsDataExtents: {x: 3.6875, y: 4.8125, z: 0}
+    untrimmedBoundsDataCenter: {x: 3.78125, y: 3.71875, z: 0}
+    untrimmedBoundsDataExtents: {x: 7.5625, y: 7.4375, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 2.5625, y: 2.5, z: 0}
+    position1: {x: 6.25, y: 2.5, z: 0}
+    position2: {x: 2.5625, y: 7.3125, z: 0}
+    position3: {x: 6.25, y: 7.3125, z: 0}
+    uvs:
+    - {x: 0.003908203, y: 0.40722755}
+    - {x: 0.11913867, y: 0.40722755}
+    - {x: 0.003908203, y: 0.4824209}
+    - {x: 0.11913867, y: 0.4824209}
+    material: {fileID: 2100000, guid: 285ef50a4f51b4842aa21724efbc3833, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletitan_move_back_left_004
+    boundsDataCenter: {x: 3.78125, y: 4.84375, z: 0}
+    boundsDataExtents: {x: 2.9375, y: 5.1875, z: 0}
+    untrimmedBoundsDataCenter: {x: 3.78125, y: 3.71875, z: 0}
+    untrimmedBoundsDataExtents: {x: 7.5625, y: 7.4375, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 2.3125, y: 2.25, z: 0}
+    position1: {x: 5.25, y: 2.25, z: 0}
+    position2: {x: 2.3125, y: 7.4375, z: 0}
+    position3: {x: 5.25, y: 7.4375, z: 0}
+    uvs:
+    - {x: 0.60742384, y: 0.6005869}
+    - {x: 0.6992168, y: 0.6005869}
+    - {x: 0.60742384, y: 0.6816397}
+    - {x: 0.6992168, y: 0.6816397}
+    material: {fileID: 2100000, guid: 285ef50a4f51b4842aa21724efbc3833, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletitan_move_back_left_008
+    boundsDataCenter: {x: 3.78125, y: 4.625, z: 0}
+    boundsDataExtents: {x: 3.4375, y: 5.125, z: 0}
+    untrimmedBoundsDataCenter: {x: 3.78125, y: 3.71875, z: 0}
+    untrimmedBoundsDataExtents: {x: 7.5625, y: 7.4375, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 2.0625, y: 2.0625, z: 0}
+    position1: {x: 5.5, y: 2.0625, z: 0}
+    position2: {x: 2.0625, y: 7.1875, z: 0}
+    position3: {x: 5.5, y: 7.1875, z: 0}
+    uvs:
+    - {x: 0.78906447, y: 0.36621192}
+    - {x: 0.78906447, y: 0.4199209}
+    - {x: 0.9492168, y: 0.36621192}
+    - {x: 0.9492168, y: 0.4199209}
+    material: {fileID: 2100000, guid: 285ef50a4f51b4842aa21724efbc3833, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletitan_move_left_008
+    boundsDataCenter: {x: 3.78125, y: 4.6875, z: 0}
+    boundsDataExtents: {x: 3.4375, y: 5, z: 0}
+    untrimmedBoundsDataCenter: {x: 3.78125, y: 3.71875, z: 0}
+    untrimmedBoundsDataExtents: {x: 7.5625, y: 7.4375, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 2.0625, y: 2.1875, z: 0}
+    position1: {x: 5.5, y: 2.1875, z: 0}
+    position2: {x: 2.0625, y: 7.1875, z: 0}
+    position3: {x: 5.5, y: 7.1875, z: 0}
+    uvs:
+    - {x: 0.28515822, y: 0.5166025}
+    - {x: 0.28515822, y: 0.57031155}
+    - {x: 0.44140428, y: 0.5166025}
+    - {x: 0.44140428, y: 0.57031155}
+    material: {fileID: 2100000, guid: 285ef50a4f51b4842aa21724efbc3833, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletitan_move_left_001
+    boundsDataCenter: {x: 3.78125, y: 4.78125, z: 0}
+    boundsDataExtents: {x: 2.9375, y: 4.8125, z: 0}
+    untrimmedBoundsDataCenter: {x: 3.78125, y: 3.71875, z: 0}
+    untrimmedBoundsDataExtents: {x: 7.5625, y: 7.4375, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 2.3125, y: 2.375, z: 0}
+    position1: {x: 5.25, y: 2.375, z: 0}
+    position2: {x: 2.3125, y: 7.1875, z: 0}
+    position3: {x: 5.25, y: 7.1875, z: 0}
+    uvs:
+    - {x: 0.10351758, y: 0.7167978}
+    - {x: 0.19531055, y: 0.7167978}
+    - {x: 0.10351758, y: 0.79199123}
+    - {x: 0.19531055, y: 0.79199123}
+    material: {fileID: 2100000, guid: 285ef50a4f51b4842aa21724efbc3833, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletitan_move_left_002
+    boundsDataCenter: {x: 3.75, y: 4.46875, z: 0}
+    boundsDataExtents: {x: 3.125, y: 5.0625, z: 0}
+    untrimmedBoundsDataCenter: {x: 3.78125, y: 3.71875, z: 0}
+    untrimmedBoundsDataExtents: {x: 7.5625, y: 7.4375, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 2.1875, y: 1.9375001, z: 0}
+    position1: {x: 5.3125, y: 1.9375001, z: 0}
+    position2: {x: 2.1875, y: 7, z: 0}
+    position3: {x: 5.3125, y: 7, z: 0}
+    uvs:
+    - {x: 0.8945332, y: 0.53418064}
+    - {x: 0.99218553, y: 0.53418064}
+    - {x: 0.8945332, y: 0.6132803}
+    - {x: 0.99218553, y: 0.6132803}
+    material: {fileID: 2100000, guid: 285ef50a4f51b4842aa21724efbc3833, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletitan_move_right_001
+    boundsDataCenter: {x: 3.78125, y: 4.78125, z: 0}
+    boundsDataExtents: {x: 2.9375, y: 4.8125, z: 0}
+    untrimmedBoundsDataCenter: {x: 3.78125, y: 3.71875, z: 0}
+    untrimmedBoundsDataExtents: {x: 7.5625, y: 7.4375, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 2.3125, y: 2.375, z: 0}
+    position1: {x: 5.25, y: 2.375, z: 0}
+    position2: {x: 2.3125, y: 7.1875, z: 0}
+    position3: {x: 5.25, y: 7.1875, z: 0}
+    uvs:
+    - {x: 0.003908203, y: 0.7324228}
+    - {x: 0.09570117, y: 0.7324228}
+    - {x: 0.003908203, y: 0.80761623}
+    - {x: 0.09570117, y: 0.80761623}
+    material: {fileID: 2100000, guid: 285ef50a4f51b4842aa21724efbc3833, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletitan_hit_left_001
+    boundsDataCenter: {x: 3.5625, y: 4.21875, z: 0}
+    boundsDataExtents: {x: 3.5, y: 5.0625, z: 0}
+    untrimmedBoundsDataCenter: {x: 3.78125, y: 3.71875, z: 0}
+    untrimmedBoundsDataExtents: {x: 7.5625, y: 7.4375, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 1.8125, y: 1.6875, z: 0}
+    position1: {x: 5.3125, y: 1.6875, z: 0}
+    position2: {x: 1.8125, y: 6.75, z: 0}
+    position3: {x: 5.3125, y: 6.75, z: 0}
+    uvs:
+    - {x: 0.7070332, y: 0.26660255}
+    - {x: 0.8164043, y: 0.26660255}
+    - {x: 0.7070332, y: 0.34570214}
+    - {x: 0.8164043, y: 0.34570214}
+    material: {fileID: 2100000, guid: 285ef50a4f51b4842aa21724efbc3833, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletitan_die_left_005
+    boundsDataCenter: {x: 3.21875, y: 3.5625, z: 0}
+    boundsDataExtents: {x: 4.0625, y: 4.625, z: 0}
+    untrimmedBoundsDataCenter: {x: 3.78125, y: 3.71875, z: 0}
+    untrimmedBoundsDataExtents: {x: 7.5625, y: 7.4375, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 1.1875, y: 1.25, z: 0}
+    position1: {x: 5.25, y: 1.25, z: 0}
+    position2: {x: 1.1875, y: 5.875, z: 0}
+    position3: {x: 5.25, y: 5.875, z: 0}
+    uvs:
+    - {x: 0.8554707, y: 0.15429786}
+    - {x: 0.9824199, y: 0.15429786}
+    - {x: 0.8554707, y: 0.22656152}
+    - {x: 0.9824199, y: 0.22656152}
+    material: {fileID: 2100000, guid: 285ef50a4f51b4842aa21724efbc3833, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bullettitan_idle_left_002
+    boundsDataCenter: {x: 3.78125, y: 4.09375, z: 0}
+    boundsDataExtents: {x: 2.9375, y: 4.9375, z: 0}
+    untrimmedBoundsDataCenter: {x: 3.78125, y: 3.71875, z: 0}
+    untrimmedBoundsDataExtents: {x: 7.5625, y: 7.4375, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 2.3125, y: 1.625, z: 0}
+    position1: {x: 5.25, y: 1.625, z: 0}
+    position2: {x: 2.3125, y: 6.5625, z: 0}
+    position3: {x: 5.25, y: 6.5625, z: 0}
+    uvs:
+    - {x: 0.84179884, y: 0.66699314}
+    - {x: 0.84179884, y: 0.7128897}
+    - {x: 0.9960918, y: 0.66699314}
+    - {x: 0.9960918, y: 0.7128897}
+    material: {fileID: 2100000, guid: 285ef50a4f51b4842aa21724efbc3833, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletitan_die_right_vfx_005
+    boundsDataCenter: {x: 4.3125, y: 2.84375, z: 0}
+    boundsDataExtents: {x: 6.5, y: 5.6875, z: 0}
+    untrimmedBoundsDataCenter: {x: 3.78125, y: 3.71875, z: 0}
+    untrimmedBoundsDataExtents: {x: 7.5625, y: 7.4375, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 1.0625, y: 0, z: 0}
+    position1: {x: 7.5625, y: 0, z: 0}
+    position2: {x: 1.0625, y: 5.6875, z: 0}
+    position3: {x: 7.5625, y: 5.6875, z: 0}
+    uvs:
+    - {x: 0.43359572, y: 0.09472754}
+    - {x: 0.6367168, y: 0.09472754}
+    - {x: 0.43359572, y: 0.18359277}
+    - {x: 0.6367168, y: 0.18359277}
+    material: {fileID: 2100000, guid: 285ef50a4f51b4842aa21724efbc3833, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bullettitan_idle_left_004
+    boundsDataCenter: {x: 3.78125, y: 4.15625, z: 0}
+    boundsDataExtents: {x: 2.9375, y: 4.9375, z: 0}
+    untrimmedBoundsDataCenter: {x: 3.78125, y: 3.71875, z: 0}
+    untrimmedBoundsDataExtents: {x: 7.5625, y: 7.4375, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 2.3125, y: 1.6875, z: 0}
+    position1: {x: 5.25, y: 1.6875, z: 0}
+    position2: {x: 2.3125, y: 6.625, z: 0}
+    position3: {x: 5.25, y: 6.625, z: 0}
+    uvs:
+    - {x: 0.7070332, y: 0.6728525}
+    - {x: 0.79882616, y: 0.6728525}
+    - {x: 0.7070332, y: 0.74999905}
+    - {x: 0.79882616, y: 0.74999905}
+    material: {fileID: 2100000, guid: 285ef50a4f51b4842aa21724efbc3833, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletitan_move_back_right_008
+    boundsDataCenter: {x: 3.78125, y: 4.625, z: 0}
+    boundsDataExtents: {x: 3.4375, y: 5.125, z: 0}
+    untrimmedBoundsDataCenter: {x: 3.78125, y: 3.71875, z: 0}
+    untrimmedBoundsDataExtents: {x: 7.5625, y: 7.4375, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 2.0625, y: 2.0625, z: 0}
+    position1: {x: 5.5, y: 2.0625, z: 0}
+    position2: {x: 2.0625, y: 7.1875, z: 0}
+    position3: {x: 5.5, y: 7.1875, z: 0}
+    uvs:
+    - {x: 0.78906447, y: 0.4238291}
+    - {x: 0.78906447, y: 0.47753808}
+    - {x: 0.9492168, y: 0.4238291}
+    - {x: 0.9492168, y: 0.47753808}
+    material: {fileID: 2100000, guid: 285ef50a4f51b4842aa21724efbc3833, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletitan_die_left_001
+    boundsDataCenter: {x: 3.15625, y: 4.90625, z: 0}
+    boundsDataExtents: {x: 3.6875, y: 4.8125, z: 0}
+    untrimmedBoundsDataCenter: {x: 3.78125, y: 3.71875, z: 0}
+    untrimmedBoundsDataExtents: {x: 7.5625, y: 7.4375, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 1.3125, y: 2.5, z: 0}
+    position1: {x: 5, y: 2.5, z: 0}
+    position2: {x: 1.3125, y: 7.3125, z: 0}
+    position3: {x: 5, y: 7.3125, z: 0}
+    uvs:
+    - {x: 0.30859572, y: 0.4550791}
+    - {x: 0.30859572, y: 0.51269436}
+    - {x: 0.4589824, y: 0.4550791}
+    - {x: 0.4589824, y: 0.51269436}
+    material: {fileID: 2100000, guid: 285ef50a4f51b4842aa21724efbc3833, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletitan_move_back_right_004
+    boundsDataCenter: {x: 3.78125, y: 4.84375, z: 0}
+    boundsDataExtents: {x: 2.9375, y: 5.1875, z: 0}
+    untrimmedBoundsDataCenter: {x: 3.78125, y: 3.71875, z: 0}
+    untrimmedBoundsDataExtents: {x: 7.5625, y: 7.4375, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 2.3125, y: 2.25, z: 0}
+    position1: {x: 5.25, y: 2.25, z: 0}
+    position2: {x: 2.3125, y: 7.4375, z: 0}
+    position3: {x: 5.25, y: 7.4375, z: 0}
+    uvs:
+    - {x: 0.44336134, y: 0.62793064}
+    - {x: 0.5351543, y: 0.62793064}
+    - {x: 0.44336134, y: 0.7089834}
+    - {x: 0.5351543, y: 0.7089834}
+    material: {fileID: 2100000, guid: 285ef50a4f51b4842aa21724efbc3833, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletitan_move_back_right_001
+    boundsDataCenter: {x: 3.78125, y: 4.78125, z: 0}
+    boundsDataExtents: {x: 2.9375, y: 4.8125, z: 0}
+    untrimmedBoundsDataCenter: {x: 3.78125, y: 3.71875, z: 0}
+    untrimmedBoundsDataExtents: {x: 7.5625, y: 7.4375, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 2.3125, y: 2.375, z: 0}
+    position1: {x: 5.25, y: 2.375, z: 0}
+    position2: {x: 2.3125, y: 7.1875, z: 0}
+    position3: {x: 5.25, y: 7.1875, z: 0}
+    uvs:
+    - {x: 0.31836134, y: 0.76269627}
+    - {x: 0.31836134, y: 0.8085928}
+    - {x: 0.46874803, y: 0.76269627}
+    - {x: 0.46874803, y: 0.8085928}
+    material: {fileID: 2100000, guid: 285ef50a4f51b4842aa21724efbc3833, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bullettitan_idle_right_003
+    boundsDataCenter: {x: 3.78125, y: 4.09375, z: 0}
+    boundsDataExtents: {x: 2.9375, y: 4.9375, z: 0}
+    untrimmedBoundsDataCenter: {x: 3.78125, y: 3.71875, z: 0}
+    untrimmedBoundsDataExtents: {x: 7.5625, y: 7.4375, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 2.3125, y: 1.625, z: 0}
+    position1: {x: 5.25, y: 1.625, z: 0}
+    position2: {x: 2.3125, y: 6.5625, z: 0}
+    position3: {x: 5.25, y: 6.5625, z: 0}
+    uvs:
+    - {x: 0.5429707, y: 0.6855478}
+    - {x: 0.5429707, y: 0.73144436}
+    - {x: 0.69726366, y: 0.6855478}
+    - {x: 0.69726366, y: 0.73144436}
+    material: {fileID: 2100000, guid: 285ef50a4f51b4842aa21724efbc3833, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletitan_move_left_005
+    boundsDataCenter: {x: 3.78125, y: 4.59375, z: 0}
+    boundsDataExtents: {x: 3.4375, y: 5.0625, z: 0}
+    untrimmedBoundsDataCenter: {x: 3.78125, y: 3.71875, z: 0}
+    untrimmedBoundsDataExtents: {x: 7.5625, y: 7.4375, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 2.0625, y: 2.0625, z: 0}
+    position1: {x: 5.5, y: 2.0625, z: 0}
+    position2: {x: 2.0625, y: 7.125, z: 0}
+    position3: {x: 5.5, y: 7.125, z: 0}
+    uvs:
+    - {x: 0.46679884, y: 0.45703223}
+    - {x: 0.46679884, y: 0.51074123}
+    - {x: 0.62499803, y: 0.45703223}
+    - {x: 0.62499803, y: 0.51074123}
+    material: {fileID: 2100000, guid: 285ef50a4f51b4842aa21724efbc3833, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bullettitan_idle_right_004
+    boundsDataCenter: {x: 3.78125, y: 4.15625, z: 0}
+    boundsDataExtents: {x: 2.9375, y: 4.9375, z: 0}
+    untrimmedBoundsDataCenter: {x: 3.78125, y: 3.71875, z: 0}
+    untrimmedBoundsDataExtents: {x: 7.5625, y: 7.4375, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 2.3125, y: 1.6875, z: 0}
+    position1: {x: 5.25, y: 1.6875, z: 0}
+    position2: {x: 2.3125, y: 6.625, z: 0}
+    position3: {x: 5.25, y: 6.625, z: 0}
+    uvs:
+    - {x: 0.3769551, y: 0.7128916}
+    - {x: 0.3769551, y: 0.7587881}
+    - {x: 0.53124803, y: 0.7128916}
+    - {x: 0.53124803, y: 0.7587881}
+    material: {fileID: 2100000, guid: 285ef50a4f51b4842aa21724efbc3833, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletitan_move_right_002
+    boundsDataCenter: {x: 3.8125, y: 4.46875, z: 0}
+    boundsDataExtents: {x: 3.125, y: 5.0625, z: 0}
+    untrimmedBoundsDataCenter: {x: 3.78125, y: 3.71875, z: 0}
+    untrimmedBoundsDataExtents: {x: 7.5625, y: 7.4375, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 2.25, y: 1.9375001, z: 0}
+    position1: {x: 5.375, y: 1.9375001, z: 0}
+    position2: {x: 2.25, y: 7, z: 0}
+    position3: {x: 5.375, y: 7, z: 0}
+    uvs:
+    - {x: 0.7363301, y: 0.5898447}
+    - {x: 0.8339824, y: 0.5898447}
+    - {x: 0.7363301, y: 0.66894436}
+    - {x: 0.8339824, y: 0.66894436}
+    material: {fileID: 2100000, guid: 285ef50a4f51b4842aa21724efbc3833, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletitan_shadow_die_right_002
+    boundsDataCenter: {x: 3.90625, y: 2.5625, z: 0}
+    boundsDataExtents: {x: 3.5625, y: 3.5, z: 0}
+    untrimmedBoundsDataCenter: {x: 3.78125, y: 3.71875, z: 0}
+    untrimmedBoundsDataExtents: {x: 7.5625, y: 7.4375, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 2.125, y: 0.8125, z: 0}
+    position1: {x: 5.6875, y: 0.8125, z: 0}
+    position2: {x: 2.125, y: 4.3125, z: 0}
+    position3: {x: 5.6875, y: 4.3125, z: 0}
+    uvs:
+    - {x: 0.003908203, y: 0.8730478}
+    - {x: 0.11523242, y: 0.8730478}
+    - {x: 0.003908203, y: 0.9277334}
+    - {x: 0.11523242, y: 0.9277334}
+    material: {fileID: 2100000, guid: 285ef50a4f51b4842aa21724efbc3833, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bullettitan_idle_left_003
+    boundsDataCenter: {x: 3.78125, y: 4.09375, z: 0}
+    boundsDataExtents: {x: 2.9375, y: 4.9375, z: 0}
+    untrimmedBoundsDataCenter: {x: 3.78125, y: 3.71875, z: 0}
+    untrimmedBoundsDataExtents: {x: 7.5625, y: 7.4375, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 2.3125, y: 1.625, z: 0}
+    position1: {x: 5.25, y: 1.625, z: 0}
+    position2: {x: 2.3125, y: 6.5625, z: 0}
+    position3: {x: 5.25, y: 6.5625, z: 0}
+    uvs:
+    - {x: 0.53906447, y: 0.7353525}
+    - {x: 0.53906447, y: 0.78124905}
+    - {x: 0.6933574, y: 0.7353525}
+    - {x: 0.6933574, y: 0.78124905}
+    material: {fileID: 2100000, guid: 285ef50a4f51b4842aa21724efbc3833, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletitan_shadow_die_right_001
+    boundsDataCenter: {x: 3.84375, y: 2.5625, z: 0}
+    boundsDataExtents: {x: 3.6875, y: 2.875, z: 0}
+    untrimmedBoundsDataCenter: {x: 3.78125, y: 3.71875, z: 0}
+    untrimmedBoundsDataExtents: {x: 7.5625, y: 7.4375, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 1.9999999, y: 1.125, z: 0}
+    position1: {x: 5.6875, y: 1.125, z: 0}
+    position2: {x: 1.9999999, y: 4, z: 0}
+    position3: {x: 5.6875, y: 4, z: 0}
+    uvs:
+    - {x: 0.10351758, y: 0.7958994}
+    - {x: 0.10351758, y: 0.8535147}
+    - {x: 0.19335742, y: 0.7958994}
+    - {x: 0.19335742, y: 0.8535147}
+    material: {fileID: 2100000, guid: 285ef50a4f51b4842aa21724efbc3833, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletitan_die_left_002
+    boundsDataCenter: {x: 3.21875, y: 4.625, z: 0}
+    boundsDataExtents: {x: 4.0625, y: 4.625, z: 0}
+    untrimmedBoundsDataCenter: {x: 3.78125, y: 3.71875, z: 0}
+    untrimmedBoundsDataExtents: {x: 7.5625, y: 7.4375, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 1.1875, y: 2.3125, z: 0}
+    position1: {x: 5.25, y: 2.3125, z: 0}
+    position2: {x: 1.1875, y: 6.9375, z: 0}
+    position3: {x: 5.25, y: 6.9375, z: 0}
+    uvs:
+    - {x: 0.18164258, y: 0.26171973}
+    - {x: 0.18164258, y: 0.32519433}
+    - {x: 0.3261699, y: 0.26171973}
+    - {x: 0.3261699, y: 0.32519433}
+    material: {fileID: 2100000, guid: 285ef50a4f51b4842aa21724efbc3833, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletitan_move_back_left_005
+    boundsDataCenter: {x: 3.78125, y: 4.625, z: 0}
+    boundsDataExtents: {x: 3.4375, y: 5, z: 0}
+    untrimmedBoundsDataCenter: {x: 3.78125, y: 3.71875, z: 0}
+    untrimmedBoundsDataExtents: {x: 7.5625, y: 7.4375, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 2.0625, y: 2.125, z: 0}
+    position1: {x: 5.5, y: 2.125, z: 0}
+    position2: {x: 2.0625, y: 7.125, z: 0}
+    position3: {x: 5.5, y: 7.125, z: 0}
+    uvs:
+    - {x: 0.1210957, y: 0.5195322}
+    - {x: 0.1210957, y: 0.57324123}
+    - {x: 0.27734178, y: 0.5195322}
+    - {x: 0.27734178, y: 0.57324123}
+    material: {fileID: 2100000, guid: 285ef50a4f51b4842aa21724efbc3833, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletitan_move_back_left_007
+    boundsDataCenter: {x: 3.84375, y: 4.15625, z: 0}
+    boundsDataExtents: {x: 3.6875, y: 4.8125, z: 0}
+    untrimmedBoundsDataCenter: {x: 3.78125, y: 3.71875, z: 0}
+    untrimmedBoundsDataExtents: {x: 7.5625, y: 7.4375, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 1.9999999, y: 1.75, z: 0}
+    position1: {x: 5.6875, y: 1.75, z: 0}
+    position2: {x: 1.9999999, y: 6.5625, z: 0}
+    position3: {x: 5.6875, y: 6.5625, z: 0}
+    uvs:
+    - {x: 0.12695508, y: 0.4580088}
+    - {x: 0.12695508, y: 0.51562405}
+    - {x: 0.27734178, y: 0.4580088}
+    - {x: 0.27734178, y: 0.51562405}
+    material: {fileID: 2100000, guid: 285ef50a4f51b4842aa21724efbc3833, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletitan_move_right_008
+    boundsDataCenter: {x: 3.78125, y: 4.6875, z: 0}
+    boundsDataExtents: {x: 3.4375, y: 5, z: 0}
+    untrimmedBoundsDataCenter: {x: 3.78125, y: 3.71875, z: 0}
+    untrimmedBoundsDataExtents: {x: 7.5625, y: 7.4375, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 2.0625, y: 2.1875, z: 0}
+    position1: {x: 5.5, y: 2.1875, z: 0}
+    position2: {x: 2.0625, y: 7.1875, z: 0}
+    position3: {x: 5.5, y: 7.1875, z: 0}
+    uvs:
+    - {x: 0.003908203, y: 0.5693369}
+    - {x: 0.11132617, y: 0.5693369}
+    - {x: 0.003908203, y: 0.64746}
+    - {x: 0.11132617, y: 0.64746}
+    material: {fileID: 2100000, guid: 285ef50a4f51b4842aa21724efbc3833, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletitan_move_back_right_003
+    boundsDataCenter: {x: 3.84375, y: 3.90625, z: 0}
+    boundsDataExtents: {x: 3.3125, y: 4.8125, z: 0}
+    untrimmedBoundsDataCenter: {x: 3.78125, y: 3.71875, z: 0}
+    untrimmedBoundsDataExtents: {x: 7.5625, y: 7.4375, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 2.1875, y: 1.5, z: 0}
+    position1: {x: 5.5, y: 1.5, z: 0}
+    position2: {x: 2.1875, y: 6.3125, z: 0}
+    position3: {x: 5.5, y: 6.3125, z: 0}
+    uvs:
+    - {x: 0.11914258, y: 0.5771494}
+    - {x: 0.11914258, y: 0.6289053}
+    - {x: 0.26952928, y: 0.5771494}
+    - {x: 0.26952928, y: 0.6289053}
+    material: {fileID: 2100000, guid: 285ef50a4f51b4842aa21724efbc3833, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletitan_die_left_004
+    boundsDataCenter: {x: 3.21875, y: 3.46875, z: 0}
+    boundsDataExtents: {x: 4.1875, y: 4.4375, z: 0}
+    untrimmedBoundsDataCenter: {x: 3.78125, y: 3.71875, z: 0}
+    untrimmedBoundsDataExtents: {x: 7.5625, y: 7.4375, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 1.125, y: 1.25, z: 0}
+    position1: {x: 5.3125, y: 1.25, z: 0}
+    position2: {x: 1.125, y: 5.6875, z: 0}
+    position3: {x: 5.3125, y: 5.6875, z: 0}
+    uvs:
+    - {x: 0.003908203, y: 0.3378916}
+    - {x: 0.003908203, y: 0.40331933}
+    - {x: 0.14257617, y: 0.3378916}
+    - {x: 0.14257617, y: 0.40331933}
+    material: {fileID: 2100000, guid: 285ef50a4f51b4842aa21724efbc3833, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletitan_die_left_vfx_006
+    boundsDataCenter: {x: 3.3125, y: 3.03125, z: 0}
+    boundsDataExtents: {x: 6.625, y: 5.9375, z: 0}
+    untrimmedBoundsDataCenter: {x: 3.78125, y: 3.71875, z: 0}
+    untrimmedBoundsDataExtents: {x: 7.5625, y: 7.4375, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0, y: 0.0625, z: 0}
+    position1: {x: 6.625, y: 0.0625, z: 0}
+    position2: {x: 0, y: 6, z: 0}
+    position3: {x: 6.625, y: 6, z: 0}
+    uvs:
+    - {x: 0.21875195, y: 0.0019541015}
+    - {x: 0.42577928, y: 0.0019541015}
+    - {x: 0.21875195, y: 0.09472559}
+    - {x: 0.42577928, y: 0.09472559}
+    material: {fileID: 2100000, guid: 285ef50a4f51b4842aa21724efbc3833, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletitan_die_right_vfx_007
+    boundsDataCenter: {x: 4.25, y: 3.28125, z: 0}
+    boundsDataExtents: {x: 6.5, y: 5.6875, z: 0}
+    untrimmedBoundsDataCenter: {x: 3.78125, y: 3.71875, z: 0}
+    untrimmedBoundsDataExtents: {x: 7.5625, y: 7.4375, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.99999994, y: 0.4375, z: 0}
+    position1: {x: 7.5, y: 0.4375, z: 0}
+    position2: {x: 0.99999994, y: 6.125, z: 0}
+    position3: {x: 7.5, y: 6.125, z: 0}
+    uvs:
+    - {x: 0.6445332, y: 0.09472754}
+    - {x: 0.8476543, y: 0.09472754}
+    - {x: 0.6445332, y: 0.18359277}
+    - {x: 0.8476543, y: 0.18359277}
+    material: {fileID: 2100000, guid: 285ef50a4f51b4842aa21724efbc3833, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletitan_hit_right_001
+    boundsDataCenter: {x: 3.875, y: 4.21875, z: 0}
+    boundsDataExtents: {x: 3.5, y: 5.0625, z: 0}
+    untrimmedBoundsDataCenter: {x: 3.78125, y: 3.71875, z: 0}
+    untrimmedBoundsDataExtents: {x: 7.5625, y: 7.4375, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 2.125, y: 1.6875, z: 0}
+    position1: {x: 5.625, y: 1.6875, z: 0}
+    position2: {x: 2.125, y: 6.75, z: 0}
+    position3: {x: 5.625, y: 6.75, z: 0}
+    uvs:
+    - {x: 0.003908203, y: 0.4863291}
+    - {x: 0.1132793, y: 0.4863291}
+    - {x: 0.003908203, y: 0.56542873}
+    - {x: 0.1132793, y: 0.56542873}
+    material: {fileID: 2100000, guid: 285ef50a4f51b4842aa21724efbc3833, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletitan_move_right_004
+    boundsDataCenter: {x: 3.78125, y: 4.875, z: 0}
+    boundsDataExtents: {x: 2.9375, y: 5.125, z: 0}
+    untrimmedBoundsDataCenter: {x: 3.78125, y: 3.71875, z: 0}
+    untrimmedBoundsDataExtents: {x: 7.5625, y: 7.4375, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 2.3125, y: 2.3125, z: 0}
+    position1: {x: 5.25, y: 2.3125, z: 0}
+    position2: {x: 2.3125, y: 7.4375, z: 0}
+    position3: {x: 5.25, y: 7.4375, z: 0}
+    uvs:
+    - {x: 0.27734572, y: 0.62988377}
+    - {x: 0.36913866, y: 0.62988377}
+    - {x: 0.27734572, y: 0.70996}
+    - {x: 0.36913866, y: 0.70996}
+    material: {fileID: 2100000, guid: 285ef50a4f51b4842aa21724efbc3833, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletitan_die_left_vfx_008
+    boundsDataCenter: {x: 3.4375, y: 3.71875, z: 0}
+    boundsDataExtents: {x: 6.375, y: 5.0625, z: 0}
+    untrimmedBoundsDataCenter: {x: 3.78125, y: 3.71875, z: 0}
+    untrimmedBoundsDataExtents: {x: 7.5625, y: 7.4375, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.24999999, y: 1.1875, z: 0}
+    position1: {x: 6.625, y: 1.1875, z: 0}
+    position2: {x: 0.24999999, y: 6.25, z: 0}
+    position3: {x: 6.625, y: 6.25, z: 0}
+    uvs:
+    - {x: 0.21093945, y: 0.09863379}
+    - {x: 0.41015428, y: 0.09863379}
+    - {x: 0.21093945, y: 0.17773339}
+    - {x: 0.41015428, y: 0.17773339}
+    material: {fileID: 2100000, guid: 285ef50a4f51b4842aa21724efbc3833, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletitan_move_left_003
+    boundsDataCenter: {x: 3.71875, y: 3.90625, z: 0}
+    boundsDataExtents: {x: 3.3125, y: 4.8125, z: 0}
+    untrimmedBoundsDataCenter: {x: 3.78125, y: 3.71875, z: 0}
+    untrimmedBoundsDataExtents: {x: 7.5625, y: 7.4375, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 2.0625, y: 1.5, z: 0}
+    position1: {x: 5.375, y: 1.5, z: 0}
+    position2: {x: 2.0625, y: 6.3125, z: 0}
+    position3: {x: 5.375, y: 6.3125, z: 0}
+    uvs:
+    - {x: 0.7363301, y: 0.53418064}
+    - {x: 0.7363301, y: 0.58593655}
+    - {x: 0.8867168, y: 0.53418064}
+    - {x: 0.8867168, y: 0.58593655}
+    material: {fileID: 2100000, guid: 285ef50a4f51b4842aa21724efbc3833, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletitan_move_back_left_002
+    boundsDataCenter: {x: 3.75, y: 4.4375, z: 0}
+    boundsDataExtents: {x: 3.125, y: 5.125, z: 0}
+    untrimmedBoundsDataCenter: {x: 3.78125, y: 3.71875, z: 0}
+    untrimmedBoundsDataExtents: {x: 7.5625, y: 7.4375, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 2.1875, y: 1.8750001, z: 0}
+    position1: {x: 5.3125, y: 1.8750001, z: 0}
+    position2: {x: 2.1875, y: 7, z: 0}
+    position3: {x: 5.3125, y: 7, z: 0}
+    uvs:
+    - {x: 0.63086134, y: 0.5166025}
+    - {x: 0.72851366, y: 0.5166025}
+    - {x: 0.63086134, y: 0.59667873}
+    - {x: 0.72851366, y: 0.59667873}
+    material: {fileID: 2100000, guid: 285ef50a4f51b4842aa21724efbc3833, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletitan_move_right_006
+    boundsDataCenter: {x: 3.78125, y: 4.3125, z: 0}
+    boundsDataExtents: {x: 3.5625, y: 5.125, z: 0}
+    untrimmedBoundsDataCenter: {x: 3.78125, y: 3.71875, z: 0}
+    untrimmedBoundsDataExtents: {x: 7.5625, y: 7.4375, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 1.9999999, y: 1.75, z: 0}
+    position1: {x: 5.5625, y: 1.75, z: 0}
+    position2: {x: 1.9999999, y: 6.875, z: 0}
+    position3: {x: 5.5625, y: 6.875, z: 0}
+    uvs:
+    - {x: 0.66992384, y: 0.34961036}
+    - {x: 0.78124803, y: 0.34961036}
+    - {x: 0.66992384, y: 0.42968652}
+    - {x: 0.78124803, y: 0.42968652}
+    material: {fileID: 2100000, guid: 285ef50a4f51b4842aa21724efbc3833, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletitan_move_left_007
+    boundsDataCenter: {x: 3.84375, y: 4.125, z: 0}
+    boundsDataExtents: {x: 3.6875, y: 4.875, z: 0}
+    untrimmedBoundsDataCenter: {x: 3.78125, y: 3.71875, z: 0}
+    untrimmedBoundsDataExtents: {x: 7.5625, y: 7.4375, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 1.9999999, y: 1.6875, z: 0}
+    position1: {x: 5.6875, y: 1.6875, z: 0}
+    position2: {x: 1.9999999, y: 6.5625, z: 0}
+    position3: {x: 5.6875, y: 6.5625, z: 0}
+    uvs:
+    - {x: 0.4941426, y: 0.3955088}
+    - {x: 0.4941426, y: 0.45312402}
+    - {x: 0.6464824, y: 0.3955088}
+    - {x: 0.6464824, y: 0.45312402}
+    material: {fileID: 2100000, guid: 285ef50a4f51b4842aa21724efbc3833, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletitan_die_left_003
+    boundsDataCenter: {x: 3.21875, y: 4.1875, z: 0}
+    boundsDataExtents: {x: 4.0625, y: 4.625, z: 0}
+    untrimmedBoundsDataCenter: {x: 3.78125, y: 3.71875, z: 0}
+    untrimmedBoundsDataExtents: {x: 7.5625, y: 7.4375, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 1.1875, y: 1.8750001, z: 0}
+    position1: {x: 5.25, y: 1.8750001, z: 0}
+    position2: {x: 1.1875, y: 6.5, z: 0}
+    position3: {x: 5.25, y: 6.5, z: 0}
+    uvs:
+    - {x: 0.4082051, y: 0.26660255}
+    - {x: 0.4082051, y: 0.33007714}
+    - {x: 0.5527324, y: 0.26660255}
+    - {x: 0.5527324, y: 0.33007714}
+    material: {fileID: 2100000, guid: 285ef50a4f51b4842aa21724efbc3833, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletitan_die_right_004
+    boundsDataCenter: {x: 4.34375, y: 3.46875, z: 0}
+    boundsDataExtents: {x: 4.1875, y: 4.4375, z: 0}
+    untrimmedBoundsDataCenter: {x: 3.78125, y: 3.71875, z: 0}
+    untrimmedBoundsDataExtents: {x: 7.5625, y: 7.4375, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 2.25, y: 1.25, z: 0}
+    position1: {x: 6.4375, y: 1.25, z: 0}
+    position2: {x: 2.25, y: 5.6875, z: 0}
+    position3: {x: 6.4375, y: 5.6875, z: 0}
+    uvs:
+    - {x: 0.56054884, y: 0.26660255}
+    - {x: 0.56054884, y: 0.33203027}
+    - {x: 0.6992168, y: 0.26660255}
+    - {x: 0.6992168, y: 0.33203027}
+    material: {fileID: 2100000, guid: 285ef50a4f51b4842aa21724efbc3833, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletitan_die_left_vfx_004
+    boundsDataCenter: {x: 3.28125, y: 2.75, z: 0}
+    boundsDataExtents: {x: 5.4375, y: 4.625, z: 0}
+    untrimmedBoundsDataCenter: {x: 3.78125, y: 3.71875, z: 0}
+    untrimmedBoundsDataExtents: {x: 7.5625, y: 7.4375, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.5625, y: 0.4375, z: 0}
+    position1: {x: 6, y: 0.4375, z: 0}
+    position2: {x: 0.5625, y: 5.0625, z: 0}
+    position3: {x: 6, y: 5.0625, z: 0}
+    uvs:
+    - {x: 0.003908203, y: 0.26171973}
+    - {x: 0.17382617, y: 0.26171973}
+    - {x: 0.003908203, y: 0.3339834}
+    - {x: 0.17382617, y: 0.3339834}
+    material: {fileID: 2100000, guid: 285ef50a4f51b4842aa21724efbc3833, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bullettitan_idle_right_001
+    boundsDataCenter: {x: 3.78125, y: 4.15625, z: 0}
+    boundsDataExtents: {x: 2.9375, y: 4.9375, z: 0}
+    untrimmedBoundsDataCenter: {x: 3.78125, y: 3.71875, z: 0}
+    untrimmedBoundsDataExtents: {x: 7.5625, y: 7.4375, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 2.3125, y: 1.6875, z: 0}
+    position1: {x: 5.25, y: 1.6875, z: 0}
+    position2: {x: 2.3125, y: 6.625, z: 0}
+    position3: {x: 5.25, y: 6.625, z: 0}
+    uvs:
+    - {x: 0.21875195, y: 0.71386814}
+    - {x: 0.3105449, y: 0.71386814}
+    - {x: 0.21875195, y: 0.7910147}
+    - {x: 0.3105449, y: 0.7910147}
+    material: {fileID: 2100000, guid: 285ef50a4f51b4842aa21724efbc3833, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletitan_move_back_left_001
+    boundsDataCenter: {x: 3.78125, y: 4.78125, z: 0}
+    boundsDataExtents: {x: 2.9375, y: 4.8125, z: 0}
+    untrimmedBoundsDataCenter: {x: 3.78125, y: 3.71875, z: 0}
+    untrimmedBoundsDataExtents: {x: 7.5625, y: 7.4375, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 2.3125, y: 2.375, z: 0}
+    position1: {x: 5.25, y: 2.375, z: 0}
+    position2: {x: 2.3125, y: 7.1875, z: 0}
+    position3: {x: 5.25, y: 7.1875, z: 0}
+    uvs:
+    - {x: 0.20312695, y: 0.7949228}
+    - {x: 0.2949199, y: 0.7949228}
+    - {x: 0.20312695, y: 0.87011623}
+    - {x: 0.2949199, y: 0.87011623}
+    material: {fileID: 2100000, guid: 285ef50a4f51b4842aa21724efbc3833, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletitan_move_left_004
+    boundsDataCenter: {x: 3.78125, y: 4.875, z: 0}
+    boundsDataExtents: {x: 2.9375, y: 5.125, z: 0}
+    untrimmedBoundsDataCenter: {x: 3.78125, y: 3.71875, z: 0}
+    untrimmedBoundsDataExtents: {x: 7.5625, y: 7.4375, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 2.3125, y: 2.3125, z: 0}
+    position1: {x: 5.25, y: 2.3125, z: 0}
+    position2: {x: 2.3125, y: 7.4375, z: 0}
+    position3: {x: 5.25, y: 7.4375, z: 0}
+    uvs:
+    - {x: 0.11914258, y: 0.63281345}
+    - {x: 0.21093555, y: 0.63281345}
+    - {x: 0.11914258, y: 0.7128897}
+    - {x: 0.21093555, y: 0.7128897}
+    material: {fileID: 2100000, guid: 285ef50a4f51b4842aa21724efbc3833, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletitan_shadow_die_left_001
+    boundsDataCenter: {x: 3.71875, y: 2.5625, z: 0}
+    boundsDataExtents: {x: 3.6875, y: 2.875, z: 0}
+    untrimmedBoundsDataCenter: {x: 3.78125, y: 3.71875, z: 0}
+    untrimmedBoundsDataExtents: {x: 7.5625, y: 7.4375, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 1.875, y: 1.125, z: 0}
+    position1: {x: 5.5625, y: 1.125, z: 0}
+    position2: {x: 1.875, y: 4, z: 0}
+    position3: {x: 5.5625, y: 4, z: 0}
+    uvs:
+    - {x: 0.003908203, y: 0.8115244}
+    - {x: 0.003908203, y: 0.8691397}
+    - {x: 0.09374805, y: 0.8115244}
+    - {x: 0.09374805, y: 0.8691397}
+    material: {fileID: 2100000, guid: 285ef50a4f51b4842aa21724efbc3833, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletitan_die_left_vfx_009
+    boundsDataCenter: {x: 3.4375, y: 3.875, z: 0}
+    boundsDataExtents: {x: 6.375, y: 4.875, z: 0}
+    untrimmedBoundsDataCenter: {x: 3.78125, y: 3.71875, z: 0}
+    untrimmedBoundsDataExtents: {x: 7.5625, y: 7.4375, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.24999999, y: 1.4375, z: 0}
+    position1: {x: 6.625, y: 1.4375, z: 0}
+    position2: {x: 0.24999999, y: 6.3125, z: 0}
+    position3: {x: 6.625, y: 6.3125, z: 0}
+    uvs:
+    - {x: 0.21093945, y: 0.18164161}
+    - {x: 0.41015428, y: 0.18164161}
+    - {x: 0.21093945, y: 0.25781152}
+    - {x: 0.41015428, y: 0.25781152}
+    material: {fileID: 2100000, guid: 285ef50a4f51b4842aa21724efbc3833, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletitan_shadow_die_left_002
+    boundsDataCenter: {x: 3.65625, y: 2.5625, z: 0}
+    boundsDataExtents: {x: 3.5625, y: 3.5, z: 0}
+    untrimmedBoundsDataCenter: {x: 3.78125, y: 3.71875, z: 0}
+    untrimmedBoundsDataExtents: {x: 7.5625, y: 7.4375, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 1.875, y: 0.8125, z: 0}
+    position1: {x: 5.4375, y: 0.8125, z: 0}
+    position2: {x: 1.875, y: 4.3125, z: 0}
+    position3: {x: 5.4375, y: 4.3125, z: 0}
+    uvs:
+    - {x: 0.8066426, y: 0.7167978}
+    - {x: 0.9179668, y: 0.7167978}
+    - {x: 0.8066426, y: 0.7714834}
+    - {x: 0.9179668, y: 0.7714834}
+    material: {fileID: 2100000, guid: 285ef50a4f51b4842aa21724efbc3833, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bulletitan_die_right_005
+    boundsDataCenter: {x: 4.34375, y: 3.5625, z: 0}
+    boundsDataExtents: {x: 4.0625, y: 4.625, z: 0}
+    untrimmedBoundsDataCenter: {x: 3.78125, y: 3.71875, z: 0}
+    untrimmedBoundsDataExtents: {x: 7.5625, y: 7.4375, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 2.3125, y: 1.25, z: 0}
+    position1: {x: 6.375, y: 1.25, z: 0}
+    position2: {x: 2.3125, y: 5.875, z: 0}
+    position3: {x: 6.375, y: 5.875, z: 0}
+    uvs:
+    - {x: 0.18164258, y: 0.32910255}
+    - {x: 0.18164258, y: 0.39257714}
+    - {x: 0.3261699, y: 0.32910255}
+    - {x: 0.3261699, y: 0.39257714}
+    material: {fileID: 2100000, guid: 285ef50a4f51b4842aa21724efbc3833, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: blank_frame_001
+    boundsDataCenter: {x: 0.59375, y: 0.59375, z: 0}
+    boundsDataExtents: {x: 0.0625, y: 0.0625, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.59375, y: 0.59375, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.1875, y: 1.1875, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.5625, y: 0.5625, z: 0}
+    position1: {x: 0.625, y: 0.5625, z: 0}
+    position2: {x: 0.5625, y: 0.625, z: 0}
+    position3: {x: 0.625, y: 0.625, z: 0}
+    uvs:
+    - {x: 0.99023634, y: 0.0019541015}
+    - {x: 0.98437303, y: 0.0019541015}
+    - {x: 0.99023634, y: -0.0009775391}
+    - {x: 0.98437303, y: -0.0009775391}
+    material: {fileID: 2100000, guid: 285ef50a4f51b4842aa21724efbc3833, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  SpriteIDsWithBagelColliders:
+  SpriteDefinedBagelColliders: []
+  SpriteIDsWithAttachPoints:
+  SpriteDefinedAttachPoints: []
+  SpriteIDsWithNeighborDependencies:
+  SpriteDefinedIndexNeighborDependencies: []
+  SpriteIDsWithAnimationSequences:
+  SpriteDefinedAnimationSequences: []
+  premultipliedAlpha: 0
+  shouldGenerateTilemapReflectionData: 0
+  material: {fileID: 0}
+  materials:
+  - {fileID: 2100000, guid: 285ef50a4f51b4842aa21724efbc3833, type: 2}
+  textures:
+  - {fileID: 2800000, guid: 01d95a1be7097534484b0b12dc22a86a, type: 3}
+  pngTextures: []
+  materialPngTextureId: 00000000
+  textureFilterMode: 0
+  textureMipMaps: 0
+  allowMultipleAtlases: 0
+  spriteCollectionGUID: 874e0b754c786974b8e80b0b16ad325a
+  spriteCollectionName: Bullet_Titan_Collection
+  assetName:
+  loadable: 0
+  invOrthoSize: 2
+  halfTargetHeight: 8
+  buildKey: 1740614873
+  dataGuid: 82512b4972d7d814c8dd170702cd61cc
+  managedSpriteCollection: 0
+  hasPlatformData: 0
+  spriteCollectionPlatforms: []
+  spriteCollectionPlatformGUIDs: []

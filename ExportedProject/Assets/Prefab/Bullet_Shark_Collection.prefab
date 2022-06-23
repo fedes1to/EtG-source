@@ -1,0 +1,1854 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1807129061602204}
+  m_IsPrefabParent: 1
+--- !u!1 &1807129061602204
+GameObject:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - component: {fileID: 4951455886096216}
+  - component: {fileID: 114632113868553387}
+  m_Layer: 0
+  m_Name: Bullet_Shark_Collection
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4951455886096216
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1807129061602204}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &114632113868553387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1807129061602204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88a3598ad548b6f4ba107e0e1968fdb3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  version: 3
+  materialIdsValid: 1
+  needMaterialInstance: 0
+  spriteDefinitions:
+  - name: bullet_shark_front_left_001
+    boundsDataCenter: {x: 0.6875, y: 0.96875, z: 0}
+    boundsDataExtents: {x: 1.125, y: 1.0625, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.6875, y: 0.78125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.375, y: 1.5625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.125, y: 0.4375, z: 0}
+    position1: {x: 1.25, y: 0.4375, z: 0}
+    position2: {x: 0.125, y: 1.5, z: 0}
+    position3: {x: 1.25, y: 1.5, z: 0}
+    uvs:
+    - {x: 0.17188281, y: 0.5546953}
+    - {x: 0.17188281, y: 0.6953047}
+    - {x: 0.3046797, y: 0.5546953}
+    - {x: 0.3046797, y: 0.6953047}
+    material: {fileID: 2100000, guid: 302e38c046c3b9e4898acbea697740e9, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.6875, y: 0.96875, z: 0}
+    - {x: 0.5625, y: 0.53125, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bullet_shark_back_shadow_001
+    boundsDataCenter: {x: 0.6875, y: 0.5, z: 0}
+    boundsDataExtents: {x: 0.75, y: 1, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.6875, y: 0.78125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.375, y: 1.5625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.3125, y: 0, z: 0}
+    position1: {x: 1.0625, y: 0, z: 0}
+    position2: {x: 0.3125, y: 1, z: 0}
+    position3: {x: 1.0625, y: 1, z: 0}
+    uvs:
+    - {x: 0.17969531, y: 0.8984453}
+    - {x: 0.17969531, y: 0.9921797}
+    - {x: 0.3046797, y: 0.8984453}
+    - {x: 0.3046797, y: 0.9921797}
+    material: {fileID: 2100000, guid: 2dece02d01bc5e94caad375cb9b58477, type: 2}
+    materialId: 1
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bullet_shark_left_001
+    boundsDataCenter: {x: 0.65625, y: 1.03125, z: 0}
+    boundsDataExtents: {x: 1.3125, y: 0.8125, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.6875, y: 0.78125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.375, y: 1.5625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0, y: 0.625, z: 0}
+    position1: {x: 1.3125, y: 0.625, z: 0}
+    position2: {x: 0, y: 1.4375, z: 0}
+    position3: {x: 1.3125, y: 1.4375, z: 0}
+    uvs:
+    - {x: 0.4375078, y: 0.6796953}
+    - {x: 0.4375078, y: 0.8437422}
+    - {x: 0.5390547, y: 0.6796953}
+    - {x: 0.5390547, y: 0.8437422}
+    material: {fileID: 2100000, guid: 302e38c046c3b9e4898acbea697740e9, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.65625, y: 1.03125, z: 0}
+    - {x: 0.65625, y: 0.40625, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bullet_shark_front_right_shadow_001
+    boundsDataCenter: {x: 0.6875, y: 0.5, z: 0}
+    boundsDataExtents: {x: 1.125, y: 0.87500006, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.6875, y: 0.78125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.375, y: 1.5625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.125, y: 0.0625, z: 0}
+    position1: {x: 1.25, y: 0.0625, z: 0}
+    position2: {x: 0.125, y: 0.93750006, z: 0}
+    position3: {x: 1.25, y: 0.93750006, z: 0}
+    uvs:
+    - {x: 0.4453203, y: 0.4609453}
+    - {x: 0.4453203, y: 0.6015547}
+    - {x: 0.5546797, y: 0.4609453}
+    - {x: 0.5546797, y: 0.6015547}
+    material: {fileID: 2100000, guid: 2dece02d01bc5e94caad375cb9b58477, type: 2}
+    materialId: 1
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bullet_shark_left_shadow_001
+    boundsDataCenter: {x: 0.6875, y: 0.625, z: 0}
+    boundsDataExtents: {x: 1.25, y: 0.5, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.6875, y: 0.78125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.375, y: 1.5625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.0625, y: 0.375, z: 0}
+    position1: {x: 1.3125, y: 0.375, z: 0}
+    position2: {x: 0.0625, y: 0.875, z: 0}
+    position3: {x: 1.3125, y: 0.875, z: 0}
+    uvs:
+    - {x: 0.7187578, y: 0.007820313}
+    - {x: 0.8749922, y: 0.007820313}
+    - {x: 0.7187578, y: 0.070304684}
+    - {x: 0.8749922, y: 0.070304684}
+    material: {fileID: 2100000, guid: 2dece02d01bc5e94caad375cb9b58477, type: 2}
+    materialId: 1
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bullet_shark_front_001
+    boundsDataCenter: {x: 0.6875, y: 0.9375, z: 0}
+    boundsDataExtents: {x: 0.625, y: 1.25, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.6875, y: 0.78125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.375, y: 1.5625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.375, y: 0.3125, z: 0}
+    position1: {x: 1, y: 0.3125, z: 0}
+    position2: {x: 0.375, y: 1.5625, z: 0}
+    position3: {x: 1, y: 1.5625, z: 0}
+    uvs:
+    - {x: 0.007820313, y: 0.8984453}
+    - {x: 0.007820313, y: 0.9765547}
+    - {x: 0.16405469, y: 0.8984453}
+    - {x: 0.16405469, y: 0.9765547}
+    material: {fileID: 2100000, guid: 302e38c046c3b9e4898acbea697740e9, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.6875, y: 0.9375, z: 0}
+    - {x: 0.3125, y: 0.625, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bullet_shark_back_left_shadow_001
+    boundsDataCenter: {x: 0.6875, y: 0.5, z: 0}
+    boundsDataExtents: {x: 1.125, y: 0.87500006, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.6875, y: 0.78125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.375, y: 1.5625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.125, y: 0.0625, z: 0}
+    position1: {x: 1.25, y: 0.0625, z: 0}
+    position2: {x: 0.125, y: 0.93750006, z: 0}
+    position3: {x: 1.25, y: 0.93750006, z: 0}
+    uvs:
+    - {x: 0.4453203, y: 0.4609453}
+    - {x: 0.4453203, y: 0.6015547}
+    - {x: 0.5546797, y: 0.4609453}
+    - {x: 0.5546797, y: 0.6015547}
+    material: {fileID: 2100000, guid: 2dece02d01bc5e94caad375cb9b58477, type: 2}
+    materialId: 1
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bullet_shark_back_right_shadow_001
+    boundsDataCenter: {x: 0.6875, y: 0.5, z: 0}
+    boundsDataExtents: {x: 1.125, y: 0.87500006, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.6875, y: 0.78125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.375, y: 1.5625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.125, y: 0.0625, z: 0}
+    position1: {x: 1.25, y: 0.0625, z: 0}
+    position2: {x: 0.125, y: 0.93750006, z: 0}
+    position3: {x: 1.25, y: 0.93750006, z: 0}
+    uvs:
+    - {x: 0.5625078, y: 0.2968828}
+    - {x: 0.5625078, y: 0.4374922}
+    - {x: 0.6718672, y: 0.2968828}
+    - {x: 0.6718672, y: 0.4374922}
+    material: {fileID: 2100000, guid: 2dece02d01bc5e94caad375cb9b58477, type: 2}
+    materialId: 1
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bullet_shark_back_right_001
+    boundsDataCenter: {x: 0.6875, y: 0.90625, z: 0}
+    boundsDataExtents: {x: 1.125, y: 1.0625, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.6875, y: 0.78125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.375, y: 1.5625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.125, y: 0.375, z: 0}
+    position1: {x: 1.25, y: 0.375, z: 0}
+    position2: {x: 0.125, y: 1.4375, z: 0}
+    position3: {x: 1.25, y: 1.4375, z: 0}
+    uvs:
+    - {x: 0.2890703, y: 0.7109453}
+    - {x: 0.2890703, y: 0.8515547}
+    - {x: 0.4218672, y: 0.7109453}
+    - {x: 0.4218672, y: 0.8515547}
+    material: {fileID: 2100000, guid: 302e38c046c3b9e4898acbea697740e9, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.6875, y: 0.90625, z: 0}
+    - {x: 0.5625, y: 0.53125, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bullet_shark_front_left_shadow_001
+    boundsDataCenter: {x: 0.6875, y: 0.5, z: 0}
+    boundsDataExtents: {x: 1.125, y: 0.87500006, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.6875, y: 0.78125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.375, y: 1.5625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.125, y: 0.0625, z: 0}
+    position1: {x: 1.25, y: 0.0625, z: 0}
+    position2: {x: 0.125, y: 0.93750006, z: 0}
+    position3: {x: 1.25, y: 0.93750006, z: 0}
+    uvs:
+    - {x: 0.5625078, y: 0.2968828}
+    - {x: 0.5625078, y: 0.4374922}
+    - {x: 0.6718672, y: 0.2968828}
+    - {x: 0.6718672, y: 0.4374922}
+    material: {fileID: 2100000, guid: 2dece02d01bc5e94caad375cb9b58477, type: 2}
+    materialId: 1
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bullet_shark_back_left_001
+    boundsDataCenter: {x: 0.6875, y: 0.90625, z: 0}
+    boundsDataExtents: {x: 1.125, y: 1.0625, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.6875, y: 0.78125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.375, y: 1.5625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.125, y: 0.375, z: 0}
+    position1: {x: 1.25, y: 0.375, z: 0}
+    position2: {x: 0.125, y: 1.4375, z: 0}
+    position3: {x: 1.25, y: 1.4375, z: 0}
+    uvs:
+    - {x: 0.19532031, y: 0.007820313}
+    - {x: 0.19532031, y: 0.14842969}
+    - {x: 0.3281172, y: 0.007820313}
+    - {x: 0.3281172, y: 0.14842969}
+    material: {fileID: 2100000, guid: 302e38c046c3b9e4898acbea697740e9, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.6875, y: 0.90625, z: 0}
+    - {x: 0.5625, y: 0.53125, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bullet_shark_back_001
+    boundsDataCenter: {x: 0.6875, y: 0.90625, z: 0}
+    boundsDataExtents: {x: 0.625, y: 1.1875, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.6875, y: 0.78125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.375, y: 1.5625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.375, y: 0.3125, z: 0}
+    position1: {x: 1, y: 0.3125, z: 0}
+    position2: {x: 0.375, y: 1.5, z: 0}
+    position3: {x: 1, y: 1.5, z: 0}
+    uvs:
+    - {x: 0.6718828, y: 0.17188281}
+    - {x: 0.6718828, y: 0.24999219}
+    - {x: 0.8203047, y: 0.17188281}
+    - {x: 0.8203047, y: 0.24999219}
+    material: {fileID: 2100000, guid: 302e38c046c3b9e4898acbea697740e9, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.6875, y: 0.90625, z: 0}
+    - {x: 0.3125, y: 0.59375, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bullet_shark_front_right_001
+    boundsDataCenter: {x: 0.6875, y: 0.96875, z: 0}
+    boundsDataExtents: {x: 1.125, y: 1.0625, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.6875, y: 0.78125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.375, y: 1.5625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.125, y: 0.4375, z: 0}
+    position1: {x: 1.25, y: 0.4375, z: 0}
+    position2: {x: 0.125, y: 1.5, z: 0}
+    position3: {x: 1.25, y: 1.5, z: 0}
+    uvs:
+    - {x: 0.19532031, y: 0.16407031}
+    - {x: 0.19532031, y: 0.3046797}
+    - {x: 0.3281172, y: 0.16407031}
+    - {x: 0.3281172, y: 0.3046797}
+    material: {fileID: 2100000, guid: 302e38c046c3b9e4898acbea697740e9, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.6875, y: 0.96875, z: 0}
+    - {x: 0.5625, y: 0.53125, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bullet_shark_right_001
+    boundsDataCenter: {x: 0.71875, y: 1.03125, z: 0}
+    boundsDataExtents: {x: 1.3125, y: 0.8125, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.6875, y: 0.78125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.375, y: 1.5625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.0625, y: 0.625, z: 0}
+    position1: {x: 1.375, y: 0.625, z: 0}
+    position2: {x: 0.0625, y: 1.4375, z: 0}
+    position3: {x: 1.375, y: 1.4375, z: 0}
+    uvs:
+    - {x: 0.5000078, y: 0.8593828}
+    - {x: 0.6640547, y: 0.8593828}
+    - {x: 0.5000078, y: 0.9609297}
+    - {x: 0.6640547, y: 0.9609297}
+    material: {fileID: 2100000, guid: 302e38c046c3b9e4898acbea697740e9, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.71875, y: 1.03125, z: 0}
+    - {x: 0.65625, y: 0.40625, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bullet_shark_right_shadow_001
+    boundsDataCenter: {x: 0.6875, y: 0.625, z: 0}
+    boundsDataExtents: {x: 1.25, y: 0.5, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.6875, y: 0.78125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.375, y: 1.5625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.0625, y: 0.375, z: 0}
+    position1: {x: 1.3125, y: 0.375, z: 0}
+    position2: {x: 0.0625, y: 0.875, z: 0}
+    position3: {x: 1.3125, y: 0.875, z: 0}
+    uvs:
+    - {x: 0.7187578, y: 0.085945316}
+    - {x: 0.8749922, y: 0.085945316}
+    - {x: 0.7187578, y: 0.14842969}
+    - {x: 0.8749922, y: 0.14842969}
+    material: {fileID: 2100000, guid: 2dece02d01bc5e94caad375cb9b58477, type: 2}
+    materialId: 1
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bullet_shark_front_shadow_001
+    boundsDataCenter: {x: 0.6875, y: 0.5, z: 0}
+    boundsDataExtents: {x: 0.75, y: 1, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.6875, y: 0.78125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.375, y: 1.5625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.3125, y: 0, z: 0}
+    position1: {x: 1.0625, y: 0, z: 0}
+    position2: {x: 0.3125, y: 1, z: 0}
+    position3: {x: 1.0625, y: 1, z: 0}
+    uvs:
+    - {x: 0.17969531, y: 0.8984453}
+    - {x: 0.17969531, y: 0.9921797}
+    - {x: 0.3046797, y: 0.8984453}
+    - {x: 0.3046797, y: 0.9921797}
+    material: {fileID: 2100000, guid: 2dece02d01bc5e94caad375cb9b58477, type: 2}
+    materialId: 1
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bullet_shark_hit_right_001
+    boundsDataCenter: {x: 0.71875, y: 0.875, z: 0}
+    boundsDataExtents: {x: 1.1875, y: 1.25, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.6875, y: 0.78125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.375, y: 1.5625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.125, y: 0.25, z: 0}
+    position1: {x: 1.3125, y: 0.25, z: 0}
+    position2: {x: 0.125, y: 1.5, z: 0}
+    position3: {x: 1.3125, y: 1.5, z: 0}
+    uvs:
+    - {x: 0.007820313, y: 0.3828203}
+    - {x: 0.15624219, y: 0.3828203}
+    - {x: 0.007820313, y: 0.5390547}
+    - {x: 0.15624219, y: 0.5390547}
+    material: {fileID: 2100000, guid: 302e38c046c3b9e4898acbea697740e9, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.71875, y: 0.875, z: 0}
+    - {x: 0.59375, y: 0.625, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bullet_shark_hit_001
+    boundsDataCenter: {x: 0.65625, y: 0.875, z: 0}
+    boundsDataExtents: {x: 1.1875, y: 1.25, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.6875, y: 0.78125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.375, y: 1.5625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.0625, y: 0.25, z: 0}
+    position1: {x: 1.25, y: 0.25, z: 0}
+    position2: {x: 0.0625, y: 1.5, z: 0}
+    position3: {x: 1.25, y: 1.5, z: 0}
+    uvs:
+    - {x: 0.007820313, y: 0.5546953}
+    - {x: 0.15624219, y: 0.5546953}
+    - {x: 0.007820313, y: 0.7109297}
+    - {x: 0.15624219, y: 0.7109297}
+    material: {fileID: 2100000, guid: 302e38c046c3b9e4898acbea697740e9, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.65625, y: 0.875, z: 0}
+    - {x: 0.59375, y: 0.625, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bullet_shark_die_left_001
+    boundsDataCenter: {x: 0.6875, y: 0.6875, z: 0}
+    boundsDataExtents: {x: 1.375, y: 1.375, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.6875, y: 0.71875, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.375, y: 1.4375, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0, y: 0, z: 0}
+    position1: {x: 1.375, y: 0, z: 0}
+    position2: {x: 0, y: 1.375, z: 0}
+    position3: {x: 1.375, y: 1.375, z: 0}
+    uvs:
+    - {x: 0.007820313, y: 0.007820313}
+    - {x: 0.17967969, y: 0.007820313}
+    - {x: 0.007820313, y: 0.17967969}
+    - {x: 0.17967969, y: 0.17967969}
+    material: {fileID: 2100000, guid: 302e38c046c3b9e4898acbea697740e9, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bullet_shark_die_right_001
+    boundsDataCenter: {x: 0.6875, y: 0.6875, z: 0}
+    boundsDataExtents: {x: 1.375, y: 1.375, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.6875, y: 0.71875, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.375, y: 1.4375, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0, y: 0, z: 0}
+    position1: {x: 1.375, y: 0, z: 0}
+    position2: {x: 0, y: 1.375, z: 0}
+    position3: {x: 1.375, y: 1.375, z: 0}
+    uvs:
+    - {x: 0.007820313, y: 0.19532031}
+    - {x: 0.17967969, y: 0.19532031}
+    - {x: 0.007820313, y: 0.3671797}
+    - {x: 0.17967969, y: 0.3671797}
+    material: {fileID: 2100000, guid: 302e38c046c3b9e4898acbea697740e9, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bullet_shark_fr_right_001
+    boundsDataCenter: {x: 0.6875, y: 0.9375, z: 0}
+    boundsDataExtents: {x: 1.25, y: 1, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.6875, y: 0.78125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.375, y: 1.5625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.0625, y: 0.4375, z: 0}
+    position1: {x: 1.3125, y: 0.4375, z: 0}
+    position2: {x: 0.0625, y: 1.4375, z: 0}
+    position3: {x: 1.3125, y: 1.4375, z: 0}
+    uvs:
+    - {x: 0.007820313, y: 0.7265703}
+    - {x: 0.007820313, y: 0.8828047}
+    - {x: 0.13280469, y: 0.7265703}
+    - {x: 0.13280469, y: 0.8828047}
+    material: {fileID: 2100000, guid: 302e38c046c3b9e4898acbea697740e9, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.6875, y: 0.9375, z: 0}
+    - {x: 0.625, y: 0.5, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bullet_shark_br_right_001
+    boundsDataCenter: {x: 0.71875, y: 0.875, z: 0}
+    boundsDataExtents: {x: 1.3125, y: 0.875, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.6875, y: 0.78125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.375, y: 1.5625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.0625, y: 0.4375, z: 0}
+    position1: {x: 1.375, y: 0.4375, z: 0}
+    position2: {x: 0.0625, y: 1.3125, z: 0}
+    position3: {x: 1.375, y: 1.3125, z: 0}
+    uvs:
+    - {x: 0.3203203, y: 0.8671953}
+    - {x: 0.4843672, y: 0.8671953}
+    - {x: 0.3203203, y: 0.9765547}
+    - {x: 0.4843672, y: 0.9765547}
+    material: {fileID: 2100000, guid: 302e38c046c3b9e4898acbea697740e9, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.71875, y: 0.875, z: 0}
+    - {x: 0.65625, y: 0.4375, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bullet_shark_fl_left_001
+    boundsDataCenter: {x: 0.6875, y: 0.9375, z: 0}
+    boundsDataExtents: {x: 1.25, y: 1, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.6875, y: 0.78125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.375, y: 1.5625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.0625, y: 0.4375, z: 0}
+    position1: {x: 1.3125, y: 0.4375, z: 0}
+    position2: {x: 0.0625, y: 1.4375, z: 0}
+    position3: {x: 1.3125, y: 1.4375, z: 0}
+    uvs:
+    - {x: 0.14844531, y: 0.7265703}
+    - {x: 0.14844531, y: 0.8828047}
+    - {x: 0.2734297, y: 0.7265703}
+    - {x: 0.2734297, y: 0.8828047}
+    material: {fileID: 2100000, guid: 302e38c046c3b9e4898acbea697740e9, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.6875, y: 0.9375, z: 0}
+    - {x: 0.625, y: 0.5, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bullet_shark_ff_left_001
+    boundsDataCenter: {x: 0.6875, y: 0.96875, z: 0}
+    boundsDataExtents: {x: 0.875, y: 1.1875, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.6875, y: 0.78125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.375, y: 1.5625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.25, y: 0.375, z: 0}
+    position1: {x: 1.125, y: 0.375, z: 0}
+    position2: {x: 0.25, y: 1.5625, z: 0}
+    position3: {x: 1.125, y: 1.5625, z: 0}
+    uvs:
+    - {x: 0.3437578, y: 0.007820313}
+    - {x: 0.4531172, y: 0.007820313}
+    - {x: 0.3437578, y: 0.15624219}
+    - {x: 0.4531172, y: 0.15624219}
+    material: {fileID: 2100000, guid: 302e38c046c3b9e4898acbea697740e9, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.6875, y: 0.96875, z: 0}
+    - {x: 0.4375, y: 0.59375, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bullet_shark_ff_right_001
+    boundsDataCenter: {x: 0.6875, y: 0.96875, z: 0}
+    boundsDataExtents: {x: 0.875, y: 1.1875, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.6875, y: 0.78125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.375, y: 1.5625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.25, y: 0.375, z: 0}
+    position1: {x: 1.125, y: 0.375, z: 0}
+    position2: {x: 0.25, y: 1.5625, z: 0}
+    position3: {x: 1.125, y: 1.5625, z: 0}
+    uvs:
+    - {x: 0.3437578, y: 0.17188281}
+    - {x: 0.3437578, y: 0.2812422}
+    - {x: 0.4921797, y: 0.17188281}
+    - {x: 0.4921797, y: 0.2812422}
+    material: {fileID: 2100000, guid: 302e38c046c3b9e4898acbea697740e9, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.6875, y: 0.96875, z: 0}
+    - {x: 0.4375, y: 0.59375, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bullet_shark_bl_left_001
+    boundsDataCenter: {x: 0.65625, y: 0.875, z: 0}
+    boundsDataExtents: {x: 1.3125, y: 0.875, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.6875, y: 0.78125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.375, y: 1.5625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0, y: 0.4375, z: 0}
+    position1: {x: 1.3125, y: 0.4375, z: 0}
+    position2: {x: 0, y: 1.3125, z: 0}
+    position3: {x: 1.3125, y: 1.3125, z: 0}
+    uvs:
+    - {x: 0.3125078, y: 0.3203203}
+    - {x: 0.3125078, y: 0.4843672}
+    - {x: 0.4218672, y: 0.3203203}
+    - {x: 0.4218672, y: 0.4843672}
+    material: {fileID: 2100000, guid: 302e38c046c3b9e4898acbea697740e9, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.65625, y: 0.875, z: 0}
+    - {x: 0.65625, y: 0.4375, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bullet_shark_bb_right_001
+    boundsDataCenter: {x: 0.6875, y: 0.90625, z: 0}
+    boundsDataExtents: {x: 0.875, y: 1.1875, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.6875, y: 0.78125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.375, y: 1.5625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.25, y: 0.3125, z: 0}
+    position1: {x: 1.125, y: 0.3125, z: 0}
+    position2: {x: 0.25, y: 1.5, z: 0}
+    position3: {x: 1.125, y: 1.5, z: 0}
+    uvs:
+    - {x: 0.4687578, y: 0.007820313}
+    - {x: 0.5781172, y: 0.007820313}
+    - {x: 0.4687578, y: 0.15624219}
+    - {x: 0.5781172, y: 0.15624219}
+    material: {fileID: 2100000, guid: 302e38c046c3b9e4898acbea697740e9, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.6875, y: 0.90625, z: 0}
+    - {x: 0.4375, y: 0.59375, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bullet_shark_bb_left_001
+    boundsDataCenter: {x: 0.6875, y: 0.90625, z: 0}
+    boundsDataExtents: {x: 0.875, y: 1.1875, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.6875, y: 0.78125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.375, y: 1.5625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.25, y: 0.3125, z: 0}
+    position1: {x: 1.125, y: 0.3125, z: 0}
+    position2: {x: 0.25, y: 1.5, z: 0}
+    position3: {x: 1.125, y: 1.5, z: 0}
+    uvs:
+    - {x: 0.4375078, y: 0.2968828}
+    - {x: 0.5468672, y: 0.2968828}
+    - {x: 0.4375078, y: 0.4453047}
+    - {x: 0.5468672, y: 0.4453047}
+    material: {fileID: 2100000, guid: 302e38c046c3b9e4898acbea697740e9, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.6875, y: 0.90625, z: 0}
+    - {x: 0.4375, y: 0.59375, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bullet_shark_bb_right_shadow_001
+    boundsDataCenter: {x: 0.6875, y: 0.59375, z: 0}
+    boundsDataExtents: {x: 0.875, y: 1.1875, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.6875, y: 0.78125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.375, y: 1.5625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.25, y: 0, z: 0}
+    position1: {x: 1.125, y: 0, z: 0}
+    position2: {x: 0.25, y: 1.1875, z: 0}
+    position3: {x: 1.125, y: 1.1875, z: 0}
+    uvs:
+    - {x: 0.5078203, y: 0.17188281}
+    - {x: 0.5078203, y: 0.2812422}
+    - {x: 0.6562422, y: 0.17188281}
+    - {x: 0.6562422, y: 0.2812422}
+    material: {fileID: 2100000, guid: 2dece02d01bc5e94caad375cb9b58477, type: 2}
+    materialId: 1
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bullet_shark_br_right_shadow_001
+    boundsDataCenter: {x: 0.71875, y: 0.5625, z: 0}
+    boundsDataExtents: {x: 1.3125, y: 0.875, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.6875, y: 0.78125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.375, y: 1.5625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.0625, y: 0.125, z: 0}
+    position1: {x: 1.375, y: 0.125, z: 0}
+    position2: {x: 0.0625, y: 1, z: 0}
+    position3: {x: 1.375, y: 1, z: 0}
+    uvs:
+    - {x: 0.3203203, y: 0.5000078}
+    - {x: 0.3203203, y: 0.6640547}
+    - {x: 0.4296797, y: 0.5000078}
+    - {x: 0.4296797, y: 0.6640547}
+    material: {fileID: 2100000, guid: 2dece02d01bc5e94caad375cb9b58477, type: 2}
+    materialId: 1
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bullet_shark_fr_right_shadow_001
+    boundsDataCenter: {x: 0.6875, y: 0.5625, z: 0}
+    boundsDataExtents: {x: 1.25, y: 1, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.6875, y: 0.78125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.375, y: 1.5625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.0625, y: 0.0625, z: 0}
+    position1: {x: 1.3125, y: 0.0625, z: 0}
+    position2: {x: 0.0625, y: 1.0625, z: 0}
+    position3: {x: 1.3125, y: 1.0625, z: 0}
+    uvs:
+    - {x: 0.17188281, y: 0.3828203}
+    - {x: 0.17188281, y: 0.5390547}
+    - {x: 0.2968672, y: 0.3828203}
+    - {x: 0.2968672, y: 0.5390547}
+    material: {fileID: 2100000, guid: 2dece02d01bc5e94caad375cb9b58477, type: 2}
+    materialId: 1
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: bullet_shark_ff_right_shadow_001
+    boundsDataCenter: {x: 0.6875, y: 0.65625, z: 0}
+    boundsDataExtents: {x: 0.875, y: 1.1875, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.6875, y: 0.78125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.375, y: 1.5625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.25, y: 0.0625, z: 0}
+    position1: {x: 1.125, y: 0.0625, z: 0}
+    position2: {x: 0.25, y: 1.25, z: 0}
+    position3: {x: 1.125, y: 1.25, z: 0}
+    uvs:
+    - {x: 0.5937578, y: 0.007820313}
+    - {x: 0.7031172, y: 0.007820313}
+    - {x: 0.5937578, y: 0.15624219}
+    - {x: 0.7031172, y: 0.15624219}
+    material: {fileID: 2100000, guid: 2dece02d01bc5e94caad375cb9b58477, type: 2}
+    materialId: 1
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  SpriteIDsWithBagelColliders: 000000000200000005000000080000000a0000000b0000000c0000000d00000010000000110000001400000015000000160000001700000018000000190000001a0000001b0000001200000013000000
+  SpriteDefinedBagelColliders:
+  - bagelColliders:
+    - width: 22
+      height: 25
+      minX: 0
+      minY: 0
+      actualWidth: 0
+      actualHeight: 0
+      bagelCollider: 00000000000000000000000000000000000000000000000000000000000000000000010101010000000000000000000000000000000000010101010101010000000000000000000000000000010101010101010101000000000000000000000000010101010101010101010000000000000000000000010101010101010101010101000000000000000000010101010101010101010101010000000000000000010101010101010101010101010100000000000000010101010101010101010101010100000000000000010101010101010101010101010100000000000000010101010101010101010101010100000000000000010101010101010101010101010100000000000000000101010101010101010101010100000000000000000001010101010101010101010100000000000000000000010101010101010101010100000000000000000000000101010101010101010100000000000000000000000000010101010101010100000000000000000000000000000001010101010100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  - bagelColliders:
+    - width: 22
+      height: 25
+      minX: 0
+      minY: 0
+      actualWidth: 0
+      actualHeight: 0
+      bagelCollider: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000101010101010101010101010101010101010000000101010101010101010101010101010101010100000101010101010101010101010101010101010101000101010101010101010101010101010101010101010001010101010101010101010101010101010101010100010101010101010101010101010101010101010101000101010101010101010101010101010101010101010000010101010101010101010101010101010101010100000001010101010101010101010101010101010101000000000001010101010101010101010101010101010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  - bagelColliders:
+    - width: 22
+      height: 25
+      minX: 0
+      minY: 0
+      actualWidth: 0
+      actualHeight: 0
+      bagelCollider: 00000000000000000101010101010000000000000000000000000000000101010101010101000000000000000000000000000101010101010101010100000000000000000000000001010101010101010101000000000000000000000000010101010101010101010000000000000000000000000101010101010101010100000000000000000000000001010101010101010101000000000000000000000000010101010101010101010000000000000000000000000101010101010101010100000000000000000000000001010101010101010101000000000000000000000000010101010101010101010000000000000000000000000101010101010101010100000000000000000000000001010101010101010101000000000000000000000000010101010101010101010000000000000000000000000101010101010101010100000000000000000000000001010101010101010101000000000000000000000000010101010101010101010000000000000000000000000101010101010101010100000000000000000000000000010101010101010100000000000000000000000000000001010101010100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  - bagelColliders:
+    - width: 22
+      height: 25
+      minX: 0
+      minY: 0
+      actualWidth: 0
+      actualHeight: 0
+      bagelCollider: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001010101010000000000000000000000000000000101010101010101000000000000000000000000000101010101010101010100000000000000000000000101010101010101010101000000000000000000000101010101010101010101010000000000000000000101010101010101010101010100000000000000000101010101010101010101010100000000000000000101010101010101010101010101000000000000000101010101010101010101010101000000000000000101010101010101010101010101000000000000000101010101010101010101010101000000000000000001010101010101010101010101000000000000000000010101010101010101010101000000000000000000000101010101010101010101000000000000000000000001010101010101010101000000000000000000000000000101010101010101000000000000000000000000000000010101010101000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  - bagelColliders:
+    - width: 22
+      height: 25
+      minX: 0
+      minY: 0
+      actualWidth: 0
+      actualHeight: 0
+      bagelCollider: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001010101010000000000000000000000000000000001010101010101010000000000000000000000000001010101010101010101000000000000000000000000010101010101010101010100000000000000000000000101010101010101010101010000000000000000000001010101010101010101010101000000000000000000000101010101010101010101010100000000000000000001010101010101010101010101010000000000000000000101010101010101010101010101000000000000000000010101010101010101010101010100000000000000000001010101010101010101010101010000000000000000000101010101010101010101010100000000000000000000010101010101010101010101000000000000000000000001010101010101010101010000000000000000000000000101010101010101010100000000000000000000000000010101010101010100000000000000000000000000000001010101010100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  - bagelColliders:
+    - width: 22
+      height: 25
+      minX: 0
+      minY: 0
+      actualWidth: 0
+      actualHeight: 0
+      bagelCollider: 00000000000000000000000000000000000000000000000000000000000001010101010100000000000000000000000000000001010101010101010000000000000000000000000001010101010101010101000000000000000000000000010101010101010101010000000000000000000000000101010101010101010100000000000000000000000001010101010101010101000000000000000000000000010101010101010101010000000000000000000000000101010101010101010100000000000000000000000001010101010101010101000000000000000000000000010101010101010101010000000000000000000000000101010101010101010100000000000000000000000001010101010101010101000000000000000000000000010101010101010101010000000000000000000000000101010101010101010100000000000000000000000001010101010101010101000000000000000000000000010101010101010101010000000000000000000000000101010101010101010100000000000000000000000000010101010101010100000000000000000000000000000001010101010100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  - bagelColliders:
+    - width: 22
+      height: 25
+      minX: 0
+      minY: 0
+      actualWidth: 0
+      actualHeight: 0
+      bagelCollider: 00000000000000000000000000000000000000000000000000000000010101010000000000000000000000000000000001010101010101000000000000000000000000000001010101010101010100000000000000000000000000010101010101010101010000000000000000000000010101010101010101010101000000000000000000000101010101010101010101010100000000000000000001010101010101010101010101010000000000000000000101010101010101010101010101000000000000000000010101010101010101010101010100000000000000000001010101010101010101010101010000000000000000000101010101010101010101010101000000000000000000010101010101010101010101010000000000000000000001010101010101010101010100000000000000000000000101010101010101010101000000000000000000000000010101010101010101010000000000000000000000000001010101010101010000000000000000000000000000000101010101010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  - bagelColliders:
+    - width: 22
+      height: 25
+      minX: 0
+      minY: 0
+      actualWidth: 0
+      actualHeight: 0
+      bagelCollider: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001010101010101010101010101010101010100000000010101010101010101010101010101010101010000000101010101010101010101010101010101010101000001010101010101010101010101010101010101010100010101010101010101010101010101010101010101000101010101010101010101010101010101010101010001010101010101010101010101010101010101010100010101010101010101010101010101010101010100000101010101010101010101010101010101010100000001010101010101010101010101010101010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  - bagelColliders:
+    - width: 22
+      height: 25
+      minX: 0
+      minY: 0
+      actualWidth: 0
+      actualHeight: 0
+      bagelCollider: 00000000000000000000000000000000000000000000000000000000000000000000000101010100000000000000000000000000000000000101010101010100000000000000000000000000000001010101010101010000000000000000000000000001010101010101010101000000000000000000000001010101010101010101010000000000000000000001010101010101010101010100000000000000000001010101010101010101010100000000000000000001010101010101010101010101000000000000000001010101010101010101010101010000000000000001010101010101010101010101010000000000000001010101010101010101010101010000000000000001010101010101010101010101010000000000000001010101010101010101010101010000000000000000010101010101010101010101010000000000000000000001010101010101010101010000000000000000000000000101010101010101010000000000000000000000000000010101010101010000000000000000000000000000000001010101010000000000000000000000000000000000000101010000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  - bagelColliders:
+    - width: 22
+      height: 25
+      minX: 0
+      minY: 0
+      actualWidth: 0
+      actualHeight: 0
+      bagelCollider: 00000000000000000000000000000000000000000000000000000001010101000000000000000000000000000000000101010101010100000000000000000000000000000101010101010101000000000000000000000000000101010101010101010100000000000000000000000001010101010101010101010000000000000000000000010101010101010101010101000000000000000000000001010101010101010101010100000000000000000000010101010101010101010101010000000000000000000101010101010101010101010101000000000000000000010101010101010101010101010100000000000000000001010101010101010101010101010000000000000000000101010101010101010101010101000000000000000000010101010101010101010101010100000000000000000001010101010101010101010101000000000000000000000101010101010101010101000000000000000000000000010101010101010101000000000000000000000000000001010101010101000000000000000000000000000000000101010101000000000000000000000000000000000000010101000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  - bagelColliders:
+    - width: 22
+      height: 25
+      minX: 0
+      minY: 0
+      actualWidth: 0
+      actualHeight: 0
+      bagelCollider: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001010101000000000000000000000000000000000001010101010100000000000000000000000000000001010101010101010101000000000000000000000000010101010101010101010101000000000000000000010101010101010101010101010100000000000000000101010101010101010101010101010000000000000001010101010101010101010101010101010000000000010101010101010101010101010101010101000000000001010101010101010101010101010101010100000000000101010101010101010101010101010101010000000000000101010101010101010101010101010100000000000000000101010101010101010101010101000000000000000000000101010101010101010101010000000000000000000000010101010101010101010000000000000000000000000000010101010101010100000000000000000000000000000000010101010100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  - bagelColliders:
+    - width: 22
+      height: 25
+      minX: 0
+      minY: 0
+      actualWidth: 0
+      actualHeight: 0
+      bagelCollider: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001010101010000000000000000000000000001010101010101010101010000000000000000010101010101010101010101010101000000000001010101010101010101010101010101010000010101010101010101010101010101010101010100010101010101010101010101010101010101010101000101010101010101010101010101010101010101010001010101010101010101010101010101010101010000010101010101010101010101010101010101010000000001010101010101010101010101010101010000000000010101010101010101010101010100000000000000000101010101010101010101000000000000000000000000010101010101010000000000000000000000000000000001010100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  - bagelColliders:
+    - width: 22
+      height: 25
+      minX: 0
+      minY: 0
+      actualWidth: 0
+      actualHeight: 0
+      bagelCollider: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010101010000000000000000000000000000000000010101010101000000000000000000000000000101010101010101010100000000000000000000010101010101010101010101000000000000000000010101010101010101010101010100000000000000010101010101010101010101010101000000000001010101010101010101010101010101010000000001010101010101010101010101010101010100000001010101010101010101010101010101010100000001010101010101010101010101010101010100000000010101010101010101010101010101010000000000000101010101010101010101010101000000000000000001010101010101010101010100000000000000000000000101010101010101010100000000000000000000000001010101010101010000000000000000000000000000000101010101000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  - bagelColliders:
+    - width: 22
+      height: 25
+      minX: 0
+      minY: 0
+      actualWidth: 0
+      actualHeight: 0
+      bagelCollider: 00000000000000000000010101010100000000000000000000000000000000010101010101010100000000000000000000000000000101010101010101010000000000000000000000000101010101010101010100000000000000000000000001010101010101010101000000000000000000000001010101010101010101010000000000000000000000010101010101010101010100000000000000000000000101010101010101010101000000000000000000000101010101010101010101000000000000000000000001010101010101010101010000000000000000000000010101010101010101010000000000000000000000010101010101010101010100000000000000000000010101010101010101010100000000000000000000000101010101010101010101000000000000000000000001010101010101010101010000000000000000000000010101010101010101010100000000000000000000000101010101010101010100000000000000000000000000010101010101010100000000000000000000000000000000010101010100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  - bagelColliders:
+    - width: 22
+      height: 25
+      minX: 0
+      minY: 0
+      actualWidth: 0
+      actualHeight: 0
+      bagelCollider: 00000000000000010101010100000000000000000000000000000001010101010101010000000000000000000000000001010101010101010100000000000000000000000000010101010101010101010000000000000000000000000101010101010101010100000000000000000000000001010101010101010101010000000000000000000000010101010101010101010100000000000000000000000101010101010101010101000000000000000000000000010101010101010101010100000000000000000000000101010101010101010101000000000000000000000000010101010101010101010000000000000000000000000101010101010101010101000000000000000000000000010101010101010101010100000000000000000000000101010101010101010101000000000000000000000001010101010101010101010000000000000000000000010101010101010101010100000000000000000000000001010101010101010101000000000000000000000000000101010101010101000000000000000000000000000000010101010100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  - bagelColliders:
+    - width: 22
+      height: 25
+      minX: 0
+      minY: 0
+      actualWidth: 0
+      actualHeight: 0
+      bagelCollider: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010101010100000000000000000000000000000001010101010101010101010000000000000000000001010101010101010101010101010100000000000000010101010101010101010101010101010100000000000101010101010101010101010101010101010101000001010101010101010101010101010101010101010100010101010101010101010101010101010101010101000001010101010101010101010101010101010101010000000101010101010101010101010101010101010100000000010101010101010101010101010101010100000000000000000101010101010101010101010101000000000000000000000001010101010101010101010000000000000000000000000000010101010101010000000000000000000000000000000000000101010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  - bagelColliders:
+    - width: 22
+      height: 25
+      minX: 0
+      minY: 0
+      actualWidth: 0
+      actualHeight: 0
+      bagelCollider: 00000000000000000000000000000000000000000000000000000000000000000101010101010000000000000000000000000000000101010101010101000000000000000000000000000001010101010101010100000000000000000000000001010101010101010101000000000000000000000000010101010101010101010000000000000000000000010101010101010101010100000000000000000000000101010101010101010101000000000000000000000001010101010101010101010000000000000000000001010101010101010101010000000000000000000000010101010101010101010100000000000000000000010101010101010101010100000000000000000000010101010101010101010101000000000000000000000101010101010101010101010000000000000000000001010101010101010101010000000000000000000000010101010101010101010100000000000000000000000101010101010101010101000000000000000000000001010101010101010101000000000000000000000000000101010101010101000000000000000000000000000000010101010101000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  - bagelColliders:
+    - width: 22
+      height: 25
+      minX: 0
+      minY: 0
+      actualWidth: 0
+      actualHeight: 0
+      bagelCollider: 00000000000000000000000000000000000000000000000000000000010101010101000000000000000000000000000000010101010101010100000000000000000000000000010101010101010101000000000000000000000000000101010101010101010100000000000000000000000001010101010101010101000000000000000000000000010101010101010101010100000000000000000000000101010101010101010101000000000000000000000001010101010101010101010000000000000000000000000101010101010101010101000000000000000000000001010101010101010101010000000000000000000000000101010101010101010101000000000000000000000001010101010101010101010100000000000000000000010101010101010101010101000000000000000000000001010101010101010101010000000000000000000000010101010101010101010100000000000000000000000101010101010101010101000000000000000000000000010101010101010101010000000000000000000000000001010101010101010000000000000000000000000000000101010101010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  - bagelColliders:
+    - width: 22
+      height: 23
+      minX: 0
+      minY: 0
+      actualWidth: 0
+      actualHeight: 0
+      bagelCollider: 0000000000000000000000000000000000000000000000000000000000000101010000000000000000000000000000000000000001010101000000000000000000000000000000000101010101010000000000000000000000000000010101010101010100000000000000000000000000010101010101010100000000000000000000000000000101010101010101010101010100000000000001010101010101010101010101010101010100000000010101010101010101010101010101010101010000000101010101010101010101010101010101010101000000010101010101010101010101010101010101010100000000010101010101010101010101010101010101000000000001010101010101010101010101010101010100000000000101010101010101010101010101010101000000000001010101010101010101010101010101010000000000010101010101010101010101010101010000000000000101010101010101010101010101010100000000000000010101010101010101010101010100000000000000000101010101010101010101010100000000000000000000010101010101010101010100000000000000000000000001010101010101010100000000000000000000000000000101010101010100000000000000000000000000000000000101010100000000000000
+  - bagelColliders:
+    - width: 22
+      height: 23
+      minX: 0
+      minY: 0
+      actualWidth: 0
+      actualHeight: 0
+      bagelCollider: 0000000000000000000000000000000000000000000000000000000000000000000101010000000000000000000000000000000000000101010100000000000000000000000000000000000001010101010100000000000000000000000000000000010101010101010100000000000000000000000000000001010101010101010000000000000000000101010101010101010101010100000000000000010101010101010101010101010101010101000000010101010101010101010101010101010101010000010101010101010101010101010101010101010100010101010101010101010101010101010101010100000101010101010101010101010101010101010000000101010101010101010101010101010101010000000001010101010101010101010101010101010000000000010101010101010101010101010101010100000000000001010101010101010101010101010101000000000000010101010101010101010101010101010000000000000001010101010101010101010101010000000000000000000101010101010101010101010100000000000000000000010101010101010101010100000000000000000000000001010101010101010100000000000000000000000000000101010101010100000000000000000000000000000000010101010000000000000000000000
+  SpriteIDsWithAttachPoints: 000000000200000005000000080000000a0000000b0000000c0000000d0000001400000015000000160000001700000018000000190000001a0000001b000000
+  SpriteDefinedAttachPoints:
+  - attachPoints:
+    - name: shoot point
+      position: {x: 0.6875, y: 1.1875, z: 0}
+      angle: -135
+  - attachPoints:
+    - name: shoot point
+      position: {x: 0.6875, y: 1.1875, z: 0}
+      angle: -180
+  - attachPoints:
+    - name: shoot point
+      position: {x: 0.6875, y: 1.1875, z: 0}
+      angle: -90
+  - attachPoints:
+    - name: shoot point
+      position: {x: 0.6875, y: 1.1875, z: 0}
+      angle: 45
+  - attachPoints:
+    - name: shoot point
+      position: {x: 0.6875, y: 1.1875, z: 0}
+      angle: 135
+  - attachPoints:
+    - name: shoot point
+      position: {x: 0.6875, y: 1.1875, z: 0}
+      angle: 90
+  - attachPoints:
+    - name: shoot point
+      position: {x: 0.6875, y: 1.1875, z: 0}
+      angle: -45
+  - attachPoints:
+    - name: shoot point
+      position: {x: 0.6875, y: 1.1875, z: 0}
+      angle: 0
+  - attachPoints:
+    - name: shoot point
+      position: {x: 0.6875, y: 1.1875, z: 0}
+      angle: -22
+  - attachPoints:
+    - name: shoot point
+      position: {x: 0.6875, y: 1.1875, z: 0}
+      angle: 22
+  - attachPoints:
+    - name: shoot point
+      position: {x: 0.6875, y: 1.1875, z: 0}
+      angle: -158
+  - attachPoints:
+    - name: shoot point
+      position: {x: 0.6875, y: 1.1875, z: 0}
+      angle: -112
+  - attachPoints:
+    - name: shoot point
+      position: {x: 0.6875, y: 1.1875, z: 0}
+      angle: -68
+  - attachPoints:
+    - name: shoot point
+      position: {x: 0.6875, y: 1.1875, z: 0}
+      angle: 158
+  - attachPoints:
+    - name: shoot point
+      position: {x: 0.6875, y: 1.1875, z: 0}
+      angle: 67
+  - attachPoints:
+    - name: shoot point
+      position: {x: 0.6875, y: 1.1875, z: 0}
+      angle: 112
+  SpriteIDsWithNeighborDependencies:
+  SpriteDefinedIndexNeighborDependencies: []
+  SpriteIDsWithAnimationSequences:
+  SpriteDefinedAnimationSequences: []
+  premultipliedAlpha: 0
+  shouldGenerateTilemapReflectionData: 0
+  material: {fileID: 0}
+  materials:
+  - {fileID: 2100000, guid: 302e38c046c3b9e4898acbea697740e9, type: 2}
+  - {fileID: 2100000, guid: 2dece02d01bc5e94caad375cb9b58477, type: 2}
+  textures:
+  - {fileID: 2800000, guid: a059047b326850548aa5857de4a7f688, type: 3}
+  pngTextures: []
+  materialPngTextureId: 0000000000000000
+  textureFilterMode: 0
+  textureMipMaps: 0
+  allowMultipleAtlases: 0
+  spriteCollectionGUID: 3bc04ee6080b82246b33c763c47d9e14
+  spriteCollectionName: Bullet_Shark_Collection
+  assetName:
+  loadable: 0
+  invOrthoSize: 2
+  halfTargetHeight: 8
+  buildKey: 1956169780
+  dataGuid: 4974de066612e4e4898895bbbc7f129c
+  managedSpriteCollection: 0
+  hasPlatformData: 0
+  spriteCollectionPlatforms: []
+  spriteCollectionPlatformGUIDs: []

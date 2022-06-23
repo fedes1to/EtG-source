@@ -1,0 +1,4281 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1219648046055669}
+  m_IsPrefabParent: 1
+--- !u!1 &1219648046055669
+GameObject:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - component: {fileID: 4531664201760913}
+  - component: {fileID: 114907127718318147}
+  m_Layer: 0
+  m_Name: BulletMummyCollection
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4531664201760913
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1219648046055669}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &114907127718318147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1219648046055669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88a3598ad548b6f4ba107e0e1968fdb3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  version: 3
+  materialIdsValid: 1
+  needMaterialInstance: 0
+  spriteDefinitions:
+  - name: mummy_pitfall_003
+    boundsDataCenter: {x: 0.6875, y: 0.875, z: 0}
+    boundsDataExtents: {x: 0.75, y: 1.25, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.3125, y: 0.25, z: 0}
+    position1: {x: 1.0625, y: 0.25, z: 0}
+    position2: {x: 0.3125, y: 1.5, z: 0}
+    position3: {x: 1.0625, y: 1.5, z: 0}
+    uvs:
+    - {x: 0.007820313, y: 0.85156643}
+    - {x: 0.101554684, y: 0.85156643}
+    - {x: 0.007820313, y: 0.92968357}
+    - {x: 0.101554684, y: 0.92968357}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.6875, y: 0.875, z: 0}
+    - {x: 0.375, y: 0.625, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_move_front_left_001
+    boundsDataCenter: {x: 0.6875, y: 0.90625, z: 0}
+    boundsDataExtents: {x: 0.75, y: 1.4375, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.3125, y: 0.1875, z: 0}
+    position1: {x: 1.0625, y: 0.1875, z: 0}
+    position2: {x: 0.3125, y: 1.625, z: 0}
+    position3: {x: 1.0625, y: 1.625, z: 0}
+    uvs:
+    - {x: 0.6875078, y: 0.54687893}
+    - {x: 0.7812422, y: 0.54687893}
+    - {x: 0.6875078, y: 0.6367148}
+    - {x: 0.7812422, y: 0.6367148}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.6875, y: 0.90625, z: 0}
+    - {x: 0.375, y: 0.71875, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_die_001
+    boundsDataCenter: {x: 0.6875, y: 0.6875, z: 0}
+    boundsDataExtents: {x: 0.75, y: 1.375, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.3125, y: 0, z: 0}
+    position1: {x: 1.0625, y: 0, z: 0}
+    position2: {x: 0.3125, y: 1.375, z: 0}
+    position3: {x: 1.0625, y: 1.375, z: 0}
+    uvs:
+    - {x: 0.22657031, y: 0.6835977}
+    - {x: 0.22657031, y: 0.7304648}
+    - {x: 0.3984297, y: 0.6835977}
+    - {x: 0.3984297, y: 0.7304648}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.6875, y: 0.6875, z: 0}
+    - {x: 0.375, y: 0.6875, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_die_left_005
+    boundsDataCenter: {x: 0.78125, y: 0.84375, z: 0}
+    boundsDataExtents: {x: 1.3125, y: 1.3125, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.125, y: 0.1875, z: 0}
+    position1: {x: 1.4375, y: 0.1875, z: 0}
+    position2: {x: 0.125, y: 1.5, z: 0}
+    position3: {x: 1.4375, y: 1.5, z: 0}
+    uvs:
+    - {x: 0.3984453, y: 0.089847654}
+    - {x: 0.5624922, y: 0.089847654}
+    - {x: 0.3984453, y: 0.1718711}
+    - {x: 0.5624922, y: 0.1718711}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.78125, y: 0.84375, z: 0}
+    - {x: 0.65625, y: 0.65625, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_move_front_left_004
+    boundsDataCenter: {x: 0.6875, y: 0.84375, z: 0}
+    boundsDataExtents: {x: 0.75, y: 1.4375, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.3125, y: 0.125, z: 0}
+    position1: {x: 1.0625, y: 0.125, z: 0}
+    position2: {x: 0.3125, y: 1.5625, z: 0}
+    position3: {x: 1.0625, y: 1.5625, z: 0}
+    uvs:
+    - {x: 0.8437578, y: 0.56250393}
+    - {x: 0.9374922, y: 0.56250393}
+    - {x: 0.8437578, y: 0.6523398}
+    - {x: 0.9374922, y: 0.6523398}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.6875, y: 0.84375, z: 0}
+    - {x: 0.375, y: 0.71875, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_die_right_006
+    boundsDataCenter: {x: 0.625, y: 0.84375, z: 0}
+    boundsDataExtents: {x: 1.125, y: 1.3125, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.0625, y: 0.1875, z: 0}
+    position1: {x: 1.1875, y: 0.1875, z: 0}
+    position2: {x: 0.0625, y: 1.5, z: 0}
+    position3: {x: 1.1875, y: 1.5, z: 0}
+    uvs:
+    - {x: 0.5781328, y: 0.089847654}
+    - {x: 0.5781328, y: 0.16015235}
+    - {x: 0.7421797, y: 0.089847654}
+    - {x: 0.7421797, y: 0.16015235}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.625, y: 0.84375, z: 0}
+    - {x: 0.5625, y: 0.65625, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_die_left_007
+    boundsDataCenter: {x: 0.90625, y: 0.65625, z: 0}
+    boundsDataExtents: {x: 0.5625, y: 0.3125, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.625, y: 0.5, z: 0}
+    position1: {x: 1.1875, y: 0.5, z: 0}
+    position2: {x: 0.625, y: 0.8125, z: 0}
+    position3: {x: 1.1875, y: 0.8125, z: 0}
+    uvs:
+    - {x: 0.9531328, y: 0.56250393}
+    - {x: 0.9531328, y: 0.5976523}
+    - {x: 0.9921797, y: 0.56250393}
+    - {x: 0.9921797, y: 0.5976523}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.90625, y: 0.65625, z: 0}
+    - {x: 0.28125, y: 0.15625, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_move_back_right_003
+    boundsDataCenter: {x: 0.78125, y: 0.65625, z: 0}
+    boundsDataExtents: {x: 0.9375, y: 1.3125, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.3125, y: 0, z: 0}
+    position1: {x: 1.25, y: 0, z: 0}
+    position2: {x: 0.3125, y: 1.3125, z: 0}
+    position3: {x: 1.25, y: 1.3125, z: 0}
+    uvs:
+    - {x: 0.7109453, y: 0.45703515}
+    - {x: 0.8281172, y: 0.45703515}
+    - {x: 0.7109453, y: 0.53905857}
+    - {x: 0.8281172, y: 0.53905857}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.78125, y: 0.65625, z: 0}
+    - {x: 0.46875, y: 0.65625, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_pitfall_004
+    boundsDataCenter: {x: 0.71875, y: 0.84375, z: 0}
+    boundsDataExtents: {x: 0.8125, y: 1.1875, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.3125, y: 0.25, z: 0}
+    position1: {x: 1.125, y: 0.25, z: 0}
+    position2: {x: 0.3125, y: 1.4375, z: 0}
+    position3: {x: 1.125, y: 1.4375, z: 0}
+    uvs:
+    - {x: 0.117195316, y: 0.8476602}
+    - {x: 0.21874219, y: 0.8476602}
+    - {x: 0.117195316, y: 0.92187107}
+    - {x: 0.21874219, y: 0.92187107}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.71875, y: 0.84375, z: 0}
+    - {x: 0.40625, y: 0.59375, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_move_back_left_005
+    boundsDataCenter: {x: 0.71875, y: 0.75, z: 0}
+    boundsDataExtents: {x: 0.9375, y: 1.5, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.25, y: 0, z: 0}
+    position1: {x: 1.1875, y: 0, z: 0}
+    position2: {x: 0.25, y: 1.5, z: 0}
+    position3: {x: 1.1875, y: 1.5, z: 0}
+    uvs:
+    - {x: 0.5781328, y: 0.16797265}
+    - {x: 0.5781328, y: 0.2265586}
+    - {x: 0.7656172, y: 0.16797265}
+    - {x: 0.7656172, y: 0.2265586}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.71875, y: 0.75, z: 0}
+    - {x: 0.46875, y: 0.75, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_idle_back_002
+    boundsDataCenter: {x: 0.6875, y: 0.6875, z: 0}
+    boundsDataExtents: {x: 0.75, y: 1.375, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.3125, y: 0, z: 0}
+    position1: {x: 1.0625, y: 0, z: 0}
+    position2: {x: 0.3125, y: 1.375, z: 0}
+    position3: {x: 1.0625, y: 1.375, z: 0}
+    uvs:
+    - {x: 0.4140703, y: 0.6835977}
+    - {x: 0.4140703, y: 0.7304648}
+    - {x: 0.5859297, y: 0.6835977}
+    - {x: 0.5859297, y: 0.7304648}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.6875, y: 0.6875, z: 0}
+    - {x: 0.375, y: 0.6875, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_move_back_right_005
+    boundsDataCenter: {x: 0.65625, y: 0.75, z: 0}
+    boundsDataExtents: {x: 0.9375, y: 1.5, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.1875, y: 0, z: 0}
+    position1: {x: 1.125, y: 0, z: 0}
+    position2: {x: 0.1875, y: 1.5, z: 0}
+    position3: {x: 1.125, y: 1.5, z: 0}
+    uvs:
+    - {x: 0.7812578, y: 0.16797265}
+    - {x: 0.8984297, y: 0.16797265}
+    - {x: 0.7812578, y: 0.26171485}
+    - {x: 0.8984297, y: 0.26171485}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.65625, y: 0.75, z: 0}
+    - {x: 0.46875, y: 0.75, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_move_front_right_003
+    boundsDataCenter: {x: 0.78125, y: 0.65625, z: 0}
+    boundsDataExtents: {x: 0.9375, y: 1.3125, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.3125, y: 0, z: 0}
+    position1: {x: 1.25, y: 0, z: 0}
+    position2: {x: 0.3125, y: 1.3125, z: 0}
+    position3: {x: 1.25, y: 1.3125, z: 0}
+    uvs:
+    - {x: 0.8437578, y: 0.47266015}
+    - {x: 0.9609297, y: 0.47266015}
+    - {x: 0.8437578, y: 0.55468357}
+    - {x: 0.9609297, y: 0.55468357}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.78125, y: 0.65625, z: 0}
+    - {x: 0.46875, y: 0.65625, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_move_back_right_002
+    boundsDataCenter: {x: 0.78125, y: 0.6875, z: 0}
+    boundsDataExtents: {x: 0.9375, y: 1.375, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.3125, y: 0, z: 0}
+    position1: {x: 1.25, y: 0, z: 0}
+    position2: {x: 0.3125, y: 1.375, z: 0}
+    position3: {x: 1.25, y: 1.375, z: 0}
+    uvs:
+    - {x: 0.14844531, y: 0.3281289}
+    - {x: 0.14844531, y: 0.38671485}
+    - {x: 0.3203047, y: 0.3281289}
+    - {x: 0.3203047, y: 0.38671485}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.78125, y: 0.6875, z: 0}
+    - {x: 0.46875, y: 0.6875, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_move_front_left_002
+    boundsDataCenter: {x: 0.59375, y: 0.6875, z: 0}
+    boundsDataExtents: {x: 0.9375, y: 1.375, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.125, y: 0, z: 0}
+    position1: {x: 1.0625, y: 0, z: 0}
+    position2: {x: 0.125, y: 1.375, z: 0}
+    position3: {x: 1.0625, y: 1.375, z: 0}
+    uvs:
+    - {x: 0.007820313, y: 0.37109765}
+    - {x: 0.124992184, y: 0.37109765}
+    - {x: 0.007820313, y: 0.45702735}
+    - {x: 0.124992184, y: 0.45702735}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.59375, y: 0.6875, z: 0}
+    - {x: 0.46875, y: 0.6875, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_die_right_009
+    boundsDataCenter: {x: 0.53125, y: 0.65625, z: 0}
+    boundsDataExtents: {x: 0.81250006, y: 0.5625, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.125, y: 0.375, z: 0}
+    position1: {x: 0.93750006, y: 0.375, z: 0}
+    position2: {x: 0.125, y: 0.9375, z: 0}
+    position3: {x: 0.93750006, y: 0.9375, z: 0}
+    uvs:
+    - {x: 0.9140703, y: 0.31641015}
+    - {x: 0.9140703, y: 0.3671836}
+    - {x: 0.9843672, y: 0.31641015}
+    - {x: 0.9843672, y: 0.3671836}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.53125, y: 0.65625, z: 0}
+    - {x: 0.40625003, y: 0.28125, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_curse_attack_001
+    boundsDataCenter: {x: 0.6875, y: 0.6875, z: 0}
+    boundsDataExtents: {x: 0.75, y: 1.375, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.3125, y: 0, z: 0}
+    position1: {x: 1.0625, y: 0, z: 0}
+    position2: {x: 0.3125, y: 1.375, z: 0}
+    position3: {x: 1.0625, y: 1.375, z: 0}
+    uvs:
+    - {x: 0.6015703, y: 0.6992227}
+    - {x: 0.6015703, y: 0.7460898}
+    - {x: 0.7734297, y: 0.6992227}
+    - {x: 0.7734297, y: 0.7460898}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.6875, y: 0.6875, z: 0}
+    - {x: 0.375, y: 0.6875, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_die_right_007
+    boundsDataCenter: {x: 0.53125, y: 0.65625, z: 0}
+    boundsDataExtents: {x: 0.5625, y: 0.3125, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.25, y: 0.5, z: 0}
+    position1: {x: 0.8125, y: 0.5, z: 0}
+    position2: {x: 0.25, y: 0.8125, z: 0}
+    position3: {x: 0.8125, y: 0.8125, z: 0}
+    uvs:
+    - {x: 0.9531328, y: 0.6054727}
+    - {x: 0.9531328, y: 0.64062107}
+    - {x: 0.9921797, y: 0.6054727}
+    - {x: 0.9921797, y: 0.64062107}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.53125, y: 0.65625, z: 0}
+    - {x: 0.28125, y: 0.15625, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_die_left_002
+    boundsDataCenter: {x: 0.78125, y: 0.78125, z: 0}
+    boundsDataExtents: {x: 1.1875, y: 1.3125, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.1875, y: 0.125, z: 0}
+    position1: {x: 1.375, y: 0.125, z: 0}
+    position2: {x: 0.1875, y: 1.4375, z: 0}
+    position3: {x: 1.375, y: 1.4375, z: 0}
+    uvs:
+    - {x: 0.18750781, y: 0.093753904}
+    - {x: 0.18750781, y: 0.16796485}
+    - {x: 0.3515547, y: 0.093753904}
+    - {x: 0.3515547, y: 0.16796485}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.78125, y: 0.78125, z: 0}
+    - {x: 0.59375, y: 0.65625, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_idle_front_002
+    boundsDataCenter: {x: 0.6875, y: 0.6875, z: 0}
+    boundsDataExtents: {x: 0.75, y: 1.375, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.3125, y: 0, z: 0}
+    position1: {x: 1.0625, y: 0, z: 0}
+    position2: {x: 0.3125, y: 1.375, z: 0}
+    position3: {x: 1.0625, y: 1.375, z: 0}
+    uvs:
+    - {x: 0.7890703, y: 0.7148477}
+    - {x: 0.7890703, y: 0.7617148}
+    - {x: 0.9609297, y: 0.7148477}
+    - {x: 0.9609297, y: 0.7617148}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.6875, y: 0.6875, z: 0}
+    - {x: 0.375, y: 0.6875, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_curse_attack_005
+    boundsDataCenter: {x: 0.6875, y: 0.5625, z: 0}
+    boundsDataExtents: {x: 0.75, y: 1.125, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.3125, y: 0, z: 0}
+    position1: {x: 1.0625, y: 0, z: 0}
+    position2: {x: 0.3125, y: 1.125, z: 0}
+    position3: {x: 1.0625, y: 1.125, z: 0}
+    uvs:
+    - {x: 0.3437578, y: 0.9023477}
+    - {x: 0.3437578, y: 0.9492148}
+    - {x: 0.4843672, y: 0.9023477}
+    - {x: 0.4843672, y: 0.9492148}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.6875, y: 0.5625, z: 0}
+    - {x: 0.375, y: 0.5625, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_pitfall_007
+    boundsDataCenter: {x: 0.6875, y: 0.8125, z: 0}
+    boundsDataExtents: {x: 1.25, y: 1.5, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.0625, y: 0.0625, z: 0}
+    position1: {x: 1.3125, y: 0.0625, z: 0}
+    position2: {x: 0.0625, y: 1.5625, z: 0}
+    position3: {x: 1.3125, y: 1.5625, z: 0}
+    uvs:
+    - {x: 0.3984453, y: 0.0039101564}
+    - {x: 0.3984453, y: 0.082027346}
+    - {x: 0.5859297, y: 0.0039101564}
+    - {x: 0.5859297, y: 0.082027346}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.6875, y: 0.8125, z: 0}
+    - {x: 0.625, y: 0.75, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_die_left_003
+    boundsDataCenter: {x: 0.8125, y: 0.90625, z: 0}
+    boundsDataExtents: {x: 1.25, y: 1.4375, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.1875, y: 0.1875, z: 0}
+    position1: {x: 1.4375, y: 0.1875, z: 0}
+    position2: {x: 0.1875, y: 1.625, z: 0}
+    position3: {x: 1.4375, y: 1.625, z: 0}
+    uvs:
+    - {x: 0.6015703, y: 0.0039101564}
+    - {x: 0.6015703, y: 0.082027346}
+    - {x: 0.7812422, y: 0.0039101564}
+    - {x: 0.7812422, y: 0.082027346}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.8125, y: 0.90625, z: 0}
+    - {x: 0.625, y: 0.71875, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_die_right_001
+    boundsDataCenter: {x: 0.6875, y: 0.65625, z: 0}
+    boundsDataExtents: {x: 1, y: 1.3125, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.1875, y: 0, z: 0}
+    position1: {x: 1.1875, y: 0, z: 0}
+    position2: {x: 0.1875, y: 1.3125, z: 0}
+    position3: {x: 1.1875, y: 1.3125, z: 0}
+    uvs:
+    - {x: 0.3515703, y: 0.31641015}
+    - {x: 0.3515703, y: 0.37890235}
+    - {x: 0.5156172, y: 0.31641015}
+    - {x: 0.5156172, y: 0.37890235}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.6875, y: 0.65625, z: 0}
+    - {x: 0.5, y: 0.65625, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_die_left_001
+    boundsDataCenter: {x: 0.75, y: 0.65625, z: 0}
+    boundsDataExtents: {x: 1, y: 1.3125, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.25, y: 0, z: 0}
+    position1: {x: 1.25, y: 0, z: 0}
+    position2: {x: 0.25, y: 1.3125, z: 0}
+    position3: {x: 1.25, y: 1.3125, z: 0}
+    uvs:
+    - {x: 0.5312578, y: 0.37109765}
+    - {x: 0.5312578, y: 0.43358985}
+    - {x: 0.6953047, y: 0.37109765}
+    - {x: 0.6953047, y: 0.43358985}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.75, y: 0.65625, z: 0}
+    - {x: 0.5, y: 0.65625, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_move_back_right_006
+    boundsDataCenter: {x: 0.6875, y: 0.6875, z: 0}
+    boundsDataExtents: {x: 1, y: 1.375, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.1875, y: 0, z: 0}
+    position1: {x: 1.1875, y: 0, z: 0}
+    position2: {x: 0.1875, y: 1.375, z: 0}
+    position3: {x: 1.1875, y: 1.375, z: 0}
+    uvs:
+    - {x: 0.7734453, y: 0.26953515}
+    - {x: 0.8984297, y: 0.26953515}
+    - {x: 0.7734453, y: 0.35546485}
+    - {x: 0.8984297, y: 0.35546485}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.6875, y: 0.6875, z: 0}
+    - {x: 0.5, y: 0.6875, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_pitfall_001
+    boundsDataCenter: {x: 0.6875, y: 0.84375, z: 0}
+    boundsDataExtents: {x: 0.875, y: 1.4375, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.25, y: 0.125, z: 0}
+    position1: {x: 1.125, y: 0.125, z: 0}
+    position2: {x: 0.25, y: 1.5625, z: 0}
+    position3: {x: 1.125, y: 1.5625, z: 0}
+    uvs:
+    - {x: 0.8828203, y: 0.3750039}
+    - {x: 0.9921797, y: 0.3750039}
+    - {x: 0.8828203, y: 0.46483985}
+    - {x: 0.9921797, y: 0.46483985}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.6875, y: 0.84375, z: 0}
+    - {x: 0.4375, y: 0.71875, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_move_back_left_001
+    boundsDataCenter: {x: 0.6875, y: 0.90625, z: 0}
+    boundsDataExtents: {x: 0.75, y: 1.4375, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.3125, y: 0.1875, z: 0}
+    position1: {x: 1.0625, y: 0.1875, z: 0}
+    position2: {x: 0.3125, y: 1.625, z: 0}
+    position3: {x: 1.0625, y: 1.625, z: 0}
+    uvs:
+    - {x: 0.14063281, y: 0.4609414}
+    - {x: 0.23436719, y: 0.4609414}
+    - {x: 0.14063281, y: 0.5507773}
+    - {x: 0.23436719, y: 0.5507773}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.6875, y: 0.90625, z: 0}
+    - {x: 0.375, y: 0.71875, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_pitfall_006
+    boundsDataCenter: {x: 0.6875, y: 0.8125, z: 0}
+    boundsDataExtents: {x: 1.125, y: 1.375, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.125, y: 0.125, z: 0}
+    position1: {x: 1.25, y: 0.125, z: 0}
+    position2: {x: 0.125, y: 1.5, z: 0}
+    position3: {x: 1.25, y: 1.5, z: 0}
+    uvs:
+    - {x: 0.007820313, y: 0.18359765}
+    - {x: 0.14842969, y: 0.18359765}
+    - {x: 0.007820313, y: 0.26952735}
+    - {x: 0.14842969, y: 0.26952735}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.6875, y: 0.8125, z: 0}
+    - {x: 0.5625, y: 0.6875, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_curse_attack_004
+    boundsDataCenter: {x: 0.6875, y: 0.5625, z: 0}
+    boundsDataExtents: {x: 0.75, y: 1.125, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.3125, y: 0, z: 0}
+    position1: {x: 1.0625, y: 0, z: 0}
+    position2: {x: 0.3125, y: 1.125, z: 0}
+    position3: {x: 1.0625, y: 1.125, z: 0}
+    uvs:
+    - {x: 0.5937578, y: 0.8632852}
+    - {x: 0.5937578, y: 0.9101523}
+    - {x: 0.7343672, y: 0.8632852}
+    - {x: 0.7343672, y: 0.9101523}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.6875, y: 0.5625, z: 0}
+    - {x: 0.375, y: 0.5625, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_move_back_left_002
+    boundsDataCenter: {x: 0.59375, y: 0.6875, z: 0}
+    boundsDataExtents: {x: 0.9375, y: 1.375, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.125, y: 0, z: 0}
+    position1: {x: 1.0625, y: 0, z: 0}
+    position2: {x: 0.125, y: 1.375, z: 0}
+    position3: {x: 1.0625, y: 1.375, z: 0}
+    uvs:
+    - {x: 0.3359453, y: 0.38672265}
+    - {x: 0.3359453, y: 0.4453086}
+    - {x: 0.5078047, y: 0.38672265}
+    - {x: 0.5078047, y: 0.4453086}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.59375, y: 0.6875, z: 0}
+    - {x: 0.46875, y: 0.6875, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_idle_back_001
+    boundsDataCenter: {x: 0.6875, y: 0.71875, z: 0}
+    boundsDataExtents: {x: 0.75, y: 1.4375, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.3125, y: 0, z: 0}
+    position1: {x: 1.0625, y: 0, z: 0}
+    position2: {x: 0.3125, y: 1.4375, z: 0}
+    position3: {x: 1.0625, y: 1.4375, z: 0}
+    uvs:
+    - {x: 0.007820313, y: 0.46484765}
+    - {x: 0.101554684, y: 0.46484765}
+    - {x: 0.007820313, y: 0.55468357}
+    - {x: 0.101554684, y: 0.55468357}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.6875, y: 0.71875, z: 0}
+    - {x: 0.375, y: 0.71875, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_die_right_008
+    boundsDataCenter: {x: 0.53125, y: 0.65625006, z: 0}
+    boundsDataExtents: {x: 0.68749994, y: 0.43750003, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.1875, y: 0.43750003, z: 0}
+    position1: {x: 0.87499994, y: 0.43750003, z: 0}
+    position2: {x: 0.1875, y: 0.87500006, z: 0}
+    position3: {x: 0.87499994, y: 0.87500006, z: 0}
+    uvs:
+    - {x: 0.9375078, y: 0.089847654}
+    - {x: 0.9375078, y: 0.1328086}
+    - {x: 0.9921797, y: 0.089847654}
+    - {x: 0.9921797, y: 0.1328086}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.53125, y: 0.65625006, z: 0}
+    - {x: 0.34374997, y: 0.21875001, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_idle_front_003
+    boundsDataCenter: {x: 0.6875, y: 0.6875, z: 0}
+    boundsDataExtents: {x: 0.75, y: 1.375, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.3125, y: 0, z: 0}
+    position1: {x: 1.0625, y: 0, z: 0}
+    position2: {x: 0.3125, y: 1.375, z: 0}
+    position3: {x: 1.0625, y: 1.375, z: 0}
+    uvs:
+    - {x: 0.22657031, y: 0.7382852}
+    - {x: 0.22657031, y: 0.7851523}
+    - {x: 0.3984297, y: 0.7382852}
+    - {x: 0.3984297, y: 0.7851523}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.6875, y: 0.6875, z: 0}
+    - {x: 0.375, y: 0.6875, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_move_front_left_003
+    boundsDataCenter: {x: 0.59375, y: 0.65625, z: 0}
+    boundsDataExtents: {x: 0.9375, y: 1.3125, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.125, y: 0, z: 0}
+    position1: {x: 1.0625, y: 0, z: 0}
+    position2: {x: 0.125, y: 1.3125, z: 0}
+    position3: {x: 1.0625, y: 1.3125, z: 0}
+    uvs:
+    - {x: 0.3281328, y: 0.4531289}
+    - {x: 0.3281328, y: 0.5117148}
+    - {x: 0.4921797, y: 0.4531289}
+    - {x: 0.4921797, y: 0.5117148}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.59375, y: 0.65625, z: 0}
+    - {x: 0.46875, y: 0.65625, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_die_right_011
+    boundsDataCenter: {x: 0.5625, y: 0.65625, z: 0}
+    boundsDataExtents: {x: 0.875, y: 0.5625, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.125, y: 0.375, z: 0}
+    position1: {x: 1, y: 0.375, z: 0}
+    position2: {x: 0.125, y: 0.9375, z: 0}
+    position3: {x: 1, y: 0.9375, z: 0}
+    uvs:
+    - {x: 0.9140703, y: 0.19141015}
+    - {x: 0.9140703, y: 0.24608985}
+    - {x: 0.9843672, y: 0.19141015}
+    - {x: 0.9843672, y: 0.24608985}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.5625, y: 0.65625, z: 0}
+    - {x: 0.4375, y: 0.28125, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_move_front_right_006
+    boundsDataCenter: {x: 0.6875, y: 0.6875, z: 0}
+    boundsDataExtents: {x: 1, y: 1.375, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.1875, y: 0, z: 0}
+    position1: {x: 1.1875, y: 0, z: 0}
+    position2: {x: 0.1875, y: 1.375, z: 0}
+    position3: {x: 1.1875, y: 1.375, z: 0}
+    uvs:
+    - {x: 0.3671953, y: 0.24609765}
+    - {x: 0.3671953, y: 0.30858985}
+    - {x: 0.5390547, y: 0.24609765}
+    - {x: 0.5390547, y: 0.30858985}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.6875, y: 0.6875, z: 0}
+    - {x: 0.5, y: 0.6875, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_curse_attack_002
+    boundsDataCenter: {x: 0.6875, y: 0.625, z: 0}
+    boundsDataExtents: {x: 0.75, y: 1.25, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.3125, y: 0, z: 0}
+    position1: {x: 1.0625, y: 0, z: 0}
+    position2: {x: 0.3125, y: 1.25, z: 0}
+    position3: {x: 1.0625, y: 1.25, z: 0}
+    uvs:
+    - {x: 0.23438281, y: 0.8476602}
+    - {x: 0.3281172, y: 0.8476602}
+    - {x: 0.23438281, y: 0.9257773}
+    - {x: 0.3281172, y: 0.9257773}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.6875, y: 0.625, z: 0}
+    - {x: 0.375, y: 0.625, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_die_left_008
+    boundsDataCenter: {x: 0.90625, y: 0.65625006, z: 0}
+    boundsDataExtents: {x: 0.6875, y: 0.43750003, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.5625, y: 0.43750003, z: 0}
+    position1: {x: 1.25, y: 0.43750003, z: 0}
+    position2: {x: 0.5625, y: 0.87500006, z: 0}
+    position3: {x: 1.25, y: 0.87500006, z: 0}
+    uvs:
+    - {x: 0.9375078, y: 0.1406289}
+    - {x: 0.9375078, y: 0.18358985}
+    - {x: 0.9921797, y: 0.1406289}
+    - {x: 0.9921797, y: 0.18358985}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.90625, y: 0.65625006, z: 0}
+    - {x: 0.34375, y: 0.21875001, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_pitfall_002
+    boundsDataCenter: {x: 0.6875, y: 0.84375, z: 0}
+    boundsDataExtents: {x: 0.75, y: 1.3125, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.3125, y: 0.1875, z: 0}
+    position1: {x: 1.0625, y: 0.1875, z: 0}
+    position2: {x: 0.3125, y: 1.5, z: 0}
+    position3: {x: 1.0625, y: 1.5, z: 0}
+    uvs:
+    - {x: 0.4140703, y: 0.7929727}
+    - {x: 0.4140703, y: 0.8398398}
+    - {x: 0.5781172, y: 0.7929727}
+    - {x: 0.5781172, y: 0.8398398}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.6875, y: 0.84375, z: 0}
+    - {x: 0.375, y: 0.65625, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_die_right_005
+    boundsDataCenter: {x: 0.65625, y: 0.84375, z: 0}
+    boundsDataExtents: {x: 1.3125, y: 1.3125, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0, y: 0.1875, z: 0}
+    position1: {x: 1.3125, y: 0.1875, z: 0}
+    position2: {x: 0, y: 1.5, z: 0}
+    position3: {x: 1.3125, y: 1.5, z: 0}
+    uvs:
+    - {x: 0.007820313, y: 0.093753904}
+    - {x: 0.17186719, y: 0.093753904}
+    - {x: 0.007820313, y: 0.17577735}
+    - {x: 0.17186719, y: 0.17577735}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.65625, y: 0.84375, z: 0}
+    - {x: 0.65625, y: 0.65625, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_die_right_003
+    boundsDataCenter: {x: 0.625, y: 0.90625, z: 0}
+    boundsDataExtents: {x: 1.25, y: 1.4375, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0, y: 0.1875, z: 0}
+    position1: {x: 1.25, y: 0.1875, z: 0}
+    position2: {x: 0, y: 1.625, z: 0}
+    position3: {x: 1.25, y: 1.625, z: 0}
+    uvs:
+    - {x: 0.7968828, y: 0.0039101564}
+    - {x: 0.7968828, y: 0.082027346}
+    - {x: 0.9765547, y: 0.0039101564}
+    - {x: 0.9765547, y: 0.082027346}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.625, y: 0.90625, z: 0}
+    - {x: 0.625, y: 0.71875, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_hit_left_001
+    boundsDataCenter: {x: 0.8125, y: 0.6875, z: 0}
+    boundsDataExtents: {x: 1, y: 1.375, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.3125, y: 0, z: 0}
+    position1: {x: 1.3125, y: 0, z: 0}
+    position2: {x: 0.3125, y: 1.375, z: 0}
+    position3: {x: 1.3125, y: 1.375, z: 0}
+    uvs:
+    - {x: 0.16407031, y: 0.2578164}
+    - {x: 0.16407031, y: 0.3203086}
+    - {x: 0.3359297, y: 0.2578164}
+    - {x: 0.3359297, y: 0.3203086}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.8125, y: 0.6875, z: 0}
+    - {x: 0.5, y: 0.6875, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_die_left_006
+    boundsDataCenter: {x: 0.8125, y: 0.84375, z: 0}
+    boundsDataExtents: {x: 1.125, y: 1.3125, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.25, y: 0.1875, z: 0}
+    position1: {x: 1.375, y: 0.1875, z: 0}
+    position2: {x: 0.25, y: 1.5, z: 0}
+    position3: {x: 1.375, y: 1.5, z: 0}
+    uvs:
+    - {x: 0.7578203, y: 0.089847654}
+    - {x: 0.7578203, y: 0.16015235}
+    - {x: 0.9218672, y: 0.089847654}
+    - {x: 0.9218672, y: 0.16015235}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.8125, y: 0.84375, z: 0}
+    - {x: 0.5625, y: 0.65625, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_move_back_left_006
+    boundsDataCenter: {x: 0.6875, y: 0.6875, z: 0}
+    boundsDataExtents: {x: 1, y: 1.375, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.1875, y: 0, z: 0}
+    position1: {x: 1.1875, y: 0, z: 0}
+    position2: {x: 0.1875, y: 1.375, z: 0}
+    position3: {x: 1.1875, y: 1.375, z: 0}
+    uvs:
+    - {x: 0.007820313, y: 0.27734765}
+    - {x: 0.13280469, y: 0.27734765}
+    - {x: 0.007820313, y: 0.36327735}
+    - {x: 0.13280469, y: 0.36327735}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.6875, y: 0.6875, z: 0}
+    - {x: 0.5, y: 0.6875, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_idle_back_004
+    boundsDataCenter: {x: 0.6875, y: 0.71875, z: 0}
+    boundsDataExtents: {x: 0.75, y: 1.4375, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.3125, y: 0, z: 0}
+    position1: {x: 1.0625, y: 0, z: 0}
+    position2: {x: 0.3125, y: 1.4375, z: 0}
+    position3: {x: 1.0625, y: 1.4375, z: 0}
+    uvs:
+    - {x: 0.2500078, y: 0.5195352}
+    - {x: 0.2500078, y: 0.5664023}
+    - {x: 0.4296797, y: 0.5195352}
+    - {x: 0.4296797, y: 0.5664023}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.6875, y: 0.71875, z: 0}
+    - {x: 0.375, y: 0.71875, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_move_back_right_001
+    boundsDataCenter: {x: 0.6875, y: 0.90625, z: 0}
+    boundsDataExtents: {x: 0.75, y: 1.4375, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.3125, y: 0.1875, z: 0}
+    position1: {x: 1.0625, y: 0.1875, z: 0}
+    position2: {x: 0.3125, y: 1.625, z: 0}
+    position3: {x: 1.0625, y: 1.625, z: 0}
+    uvs:
+    - {x: 0.117195316, y: 0.5585977}
+    - {x: 0.21092969, y: 0.5585977}
+    - {x: 0.117195316, y: 0.64843357}
+    - {x: 0.21092969, y: 0.64843357}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.6875, y: 0.90625, z: 0}
+    - {x: 0.375, y: 0.71875, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_pitfall_005
+    boundsDataCenter: {x: 0.6875, y: 0.8125, z: 0}
+    boundsDataExtents: {x: 1, y: 1.375, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.1875, y: 0.125, z: 0}
+    position1: {x: 1.1875, y: 0.125, z: 0}
+    position2: {x: 0.1875, y: 1.5, z: 0}
+    position3: {x: 1.1875, y: 1.5, z: 0}
+    uvs:
+    - {x: 0.5546953, y: 0.30078515}
+    - {x: 0.5546953, y: 0.36327735}
+    - {x: 0.7265547, y: 0.30078515}
+    - {x: 0.7265547, y: 0.36327735}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.6875, y: 0.8125, z: 0}
+    - {x: 0.5, y: 0.6875, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_idle_front_004
+    boundsDataCenter: {x: 0.6875, y: 0.71875, z: 0}
+    boundsDataExtents: {x: 0.75, y: 1.4375, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.3125, y: 0, z: 0}
+    position1: {x: 1.0625, y: 0, z: 0}
+    position2: {x: 0.3125, y: 1.4375, z: 0}
+    position3: {x: 1.0625, y: 1.4375, z: 0}
+    uvs:
+    - {x: 0.007820313, y: 0.56250393}
+    - {x: 0.101554684, y: 0.56250393}
+    - {x: 0.007820313, y: 0.6523398}
+    - {x: 0.101554684, y: 0.6523398}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.6875, y: 0.71875, z: 0}
+    - {x: 0.375, y: 0.71875, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_idle_back_003
+    boundsDataCenter: {x: 0.6875, y: 0.6875, z: 0}
+    boundsDataExtents: {x: 0.75, y: 1.375, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.3125, y: 0, z: 0}
+    position1: {x: 1.0625, y: 0, z: 0}
+    position2: {x: 0.3125, y: 1.375, z: 0}
+    position3: {x: 1.0625, y: 1.375, z: 0}
+    uvs:
+    - {x: 0.117195316, y: 0.7539102}
+    - {x: 0.21092969, y: 0.7539102}
+    - {x: 0.117195316, y: 0.8398398}
+    - {x: 0.21092969, y: 0.8398398}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.6875, y: 0.6875, z: 0}
+    - {x: 0.375, y: 0.6875, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_move_front_right_004
+    boundsDataCenter: {x: 0.6875, y: 0.84375, z: 0}
+    boundsDataExtents: {x: 0.75, y: 1.4375, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.3125, y: 0.125, z: 0}
+    position1: {x: 1.0625, y: 0.125, z: 0}
+    position2: {x: 0.3125, y: 1.5625, z: 0}
+    position3: {x: 1.0625, y: 1.5625, z: 0}
+    uvs:
+    - {x: 0.22657031, y: 0.5742227}
+    - {x: 0.22657031, y: 0.6210898}
+    - {x: 0.4062422, y: 0.5742227}
+    - {x: 0.4062422, y: 0.6210898}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.6875, y: 0.84375, z: 0}
+    - {x: 0.375, y: 0.71875, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_move_back_left_003
+    boundsDataCenter: {x: 0.59375, y: 0.65625, z: 0}
+    boundsDataExtents: {x: 0.9375, y: 1.3125, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.125, y: 0, z: 0}
+    position1: {x: 1.0625, y: 0, z: 0}
+    position2: {x: 0.125, y: 1.3125, z: 0}
+    position3: {x: 1.0625, y: 1.3125, z: 0}
+    uvs:
+    - {x: 0.5078203, y: 0.50781643}
+    - {x: 0.5078203, y: 0.5664023}
+    - {x: 0.6718672, y: 0.50781643}
+    - {x: 0.6718672, y: 0.5664023}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.59375, y: 0.65625, z: 0}
+    - {x: 0.46875, y: 0.65625, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_die_right_004
+    boundsDataCenter: {x: 0.65625, y: 0.90625, z: 0}
+    boundsDataExtents: {x: 1.3125, y: 1.4375, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0, y: 0.1875, z: 0}
+    position1: {x: 1.3125, y: 0.1875, z: 0}
+    position2: {x: 0, y: 1.625, z: 0}
+    position3: {x: 1.3125, y: 1.625, z: 0}
+    uvs:
+    - {x: 0.007820313, y: 0.0039101564}
+    - {x: 0.007820313, y: 0.085933596}
+    - {x: 0.18749219, y: 0.0039101564}
+    - {x: 0.18749219, y: 0.085933596}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.65625, y: 0.90625, z: 0}
+    - {x: 0.65625, y: 0.71875, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_die_left_009
+    boundsDataCenter: {x: 0.90625, y: 0.65625, z: 0}
+    boundsDataExtents: {x: 0.8125, y: 0.5625, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.5, y: 0.375, z: 0}
+    position1: {x: 1.3125, y: 0.375, z: 0}
+    position2: {x: 0.5, y: 0.9375, z: 0}
+    position3: {x: 1.3125, y: 0.9375, z: 0}
+    uvs:
+    - {x: 0.5078203, y: 0.8476602}
+    - {x: 0.5078203, y: 0.89843357}
+    - {x: 0.5781172, y: 0.8476602}
+    - {x: 0.5781172, y: 0.89843357}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.90625, y: 0.65625, z: 0}
+    - {x: 0.40625, y: 0.28125, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_move_front_left_006
+    boundsDataCenter: {x: 0.6875, y: 0.6875, z: 0}
+    boundsDataExtents: {x: 1, y: 1.375, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.1875, y: 0, z: 0}
+    position1: {x: 1.1875, y: 0, z: 0}
+    position2: {x: 0.1875, y: 1.375, z: 0}
+    position3: {x: 1.1875, y: 1.375, z: 0}
+    uvs:
+    - {x: 0.7421953, y: 0.36328515}
+    - {x: 0.8671797, y: 0.36328515}
+    - {x: 0.7421953, y: 0.44921485}
+    - {x: 0.8671797, y: 0.44921485}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.6875, y: 0.6875, z: 0}
+    - {x: 0.5, y: 0.6875, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_die_right_010
+    boundsDataCenter: {x: 0.53125, y: 0.65625, z: 0}
+    boundsDataExtents: {x: 0.9375, y: 0.6875, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.0625, y: 0.3125, z: 0}
+    position1: {x: 1, y: 0.3125, z: 0}
+    position2: {x: 0.0625, y: 1, z: 0}
+    position3: {x: 1, y: 1, z: 0}
+    uvs:
+    - {x: 0.117195316, y: 0.92969143}
+    - {x: 0.117195316, y: 0.9882773}
+    - {x: 0.20311719, y: 0.92969143}
+    - {x: 0.20311719, y: 0.9882773}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.53125, y: 0.65625, z: 0}
+    - {x: 0.46875, y: 0.34375, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_die_left_004
+    boundsDataCenter: {x: 0.78125, y: 0.90625, z: 0}
+    boundsDataExtents: {x: 1.3125, y: 1.4375, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.125, y: 0.1875, z: 0}
+    position1: {x: 1.4375, y: 0.1875, z: 0}
+    position2: {x: 0.125, y: 1.625, z: 0}
+    position3: {x: 1.4375, y: 1.625, z: 0}
+    uvs:
+    - {x: 0.20313281, y: 0.0039101564}
+    - {x: 0.20313281, y: 0.085933596}
+    - {x: 0.3828047, y: 0.0039101564}
+    - {x: 0.3828047, y: 0.085933596}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.78125, y: 0.90625, z: 0}
+    - {x: 0.65625, y: 0.71875, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_move_back_right_004
+    boundsDataCenter: {x: 0.6875, y: 0.84375, z: 0}
+    boundsDataExtents: {x: 0.75, y: 1.4375, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.3125, y: 0.125, z: 0}
+    position1: {x: 1.0625, y: 0.125, z: 0}
+    position2: {x: 0.3125, y: 1.5625, z: 0}
+    position3: {x: 1.0625, y: 1.5625, z: 0}
+    uvs:
+    - {x: 0.4218828, y: 0.5742227}
+    - {x: 0.4218828, y: 0.6210898}
+    - {x: 0.6015547, y: 0.5742227}
+    - {x: 0.6015547, y: 0.6210898}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.6875, y: 0.84375, z: 0}
+    - {x: 0.375, y: 0.71875, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_die_002
+    boundsDataCenter: {x: 0.6875, y: 0.6875, z: 0}
+    boundsDataExtents: {x: 0.75, y: 1.375, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.3125, y: 0, z: 0}
+    position1: {x: 1.0625, y: 0, z: 0}
+    position2: {x: 0.3125, y: 1.375, z: 0}
+    position3: {x: 1.0625, y: 1.375, z: 0}
+    uvs:
+    - {x: 0.007820313, y: 0.75781643}
+    - {x: 0.101554684, y: 0.75781643}
+    - {x: 0.007820313, y: 0.84374607}
+    - {x: 0.101554684, y: 0.84374607}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.6875, y: 0.6875, z: 0}
+    - {x: 0.375, y: 0.6875, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_move_front_left_005
+    boundsDataCenter: {x: 0.71875, y: 0.75, z: 0}
+    boundsDataExtents: {x: 0.9375, y: 1.5, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.25, y: 0, z: 0}
+    position1: {x: 1.1875, y: 0, z: 0}
+    position2: {x: 0.25, y: 1.5, z: 0}
+    position3: {x: 1.1875, y: 1.5, z: 0}
+    uvs:
+    - {x: 0.3671953, y: 0.1796914}
+    - {x: 0.3671953, y: 0.23827735}
+    - {x: 0.5546797, y: 0.1796914}
+    - {x: 0.5546797, y: 0.23827735}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.71875, y: 0.75, z: 0}
+    - {x: 0.46875, y: 0.75, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_move_back_left_004
+    boundsDataCenter: {x: 0.6875, y: 0.84375, z: 0}
+    boundsDataExtents: {x: 0.75, y: 1.4375, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.3125, y: 0.125, z: 0}
+    position1: {x: 1.0625, y: 0.125, z: 0}
+    position2: {x: 0.3125, y: 1.5625, z: 0}
+    position3: {x: 1.0625, y: 1.5625, z: 0}
+    uvs:
+    - {x: 0.22657031, y: 0.6289102}
+    - {x: 0.22657031, y: 0.6757773}
+    - {x: 0.4062422, y: 0.6289102}
+    - {x: 0.4062422, y: 0.6757773}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.6875, y: 0.84375, z: 0}
+    - {x: 0.375, y: 0.71875, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_move_front_right_005
+    boundsDataCenter: {x: 0.65625, y: 0.75, z: 0}
+    boundsDataExtents: {x: 0.9375, y: 1.5, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.1875, y: 0, z: 0}
+    position1: {x: 1.125, y: 0, z: 0}
+    position2: {x: 0.1875, y: 1.5, z: 0}
+    position3: {x: 1.125, y: 1.5, z: 0}
+    uvs:
+    - {x: 0.5703203, y: 0.2343789}
+    - {x: 0.5703203, y: 0.29296485}
+    - {x: 0.7578047, y: 0.2343789}
+    - {x: 0.7578047, y: 0.29296485}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.65625, y: 0.75, z: 0}
+    - {x: 0.46875, y: 0.75, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_curse_attack_003
+    boundsDataCenter: {x: 0.6875, y: 0.5625, z: 0}
+    boundsDataExtents: {x: 0.75, y: 1.125, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.3125, y: 0, z: 0}
+    position1: {x: 1.0625, y: 0, z: 0}
+    position2: {x: 0.3125, y: 1.125, z: 0}
+    position3: {x: 1.0625, y: 1.125, z: 0}
+    uvs:
+    - {x: 0.7500078, y: 0.8789102}
+    - {x: 0.8437422, y: 0.8789102}
+    - {x: 0.7500078, y: 0.9492148}
+    - {x: 0.8437422, y: 0.9492148}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.6875, y: 0.5625, z: 0}
+    - {x: 0.375, y: 0.5625, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_die_left_010
+    boundsDataCenter: {x: 0.90625, y: 0.65625, z: 0}
+    boundsDataExtents: {x: 0.9375, y: 0.6875, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.43749997, y: 0.3125, z: 0}
+    position1: {x: 1.375, y: 0.3125, z: 0}
+    position2: {x: 0.43749997, y: 1, z: 0}
+    position3: {x: 1.375, y: 1, z: 0}
+    uvs:
+    - {x: 0.007820313, y: 0.93750393}
+    - {x: 0.007820313, y: 0.9960898}
+    - {x: 0.093742184, y: 0.93750393}
+    - {x: 0.093742184, y: 0.9960898}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.90625, y: 0.65625, z: 0}
+    - {x: 0.46875, y: 0.34375, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_move_front_right_002
+    boundsDataCenter: {x: 0.78125, y: 0.6875, z: 0}
+    boundsDataExtents: {x: 0.9375, y: 1.375, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.3125, y: 0, z: 0}
+    position1: {x: 1.25, y: 0, z: 0}
+    position2: {x: 0.3125, y: 1.375, z: 0}
+    position3: {x: 1.25, y: 1.375, z: 0}
+    uvs:
+    - {x: 0.14063281, y: 0.39453515}
+    - {x: 0.14063281, y: 0.4531211}
+    - {x: 0.3124922, y: 0.39453515}
+    - {x: 0.3124922, y: 0.4531211}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.78125, y: 0.6875, z: 0}
+    - {x: 0.46875, y: 0.6875, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_die_left_011
+    boundsDataCenter: {x: 0.875, y: 0.65625, z: 0}
+    boundsDataExtents: {x: 0.875, y: 0.5625, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.43749997, y: 0.375, z: 0}
+    position1: {x: 1.3125, y: 0.375, z: 0}
+    position2: {x: 0.43749997, y: 0.9375, z: 0}
+    position3: {x: 1.3125, y: 0.9375, z: 0}
+    uvs:
+    - {x: 0.9140703, y: 0.25391015}
+    - {x: 0.9140703, y: 0.30858985}
+    - {x: 0.9843672, y: 0.25391015}
+    - {x: 0.9843672, y: 0.30858985}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.875, y: 0.65625, z: 0}
+    - {x: 0.4375, y: 0.28125, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_move_front_right_001
+    boundsDataCenter: {x: 0.6875, y: 0.90625, z: 0}
+    boundsDataExtents: {x: 0.75, y: 1.4375, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.3125, y: 0.1875, z: 0}
+    position1: {x: 1.0625, y: 0.1875, z: 0}
+    position2: {x: 0.3125, y: 1.625, z: 0}
+    position3: {x: 1.0625, y: 1.625, z: 0}
+    uvs:
+    - {x: 0.117195316, y: 0.65625393}
+    - {x: 0.21092969, y: 0.65625393}
+    - {x: 0.117195316, y: 0.7460898}
+    - {x: 0.21092969, y: 0.7460898}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.6875, y: 0.90625, z: 0}
+    - {x: 0.375, y: 0.71875, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_die_right_002
+    boundsDataCenter: {x: 0.65625, y: 0.78125, z: 0}
+    boundsDataExtents: {x: 1.1875, y: 1.3125, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.0625, y: 0.125, z: 0}
+    position1: {x: 1.25, y: 0.125, z: 0}
+    position2: {x: 0.0625, y: 1.4375, z: 0}
+    position3: {x: 1.25, y: 1.4375, z: 0}
+    uvs:
+    - {x: 0.18750781, y: 0.17578515}
+    - {x: 0.18750781, y: 0.2499961}
+    - {x: 0.3515547, y: 0.17578515}
+    - {x: 0.3515547, y: 0.2499961}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.65625, y: 0.78125, z: 0}
+    - {x: 0.59375, y: 0.65625, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_idle_front_001
+    boundsDataCenter: {x: 0.6875, y: 0.71875, z: 0}
+    boundsDataExtents: {x: 0.75, y: 1.4375, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.3125, y: 0, z: 0}
+    position1: {x: 1.0625, y: 0, z: 0}
+    position2: {x: 0.3125, y: 1.4375, z: 0}
+    position3: {x: 1.0625, y: 1.4375, z: 0}
+    uvs:
+    - {x: 0.007820313, y: 0.6601602}
+    - {x: 0.101554684, y: 0.6601602}
+    - {x: 0.007820313, y: 0.74999607}
+    - {x: 0.101554684, y: 0.74999607}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.6875, y: 0.71875, z: 0}
+    - {x: 0.375, y: 0.71875, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_hit_right_001
+    boundsDataCenter: {x: 0.59375, y: 0.6875, z: 0}
+    boundsDataExtents: {x: 0.9375, y: 1.375, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.125, y: 0, z: 0}
+    position1: {x: 1.0625, y: 0, z: 0}
+    position2: {x: 0.125, y: 1.375, z: 0}
+    position3: {x: 1.0625, y: 1.375, z: 0}
+    uvs:
+    - {x: 0.5234453, y: 0.44141015}
+    - {x: 0.5234453, y: 0.4999961}
+    - {x: 0.6953047, y: 0.44141015}
+    - {x: 0.6953047, y: 0.4999961}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.59375, y: 0.6875, z: 0}
+    - {x: 0.46875, y: 0.6875, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_hand_001
+    boundsDataCenter: {x: 0, y: 0, z: 0}
+    boundsDataExtents: {x: 0.25, y: 0.25, z: 0}
+    untrimmedBoundsDataCenter: {x: 0, y: 0, z: 0}
+    untrimmedBoundsDataExtents: {x: 0.25, y: 0.25, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: -0.125, y: -0.125, z: 0}
+    position1: {x: 0.125, y: -0.125, z: 0}
+    position2: {x: -0.125, y: 0.125, z: 0}
+    position3: {x: 0.125, y: 0.125, z: 0}
+    uvs:
+    - {x: 0.7968828, y: 0.54687893}
+    - {x: 0.8281172, y: 0.54687893}
+    - {x: 0.7968828, y: 0.56249607}
+    - {x: 0.8281172, y: 0.56249607}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_spawn_002
+    boundsDataCenter: {x: 0.6875, y: 0.71875, z: 0}
+    boundsDataExtents: {x: 0.75, y: 1.1875, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.3125, y: 0.125, z: 0}
+    position1: {x: 1.0625, y: 0.125, z: 0}
+    position2: {x: 0.3125, y: 1.3125, z: 0}
+    position3: {x: 1.0625, y: 1.3125, z: 0}
+    uvs:
+    - {x: 0.3437578, y: 0.8476602}
+    - {x: 0.3437578, y: 0.8945273}
+    - {x: 0.4921797, y: 0.8476602}
+    - {x: 0.4921797, y: 0.8945273}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_spawn_004
+    boundsDataCenter: {x: 0.6875, y: 0.84375, z: 0}
+    boundsDataExtents: {x: 0.75, y: 1.4375, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.3125, y: 0.125, z: 0}
+    position1: {x: 1.0625, y: 0.125, z: 0}
+    position2: {x: 0.3125, y: 1.5625, z: 0}
+    position3: {x: 1.0625, y: 1.5625, z: 0}
+    uvs:
+    - {x: 0.4218828, y: 0.6289102}
+    - {x: 0.4218828, y: 0.6757773}
+    - {x: 0.6015547, y: 0.6289102}
+    - {x: 0.6015547, y: 0.6757773}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_spawn_003
+    boundsDataCenter: {x: 0.6875, y: 0.90625, z: 0}
+    boundsDataExtents: {x: 0.75, y: 1.4375, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.3125, y: 0.1875, z: 0}
+    position1: {x: 1.0625, y: 0.1875, z: 0}
+    position2: {x: 0.3125, y: 1.625, z: 0}
+    position3: {x: 1.0625, y: 1.625, z: 0}
+    uvs:
+    - {x: 0.6171953, y: 0.6445352}
+    - {x: 0.6171953, y: 0.6914023}
+    - {x: 0.7968672, y: 0.6445352}
+    - {x: 0.7968672, y: 0.6914023}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_spawn_001
+    boundsDataCenter: {x: 0.6875, y: 0.375, z: 0}
+    boundsDataExtents: {x: 0.75, y: 0.75, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.3125, y: 0, z: 0}
+    position1: {x: 1.0625, y: 0, z: 0}
+    position2: {x: 0.3125, y: 0.75, z: 0}
+    position3: {x: 1.0625, y: 0.75, z: 0}
+    uvs:
+    - {x: 0.21875781, y: 0.9335977}
+    - {x: 0.3124922, y: 0.9335977}
+    - {x: 0.21875781, y: 0.9804648}
+    - {x: 0.3124922, y: 0.9804648}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_awaken_004
+    boundsDataCenter: {x: 0.6875, y: 0.6875, z: 0}
+    boundsDataExtents: {x: 0.75, y: 1.375, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.3125, y: 0, z: 0}
+    position1: {x: 1.0625, y: 0, z: 0}
+    position2: {x: 0.3125, y: 1.375, z: 0}
+    position3: {x: 1.0625, y: 1.375, z: 0}
+    uvs:
+    - {x: 0.4140703, y: 0.7382852}
+    - {x: 0.4140703, y: 0.7851523}
+    - {x: 0.5859297, y: 0.7382852}
+    - {x: 0.5859297, y: 0.7851523}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_awaken_002
+    boundsDataCenter: {x: 0.6875, y: 0.6875, z: 0}
+    boundsDataExtents: {x: 0.75, y: 1.375, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.3125, y: 0, z: 0}
+    position1: {x: 1.0625, y: 0, z: 0}
+    position2: {x: 0.3125, y: 1.375, z: 0}
+    position3: {x: 1.0625, y: 1.375, z: 0}
+    uvs:
+    - {x: 0.22657031, y: 0.6835977}
+    - {x: 0.22657031, y: 0.7304648}
+    - {x: 0.3984297, y: 0.6835977}
+    - {x: 0.3984297, y: 0.7304648}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_awaken_005
+    boundsDataCenter: {x: 0.6875, y: 0.6875, z: 0}
+    boundsDataExtents: {x: 0.75, y: 1.375, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.3125, y: 0, z: 0}
+    position1: {x: 1.0625, y: 0, z: 0}
+    position2: {x: 0.3125, y: 1.375, z: 0}
+    position3: {x: 1.0625, y: 1.375, z: 0}
+    uvs:
+    - {x: 0.6015703, y: 0.7539102}
+    - {x: 0.6015703, y: 0.8007773}
+    - {x: 0.7734297, y: 0.7539102}
+    - {x: 0.7734297, y: 0.8007773}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_awaken_003
+    boundsDataCenter: {x: 0.6875, y: 0.6875, z: 0}
+    boundsDataExtents: {x: 0.75, y: 1.375, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.3125, y: 0, z: 0}
+    position1: {x: 1.0625, y: 0, z: 0}
+    position2: {x: 0.3125, y: 1.375, z: 0}
+    position3: {x: 1.0625, y: 1.375, z: 0}
+    uvs:
+    - {x: 0.007820313, y: 0.75781643}
+    - {x: 0.101554684, y: 0.75781643}
+    - {x: 0.007820313, y: 0.84374607}
+    - {x: 0.101554684, y: 0.84374607}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_awaken_001
+    boundsDataCenter: {x: 0.6875, y: 0.6875, z: 0}
+    boundsDataExtents: {x: 0.75, y: 1.375, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.3125, y: 0, z: 0}
+    position1: {x: 1.0625, y: 0, z: 0}
+    position2: {x: 0.3125, y: 1.375, z: 0}
+    position3: {x: 1.0625, y: 1.375, z: 0}
+    uvs:
+    - {x: 0.7890703, y: 0.7695352}
+    - {x: 0.7890703, y: 0.8164023}
+    - {x: 0.9609297, y: 0.7695352}
+    - {x: 0.9609297, y: 0.8164023}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_awaken_006
+    boundsDataCenter: {x: 0.6875, y: 0.6875, z: 0}
+    boundsDataExtents: {x: 0.75, y: 1.375, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.3125, y: 0, z: 0}
+    position1: {x: 1.0625, y: 0, z: 0}
+    position2: {x: 0.3125, y: 1.375, z: 0}
+    position3: {x: 1.0625, y: 1.375, z: 0}
+    uvs:
+    - {x: 0.22657031, y: 0.7929727}
+    - {x: 0.22657031, y: 0.8398398}
+    - {x: 0.3984297, y: 0.7929727}
+    - {x: 0.3984297, y: 0.8398398}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 1
+    collisionLayer: 6
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices: []
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_charge_002
+    boundsDataCenter: {x: 0.6875, y: 0.65625, z: 0}
+    boundsDataExtents: {x: 0.75, y: 1.3125, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.3125, y: 0, z: 0}
+    position1: {x: 1.0625, y: 0, z: 0}
+    position2: {x: 0.3125, y: 1.3125, z: 0}
+    position3: {x: 1.0625, y: 1.3125, z: 0}
+    uvs:
+    - {x: 0.5937578, y: 0.8085977}
+    - {x: 0.5937578, y: 0.8554648}
+    - {x: 0.7578047, y: 0.8085977}
+    - {x: 0.7578047, y: 0.8554648}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.6875, y: 0.65625, z: 0}
+    - {x: 0.375, y: 0.65625, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_charge_001
+    boundsDataCenter: {x: 0.6875, y: 0.65625, z: 0}
+    boundsDataExtents: {x: 0.75, y: 1.3125, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.3125, y: 0, z: 0}
+    position1: {x: 1.0625, y: 0, z: 0}
+    position2: {x: 0.3125, y: 1.3125, z: 0}
+    position3: {x: 1.0625, y: 1.3125, z: 0}
+    uvs:
+    - {x: 0.7734453, y: 0.8242227}
+    - {x: 0.7734453, y: 0.8710898}
+    - {x: 0.9374922, y: 0.8242227}
+    - {x: 0.9374922, y: 0.8710898}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.6875, y: 0.65625, z: 0}
+    - {x: 0.375, y: 0.65625, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_awaken_004 1
+    boundsDataCenter: {x: 0.6875, y: 0.6875, z: 0}
+    boundsDataExtents: {x: 0.75, y: 1.375, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.3125, y: 0, z: 0}
+    position1: {x: 1.0625, y: 0, z: 0}
+    position2: {x: 0.3125, y: 1.375, z: 0}
+    position3: {x: 1.0625, y: 1.375, z: 0}
+    uvs:
+    - {x: 0.4140703, y: 0.7382852}
+    - {x: 0.4140703, y: 0.7851523}
+    - {x: 0.5859297, y: 0.7382852}
+    - {x: 0.5859297, y: 0.7851523}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.6875, y: 0.6875, z: 0}
+    - {x: 0.375, y: 0.6875, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_attack_000
+    boundsDataCenter: {x: 0.6875, y: 0.875, z: 0}
+    boundsDataExtents: {x: 0.75, y: 1.375, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.3125, y: 0.1875, z: 0}
+    position1: {x: 1.0625, y: 0.1875, z: 0}
+    position2: {x: 0.3125, y: 1.5625, z: 0}
+    position3: {x: 1.0625, y: 1.5625, z: 0}
+    uvs:
+    - {x: 0.4140703, y: 0.7382852}
+    - {x: 0.4140703, y: 0.7851523}
+    - {x: 0.5859297, y: 0.7382852}
+    - {x: 0.5859297, y: 0.7851523}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.6875, y: 0.875, z: 0}
+    - {x: 0.375, y: 0.6875, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: mummy_attack_100
+    boundsDataCenter: {x: 0.6875, y: 0.90625, z: 0}
+    boundsDataExtents: {x: 0.75, y: 1.4375, z: 0}
+    untrimmedBoundsDataCenter: {x: 0.71875, y: 0.8125, z: 0}
+    untrimmedBoundsDataExtents: {x: 1.4375, y: 1.625, z: 0}
+    texelSize: {x: 0.0625, y: 0.0625}
+    position0: {x: 0.3125, y: 0.1875, z: 0}
+    position1: {x: 1.0625, y: 0.1875, z: 0}
+    position2: {x: 0.3125, y: 1.625, z: 0}
+    position3: {x: 1.0625, y: 1.625, z: 0}
+    uvs:
+    - {x: 0.8125078, y: 0.6601602}
+    - {x: 0.8125078, y: 0.7070273}
+    - {x: 0.9921797, y: 0.6601602}
+    - {x: 0.9921797, y: 0.7070273}
+    material: {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+    materialId: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    collisionLayer: 2
+    metadata:
+      type: 0
+      weight: 0.1
+      dungeonRoomSubType: 0
+      secondRoomSubType: -1
+      thirdRoomSubType: -1
+      preventWallStamping: 0
+      usesAnimSequence: 0
+      usesNeighborDependencies: 0
+      usesPerTileVFX: 0
+      tileVFXPlaystyle: 0
+      tileVFXChance: 1
+      tileVFXPrefab: {fileID: 0}
+      tileVFXOffset: {x: 0, y: 0}
+      tileVFXDelayTime: 0
+      tileVFXDelayVariance: 0
+      tileVFXAnimFrame: 0
+    colliderVertices:
+    - {x: 0.6875, y: 0.90625, z: 0}
+    - {x: 0.375, y: 0.71875, z: 0.1}
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  SpriteIDsWithBagelColliders:
+  SpriteDefinedBagelColliders: []
+  SpriteIDsWithAttachPoints:
+  SpriteDefinedAttachPoints: []
+  SpriteIDsWithNeighborDependencies:
+  SpriteDefinedIndexNeighborDependencies: []
+  SpriteIDsWithAnimationSequences:
+  SpriteDefinedAnimationSequences: []
+  premultipliedAlpha: 0
+  shouldGenerateTilemapReflectionData: 0
+  material: {fileID: 0}
+  materials:
+  - {fileID: 2100000, guid: 6b1fc62af237da346ac3885a4ebdff3a, type: 2}
+  textures:
+  - {fileID: 2800000, guid: 56f0487fc91e1bc40b2893dfc2f721ef, type: 3}
+  pngTextures: []
+  materialPngTextureId: 00000000
+  textureFilterMode: 0
+  textureMipMaps: 0
+  allowMultipleAtlases: 0
+  spriteCollectionGUID: 7dd0cfc70a405c142975d7c66407c9c7
+  spriteCollectionName: BulletMummyCollection
+  assetName:
+  loadable: 0
+  invOrthoSize: 2
+  halfTargetHeight: 8
+  buildKey: 139519386
+  dataGuid: 324ea3b44bf24bc49955581aba1e9737
+  managedSpriteCollection: 0
+  hasPlatformData: 0
+  spriteCollectionPlatforms: []
+  spriteCollectionPlatformGUIDs: []

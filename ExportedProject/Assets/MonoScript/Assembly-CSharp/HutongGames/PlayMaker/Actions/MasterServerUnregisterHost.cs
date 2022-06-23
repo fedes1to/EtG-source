@@ -1,0 +1,15 @@
+using UnityEngine;
+
+namespace HutongGames.PlayMaker.Actions
+{
+	[ActionCategory(ActionCategory.Network)]
+	[Tooltip("Unregister this server from the master server.\n\nDoes nothing if the server is not registered or has already unregistered.")]
+	public class MasterServerUnregisterHost : FsmStateAction
+	{
+		public override void OnEnter()
+		{
+			MasterServer.UnregisterHost();
+			Finish();
+		}
+	}
+}

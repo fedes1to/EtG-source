@@ -1,0 +1,193 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89c8b82035a27144f91d94ae1d6c0238, type: 3}
+  m_Name: MimicSpitGoop
+  m_EditorClassIdentifier:
+  goopTexture: {fileID: 2800000, guid: e9bb9f5a1cbf6cd4db771ccec532bfe1, type: 3}
+  worldTexture: {fileID: 2800000, guid: 281e6b714de4a6649be8eaccbcf02a45, type: 3}
+  usesWorldTextureByDefault: 0
+  baseColor32:
+    serializedVersion: 2
+    rgba: 4290883725
+  usesLifespan: 1
+  lifespan: 6
+  fadePeriod: 4
+  fadeColor32:
+    serializedVersion: 2
+    rgba: 8421504
+  lifespanRadialReduction: 2
+  damagesPlayers: 0
+  damageToPlayers: 0.5
+  delayBeforeDamageToPlayers: 0.5
+  damageTypes: 0
+  damagesEnemies: 0
+  damagePerSecondtoEnemies: 0
+  goopDamageTypeInteractions:
+  - damageType: 64
+    electrifiesGoop: 1
+    freezesGoop: 0
+    ignitionMode: 0
+  - damageType: 8
+    electrifiesGoop: 0
+    freezesGoop: 1
+    ignitionMode: 0
+  usesAmbientGoopFX: 0
+  ambientGoopFXChance: 0.01
+  ambientGoopFX:
+    type: 0
+    effects: []
+  usesAcidAudio: 0
+  isOily: 0
+  usesWaterVfx: 1
+  eternal: 0
+  usesOverrideOpaqueness: 0
+  overrideOpaqueness: 0.5
+  CanBeIgnited: 0
+  igniteSpreadTime: 0.1
+  SelfIgnites: 0
+  selfIgniteDelay: 0.5
+  ignitionChangesLifetime: 0
+  ignitedLifetime: 5
+  playerStepsChangeLifetime: 0
+  playerStepsLifetime: 2
+  fireDamageToPlayer: 0.5
+  fireDamagePerSecondToEnemies: 10
+  fireBurnsEnemies: 1
+  fireEffect:
+    AffectsPlayers: 1
+    AffectsEnemies: 1
+    effectIdentifier: effect
+    resistanceType: 0
+    stackMode: 0
+    duration: 10
+    maxStackedDuration: -1
+    AppliesTint: 0
+    TintColor: {r: 1, g: 1, b: 1, a: 0.5}
+    AppliesDeathTint: 0
+    DeathTintColor: {r: 0.388, g: 0.388, b: 0.388, a: 1}
+    AppliesOutlineTint: 0
+    OutlineTintColor: {r: 0, g: 0, b: 0, a: 1}
+    OverheadVFX: {fileID: 0}
+    PlaysVFXOnActor: 0
+    DamagePerSecondToEnemies: 10
+    ignitesGoops: 0
+    FlameVfx: []
+    flameNumPerSquareUnit: 10
+    flameBuffer: {x: 0.0625, y: 0.0625}
+    flameFpsVariation: 0.5
+    flameMoveChance: 0.2
+    IsGreenFire: 0
+  igniteColor32:
+    serializedVersion: 2
+    rgba: 4286611711
+  fireColor32:
+    serializedVersion: 2
+    rgba: 4278190335
+  UsesGreenFire: 0
+  CanBeElectrified: 0
+  electrifiedDamageToPlayer: 0.5
+  electrifiedDamagePerSecondToEnemies: 10
+  electrifiedTime: 2
+  CanBeFrozen: 0
+  freezeLifespan: 10
+  freezeSpreadTime: 0.1
+  prefreezeColor32:
+    serializedVersion: 2
+    rgba: 4287792991
+  frozenColor32:
+    serializedVersion: 2
+    rgba: 4285493103
+  AppliesSpeedModifier: 0
+  AppliesSpeedModifierContinuously: 1
+  SpeedModifierEffect:
+    AffectsPlayers: 1
+    AffectsEnemies: 0
+    effectIdentifier: mimic spit goop
+    resistanceType: 0
+    stackMode: 0
+    duration: 0.1
+    maxStackedDuration: -1
+    AppliesTint: 0
+    TintColor: {r: 1, g: 1, b: 1, a: 0.5}
+    AppliesDeathTint: 0
+    DeathTintColor: {r: 0.388, g: 0.388, b: 0.388, a: 1}
+    AppliesOutlineTint: 0
+    OutlineTintColor: {r: 0, g: 0, b: 0, a: 1}
+    OverheadVFX: {fileID: 0}
+    PlaysVFXOnActor: 0
+    SpeedMultiplier: 0.333
+    CooldownMultiplier: 1
+    OnlyAffectPlayerWhenGrounded: 1
+  AppliesDamageOverTime: 0
+  HealthModifierEffect:
+    AffectsPlayers: 1
+    AffectsEnemies: 1
+    effectIdentifier: effect
+    resistanceType: 0
+    stackMode: 0
+    duration: 10
+    maxStackedDuration: -1
+    AppliesTint: 0
+    TintColor: {r: 1, g: 1, b: 1, a: 0.5}
+    AppliesDeathTint: 0
+    DeathTintColor: {r: 0.388, g: 0.388, b: 0.388, a: 1}
+    AppliesOutlineTint: 0
+    OutlineTintColor: {r: 0, g: 0, b: 0, a: 1}
+    OverheadVFX: {fileID: 0}
+    PlaysVFXOnActor: 0
+    DamagePerSecondToEnemies: 10
+    ignitesGoops: 0
+  DrainsAmmo: 0
+  PercentAmmoDrainPerSecond: 0.1
+  AppliesCharm: 0
+  CharmModifierEffect:
+    AffectsPlayers: 1
+    AffectsEnemies: 1
+    effectIdentifier: effect
+    resistanceType: 0
+    stackMode: 0
+    duration: 10
+    maxStackedDuration: -1
+    AppliesTint: 0
+    TintColor: {r: 1, g: 1, b: 1, a: 0.5}
+    AppliesDeathTint: 0
+    DeathTintColor: {r: 0.388, g: 0.388, b: 0.388, a: 1}
+    AppliesOutlineTint: 0
+    OutlineTintColor: {r: 0, g: 0, b: 0, a: 1}
+    OverheadVFX: {fileID: 0}
+    PlaysVFXOnActor: 0
+  AppliesCheese: 0
+  CheeseModifierEffect:
+    AffectsPlayers: 1
+    AffectsEnemies: 1
+    effectIdentifier: effect
+    resistanceType: 0
+    stackMode: 0
+    duration: 10
+    maxStackedDuration: -1
+    AppliesTint: 0
+    TintColor: {r: 1, g: 1, b: 1, a: 0.5}
+    AppliesDeathTint: 0
+    DeathTintColor: {r: 0.388, g: 0.388, b: 0.388, a: 1}
+    AppliesOutlineTint: 0
+    OutlineTintColor: {r: 0, g: 0, b: 0, a: 1}
+    OverheadVFX: {fileID: 0}
+    PlaysVFXOnActor: 0
+    CheeseAmount: 50
+    CheeseGoop: {fileID: 0}
+    CheeseGoopRadius: 1.5
+    CheeseCrystals: []
+    crystalRot: 8
+    crystalVariation: {x: 0.05, y: 0.05}
+    debrisMinForce: 5
+    debrisMaxForce: 5
+    debrisAngleVariance: 15
+    vfxExplosion: {fileID: 0}
