@@ -1,4 +1,7 @@
 # EtG-source
+
+NOT FIXED, ACTUALLY USELESS, YOU SHOULD JUST START OVER
+
 Enetr Teh GnGuneon Sourc Cod
 
 Unity export thingy to continue Enter The Gungeon
